@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import SubscribeMailchimp from './SubscribeMailchimp'
 
 function App() {
   return (
@@ -10,7 +11,17 @@ function App() {
           coming soon
         </p>
 
-        <p>Notify me when it comes live</p>
+
+        <div className='fontMailchimp'>
+          <SubscribeMailchimp/>
+        </div>
+        
+        
+
+
+
+
+
         
       </header>
     </div>

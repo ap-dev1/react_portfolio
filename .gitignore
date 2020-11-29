@@ -2,14 +2,12 @@
 
 
 #  Custom:
-**/src/App.css**
-
 /PULA
 muie.css
-App.css
-**/src/App.css
 /ignored_res
 
+
+App.css
 
 # dependencies
 /node_modules
