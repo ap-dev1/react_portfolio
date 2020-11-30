@@ -4,10 +4,11 @@ import './App.css';
 import SubscribeMailchimp from './SubscribeMailchimp'
 
 function App() {
-  
+
   // G-044X7R2Z81  or  UA-044X7R2Z81-G
   ReactGA.initialize('UA-044X7R2Z81-G');
-  ReactGA.pageview('/homepage');
+  //ReactGA.pageview('/homepage');
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
     <div className="App">
