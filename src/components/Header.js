@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-import data from '.../myData.js'
+import data from '../myData.js'
 import {Link} from 'react-scroll'
 
 import '../styles/header.css'
