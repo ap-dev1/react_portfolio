@@ -4,8 +4,9 @@
 #  Custom:
 /PULA
 muie.css
+myData.js
 /ignored_res
-
+SubscribeMailchimp.js
 
 
 /.env

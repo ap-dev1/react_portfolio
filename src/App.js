@@ -1,38 +1,43 @@
-// import logo from './logo.svg';
-import ReactGA from 'react-ga';
+
 import './App.css';
-import SubscribeMailchimp from './SubscribeMailchimp'
+import './styles/common_styles.css'
+import './styles/header.css';
+import './styles/about.css';
+//import './styles/project.css';
+import './styles/project_section.css';
+import './styles/contact.css';
+
+//import SubscribeMailchimp from './components/SubscribeMailchimp'
+
+import Header from './components/Header';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 function App() {
 
-  // G-044X7R2Z81  or  UA-044X7R2Z81-G
-  ReactGA.initialize('UA-044X7R2Z81-G');
-  //ReactGA.pageview('/homepage');
-  ReactGA.pageview(window.location.pathname + window.location.search);
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          coming soon
-        </p>
 
 
-        <div className='fontMailchimp'>
-          <SubscribeMailchimp/>
+    return (
+
+        <div className="App">
+
+            <Header></Header>
+
+            <About></About>
+
+            <Projects></Projects>
+            
+            <Contact></Contact>
+
+            <Footer></Footer>
+
         </div>
-        
-        
 
 
-
-
-
-        
-      </header>
-    </div>
-  );
+    );
 }
 
 export default App;
