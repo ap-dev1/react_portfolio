@@ -2,10 +2,26 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import data from '../myData';
 import '../styles/contact.css';
-
+//import { Link } from 'react-router-dom';
+import {Redirect} from 'react-router-dom'
+import {Button} from 'react-bootstrap'
 
 class Contact extends Component {
-    state = {}
+ 
+    goToLink = (e) => {
+        e.preventDefault()
+        //window.location.replace(`https://${this.url}`)
+        let a = e.currentTarget.name
+
+        console.log("e.currentTarget.name: ", a)
+
+        // let b = a.name
+        // console.log("destination: ", b)
+        //window.location.href = (a, "_blank")
+        window.open(a, '_blank')
+        //window.location.href = `/${this.props.match.params.user}/${this.props.match.params.sessionId}
+      }
+
 
     render() {
         return (
@@ -25,15 +41,18 @@ class Contact extends Component {
                     <div className='section_row' style={{ flexWrap: 'wrap' }}>
                         {data.links.map((link, index) => (
 
-                            <a
-                                target='blank'
-                                href={link.url}
+                            <Button
+                                //target='blank'
+                                //as={"link"}
+                                name={link.url}
+                                title={link.url}
+                                size={"lg"}
                                 className='link_google'
                                 style={{ width: '25%' }}
-                            >
-                                {link.name}
+                                onClick={this.goToLink}
+                                key={index}
+                            >{link.name}</Button>
 
-                            </a>
                         ))}
 
                     </div>
