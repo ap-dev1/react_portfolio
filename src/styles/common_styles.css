@@ -29,6 +29,8 @@
     align-items: stretch;
     min-width: 40%;
     margin: 2em 0 2em 0;
+    align-items: center;
+
 }
 
 
@@ -38,6 +40,8 @@
     min-height: 96%;
     margin: 1%;
     padding: 1%;
+    align-items: center;
+
 }
 
 

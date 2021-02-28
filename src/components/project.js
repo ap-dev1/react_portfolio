@@ -50,7 +50,7 @@ class Project extends Component {
 
                     <div className='section_column'>
                         <a href={this.props.url}>
-                            <img src={this.props.imageSrc} alt={this.props.title} width='600px'></img>
+                            <img src={this.props.imageSrc} alt={this.props.title} width='500px'></img>
                         </a>
 
                         <p className='project_caption'>{this.props.citation}</p>
