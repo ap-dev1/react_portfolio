@@ -7,16 +7,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding-top: 0%;
-
-    border: 0px solid red;
 }
 
 
 .Section{
     width: 100%;
-    margin-top: 15em;
+    min-height: 100vh;
     height: auto;
     display: flex;
     flex-direction: column;

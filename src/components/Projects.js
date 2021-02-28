@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Project from './project';
-import Fade from 'react-reveal/Fade';
+//import Fade from 'react-reveal/Fade';
 import data from '../myData';
 
 import '../styles/common_styles.css'
@@ -14,7 +14,7 @@ class Projects extends Component {
             <div className='Section'>
 
                 <h1 className='section_title'>
-                    <Fade bottom cascade>Projects</Fade>
+                    {/* <Fade bottom cascade>Projects</Fade> */}
                 </h1>
 
 

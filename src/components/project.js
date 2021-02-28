@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
+//import Fade from 'react-reveal/Fade';  
+//  -------  everything in the return function was wrapped in a Fade object;
 
 import '../styles/common_styles.css'
 import '../styles/buttons.css'
@@ -10,7 +11,7 @@ class Project extends Component {
     render() {
         return (
 
-            <Fade bottom>
+           
 
                 <div className='section_row'>
 
@@ -57,7 +58,8 @@ class Project extends Component {
 
                 </div>
 
-            </Fade>);
+         
+        );
     }
 }
 

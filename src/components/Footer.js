@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
+//import Fade from 'react-reveal/Fade';
 
 import '../styles/footer.css';
 
@@ -11,14 +11,7 @@ class Footer extends Component {
         return (
 
             <div className='footer' fixed="bottom">
-
-                <Fade bottom>
-
                     <span>End of site.<br/>Made with React JS and ❤ (but mostly React) | Andrei Popa 2020</span>
-
-                </Fade>
-
-    
             </div>
         );
     }

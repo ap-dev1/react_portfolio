@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
+//import Fade from 'react-reveal/Fade';
 import data from '../myData';
 import '../styles/contact.css';
 //import { Link } from 'react-router-dom';
-import {Redirect} from 'react-router-dom'
+//import {Redirect} from 'react-router-dom'
 import {Button} from 'react-bootstrap'
 
 class Contact extends Component {
@@ -27,7 +27,7 @@ class Contact extends Component {
         return (
 
 
-            <Fade bottom cascade>
+            
                 <div className='Section background_color'>
                     <h1 className='section_title'>Connect</h1>
 
@@ -58,7 +58,7 @@ class Contact extends Component {
                     </div>
 
                 </div>
-            </Fade>
+          
         );
     }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
+//import Fade from 'react-reveal/Fade';
 import data from '../myData';
 import '../styles/about.css';
 
@@ -15,7 +15,7 @@ class About extends Component {
 
         return (
 
-            <Fade bottom>
+           
                 <div className='Section background_color' id='about'>
 
                     <h1 className='section_title'>About me</h1>
@@ -52,7 +52,7 @@ class About extends Component {
                     </div>
 
                 </div>
-            </Fade>
+           
         );
     }
 }

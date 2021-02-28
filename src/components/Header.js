@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
+//import Fade from 'react-reveal/Fade';
 import data from '../myData.js'
-import {Link} from 'react-scroll'
+//import {Link} from 'react-scroll'
 
 import '../styles/header.css'
-
 import '../styles/common_styles.css'
 import '../styles/buttons.css'
 
@@ -15,9 +14,9 @@ class Header extends Component {
         return (
 
 
-            <div className='Section' style={{ marginTop: '10em' }}>
+            <div className='Section' style={{marginTop: '0'}}>
 
-                <Fade bottom>
+               
                     <div className='section_column'>
 
                         <p className='header-title'>
@@ -30,7 +29,7 @@ class Header extends Component {
                         </p>
 
 
-                        <p className='header-title'>
+                        {/* <p className='header-title'>
                             <Link 
                                 to='about'
                                 spy={true}
@@ -38,17 +37,14 @@ class Header extends Component {
                                 smooth={true}
                                 className='fake_button'
                                 >Continue</Link>
-                        </p>
+                        </p> */}
 
 
                     </div>
-                </Fade>
+
+
+
             </div>
-
-
-
-
-
         );
     }
 }
