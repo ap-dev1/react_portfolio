@@ -3,7 +3,7 @@
 
 .project_title{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     font-weight: 600;
 }
@@ -11,7 +11,7 @@
 
 .project_description{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: .8em;
     text-align: left;
     font-weight: 400;
     line-height: 1.5em;
@@ -22,7 +22,7 @@
 
 .project_caption{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: .8em;
     text-align: left;
     margin: 1%;
     font-weight: 400;
