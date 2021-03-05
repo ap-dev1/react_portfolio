@@ -133,12 +133,14 @@
     
     border: 2px solid orange;
     border: 0px solid orange;
+    width: 100%;
 }
 
 
 
 .link_google{
-    
+    font-family: 'Montserrat', sans-serif;
+
     text-align: center;
     background-color: black;
     color: white;
@@ -146,6 +148,8 @@
     text-decoration: none;
     border-radius: 5px;
     margin: 1%;
+    width: fit-content;
+    min-width: 30%;
 }
 
 .link_google:hover{

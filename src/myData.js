@@ -22,7 +22,7 @@ const data = {
 
     aboutDescription: "Behavioral scientist and web developer, passionate about creating useful products and learning new technologies.",
 
-    aboutTech: "HTML, CSS, <br>JavaScript (+ React, D3, Node,..); <br>Python (+ pandas, scipy, nltk, spacy, tkinter, matplotlib); <br>AWS DynamoDB and RDS/PosgreSQL, MongoDB/Atlas; <br>VB.Net; <br>Tableau, Git; familiar with Agile and workflow boards;",
+    aboutTech: "HTML, CSS, JavaScript (React, Node, ... )<br>MongoDB/Atlas, AWS DynamoDB, AWS RDS/PosgreSQL, SQLite <br>Python (pandas, scipy, nltk, spacy, tkinter, ...); <br>D3, Tableau, Matplotlib <br>VB.Net, MS Office, SigmaPlot, SPSS<br>Git, familiar with Agile and workflow boards;",
 
     aboutImage: profile_444,
 
