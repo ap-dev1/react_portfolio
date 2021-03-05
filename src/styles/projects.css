@@ -105,42 +105,21 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .button_row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 1%;
-    margin: 1%;
-
-    
+    margin: 1%;    
     border: 2px solid orange;
     border: 0px solid orange;
     width: 100%;
 }
 
 
-
 .link_google{
     font-family: 'Montserrat', sans-serif;
-
     text-align: center;
     background-color: black;
     color: white;

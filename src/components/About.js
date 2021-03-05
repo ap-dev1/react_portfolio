@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import data from '../myData';
-import '../styles/sassStyles.sass'
-import ReactTinyMarkup from 'react-tiny-markup';
+import '../styles/sassStyles.sass';
 import parse from 'html-react-parser';
 
 
