@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
 import Project from './project';
-//import Fade from 'react-reveal/Fade';
 import data from '../myData';
 
-import '../styles/common_styles.css'
-import '../styles/buttons.css'
+import '../styles/projects.css'
 
 class Projects extends Component {
     state = {}
     render() {
         return (
 
-            <div className='Section'>
+            <div id='Projects'>
 
-                <h1 className='section_title'>
-                    {/* <Fade bottom cascade>Projects</Fade> */}
-                </h1>
-
+                <h1>Projects</h1>
 
                 <div>
 

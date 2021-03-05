@@ -3,8 +3,6 @@ import './App.css';
 import './styles/common_styles.css'
 import './styles/header.css';
 import './styles/about.css';
-//import './styles/project.css';
-import './styles/project_section.css';
 import './styles/contact.css';
 
 //import SubscribeMailchimp from './components/SubscribeMailchimp'
@@ -33,6 +31,7 @@ function App() {
             <Contact></Contact>
 
             <Footer></Footer>
+
 
         </div>
 

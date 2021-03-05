@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-//import Fade from 'react-reveal/Fade';
 import data from '../myData.js'
-//import {Link} from 'react-scroll'
-
 import '../styles/header.css'
-import '../styles/common_styles.css'
-import '../styles/buttons.css'
 
 class Header extends Component {
-    state = {}
+
+    scrollTo = (e) => {
+        e.preventDefault()
+        document.getElementById('About').scrollIntoView({ block: 'end',  behavior: 'smooth' })
+    };
+
 
     render() {
         return (
@@ -28,17 +28,9 @@ class Header extends Component {
                             {data.headerTagline[1]}
                         </p>
 
-
-                        {/* <p className='header-title'>
-                            <Link 
-                                to='about'
-                                spy={true}
-                                activeClass='active'
-                                smooth={true}
-                                className='fake_button'
-                                >Continue</Link>
-                        </p> */}
-
+                        <p className='header-title'>
+                            <button onClick={this.scrollTo}>Continue</button>
+                        </p>
 
                     </div>
 

@@ -1,34 +1,22 @@
 import React, { Component } from 'react';
-//import Fade from 'react-reveal/Fade';
 import data from '../myData';
 import '../styles/contact.css';
-//import { Link } from 'react-router-dom';
-//import {Redirect} from 'react-router-dom'
-import {Button} from 'react-bootstrap'
+import {Button} from 'react-bootstrap';
+import '../styles/common_styles.css'
 
 class Contact extends Component {
  
     goToLink = (e) => {
         e.preventDefault()
-        //window.location.replace(`https://${this.url}`)
         let a = e.currentTarget.name
-
-        console.log("e.currentTarget.name: ", a)
-
-        // let b = a.name
-        // console.log("destination: ", b)
-        //window.location.href = (a, "_blank")
         window.open(a, '_blank')
-        //window.location.href = `/${this.props.match.params.user}/${this.props.match.params.sessionId}
       }
 
 
     render() {
         return (
 
-
-            
-                <div className='Section background_color'>
+                <div id='Contact'>
                     <h1 className='section_title'>Connect</h1>
 
 

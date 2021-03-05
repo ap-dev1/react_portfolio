@@ -1,15 +1,85 @@
 
-
-.background_color{
+#About{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #02aab0;
     color: white;
 }
 
-.about_paragraph{
+
+#About h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: .8em;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+
+#About p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
     text-align: left;
     font-weight: 400;
     line-height: 1.5em;
-    width: 600px;
+    width: 500px;
+}
+
+.AboutRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    min-width: 40%;
+    margin: 2em 0 2em 0;
+    align-items: center;
+}
+
+.AboutColumn{
+    display: flex;
+    flex-direction: column;
+    min-height: 96%;
+    margin: 1%;
+    padding: 1%;
+    align-items: flex-start;
+}
+
+.AboutButtons{
+    display: flex;
+    flex-direction: row;
+    min-height: 96%;
+    margin: 1%;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AboutButtons button{
+    background: black;
+    color: white;
+    border: 0px;
+    padding: .8em 3em;
+    margin: 0 1em;
+    font-size: .9rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+
+.AboutButtons button:hover{
+    background: #1B4D3E;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
 }

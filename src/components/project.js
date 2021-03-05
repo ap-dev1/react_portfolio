@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-//import Fade from 'react-reveal/Fade';  
-//  -------  everything in the return function was wrapped in a Fade object;
 
-import '../styles/common_styles.css'
-import '../styles/buttons.css'
+import '../styles/projects.css'
 
 
 class Project extends Component {
@@ -13,9 +10,9 @@ class Project extends Component {
 
            
 
-                <div className='section_row'>
+                <div className='projectRow'>
 
-                    <div className='section_column'>
+                    <div className='projectColumn'>
 
                         <h2 className='project_title'>{this.props.title}</h2>
 
@@ -23,7 +20,6 @@ class Project extends Component {
 
 
                         <div className='button_row'>
-
                             <a
                                 href={this.props.url}
                                 target='blank'
@@ -48,7 +44,7 @@ class Project extends Component {
 
 
 
-                    <div className='section_column'>
+                    <div className='projectColumn'>
                         <a href={this.props.url}>
                             <img src={this.props.imageSrc} alt={this.props.title} width='500px'></img>
                         </a>

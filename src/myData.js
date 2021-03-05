@@ -18,11 +18,11 @@ const data = {
 
     contactEmail: 'andrei.popa.dev@gmail.com',
 
-    aboutText: "I am a web developer with solid background in behavioral sciences, passionate about creating useful products and learning new technologies.",
+    aboutText: "Behavioral scientist and web developer, with strong computational skills, research experience, and a passion for making things. I am especially interested in products and services that enhance human experience and performance in sustainable ways. I see interesting opportunities, for example, in interfaces that allow people to effortlessly intergrate AI in everyday activities  (think 'cognitive prosthetic').",
 
-    aboutDescription: "I am a web developer with solid background in behavioral sciences, passionate about creating useful products and learning new technologies.",
+    aboutDescription: "Behavioral scientist and web developer, passionate about creating useful products and learning new technologies.",
 
-    aboutTech: "HTML, CSS, JavaScript (+ React, Redux, Node, D3); AWS (DynamoDB, RDS/PosgreSQL), MongoDB/Atlas; Firebase; Python (+ tkinter, pandas, scipy, nltk, spacy), Tableau, VB.Net; Git; familiar with Agile and workflow boards;",
+    aboutTech: "HTML, CSS, JavaScript (+ React, D3, Node,..); Python (+ tkinter, pandas, scipy, nltk, spacy); AWS DynamoDB and RDS/PosgreSQL, MongoDB/Atlas; Tableau, VB.Net; Git; familiar with Agile and workflow boards;",
 
     aboutImage: profile_444,
 
