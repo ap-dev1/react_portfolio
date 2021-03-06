@@ -4,38 +4,32 @@ import '../styles/projects.css'
 
 
 class Project extends Component {
-    state = {}
+    
+    goToLink = (e) => {
+        e.preventDefault()
+        let destination = e.target.id
+        window.open(destination, '_blank')
+    };
+
+
     render() {
         return (
-
-           
-
                 <div className='projectRow'>
 
                     <div className='projectColumn'>
 
-                        <h2 className='project_title'>{this.props.title}</h2>
+                        <h2 className='projectTitle'>{this.props.title}</h2>
 
-                        <p className='project_description'>{this.props.description}</p>
-
-
-                        <div className='button_row'>
-                            <a
-                                href={this.props.url}
-                                target='blank'
-                                className="link_google"
-                                style={{width:'30%'}}
-                            >{this.props.url_name}
-                            </a>
+                        <p className='projectOverview'>{this.props.description}</p>
 
 
-                            <a
-                                href={this.props.url2}
-                                target='blank'
-                                className="link_google"
-                                style={{width:'30%'}}
-                            >{this.props.url2_name}
-                            </a>
+                        <div className='projectButtons'>
+                        
+                            <button onClick={this.goToLink}
+                            id={this.props.url}>{this.props.url_name}</button>
+
+                            <button onClick={this.goToLink}
+                            id={this.props.url2}>{this.props.url2_name}</button>
 
 
                         </div>
@@ -46,10 +40,13 @@ class Project extends Component {
 
                     <div className='projectColumn'>
                         <a href={this.props.url}>
-                            <img src={this.props.imageSrc} alt={this.props.title} width='500px'></img>
+                            <img src={this.props.imageSrc}
+                                alt={this.props.title}
+                                title={this.props.imgTitle}
+                                className='projectImage'></img>
                         </a>
 
-                        <p className='project_caption'>{this.props.citation}</p>
+                        <p className='imageCaption'>{this.props.citation}</p>
                     </div>
 
                 </div>

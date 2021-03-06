@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import data from '../myData';
 import '../styles/sassStyles.sass';
 import parse from 'html-react-parser';
-
+import "../App.css"
 
 class About extends Component {
 
@@ -36,11 +36,14 @@ class About extends Component {
                     </div>
 
                     <div className='AboutColumn'>
-                        <p >{data.aboutText}</p>
-                        <p>{parse(data.aboutTech)}</p>
-                    
-                        <div className='AboutButtons'>
 
+                        <p className='narrative' >{data.aboutText}</p>
+                        <br></br>
+                        
+                        <p className='skills'>{parse(data.aboutTech)}</p>
+                        <br></br>
+
+                        <div className='AboutButtons'>
                             <button onClick={this.goToCredentials}
                             title={this.state.gDrive}>go to credentials</button>
                         </div>

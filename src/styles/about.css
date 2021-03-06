@@ -23,16 +23,30 @@
 }
 
 
-#About p{
-    font-family: 'Montserrat', sans-serif;
+
+.narrative{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     text-align: left;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.4em;
     width: 500px;
     margin: 1%;
     padding: 1%;
 }
+
+.skills{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .9em;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.4em;
+    width: 500px;
+    margin: 1%;
+    padding: 1%;
+}
+
+
 
 .AboutRow{
     display: flex;

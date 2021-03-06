@@ -5,7 +5,10 @@ import data from '../myData';
 import '../styles/projects.css'
 
 class Projects extends Component {
-    state = {}
+    
+
+
+
     render() {
         return (
 
@@ -29,6 +32,7 @@ class Projects extends Component {
                             url2={project.url2}
                             url2_name={project.url2_name}
                             citation={project.citation}
+                            imgTitle={project.title}
 
                         ></Project>
 
