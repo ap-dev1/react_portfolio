@@ -1,4 +1,14 @@
-
+.read-more-link{
+    color: blueviolet;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .extra-content{
+    color: cornflowerblue;
+    font-weight: 500;
+  }
+  
 
 #Projects{
     width: 100%;
@@ -58,8 +68,19 @@
     width: 400px;
 }
 
-.projectImage{
-    width: 500px;;
+
+.projectImages{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.imgZoom:hover {
+    transform: scale(2.5);
+    border: 1px solid darkslategrey;
 }
 
 .imageCaption{
@@ -69,8 +90,6 @@
     margin: 1%;
     font-weight: 400;
     line-height: 1.2em;
-    
-    
 }
 
 

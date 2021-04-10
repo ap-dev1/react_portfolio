@@ -1,36 +1,29 @@
 import React, { Component } from 'react';
 import Project from './project';
-import data from '../myData';
-
+import infoProjects from "../data/infoProjects"
 import '../styles/projects.css'
 
 class Projects extends Component {
     
 
-
-
     render() {
+
+
         return (
 
             <div id='Projects'>
-
                 <h1>Projects</h1>
 
                 <div>
-
-                    {data.projects.map((project) => (
+                    {infoProjects.map((project) => (
 
                         <Project
-
-                            key={project.id}
+                            key={project.title}
                             title={project.title}
                             description={project.description}
-                            service={project.service}
-                            imageSrc={project.imageSrc}
-                            url={project.url}
-                            url_name={project.url_name}
-                            url2={project.url2}
-                            url2_name={project.url2_name}
+                            img={project.img}
+                            urls={project.urls}
+                            
                             citation={project.citation}
                             imgTitle={project.title}
 
