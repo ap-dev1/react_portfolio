@@ -15,14 +15,14 @@ import Footer from './components/Footer';
 
 class App extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            showThis: 1,
-            seconds: 0,
-            wait: 3
-        }
-    };
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         showThis: 1,
+    //         seconds: 0,
+    //         wait: 3
+    //     }
+    // };
 
 
     render() {

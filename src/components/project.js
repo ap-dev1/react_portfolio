@@ -1,6 +1,9 @@
 
 import React, { Component } from 'react';
-import '../styles/projects.css'
+import '../styles/projects.css';
+import '../styles/timeline.css';
+//import ReadMore from "./ReadMore";
+import ReadMore from "./ReadMore";
 
 
 class Project extends Component {
@@ -13,28 +16,23 @@ class Project extends Component {
 
 
     render() {
-
         var Buttons = this.props.urls.map((item) => (
             <button
                 id={item.link}
                 title={item.link}
                 onClick={this.goToLink}
-                >{item.name}
+            >{item.name}
             </button>
         ))
 
 
         var Images = this.props.img.map((item) => (
-            
             <img src={item}
                 alt={item.title}
                 title={item.imgTitle}
-                style={{ maxWidth : 500/this.props.img.length, minWidth:150 , margin: '.1rem'}}
+                style={{ maxWidth: 500 / this.props.img.length, minWidth: 150, margin: '.1rem' }}
                 className="imgZoom"
-                ></img>
-
-
-
+            ></img>
         ))
 
 
@@ -42,10 +40,25 @@ class Project extends Component {
 
             <div className='projectRow'>
 
+
+                <div className="timelineYear">
+                    <h3>{this.props.date}</h3>
+                </div>
+                           
+
                 <div className='projectColumn'>
-                    <h2 className='projectTitle'>{this.props.title}</h2>
-                    <p className='projectOverview'>{this.props.description}</p>
+                    <h3 className='projectTitle'>{this.props.title}</h3>
+
+                    <p className='projectRole'>{this.props.role}  </p>
                     
+                    <p className='projectTags'>{this.props.tags} </p>
+
+                    {/* <p className='projectTags'>{this.props.tags}</p> */}
+
+                    {/* <p className='projectOverview'>{this.props.description}</p> */}
+
+                    <ReadMore overview={this.props.overview}/>
+
                     <div className='projectButtons'>
                         {Buttons}
                     </div>

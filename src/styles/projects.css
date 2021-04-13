@@ -60,12 +60,15 @@
 
 
 .projectOverview{
+    height: 100%;
+
     font-family: 'Montserrat', sans-serif;
     font-size: .9em;
     text-align: left;
     font-weight: 400;
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
     width: 400px;
+    vertical-align: top;
 }
 
 
@@ -93,6 +96,29 @@
 }
 
 
+.projectTags{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8rem;
+    text-align: left;
+    margin: 1%;
+    font-weight: 600;
+    line-height: 1rem;
+    margin: .1rem;
+    width: 100%;
+}
+
+
+.projectRole{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .9rem;
+    text-align: left;
+    margin: 1%;
+    font-weight: 500;
+    line-height: 1rem;
+    margin: .1rem;
+    width: 100%;
+}
+
 .section_row{
     display: flex;
     flex-direction: row;
@@ -103,6 +129,7 @@
     align-items: center;
 }
 
+
 .section_column{
     display: flex;
     flex-direction: column;
@@ -112,23 +139,12 @@
     align-items: center;
 }
 
+
 .section_title{
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2em;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .button_row{
@@ -148,8 +164,12 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-color: black;
+    background-color: #2d3e50;
+    background-color: #474e5d;
+    
     color: white;
     padding: 1em;
+    border:0;
     text-decoration: none;
     border-radius: 5px;
     margin: 1%;
@@ -157,8 +177,12 @@
     min-width: 30%;
 }
 
+
 .link_google:hover{
     background: #02aab0;
+    background: #5b738d;
+    background: #496481;
+    cursor: pointer;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -171,6 +195,7 @@
     border: 0px solid black;
 }
 
+
 .black_border:hover{
     background: #595a5a;
     transition: all 0.2s ease-in-out;
@@ -178,11 +203,7 @@
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
-
 }
-
-
-
 
 
 
@@ -198,14 +219,17 @@
     justify-content: space-evenly;
 }
 
+
 .projectButtons button{
-    background: black;
+    background: #2d3e50;
+
     color: white;
     border: 0px;
-    padding: .8em 3em;
+    padding: .5rem 1rem;
     cursor: pointer;
-    margin: 0;
+    margin: 0.1rem;
     font-size: .9rem;
+    border-radius: 5px;
     font-weight: 400;
     text-decoration: none;
     transition: all 0.2s ease-out;
@@ -218,6 +242,8 @@
 
 .projectButtons button:hover{
     background: #1B4D3E;
+    background: #496481;
+    background: #5b738d; 
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-out;
@@ -229,30 +255,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .spanDrive{
     font-size: 1.2em;
     font-weight: 600;
 }
-
 
 
 .btnHeader{
@@ -286,14 +292,52 @@
 
   
 
+.timelineYear {
+    display: flex;
+    height: 100%;
+    font-family: Arial;
+    font-size: 1rem;
+    min-width: 10rem;
+    width: 100%;
+
+    border-right: .2rem solid #2d3e50;
+    background-image: linear-gradient(to right, white, white, white, #9eacbc);
+}
+
+.timelineYear:nth-child(even) {
+    border-right: .3rem solid #2d3e50;
+    border-right: .3rem solid #503f2d;
+
+    /* background-image: linear-gradient(to right, white, white, white, #9eacbc); */
+    background-image: linear-gradient(to right, white, white, white, #9eacbc);
+}
+
+.timelineYear h3 {
+    flex: 1;
+    margin: 7rem 1rem;
+}
 
 
 
+.projectOverview{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.5em;
+    width: 400px;
+}
 
+    
+.read-or-hide{ 
+    color: rgb(235, 239, 245); 
+    cursor: pointer; 
+    background-color: rgb(87, 87, 86);
+    opacity: .7;
 
+    padding: .2rem .4rem;
+    font-size: .7rem;
+    font-weight: 600;
 
-
-
-
-
+  }
   

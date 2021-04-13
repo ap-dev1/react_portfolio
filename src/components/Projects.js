@@ -20,12 +20,21 @@ class Projects extends Component {
                         <Project
                             key={project.title}
                             title={project.title}
-                            description={project.description}
+
+                            date={project.date}
+                            role={project.role}
+                            tags={project.tags}
+                            
+                            //description={project.description}
+
+                            overview={project.description}
                             img={project.img}
                             urls={project.urls}
                             
                             citation={project.citation}
                             imgTitle={project.title}
+
+                            
 
                         ></Project>
 
