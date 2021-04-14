@@ -14,7 +14,7 @@ const ReadMore = (props) => {
     return (
 
         <p className="projectOverview">
-        {isReadMore ? props.overview.slice(0, 150) : props.overview} . . .
+        {isReadMore ? props.overview.slice(0, 750) : props.overview} . . .
 
         <span
             onClick={toggleReadMore} className="read-or-hide"

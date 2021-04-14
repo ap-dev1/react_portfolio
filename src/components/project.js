@@ -26,14 +26,42 @@ class Project extends Component {
         ))
 
 
-        var Images = this.props.img.map((item) => (
-            <img src={item}
-                alt={item.title}
-                title={item.imgTitle}
-                style={{ maxWidth: 500 / this.props.img.length, minWidth: 150, margin: '.1rem' }}
-                className="imgZoom"
-            ></img>
-        ))
+        // var Images = this.props.img.map((item) => (
+        //     <img src={item}
+        //         alt={item.title}
+        //         title={item.imgTitle}
+        //         style={{ maxWidth: 500 / this.props.img.length, minWidth: 150, margin: '.1rem' }}
+        //         className="imgZoom"
+        //     ></img>
+        // ))
+
+
+        var Images = this.props.img.map((item) => {
+
+
+            if (item.includes("://")) {
+
+                return (
+                    <iframe sandbox src={item}
+                        //alt={item.title}
+                        title={item.imgTitle}
+                        style={{ maxWidth: 500 / this.props.img.length, minWidth: 150, margin: '.1rem' }}
+                        className="imgZoom"
+                    ></iframe>
+                )
+            }
+
+            return (
+                <img src={item}
+                    alt={item.title}
+                    title={item.imgTitle}
+                    style={{ maxWidth: 500 / this.props.img.length, minWidth: 150, margin: '.1rem' }}
+                    className="imgZoom"
+                ></img>
+            )
+        }
+        )
+
 
 
         return (
@@ -44,20 +72,20 @@ class Project extends Component {
                 <div className="timelineYear">
                     <h3>{this.props.date}</h3>
                 </div>
-                           
+
 
                 <div className='projectColumn'>
                     <h3 className='projectTitle'>{this.props.title}</h3>
 
                     <p className='projectRole'>{this.props.role}  </p>
-                    
+
                     <p className='projectTags'>{this.props.tags} </p>
 
                     {/* <p className='projectTags'>{this.props.tags}</p> */}
 
                     {/* <p className='projectOverview'>{this.props.description}</p> */}
 
-                    <ReadMore overview={this.props.overview}/>
+                    <ReadMore overview={this.props.overview} />
 
                     <div className='projectButtons'>
                         {Buttons}

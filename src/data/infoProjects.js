@@ -235,11 +235,12 @@ var infoProjects = [
         tags: "VBA/Excel, ensemble fitting, residual analysis, model selection",
 
         id: 25,
-        description: 'xxxx',
+        description: "Virtual organisms animated by a selectionist theory of behavior dynamics worked on concurrent random interval schedules where both the rate and magnitude of reinforcement were varied. The selectionist theory consists of a set of simple rules of selection, recombination, and mutation that act on a population of potential behaviors by means of a genetic algorithm.An xtension of the power function matching equation, which expresses behavior allocation as a joint function of exponentiated reinforcement rate and reinforcer magnitude ratios, was fitted to the virtual organisms’ data, and over a range of moderate mutation rates was found to provide an excellent description of their behavior without residual trends.The mean exponents in this range of mutation rates were 0.83 for the reinforcement rate ratio and 0.68 for the reinforcer magnitude ratio, which are values that are comparable to those obtained in experiments with live organisms.These findings add to the evidence supporting the selectionist theory, which asserts that the world of behavior we observe and measure is created by evolutionary dynamics.",
+
         img: [placeholder],
         citation: "McDowell, J, J., Popa, A., & Calvin, N. (2012). Selection Dynamics in Joint Matching to Rate and Magnitude of Reinforcement. Journal of the Experimental Analysis of Behavior, 98, 199-212.",
         urls: [
-            { name: "JEAB ?? ", link: 'http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/' },
+            { name: "NCBI", link: 'http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/' },
             { name: 'ResearchGate', link: 'https://www.researchgate.net/publication/231176507_Selection_dynamics_in_joint_matching_to_rate_and_magnitude_of_reinforcement' },
         ],
 
@@ -271,10 +272,10 @@ var infoProjects = [
         tags: "VBA/Excel, ensemble fitting, residual analysis, model selection",
         id: 28,
         description: 'My M.A. project (December 2009) and my first peer-reviewed publication as first author',
-        img: [placeholder],
+        img: [""],
         citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434.",
         urls: [
-            { name: "JEAB ?? ", link: 'http://www.ncbi.nlm.nih.gov/pubmed/20152891' },
+            { name: "Pubmed", link: 'http://www.ncbi.nlm.nih.gov/pubmed/20152891' },
             { name: 'ResearchGate', link: 'https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences' },
             { name: "Emory ETD", link: 'https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en' },
             { name: "ProQuest", link: 'xxx' }
@@ -290,7 +291,7 @@ var infoProjects = [
         tags: "VBA/Excel, ensemble fitting, residual analysis, model selection",
         id: 29,
         description: 'xxxx',
-        img: [placeholder],
+        img: ['https://www.ncbi.nlm.nih.gov/pubmed/19429227'],
         citation: "McDowell, J. J, & Popa, A. (2009). Beyond continuous mathematics and traditional scientific analysis: Understanding and mining Wolfram's A new kind of science. Behavioural Processes, 81, 343-352.",
         urls: [
             { name: "Pubmed", link: 'http://www.ncbi.nlm.nih.gov/pubmed/19429227' },
