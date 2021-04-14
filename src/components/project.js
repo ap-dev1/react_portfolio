@@ -16,6 +16,17 @@ class Project extends Component {
 
 
     render() {
+
+        var Tags = this.props.tags.map((item) => {    
+            return (
+                <span classname="projectTag">{item}</span>
+            )
+        }
+        )
+
+        
+
+
         var Buttons = this.props.urls.map((item) => (
             <button
                 id={item.link}
@@ -26,30 +37,7 @@ class Project extends Component {
         ))
 
 
-        // var Images = this.props.img.map((item) => (
-        //     <img src={item}
-        //         alt={item.title}
-        //         title={item.imgTitle}
-        //         style={{ maxWidth: 500 / this.props.img.length, minWidth: 150, margin: '.1rem' }}
-        //         className="imgZoom"
-        //     ></img>
-        // ))
-
-
         var Images = this.props.img.map((item) => {
-
-
-            if (item.includes("://")) {
-
-                return (
-                    <iframe sandbox src={item}
-                        //alt={item.title}
-                        title={item.imgTitle}
-                        style={{ maxWidth: 500 / this.props.img.length, minWidth: 150, margin: '.1rem' }}
-                        className="imgZoom"
-                    ></iframe>
-                )
-            }
 
             return (
                 <img src={item}
@@ -68,18 +56,24 @@ class Project extends Component {
 
             <div className='projectRow'>
 
-
-                <div className="timelineYear">
-                    <h3>{this.props.date}</h3>
-                </div>
-
-
                 <div className='projectColumn'>
+
                     <h3 className='projectTitle'>{this.props.title}</h3>
 
-                    <p className='projectRole'>{this.props.role}  </p>
+                    <p className='projectRole'>{this.props.date}  |  {this.props.role}  </p>
 
-                    <p className='projectTags'>{this.props.tags} </p>
+                    <div className="divTags">
+                        <Tags/>
+                    </div>
+
+
+                    {/* <p className='projectTags'>TECH: {this.props.tags} </p> */}
+
+
+
+                    <div className='projectButtons'>
+                        {Buttons}
+                    </div>
 
                     {/* <p className='projectTags'>{this.props.tags}</p> */}
 
@@ -87,9 +81,10 @@ class Project extends Component {
 
                     <ReadMore overview={this.props.overview} />
 
-                    <div className='projectButtons'>
+                    {/* <div className='projectButtons'>
                         {Buttons}
-                    </div>
+                    </div> */}
+
                 </div>
 
                 <div className='projectColumn'>

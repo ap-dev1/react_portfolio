@@ -5,6 +5,9 @@ import pure_refuge from '../assets/pure_refuge.png'
 import aquerous_plains from '../assets/aquerous_plains.png'
 import placeholder from '../assets/placeholder.png'
 
+import bivariate2012_01 from '../assets/bivariate2012_01.png'
+import bivariate2012_02 from '../assets/bivariate2012_02.png'
+
 
 var infoProjects = [
 
@@ -194,8 +197,10 @@ var infoProjects = [
     {
         title: 'Doctor of Philosophy',
         date: "12/2013",
-        role: "Principal Investigator",
-        tags: "VB.Net, VBA (Excel macros)",
+        role: "PRINCIPAL INVESTIGATOR",
+        
+        tags: ["VB.Net", "VBA (Excel macros)"],
+
 
         id: 23,
         description: 'xxxx',
@@ -231,13 +236,13 @@ var infoProjects = [
     {
         title: 'Bivariate Matching',
         date: "2012",
-        role: "co-investigator",
-        tags: "VBA/Excel, ensemble fitting, residual analysis, model selection",
+        role: "CO-INVESTIGATOR",
+        tags: ["VBA/Excel", "ensemble fitting", "residual analysis", "model selection"],
 
         id: 25,
         description: "Virtual organisms animated by a selectionist theory of behavior dynamics worked on concurrent random interval schedules where both the rate and magnitude of reinforcement were varied. The selectionist theory consists of a set of simple rules of selection, recombination, and mutation that act on a population of potential behaviors by means of a genetic algorithm.An xtension of the power function matching equation, which expresses behavior allocation as a joint function of exponentiated reinforcement rate and reinforcer magnitude ratios, was fitted to the virtual organisms’ data, and over a range of moderate mutation rates was found to provide an excellent description of their behavior without residual trends.The mean exponents in this range of mutation rates were 0.83 for the reinforcement rate ratio and 0.68 for the reinforcer magnitude ratio, which are values that are comparable to those obtained in experiments with live organisms.These findings add to the evidence supporting the selectionist theory, which asserts that the world of behavior we observe and measure is created by evolutionary dynamics.",
 
-        img: [placeholder],
+        img: [bivariate2012_01,bivariate2012_02],
         citation: "McDowell, J, J., Popa, A., & Calvin, N. (2012). Selection Dynamics in Joint Matching to Rate and Magnitude of Reinforcement. Journal of the Experimental Analysis of Behavior, 98, 199-212.",
         urls: [
             { name: "NCBI", link: 'http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/' },
@@ -251,8 +256,8 @@ var infoProjects = [
     {
         title: 'Toward a mechanics of adaptive behavior',
         date: "2010",
-        role: "co-investigator",
-        tags: "VBA/Excel, ensemble fitting, residual analysis, model selection",
+        role: "CO-INVESTIGATOR",
+        tags: ["VBA/Excel", "ensemble fitting", "residual analysis", "model selection"],
         id: 27,
         description: 'xxxx',
         img: [placeholder],
@@ -269,7 +274,8 @@ var infoProjects = [
         title: 'Hamming Distances and Changeover Delays',
         date: "2010",
         role: "Principal Investigator",
-        tags: "VBA/Excel, ensemble fitting, residual analysis, model selection",
+        tags: ["VBA/Excel", "ensemble fitting", "residual analysis", "model selection"],
+
         id: 28,
         description: 'My M.A. project (December 2009) and my first peer-reviewed publication as first author',
         img: [""],
@@ -287,8 +293,8 @@ var infoProjects = [
     {
         title: 'Mathematical models of behavior applied to Elementary Cellular Automata',
         date: "2009",
-        role: "co-investigator",
-        tags: "VBA/Excel, ensemble fitting, residual analysis, model selection",
+        role: "CO-INVESTIGATOR",
+        tags: ["VBA/Excel", "ensemble fitting", "residual analysis", "model selection"],
         id: 29,
         description: 'xxxx',
         img: ['https://www.ncbi.nlm.nih.gov/pubmed/19429227'],

@@ -90,15 +90,28 @@
 }
 
 
-.projectTags{
+
+.divTags{
+    display: flex;
+    flex-direction: row;
+    padding: .1rem;
+    justify-content: left;
     
+    /* width: 100%; */
+    /* background: rgba(175, 34, 34, .8);
+    color: #fff;
+    font-family: Roboto; */
+
+}
+
+
+.projectTag{    
     font-size: .8rem;
-    text-align: left;
-    
-    font-weight: 400;
-    padding:.5rem;
+    text-align: center;    
+    font-weight: 300;
+    padding: .3rem .5rem;
     margin: .1rem;
-    width: 100%;
+    /* width: 100%; */
 
     background: rgba(175, 34, 34, .8);
     color: #fff;
@@ -109,12 +122,10 @@
 
 .projectRole{
     font-family: Roboto;
-    font-size: .9rem;
-    text-align: left;
-    margin: 1%;
+    font-size: .8rem;
     font-weight: 500;
+    text-align: left;
     line-height: 1rem;
-    margin: .1rem;
     width: 100%;
 }
 
