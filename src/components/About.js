@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import data from '../myData';
 import '../styles/sassStyles.sass';
 import parse from 'html-react-parser';
-import "../App.css"
+import "../App.css";
+
+import infoSkills from "../data/infoSkills";
+
+import * as d3 from "d3";
+
 
 class About extends Component {
 
@@ -23,6 +28,19 @@ class About extends Component {
 
     render() {
         
+
+        // var Skills = infoSkills.skills.map((item) => (
+        //     <label>{item.name}</label>
+        // ))
+        // style={{background: item.color , opacity: 0.8}}
+
+        var Skills = infoSkills.skills.map((item) => {
+            
+            return (
+            <label style={{background: item.color, opacity: item.opacity}} >{item.name}</label >
+        )})
+
+
         return (
 
             <div id='About'>
@@ -40,13 +58,18 @@ class About extends Component {
                         <p className='narrative' >{data.aboutText}</p>
                         <br></br>
                         
-                        <p className='skills'>{parse(data.aboutTech)}</p>
+                        {/* <p className='skills'>{parse(data.aboutTech)}</p> */}
+
+                        <div className='divSkills'>
+                            {Skills}
+                        </div>
+
                         <br></br>
 
-                        <div className='AboutButtons'>
+                        {/* <div className='AboutButtons'>
                             <button onClick={this.goToCredentials}
                             title={this.state.gDrive}>go to credentials</button>
-                        </div>
+                        </div> */}
 
                     </div>
 

@@ -13,9 +13,8 @@ var infoProjects = [
 
     {
         id: 1,
-        date: "2021",
-        role: "",
-        tags: "MongoDB/Atlas, Node/Express, React",
+        date: "in progress",
+        tags: ["MongoDB/Atlas", "Node/Express", "React"],
         title: 'Aqueros Plains',
         description: "A different approach to work and time management. Integrates WebSockets, React JS, Express, MongoAtlas, and Node JS. A work in progress.",
         img: [aquerous_plains],
@@ -27,9 +26,8 @@ var infoProjects = [
 
     {
         id: 2,
-        date: "2021",
-        role: "",
-        tags: "Python, Node, Websockets, React, D3",
+        date: "in progress",
+        tags: ["Python", "Node", "Websockets", "React", "D3"],
         title: "Pure Refuge",
         description: 'This project deals with emergence and learning. Muro et al (2011) showed that group behavior that looks planned and coordinated does not <i>require</i> planning or communication. They instantiated wolves driven by low-level rules - follow the bison, but not too close - and successfully recreated hunting "strategies" observed in the wild. My goal is to implement wolves driven by more basic tendencies, like avoid harm, and to allow the agents to learn the rules. If the learning account is complete and robust (Popa, 2019), the right implementation should produce group behavior similar to that reported by Muro et al (2011). Technology-wise, this is a bridge between Python and D3, in a React-Express environment.',
         img: [pure_refuge],
@@ -43,8 +41,7 @@ var infoProjects = [
     {
         id: 3,
         date: "2020",
-        role: "",
-        tags: "MongoDB/Atlas, Node/Express, React",
+        tags: ["MongoDB/Atlas", "Node/Express", "React"],
         title: 'Card Sorting App',
         description: 'My first MERN app. Before switching to MongoDB/Atlas, the app was relying on AWS: DynamoDB for authentication and RDS for storing user data. ',
         img: [projectCardSorting],
@@ -58,13 +55,14 @@ var infoProjects = [
         id: 4,
         date: "2019",
         title: 'Imperfect Automata',
-        tags: "Python, Tkinter",
+        tags: ["Python", "Tkinter"],
+
         description: 'Unlike biological systems, automata are deterministic systems, governed by precise rules. The question examined here was: what if every new cell has a small probability to be written incorrectly, i.e. to "mutate" from 0 to 1 or viceversa. ... Low mutation probabilities facilitated the emergence of new patterns and structures, disconnected from the initial conditions.',
         img: [projectAutomata1],
         urls: [
             { name: "PsyArXiv", link: 'https://psyarxiv.com/wgp4e/' },
             { name: "GitHub", link: 'https://github.com/ap-dev1/automata/' },
-            { name: "ResearchGate", link: "https://www.researchgate.net/publication/336143797_Imperfect_Automata_Effects_of_mutation_on_the_evolution_of_automaton_01101110_Rule_110" }
+            { name: "ResGate", link: "https://www.researchgate.net/publication/336143797_Imperfect_Automata_Effects_of_mutation_on_the_evolution_of_automaton_01101110_Rule_110" }
         ],
         citation: 'Popa, Andrei. 2019. “Imperfect Automata: Effects of “mutation” on the Evolution of Automaton 01101110 (rule 110)” PsyArXiv. September 30. doi:10.31234/osf.io/wgp4e.',
     },
@@ -72,15 +70,15 @@ var infoProjects = [
     {
         id: 5,
         date: "2019",
-        //role: "Principal Investigator",
-        tags: "Problem Solving",
+        role: "PRINCIPAL INVESTIGATOR",
+        tags: ["Problem Solving"],
 
         title: 'The Emergence of You',
         description: 'Physical forces acting on particles explain how physical systems change over time. Evolutionary forces acting on populations of genomes explain change in the genetic structure of populations across generations. Change in psychological systems - i.e. human development, or learning - is not yet understood. Although dynamic principles have been proposed, their target remained vaguely defined. What are such principles acting on, what kind of empirical transformations do they cause, and how do these transformations explain development?',
         img: [projectPsych],
         urls: [
             { name: 'PsyArXiv', link: 'https://psyarxiv.com/m87an/' },
-            { name: "ResearchGate", link: 'https://www.researchgate.net/publication/335688963_Psychology_20_The_Emergence_of_Individuality' },
+            { name: "ResGate", link: 'https://www.researchgate.net/publication/335688963_Psychology_20_The_Emergence_of_Individuality' },
         ],
         citation: 'Popa, Andrei. 2019. “Psychology 2.0: The Emergence of Individuality.” PsyArXiv. September 8. doi:10.31234/osf.io/m87an.',
     },
@@ -107,9 +105,9 @@ var infoProjects = [
     {
         title: 'Triangles!',
         date: "2018",
-        role: "Principal Investigator",
+        role: "PRINCIPAL INVESTIGATOR",
         id: 7,
-        tags: "VB.Net, Python, Pandas, SciPy, Matplotlib",
+        tags: ["VB.NET", "Python", "Pandas", "SciPy", "Matplotlib"],
 
         description: 'A laboratory invstigation in the effects of positive and negative reinforcement on learning... (Emory University, Oxford College Campus, 2018; with Kenneth Carter)',
         img: [placeholder, placeholder, placeholder, placeholder, placeholder, placeholder],
@@ -126,8 +124,8 @@ var infoProjects = [
     {
         title: 'Escape behavior on extinction',
         date: "2017",
-        role: "Principal Investigator",
-        tags: "VB.Net, VBA (Excel macros)",
+        role: "PRINCIPAL INVESTIGATOR",
+        tags: ["VB.NET", "VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
 
         id: 10,
         description: 'A laboratory invstigation in the effects of positive and negative reinforcement on learning... Research conducted in 2016, at Agnes Scott College',
@@ -145,8 +143,8 @@ var infoProjects = [
     {
         title: 'Behavioral Variability in ETBD',
         date: "2016",
-        role: "Principal Investigator",
-        tags: "VB.Net, VBA (Excel macros)",
+        role: "PRINCIPAL INVESTIGATOR",
+        tags: ["VB.NET"],
 
         id: 22,
         description: 'xxxx',
@@ -198,9 +196,8 @@ var infoProjects = [
         title: 'Doctor of Philosophy',
         date: "12/2013",
         role: "PRINCIPAL INVESTIGATOR",
-        
-        tags: ["VB.Net", "VBA (Excel macros)"],
 
+        tags: ["VB.NET", "VBA/Excel"],
 
         id: 23,
         description: 'xxxx',
@@ -219,6 +216,7 @@ var infoProjects = [
         title: 'Social Entanglementnntmtntmtntntnt',
         date: "2012",
         role: "Study Coordinator (as O.R.D.E.R. fellow)",
+        tags: [""],
         id: 24,
         description: 'xxxx',
         img: [placeholder],
@@ -237,16 +235,16 @@ var infoProjects = [
         title: 'Bivariate Matching',
         date: "2012",
         role: "CO-INVESTIGATOR",
-        tags: ["VBA/Excel", "ensemble fitting", "residual analysis", "model selection"],
+        tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
 
         id: 25,
         description: "Virtual organisms animated by a selectionist theory of behavior dynamics worked on concurrent random interval schedules where both the rate and magnitude of reinforcement were varied. The selectionist theory consists of a set of simple rules of selection, recombination, and mutation that act on a population of potential behaviors by means of a genetic algorithm.An xtension of the power function matching equation, which expresses behavior allocation as a joint function of exponentiated reinforcement rate and reinforcer magnitude ratios, was fitted to the virtual organisms’ data, and over a range of moderate mutation rates was found to provide an excellent description of their behavior without residual trends.The mean exponents in this range of mutation rates were 0.83 for the reinforcement rate ratio and 0.68 for the reinforcer magnitude ratio, which are values that are comparable to those obtained in experiments with live organisms.These findings add to the evidence supporting the selectionist theory, which asserts that the world of behavior we observe and measure is created by evolutionary dynamics.",
 
-        img: [bivariate2012_01,bivariate2012_02],
+        img: [bivariate2012_01, bivariate2012_02],
         citation: "McDowell, J, J., Popa, A., & Calvin, N. (2012). Selection Dynamics in Joint Matching to Rate and Magnitude of Reinforcement. Journal of the Experimental Analysis of Behavior, 98, 199-212.",
         urls: [
             { name: "NCBI", link: 'http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/' },
-            { name: 'ResearchGate', link: 'https://www.researchgate.net/publication/231176507_Selection_dynamics_in_joint_matching_to_rate_and_magnitude_of_reinforcement' },
+            { name: 'ResGate', link: 'https://www.researchgate.net/publication/231176507_Selection_dynamics_in_joint_matching_to_rate_and_magnitude_of_reinforcement' },
         ],
 
     },
@@ -257,14 +255,14 @@ var infoProjects = [
         title: 'Toward a mechanics of adaptive behavior',
         date: "2010",
         role: "CO-INVESTIGATOR",
-        tags: ["VBA/Excel", "ensemble fitting", "residual analysis", "model selection"],
-        id: 27,
+        tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
+                id: 27,
         description: 'xxxx',
         img: [placeholder],
         citation: "McDowell, J. J, & Popa, A. (2010). Toward a mechanics of adaptive behavior: Evolutionary dynamics and matching theory statics. Journal of the Experimental Analysis of Behavior, 94, 241-260.",
         urls: [
             { name: "JEAB ?? ", link: 'http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2929088/' },
-            { name: 'ResearchGate', link: 'https://www.researchgate.net/publication/50937156_Toward_a_Mechanics_of_Adaptive_Behavior_Evolutionary_Dynamics_and_Matching_Theory_Statics' },
+            { name: 'ResGate', link: 'https://www.researchgate.net/publication/50937156_Toward_a_Mechanics_of_Adaptive_Behavior_Evolutionary_Dynamics_and_Matching_Theory_Statics' },
         ],
     },
 
@@ -274,15 +272,14 @@ var infoProjects = [
         title: 'Hamming Distances and Changeover Delays',
         date: "2010",
         role: "Principal Investigator",
-        tags: ["VBA/Excel", "ensemble fitting", "residual analysis", "model selection"],
-
+        tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
         id: 28,
         description: 'My M.A. project (December 2009) and my first peer-reviewed publication as first author',
         img: [""],
         citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434.",
         urls: [
             { name: "Pubmed", link: 'http://www.ncbi.nlm.nih.gov/pubmed/20152891' },
-            { name: 'ResearchGate', link: 'https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences' },
+            { name: 'ReshGate', link: 'https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences' },
             { name: "Emory ETD", link: 'https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en' },
             { name: "ProQuest", link: 'xxx' }
         ],
@@ -294,14 +291,14 @@ var infoProjects = [
         title: 'Mathematical models of behavior applied to Elementary Cellular Automata',
         date: "2009",
         role: "CO-INVESTIGATOR",
-        tags: ["VBA/Excel", "ensemble fitting", "residual analysis", "model selection"],
+        tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
         id: 29,
         description: 'xxxx',
         img: ['https://www.ncbi.nlm.nih.gov/pubmed/19429227'],
         citation: "McDowell, J. J, & Popa, A. (2009). Beyond continuous mathematics and traditional scientific analysis: Understanding and mining Wolfram's A new kind of science. Behavioural Processes, 81, 343-352.",
         urls: [
             { name: "Pubmed", link: 'http://www.ncbi.nlm.nih.gov/pubmed/19429227' },
-            { name: 'ResearchGate', link: "https://www.researchgate.net/publication/24414894_Beyond_continuous_mathematics_and_traditional_scientific_analysis_Understanding_and_mining_Wolfram's_A_New_Kind_of_Science" },
+            { name: 'ResGate', link: "https://www.researchgate.net/publication/24414894_Beyond_continuous_mathematics_and_traditional_scientific_analysis_Understanding_and_mining_Wolfram's_A_New_Kind_of_Science" },
         ],
     },
 

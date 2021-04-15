@@ -17,14 +17,7 @@ class Project extends Component {
 
     render() {
 
-        var Tags = this.props.tags.map((item) => {    
-            return (
-                <span classname="projectTag">{item}</span>
-            )
-        }
-        )
 
-        
 
 
         var Buttons = this.props.urls.map((item) => (
@@ -51,58 +44,56 @@ class Project extends Component {
         )
 
 
+        var Tags = this.props.tags.map((item) => (
+            <label className="projectTag">{item}</label>
+        ))
+
+
 
         return (
 
             <div className='projectRow'>
 
-                <div className='projectColumn'>
 
-                    <h3 className='projectTitle'>{this.props.title}</h3>
+                <div className='projectRow'>
 
-                    <p className='projectRole'>{this.props.date}  |  {this.props.role}  </p>
+                    <div className='projectColumn'>
 
-                    <div className="divTags">
-                        <Tags/>
+                        <h3 className='projectTitle'>{this.props.title}</h3>
+
+                        <p className='projectRole'>{this.props.date}  |  {this.props.role}  </p>
+
+                        <div className="divTags">
+                            {Tags}
+                        </div>
+
+                        <div className='projectButtons'>
+                            {Buttons}
+                        </div>
+
+                        <ReadMore overview={this.props.overview} />
                     </div>
 
 
-                    {/* <p className='projectTags'>TECH: {this.props.tags} </p> */}
+                    <div className='projectColumn'>
+                        <div className="projectImages">
+                            {Images}
+                        </div>
 
-
-
-                    <div className='projectButtons'>
-                        {Buttons}
-                    </div>
-
-                    {/* <p className='projectTags'>{this.props.tags}</p> */}
-
-                    {/* <p className='projectOverview'>{this.props.description}</p> */}
-
-                    <ReadMore overview={this.props.overview} />
-
-                    {/* <div className='projectButtons'>
-                        {Buttons}
-                    </div> */}
-
-                </div>
-
-                <div className='projectColumn'>
-
-                    <div className="projectImages">
-                        {Images}
-
-                    </div>
-
-                    {/* <a href={this.props.urls[0]}>
+                        {/* <a href={this.props.urls[0]}>
                         <img src={this.props.img}
                             alt={this.props.title}
                             title={this.props.imgTitle}
                             className='projectImage'></img>
                     </a> */}
 
-                    <p className='imageCaption'>{this.props.citation}</p>
+                        <p className='imageCaption'>{this.props.citation}</p>
+                    </div>
+
                 </div>
+
+
+
 
             </div>
 

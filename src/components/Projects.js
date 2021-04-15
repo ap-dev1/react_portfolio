@@ -25,8 +25,6 @@ class Projects extends Component {
                             role={project.role}
                             tags={project.tags}
                             
-                            //description={project.description}
-
                             overview={project.description}
                             img={project.img}
                             urls={project.urls}
