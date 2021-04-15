@@ -1,7 +1,7 @@
 
 var strong = .8;
 var weak = 0.6;
-var light_blue = "#3771a1";
+// var light_blue = "#3771a1";
 
 var skills = [
 

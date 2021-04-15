@@ -1,4 +1,5 @@
-import profile_444 from './assets/profile_444.jpg'
+//import profile_444 from './assets/profile_444.jpg'
+import profile_22 from './assets/profile_22.png'
 
 
 const data = {
@@ -12,7 +13,8 @@ const data = {
 
     aboutTech: "HTML, CSS, JavaScript (React, Node, ... )<br>MongoDB/Atlas, AWS DynamoDB, AWS RDS/PosgreSQL, SQLite <br>Python (pandas, scipy, nltk, spacy, tkinter, ...); <br>D3, Tableau, Matplotlib <br>VB.Net, MS Office, SigmaPlot, SPSS<br>Git, familiar with Agile and workflow boards;",
 
-    aboutImage: profile_444,
+    // aboutImage: profile_444,
+    aboutImage: profile_22,
 
     ShowAboutImage: true,
 

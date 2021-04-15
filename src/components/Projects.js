@@ -12,7 +12,7 @@ class Projects extends Component {
         return (
 
             <div id='Projects'>
-                <h1>Projects</h1>
+                {/* <h1>Projects</h1> */}
 
                 <div>
                     {infoProjects.map((project) => (

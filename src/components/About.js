@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import data from '../myData';
-import '../styles/sassStyles.sass';
-import parse from 'html-react-parser';
-import "../App.css";
+//import parse from 'html-react-parser';
 
 import infoSkills from "../data/infoSkills";
-
-import * as d3 from "d3";
 
 
 class About extends Component {
@@ -28,16 +24,9 @@ class About extends Component {
 
     render() {
         
-
-        // var Skills = infoSkills.skills.map((item) => (
-        //     <label>{item.name}</label>
-        // ))
-        // style={{background: item.color , opacity: 0.8}}
-
         var Skills = infoSkills.skills.map((item) => {
-            
             return (
-            <label style={{background: item.color, opacity: item.opacity}} >{item.name}</label >
+            <label style={{background: item.color, opacity: item.opacity}}>{item.name}</label >
         )})
 
 
@@ -53,18 +42,13 @@ class About extends Component {
                         {data.ShowAboutImage ? <img src={data.aboutImage} alt='about iamge' height='400px'></img> : null}
                     </div>
 
+
                     <div className='AboutColumn'>
-
                         <p className='narrative' >{data.aboutText}</p>
-                        <br></br>
                         
-                        {/* <p className='skills'>{parse(data.aboutTech)}</p> */}
-
                         <div className='divSkills'>
                             {Skills}
                         </div>
-
-                        <br></br>
 
                         {/* <div className='AboutButtons'>
                             <button onClick={this.goToCredentials}
