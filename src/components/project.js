@@ -17,9 +17,6 @@ class Project extends Component {
 
     render() {
 
-
-
-
         var Buttons = this.props.urls.map((item) => (
             <button
                 id={item.link}
@@ -29,9 +26,7 @@ class Project extends Component {
             </button>
         ))
 
-
         var Images = this.props.img.map((item) => {
-
             return (
                 <img src={item}
                     alt={item.title}
@@ -40,9 +35,7 @@ class Project extends Component {
                     className="imgZoom"
                 ></img>
             )
-        }
-        )
-
+        })
 
         var Tags = this.props.tags.map((item) => (
             <label className="projectTag">{item}</label>
@@ -56,8 +49,8 @@ class Project extends Component {
 
 
                 <div className='projectRow'>
-
                     <div className='projectColumn'>
+
 
                         <h3 className='projectTitle'>{this.props.title}</h3>
 

@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 
 import Header from './components/Header';
 import About from './components/About';
-import Projects from './components/Projects';
 import RecentProjects from './components/RecentProjects';
 
+// import AboutResearch from './components/AboutResearch';
+// import Projects from './components/Projects';
+// import AboutCV from './components/AboutCV';
+
+import MyTimeline from './components/MyTimeline';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
+import infoTimeline from "./data/infoTimeline"
 
 
 class App extends Component {
@@ -15,13 +21,24 @@ class App extends Component {
         return (
             <div >
                 <Header/>
+
                 <About/>
 
                 <RecentProjects/>
-                
+
+                {/* <AboutResearch/>
                 <Projects/>
+                <AboutCV/> */}
+
+                <MyTimeline 
+                    events={infoTimeline}
+                    orientation = "vertical"
+                    startFrom = "first"
+                    />
+                
 
                 <Contact/>
+                
                 <Footer/>
             </div>
         );
