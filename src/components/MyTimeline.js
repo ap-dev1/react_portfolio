@@ -14,7 +14,7 @@ import infoTimeline from "../data/infoTimeline"
 const MyTimeline = props => {
     let { events, orientation, startFrom } = props;
 
-    if (startFrom === "last") {
+    if (startFrom === 'last') {
         events = events.reverse();
     }
 

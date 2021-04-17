@@ -41,7 +41,7 @@ const data = {
         },
         {
             name: 'ResearchGate',
-            url: 'https://www.researchgate.net/profile/Andrei_Popa5',
+            url: '',
             key: 3,
             image_src: 'link_researchgate_profile1.png',
             

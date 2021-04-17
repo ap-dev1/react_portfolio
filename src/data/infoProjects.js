@@ -12,21 +12,19 @@ import bivariate2012_02 from '../assets/bivariate2012_02.png'
 var infoProjects = [
 
    
-    {
-        id: 4,
-        date: "03/08/2019",
-        title: 'Imperfect Automata',
-        tags: ["Python", "Tkinter"],
+    
+    // {title: 'Imperfect Automata', date: "03/08/2019",
+    //     tags: ["Python", "Tkinter"],
+    //     description: "Unlike biological systems, automata are deterministic systems, governed by precise rules. The question examined here was: what if every new cell has a small probability to be written incorrectly, i.e. to mutate from 0 to 1 or viceversa. ... Low mutation probabilities facilitated the emergence of new patterns and structures, disconnected from the initial conditions.", 
+    //     img: [projectAutomata1],
+    //     urls: [
+    //         { name: "PsyArXiv", link: "https://psyarxiv.com/wgp4e/" },
+    //         { name: "GitHub", link: "https://github.com/ap-dev1/automata/" },
+    //         { name: "ResGate", link: "https://www.researchgate.net/publication/336143797_Imperfect_Automata_Effects_of_mutation_on_the_evolution_of_automaton_01101110_Rule_110" }
+    //     ],
+    //     citation: "Popa, Andrei. 2019. “Imperfect Automata: Effects of “mutation” on the Evolution of Automaton 01101110 (rule 110)” PsyArXiv. September 30. doi:10.31234/osf.io/wgp4e.",
+    // },
 
-        description: 'Unlike biological systems, automata are deterministic systems, governed by precise rules. The question examined here was: what if every new cell has a small probability to be written incorrectly, i.e. to "mutate" from 0 to 1 or viceversa. ... Low mutation probabilities facilitated the emergence of new patterns and structures, disconnected from the initial conditions.',
-        img: [projectAutomata1],
-        urls: [
-            { name: "PsyArXiv", link: 'https://psyarxiv.com/wgp4e/' },
-            { name: "GitHub", link: 'https://github.com/ap-dev1/automata/' },
-            { name: "ResGate", link: "https://www.researchgate.net/publication/336143797_Imperfect_Automata_Effects_of_mutation_on_the_evolution_of_automaton_01101110_Rule_110" }
-        ],
-        citation: 'Popa, Andrei. 2019. “Imperfect Automata: Effects of “mutation” on the Evolution of Automaton 01101110 (rule 110)” PsyArXiv. September 30. doi:10.31234/osf.io/wgp4e.',
-    },
 
     {
         id: 5,
@@ -199,13 +197,13 @@ var infoProjects = [
         tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
 
         id: 25,
-        description: "Virtual organisms animated by a selectionist theory of behavior dynamics worked on concurrent random interval schedules where both the rate and magnitude of reinforcement were varied. The selectionist theory consists of a set of simple rules of selection, recombination, and mutation that act on a population of potential behaviors by means of a genetic algorithm.An xtension of the power function matching equation, which expresses behavior allocation as a joint function of exponentiated reinforcement rate and reinforcer magnitude ratios, was fitted to the virtual organisms’ data, and over a range of moderate mutation rates was found to provide an excellent description of their behavior without residual trends.The mean exponents in this range of mutation rates were 0.83 for the reinforcement rate ratio and 0.68 for the reinforcer magnitude ratio, which are values that are comparable to those obtained in experiments with live organisms.These findings add to the evidence supporting the selectionist theory, which asserts that the world of behavior we observe and measure is created by evolutionary dynamics.",
+        description: "Virtual organisms animated by a selectionist theory of behavior dynamics worked on concurrent random interval schedules where both the rate and magnitude of reinforcement were varied. The selectionist theory consists of a set of simple rules of selection, recombination, and mutation that act on a population of potential behaviors by means of a genetic algorithm. An extension of the power function matching equation, which expresses behavior allocation as a joint function of exponentiated reinforcement rate and reinforcer magnitude ratios, was fitted to the virtual organisms’ data, and over a range of moderate mutation rates was found to provide an excellent description of their behavior without residual trends.The mean exponents in this range of mutation rates were 0.83 for the reinforcement rate ratio and 0.68 for the reinforcer magnitude ratio, which are values that are comparable to those obtained in experiments with live organisms.These findings add to the evidence supporting the selectionist theory, which asserts that the world of behavior we observe and measure is created by evolutionary dynamics.",
 
-        img: [bivariate2012_01, bivariate2012_02],
+        img: [bivariate2012_01, bivariate2012_02, ],
         citation: "McDowell, J, J., Popa, A., & Calvin, N. (2012). Selection Dynamics in Joint Matching to Rate and Magnitude of Reinforcement. Journal of the Experimental Analysis of Behavior, 98, 199-212.",
         urls: [
-            { name: "NCBI", link: 'http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/' },
-            { name: 'ResGate', link: 'https://www.researchgate.net/publication/231176507_Selection_dynamics_in_joint_matching_to_rate_and_magnitude_of_reinforcement' },
+            { name: "NCBI", link: "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/" },
+            { name: "ResGate", link: "https://www.researchgate.net/profile/Andrei_Popa5" },
         ],
 
     },
