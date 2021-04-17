@@ -18,10 +18,13 @@ class Projects extends Component {
                     {infoProjects.map((project) => (
 
                         <Project
+
+
                             key={project.title}
                             title={project.title}
 
                             date={project.date}
+                            
                             role={project.role}
                             tags={project.tags}
                             

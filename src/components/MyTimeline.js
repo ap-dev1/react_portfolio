@@ -6,8 +6,6 @@ import ReadMore from "./ReadMore";
 import "../styles/timeline.sass"
 
 import PropTypes from "prop-types";
-// import cx from "classnames";
-// import timeline from "../styles/timeline.sass";
 
 import infoTimeline from "../data/infoTimeline"
 
@@ -34,29 +32,29 @@ const MyTimeline = props => {
 
 
         // FUNCTIONS, IMAGES, BUTTONS, -----------------------------------------
-        // var Buttons = e.urls.map((item) => (
-        //     <button
-        //         id={item.link}
-        //         title={item.link}
-        //         onClick={goToLink}
-        //     >{item.name}
-        //     </button>
-        // ))
+        var Buttons = e.urls.map((item) => (
+            <button
+                id={item.link}
+                title={item.link}
+                onClick={goToLink}
+            >{item.name}
+            </button>
+        ))
 
-        // var Images = e.img.map((item) => {
-        //     return (
-        //         <img src={item}
-        //             alt={item.title}
-        //             title={item.imgTitle}
-        //             style={{ maxWidth: 500 / e.img.length, minWidth: 150, margin: '.1rem' }}
-        //             className="imgZoom"
-        //         ></img>
-        //     )
-        // })
+        var Images = e.img.map((item) => {
+            return (
+                <img src={item}
+                    alt={item.title}
+                    title={item.imgTitle}
+                    style={{ maxWidth: 350 / e.img.length, minWidth: 150, margin: '.1rem' }}
+                    className="imgZoom"
+                ></img>
+            )
+        })
 
-        // var Tags = e.tags.map((item) => (
-        //     <label className="projectTag">{item}</label>
-        // ))
+        var Tags = e.tags.map((item) => (
+            <label className="projectTagTimeline">{item}</label>
+        ))
 
         // console.log(styles.timelineItem)
 
@@ -67,19 +65,31 @@ const MyTimeline = props => {
                 key={e.date}
                 className="timelineItem right"
                 content1={e.date}
-
-            // className={cx(styles.timelineItem, { [styles.right]: i % 2 !== 0 })}
             >
 
                 <div className="timelineContent">
-                    
-                    {/* <span className="time">{e.date}</span> */}
 
-                    <span className="title">{e.title}</span>
-                    <p className="desc">{e.description}</p>
+                    <div className="projectColumn">
+                        <span className="title">{e.title}</span>
+
+                        <p className='projectRole'>{e.role}</p>
+
+                        <div className="divTags">{Tags}</div>
+
+                        <div className='projectButtons'>{Buttons}</div>
+
+
+                        <ReadMore overview={e.description} />
+
+                    </div>
+
+                    <div className='projectColumn'>
+                        <div className="projectImages">{Images}</div>
+
+                        <p className='imageCaption'>{e.citation}</p>
+                    </div>
 
                 </div>
-
 
 
             </div>
@@ -92,13 +102,13 @@ const MyTimeline = props => {
 
 
         <div
-                className="vertical"
-            >
-                {eventsMappedToElements}
+            className="vertical"
+        >
+            {eventsMappedToElements}
 
-            </div>
+        </div>
         // <div className='timelineWrapper'>
-            
+
 
         // </div>
 

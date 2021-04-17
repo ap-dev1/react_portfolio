@@ -26,14 +26,10 @@ class App extends Component {
 
                 <RecentProjects/>
 
-                {/* <AboutResearch/>
-                <Projects/>
-                <AboutCV/> */}
-
                 <MyTimeline 
                     events={infoTimeline}
                     orientation = "vertical"
-                    startFrom = "first"
+                    startFrom = "last"
                     />
                 
 

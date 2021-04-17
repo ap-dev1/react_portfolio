@@ -14,7 +14,7 @@ var infoProjects = [
    
     {
         id: 4,
-        date: "2019",
+        date: "03/08/2019",
         title: 'Imperfect Automata',
         tags: ["Python", "Tkinter"],
 
@@ -45,10 +45,11 @@ var infoProjects = [
     },
 
 
+
     // {
     //     id: 6,
     //     title: 'ETBD.py',
-    //     date: "09/2018",
+    //     date: "09/15/2018",
     //     role: "Principal Investigator",
     // tags: "Python, SciPy, SQLite, Postgres" ,
 
@@ -61,7 +62,6 @@ var infoProjects = [
     //     ],
     //     citation: '(capstone project for Python bootcamp I took in 2018)',
     // },
-
 
     {
         title: 'Triangles!',
@@ -175,15 +175,15 @@ var infoProjects = [
 
     {
         title: 'Social Entanglementnntmtntmtntntnt',
-        date: "2012",
+        date: "05/10/2012",
         role: "Study Coordinator (as O.R.D.E.R. fellow)",
-        tags: [""],
+        tags: ["David Lynn, ", " ---- ---  "],
         id: 24,
-        description: 'xxxx',
+        description: "On Recent Discoveries by Emory Researchers, or ORDER, is a  ... fellowship ...  Course: Complexity and Emergence: Implications for Psychology ... Teacher/Scholar Fellowship; Research Project: Conformity at a Distance; ... Howard Hughes Teacher/Scholar Award; ...  Fellowship Advisory Board",
         img: [placeholder],
         citation: "find manuscript.",
         urls: [
-            { name: "O.R.D.E.R.", link: 'xxx' },
+            { name: "O.R.D.E.R.", link: "http://www.order.emory.edu/about/index.html" },
             { name: "Google Drive", link: 'xxx' },
         ],
     },
