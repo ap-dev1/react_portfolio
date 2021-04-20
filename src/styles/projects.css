@@ -1,353 +1,267 @@
 
-
-#Projects{
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: white;
-    color: #1B4D3E;
-    color: #333333;
-    font-family: Roboto;
-    /* background: #02aab0 */
-
-}
-
-.projectRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    min-width: 40%;
-    margin: 2rem 0 2rem 0;
-    align-items: center;
-}
+/* 
+ #Projects
+     width: 100%
+     min-height: 100vh
+     height: auto
+     display: flex
+     flex-direction: column
+     justify-content: space-around
+     align-items: center
+     background: white
+     color: #1B4D3E
+     color: #333333
+     font-family: Roboto */
 
 
-.projectColumn{
-    display: flex;
-    flex-direction: column;
-    min-height: 96%;
-    margin: 1%;
-    padding: 1%;
-    align-items: center;
-    max-width: 500px;
-}
+/* .projectRow
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: stretch
+    min-width: 40%
+    margin: 2rem 0 2rem 0
+    align-items: center
+
+
+.section_row
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: stretch
+    min-width: 40%
+    margin: 2em 0 2em 0
+    align-items: center */
+
+
+/* 
+.section_column
+    display: flex
+    flex-direction: column
+    min-height: 96%
+    margin: 1%
+    padding: 1%
+    align-items: center
 
 
 
-
-.section_row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    min-width: 40%;
-    margin: 2em 0 2em 0;
-    align-items: center;
-}
+.section_title
+    font-family: Roboto
+    font-size: 2.2em
+    text-align: center
+    color: white */
 
 
-.section_column{
-    display: flex;
-    flex-direction: column;
-    min-height: 96%;
-    margin: 1%;
-    padding: 1%;
-    align-items: center;
-}
+/* 
+#Projects h1
+    font-family: Roboto
+    font-size: 2.2em
+    text-align: center
 
 
-.section_title{
-    font-family: Roboto;
-    font-size: 2.2em;
-    text-align: center;
-    color: white;
-}
 
-
-#Projects h1{
-    font-family: Roboto;
-    font-size: 2.2em;
-    text-align: center;
-}
-
-
-.projectTitle{
-    font-family: Roboto;
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 600;
-    background-color: rgb(178, 202, 202);
-    width: 100%;
-    padding: .5rem;
-    margin: .2rem;
-}
-
-
-.projectOverview{
-    font-family: Roboto;
-    height: 100%;
-    font-size: .8rem;
-    line-height: 1.2rem;
-    text-align: left;
-    font-weight: 400;
-    width: 400px;
-    vertical-align: top;
-}
-
-
-.projectImages{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid #2d3e50;
-    border-radius: 5px;
-}
-
-
-.imgZoom:hover {
-    transform: scale(2.5);
-    border: 1px solid darkslategrey;
-}
-
-.imageCaption{
-    font-family: Roboto;
-    font-size: .7em;
-    text-align: left;
-    margin: .1rem;
-    font-weight: 400;
-    line-height: 1.2rem;
-}
+.projectTitle
+    font-family: Roboto
+    font-size: 1.2rem
+    text-align: center
+    font-weight: 600
+    background-color: rgb(178, 202, 202)
+    width: 100%
+    padding: .5rem
+    margin: .2rem */
 
 
 
 
-.projectRole{
-    font-family: Roboto;
-    font-size: .8rem;
-    font-weight: 500;
-    text-align: left;
-    /* line-height: 1rem; */
-    width: 100%;
-    padding: .2rem;
-    margin: .2rem;
-
-}
 
 
-.button_row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1%;
-    margin: 1%;    
-    border: 2px solid orange;
-    border: 0px solid orange;
-    width: 100%;
-}
 
 
-.link_google{
-    font-family: Roboto;
-    text-align: center;
-    background-color: black;
-    background-color: #2d3e50;
-    background-color: #474e5d;
+/* 
+.button_row
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    padding: 1%
+    margin: 1%    
+    border: 2px solid orange
+    border: 0px solid orange
+    width: 100% */
+
+/* 
+
+.link_google
+    font-family: Roboto
+    text-align: center
+    background-color: black
+    background-color: #2d3e50
+    background-color: #474e5d
+    color: white
+    padding: 1em
+    border:0
+    text-decoration: none
+    border-radius: 5px
+    margin: 1%
+    width: fit-content
+    min-width: 30%
+
+.link_google:hover
+    background: #02aab0
+    background: #5b738d
+    background: #496481
+    cursor: pointer
+    transition: all 0.2s ease-in-out
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -ms-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out */
+
+
+/* 
+.black_border
+    border: 0px solid black
+
+
+
+.black_border:hover
+    background: #595a5a
+    transition: all 0.2s ease-in-out
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -ms-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out
+
+ */
+
+
+
+/* .divTags
+    display: flex
+    flex-direction: row
+    padding: .1rem
+    justify-content: flex-start
+    width: 100% */
+
+/* 
+.projectButtons
+    display: flex
+    flex-direction: row
+    padding: .1rem
+    justify-content: flex-start
+    width: 100%
+    flex-wrap: wrap
+
+.projectTag    
+    font-size: .8rem
+    text-align: center    
+    font-weight: 300
+    padding: .3rem .5rem
+    margin: .1rem
+    background: rgba(175, 34, 34, .8)
+    color: #fff
+    font-family: Roboto
+
+
+
+.projectButtons button
+    background: rgb(230, 229, 229)
+    background: #21B0B0
+    opacity: .8
+    color: #333
+    color: #fff
+    border: 1px solid #2d3e50
+    padding: .3rem 1rem
+    cursor: pointer
+    margin: 0.1rem
+    font-family: Roboto
+    font-size: .8rem
+    border-radius: 0px
+    font-weight: 400
+
+    transition: all 0.2s ease-out
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -ms-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out */
+
+
+/* 
+.projectButtons button:hover
+    background: #1B4D3E
+    background: #496481
+    background: #5b738d 
+    background: #0c3048 
+
+    color:#fff
+    font-weight: 500
+
+    cursor: pointer
+    transition: all 0.2s ease-in-out
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -ms-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out */
+
+
+
+
+/* 
+.spanDrive
+    font-size: 1.2em
+    font-weight: 600
+
+
+
+.btnHeader
+    position: relative
+    background: black
+    color: white
+    border: 0px
+    padding: 1em
+    padding-right: 3em
+    padding-left: 3em
     
-    color: white;
-    padding: 1em;
-    border:0;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 1%;
-    width: fit-content;
-    min-width: 30%;
-}
+    font-size: 1rem
+    align-self: left
 
-
-.link_google:hover{
-    background: #02aab0;
-    background: #5b738d;
-    background: #496481;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-}
-
-
-.black_border{
-    border: 0px solid black;
-}
-
-
-.black_border:hover{
-    background: #595a5a;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-}
-
-
-
-
-.divTags{
-    display: flex;
-    flex-direction: row;
-    padding: .1rem;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-.projectButtons{
-    display: flex;
-    flex-direction: row;
-    padding: .1rem;
-    justify-content: flex-start;
-    width: 100%;
-    flex-wrap: wrap;
-
-    /* align-items: center;
-    justify-content: space-evenly; */
-}
-
-
-.projectTag{    
-    font-size: .8rem;
-    text-align: center;    
-    font-weight: 300;
-    padding: .3rem .5rem;
-    margin: .1rem;
-    background: rgba(175, 34, 34, .8);
-    color: #fff;
-    font-family: Roboto;
-}
-
-
-.projectButtons button{
-    background: rgb(230, 229, 229);
-    background: #21B0B0;
-    opacity: .8;
-    color: #333;
-    color: #fff;
-    border: 1px solid #2d3e50;
-    padding: .3rem 1rem;
-    cursor: pointer;
-    margin: 0.1rem;
-    font-family: Roboto;
-    font-size: .8rem;
-    border-radius: 15px;
-    font-weight: 400;
-    /* text-decoration: none; */
-
-    transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-}
-
-
-.projectButtons button:hover{
-    background: #1B4D3E;
-    background: #496481;
-    background: #5b738d; 
-    background: #0c3048; 
-
-    color:#fff;
-    font-weight: 500;
-
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-}
-
-
-
-
-.spanDrive{
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-
-.btnHeader{
-    position: relative;
-    background: black;
-    color: white;
-    border: 0px;
-    padding: 1em;
-    padding-right: 3em;
-    padding-left: 3em;
+    width: fit-content
+    transition: all 0.2s ease-out
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -ms-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out */
     
-    font-size: 1rem;
-    align-self: left;
 
-    width: fit-content;
-    transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    }
-
-
-    .btnHeader :hover{
-        background: #02aab0;
-        transition: all 0.2s ease-in-out;
-        -webkit-transition: all 0.2s ease-out;
-        -moz-transition: all 0.2s ease-out;
-        -ms-transition: all 0.2s ease-out;
-        -o-transition: all 0.2s ease-out;
-    }
+/* 
+    .btnHeader :hover
+        background: #02aab0
+        transition: all 0.2s ease-in-out
+        -webkit-transition: all 0.2s ease-out
+        -moz-transition: all 0.2s ease-out
+        -ms-transition: all 0.2s ease-out
+        -o-transition: all 0.2s ease-out
+    
 
   
 
-.timelineYear {
-    display: flex;
-    /* height: 100%; */
-    font-family: Roboto;
-    font-size: 1rem;
-    min-width: 10rem;
-    width: 100%;
+.timelineYear 
+    display: flex
+    font-family: Roboto
+    font-size: 1rem
+    min-width: 10rem
+    width: 100%
 
-    border-right: .2rem solid #2d3e50;
-    background-image: linear-gradient(to right, white, white, white, #9eacbc);
-}
+    border-right: .2rem solid #2d3e50
+    background-image: linear-gradient(to right, white, white, white, #9eacbc) */
 
 
 
-.timelineYear h3 {
-    flex: 1;
-    margin: 7rem 1rem;
-}
+
+/* .timelineYear h3 
+    flex: 1
+    margin: 7rem 1rem */
+
 
 
     
-.read-or-hide{ 
-    color: rgb(235, 239, 245); 
-    cursor: pointer; 
-    background-color: rgb(87, 87, 86);
-    opacity: .7;
-
-    padding: .2rem .4rem;
-    font-size: .7rem;
-    font-weight: 600;
-    font-family: Roboto;
-
-  }
-  

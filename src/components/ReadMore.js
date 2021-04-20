@@ -10,20 +10,35 @@ const ReadMore = (props) => {
         setIsReadMore(!isReadMore);
     };
 
+    var chars = 200;
+    
+    if (props.overview !== "") {
 
-    return (
+        if (props.overview.length > chars) {
+            return (
+                <p className="projectOverview">
+                    {isReadMore ? props.overview.slice(0, chars) : props.overview}
+                    <span
+                        title="read more"
+                        onClick={toggleReadMore} className="read-or-hide"
+                    >
+                        {isReadMore ? ". . ." : ". . . LESS "}
+                    </span>
+                </p>
+            )
 
-        <p className="projectOverview">
-        {isReadMore ? props.overview.slice(0, 750) : props.overview} . . .
+        } else {
+            return (
+                <p className="projectOverview">
+                    {isReadMore ? props.overview.slice(0, 300) : props.overview}
+                </p>
+            )
+        }
 
-        <span
-            onClick={toggleReadMore} className="read-or-hide"
-        >
-            {isReadMore ? "READ MORE" : ". . . LESS "}
-        </span>
+    } else {
+        return null
+    }
 
-    </p>
-    );
 };
 
 

@@ -2,16 +2,24 @@
 import React from "react"
 
 import ReadMore from "./ReadMore";
+import ImagesCarousel from "./ImagesCarousel";
 
 import "../styles/timeline.sass"
+import "../styles/project.sass"
+import "../styles/carousel.sass"
+
 
 import PropTypes from "prop-types";
 
 import infoTimeline from "../data/infoTimeline"
 
+import parse from 'html-react-parser';
+
+import DayJS from 'react-dayjs';
 
 
 const MyTimeline = props => {
+
     let { events, orientation, startFrom } = props;
 
     if (startFrom === 'last') {
@@ -20,18 +28,18 @@ const MyTimeline = props => {
 
     events = infoTimeline
 
-
     var goToLink = (e) => {
         e.preventDefault()
         let destination = e.target.id
         window.open(destination, '_blank')
     };
-    // MAP EVERYTHING, -----------------------------------------
 
+
+    // MAP EVERYTHING, -----------------------------------------
     const eventsMappedToElements = events.map((e, i) => {
 
 
-        // FUNCTIONS, IMAGES, BUTTONS, -----------------------------------------
+        // TAGS, IMAGES, BUTTONS, -----------------------------------------
         var Buttons = e.urls.map((item) => (
             <button
                 id={item.link}
@@ -41,85 +49,64 @@ const MyTimeline = props => {
             </button>
         ))
 
-        var Images = e.img.map((item) => {
-            return (
-                <img src={item}
-                    alt={item.title}
-                    title={item.imgTitle}
-                    style={{ maxWidth: 350 / e.img.length, minWidth: 150, margin: '.1rem' }}
-                    className="imgZoom"
-                ></img>
-            )
-        })
+        // var Images = e.img.map((item) => {
+        //     if (!null) {
+        //         console.log(e)
+        //     }
+        //     return (
+        //         <img src={item}
+        //             alt={item.title}
+        //             title={item.imgTitle}
+        //             style={{ maxWidth: 300 / e.img.length, minWidth: 150, margin: '.1rem' }}
+        //             className="imgZoom"
+        //         ></img>
+        //     )
+        // })
+
 
         var Tags = e.tags.map((item) => (
             <label className="projectTagTimeline">{item}</label>
         ))
 
-        // console.log(styles.timelineItem)
+        var myDescription = parse(e.description)
 
         return (
 
-            <div
-                //key={e.time}
+            <div className="timelineItem right"
                 key={e.date}
-                className="timelineItem right"
-                content1={e.date}
-            >
+                content1={e.date.slice(-7)}>
 
-                <div className="timelineContent">
+                <div className='timelineContent'>
 
-                    <div className="projectColumn">
+                    <div className='projectColumnLeft'>
                         <span className="title">{e.title}</span>
-
-                        <p className='projectRole'>{e.role}</p>
-
+                        <p className="projectRole">{e.role}</p>
+                        {/* <p className="imageCaption">{e.citation}</p> */}
                         <div className="divTags">{Tags}</div>
-
-                        <div className='projectButtons'>{Buttons}</div>
-
-
-                        <ReadMore overview={e.description} />
-
+                        <div className="projectButtons">{Buttons}</div>
+                        <ReadMore overview={myDescription} />
                     </div>
 
-                    <div className='projectColumn'>
-                        <div className="projectImages">{Images}</div>
 
-                        <p className='imageCaption'>{e.citation}</p>
+                    <div className='projectColumnImages'>
+                        <ImagesCarousel props={e.img} />
+                        {/* <div className="projectImages">{Images}</div> */}
+                        <p className="imageCaption">{e.citation}</p>
                     </div>
+
 
                 </div>
-
-
             </div>
-
 
         )
     });
 
+
+
     return (
-
-
-        <div
-            className="vertical"
-        >
+        <div className="vertical">
             {eventsMappedToElements}
-
         </div>
-        // <div className='timelineWrapper'>
-
-
-        // </div>
-
-
-        // <div className='projectRow'>
-        //     <div className='projectColumn'>
-
-
-        //     </div>
-        // </div>
-
     );
 };
 

@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import '../styles/projects.css';
 import '../styles/timeline.css';
-//import ReadMore from "./ReadMore";
 import ReadMore from "./ReadMore";
 
 

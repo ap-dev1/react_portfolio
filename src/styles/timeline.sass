@@ -1,58 +1,60 @@
 
-$totalWidth: 100%
-$itemWidth: 80%
-$leftMargin: 15%
+$totalWidth: 90%
+$itemWidth: 90%
+$leftMargin: 10%
 
 $beforeBorder: #e45a10
 $triangleLeft: #880e4f
 $specialColor: #02aab0
 
-
 $backgroundColor: #fff
 $timelineColor: #333
 
-$circleBackground: #ffffff  //  83c2d5
-$circleBorder: #333 //14213d  0b5970
+$circleBackground: #81d0f5 // 83c2d5
+$circleBorder: #333 //14213d 0b5970
 
 $contentColor: #fff
-
-
+//$_bacground_1: #edf9fe
+$dateColor: #14213d
 
 
 .time
     display: inline-block
     width: 100%
-    font-size: 18px
-    margin-bottom: 5px
+    font-size: 14px
+    margin-bottom: 0px
 
 .title
     display: inline-block
     width: 100%
-    font-size: 18px
+    font-size: 16px
     color: #000
     margin-bottom: 5px
-    text-align: center
-
+    text-align: left
+    font-family: Roboto
 
 
 .desc
     margin: 0
 
-
-
+// #eventDate
+//     width: fit-content
+//     margin-left: 100px
+//     padding-top: 10px
+//     color: #333
+//     font-family: Roboto
+//     font-size: 14px
 
 //----------------------------
 
-    
 /*  VERTICAL  */
 
 .vertical
     position: relative
     width: $totalWidth
-    margin: 0 auto
-    padding: 15px
+    left: 5%
+    //padding: 15px
     background-color: $backgroundColor
-
 
 
 .vertical:after
@@ -65,72 +67,93 @@ $contentColor: #fff
     left: $leftMargin
     margin-left: 4px
 
-
 .vertical .timelineItem
     width: $itemWidth
     //padding: 10px 45px
-    padding: 1px 120px
+    padding: 0px 150px
     position: relative
     text-align: left
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .vertical .timelineContent
     background-color: $contentColor
     padding: 0px
-    border-radius: 4px
     color: #333
     font-family: Roboto
     font-size: 13px
     display: flex
     flex-direction: row
+    //flex-direction: column
+    width: 100%
+    margin-bottom: 1rem
+    
+    
 
 
-// Show date or year
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Show date or year as "content1":
 .vertical .timelineItem:before
+    z-index: 1
     content: attr(content1)
     height: auto
     position: absolute
-    top: 15px
+    top: 17px
     width: fit-content
-    z-index: 1
-    right: 35px
-    font-size: 18px
-    font-weight: 400
-    color: #333
+    font-size: 14px
+    font-weight: 500
+    color: $dateColor
     opacity: 1
-    padding-right: 5px
-
-
-    
-// .vertical .timelineItem:before
-//     content: attr(content1)
-//     height: 0
-//     position: absolute
-//     top: 22px
-//     width: 0
-//     z-index: 1
-//     right: 35px
-//     border: medium solid $beforeBorder
-//     border-width: 10px 0 10px 10px
-//     border-color: transparent $beforeBorder transparent transparent 
 
 
 .vertical .timelineItem::after
+    z-index: 1
     content: ""
     position: absolute
-    width: 25px
-    height: 25px
-    right: -16px
+    width: 20px
+    height: 20px
     background-color: $circleBackground
     border: 3px solid $circleBorder
     top: 19px
     border-radius: 50%
-    z-index: 1
-
+    
 
 .vertical .timelineItem.right
     left: $leftMargin
-
 
 .vertical .timelineItem.right:before
     left: 35px
@@ -138,15 +161,11 @@ $contentColor: #fff
     border-color: transparent $triangleLeft transparent transparent
 
 .vertical .timelineItem.right::after
-    left: -16px
+    left: -5px
+    max-width: 30px
 
-    
 
-.imageCaption
-    font-family: Roboto
-    font-size: .7rem
-    text-align: left
-    margin: .1rem
-    font-weight: 300
-    line-height: .8rem
-    color: #333
+
+
+
+
