@@ -25,7 +25,6 @@ class RecentProject extends Component {
             </button>
         ))
 
-
         var Tags = this.props.tags.map((item) => (
             <label className="projectTag">{item}</label>
         ))
@@ -34,9 +33,7 @@ class RecentProject extends Component {
 
         return (
 
-
             <Card style={{ width: '20rem', height: 'auto', margin: '.5rem', border: '0px solid grey', background: '#f0f0f0', color: '#333', fontFamily: 'Roboto', fontWeigth: 300 }}>
-
 
                 {/* <Card.Img variant="top" src={this.props.img[0]}
                     style={{ maxHeight: '150px',border: '1px solid grey'}} /> */}

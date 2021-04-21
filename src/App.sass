@@ -2,128 +2,8 @@ $lightCyan: #02aab0
 $specialColor: #02aab0
 
 
-#myHeader
-    display: flex
-    width: 100%
-    min-height: 100vh
-    height: auto
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    margin-top: 0
-
-#columnHeader
-    display: flex
-    flex-direction: column
-    min-height: 96%
-    margin: 1%
-    padding: 1%
-    align-items: center
-
-    > p
-        position: relative
-        font-family: 'Montserrat', sans-serif
-        font-size: 2.5rem
-        text-align: left
-        margin: 0rem
-        align-self: left
-        padding: 0rem
-        font-weight: 500
-
-        > button
-            cursor: pointer
-            background: black
-            color: white
-            border: 0px
-            padding: 1em 3em
-            font-size: 1rem
-
-            transition: all 0.2s ease-out
-            -webkit-transition: all 0.2s ease-out
-            -moz-transition: all 0.2s ease-out
-            -ms-transition: all 0.2s ease-out
-            -o-transition: all 0.2s ease-out
-
-            &:hover
-                background: #02aab0
-                // opacity: 0.8
-
-                transition: all 0.2s ease-in-out
-                -webkit-transition: all 0.2s ease-out
-                -moz-transition: all 0.2s ease-out
-                -ms-transition: all 0.2s ease-out
-                -o-transition: all 0.2s ease-out
-
-
-//---------------------------------------------  ABOUT
-
-#About
-    width: 100%
-    min-height: 100vh
-    height: auto
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    background: #02aab0
-    // background: #075e61
-
-    color: white
-    transition: ease-in
-    transition-duration: 3s
-    font-family: Roboto
-    
-    > h1
-        color: white
-        font-weight: 400
-
-.AboutRow
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: stretch
-    min-width: 40%
-    margin: 1rem 0 1rem 0
-    align-items: center
-
-.AboutColumn
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    justify-items: space-between
-    height: 100%
-    margin: 0rem .5rem
-    padding: 0rem .5rem
-    font-size: 1.2rem
-
-.narrative
-    text-align: left
-    line-height: 1.4em
-    width: 500px
-    margin: .0rem .2rem 1rem .2rem
-    padding: .1rem
-
-.divSkills
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    padding: .1rem
-    justify-content: stretch
-
-    width: 500px
-    margin-top: 1rem
-    margin-bottom: 1rem
-
-.divSkills label
-    font-size: .9rem
-    text-align: center
-    font-weight: 400
-    padding: .3rem .9rem
-    margin: .2rem
-    border-radius: .5rem
-    color: #fff
-    font-family: Roboto
-
+$lightCyan: #02aab0
+$specialColor: #02aab0
 //------------------------  Recent Projects
 
 
@@ -168,7 +48,7 @@ $specialColor: #02aab0
     max-width: 500px
 
 .projectTag  
-    font-size: .8rem
+    font-size: .7rem
     text-align: center    
     font-weight: 300
     padding: .3rem .5rem
@@ -179,17 +59,17 @@ $specialColor: #02aab0
 
 
 
-.projectTagTimeline 
-    font-size: .8rem
-    text-align: center    
-    padding: 0.1rem .5rem
-    border-radius: 1rem
-    margin: 0rem .1rem
-    // background: rgba(175, 34, 34, 1)  14213d
-    background: #14213d
-    font-weight: 400
-    color: #fff
-    font-family: Roboto
+// .projectTagTimeline 
+//     font-size: .7rem
+//     text-align: center    
+//     padding: 0.1rem .5rem
+//     border-radius: 1rem
+//     margin: 0rem .1rem
+//     // background: rgba(175, 34, 34, 1)  14213d
+//     background: #14213d
+//     font-weight: 400
+//     color: #fff
+//     font-family: Roboto
 
 
 .divTags
@@ -198,6 +78,30 @@ $specialColor: #02aab0
     padding: .1rem
     justify-content: flex-start
     width: 100%
+    //background: orange
+
+
+.divTags label
+    font-size: .7rem
+    text-align: center    
+    padding: 0.1rem .5rem
+    border-radius: 1rem
+    margin: .1rem
+    // background: rgba(175, 34, 34, 1)  14213d
+    background: #14213d
+    font-weight: 400
+    color: #fff
+    font-family: Roboto
+
+    &:hover
+        cursor: pointer
+        color: yellow
+        font-size: .8rem
+        font-weight: 500
+
+
+
+
 
 
 .projectButtons
@@ -208,13 +112,14 @@ $specialColor: #02aab0
     justify-content: flex-start
     width: 100%
     flex-wrap: wrap
+    //background: green
+
 
 
 
 .projectButtons button
     background: rgb(230, 229, 229)
     background: #21B0B0
-    
     opacity: .8
     color: #fff
     border: 1px solid #2d3e50
@@ -222,7 +127,7 @@ $specialColor: #02aab0
     cursor: pointer
     margin: 0.1rem
     font-family: Roboto
-    font-size: .8rem
+    font-size: .7rem
     border-radius: 0px
     font-weight: 400
     /* text-decoration: none */

@@ -1,5 +1,7 @@
 
 import React from "react"
+import parse from 'html-react-parser';
+import DayJS from 'react-dayjs';
 
 import ReadMore from "./ReadMore";
 import ImagesCarousel from "./ImagesCarousel";
@@ -13,9 +15,6 @@ import PropTypes from "prop-types";
 
 import infoTimeline from "../data/infoTimeline"
 
-import parse from 'html-react-parser';
-
-import DayJS from 'react-dayjs';
 
 
 const MyTimeline = props => {
@@ -68,6 +67,8 @@ const MyTimeline = props => {
             <label className="projectTagTimeline">{item}</label>
         ))
 
+
+
         var myDescription = parse(e.description)
 
         return (
@@ -79,19 +80,40 @@ const MyTimeline = props => {
                 <div className='timelineContent'>
 
                     <div className='projectColumnLeft'>
+
                         <span className="title">{e.title}</span>
-                        <p className="projectRole">{e.role}</p>
-                        {/* <p className="imageCaption">{e.citation}</p> */}
+
+                        <ReadMore
+                            id="descrp"
+                            overview={myDescription}
+                            maxChars={200} />
+
+
+                        <ReadMore
+                            id="role"
+                            overview={e.role}
+                            maxChars={50}                            
+                            />
+
                         <div className="divTags">{Tags}</div>
+
                         <div className="projectButtons">{Buttons}</div>
-                        <ReadMore overview={myDescription} />
+
+                        
                     </div>
 
 
                     <div className='projectColumnImages'>
                         <ImagesCarousel props={e.img} />
-                        {/* <div className="projectImages">{Images}</div> */}
-                        <p className="imageCaption">{e.citation}</p>
+
+                        <ReadMore
+                            id='caption1'
+                            overview={parse(e.citation)}
+                            maxChars={100}
+                            // style={{color: '#fff', backgroundColor: 'blue'}} 
+                        />
+
+
                     </div>
 
 

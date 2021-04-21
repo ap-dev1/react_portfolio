@@ -1,26 +1,27 @@
-import React, { Component } from 'react';
-import data from '../myData';
-//import parse from 'html-react-parser';
+import React, { Component } from 'react'
+import data from '../myData'
+//import parse from 'html-react-parser'
 
-import infoSkills from "../data/infoSkills";
+import infoSkills from "../data/infoSkills"
+import "../styles/about.sass";
 
 
 class About extends Component {
 
-    state={
-        gDrive: 'https://drive.google.com/drive/folders/1d6QlunZ_zh-mTXB1H2u0C5DQC7Vjmq5U'
-    };
+    // state={
+    //     gDrive: 'https://drive.google.com/drive/folders/1d6QlunZ_zh-mTXB1H2u0C5DQC7Vjmq5U'
+    // };
 
-    scrollToProjects = (e) => {
-        e.preventDefault()
-        document.getElementById('Projects').scrollIntoView({ block: 'start',  behavior: 'smooth' })
-    };
+    // scrollToProjects = (e) => {
+    //     e.preventDefault()
+    //     document.getElementById('Projects').scrollIntoView({ block: 'start',  behavior: 'smooth' })
+    // };
 
-    goToCredentials = (e) => {
-        e.preventDefault()
-        let gDrive = this.state.gDrive
-        window.open(gDrive, '_blank')
-    };
+    // goToCredentials = (e) => {
+    //     e.preventDefault()
+    //     let gDrive = this.state.gDrive
+    //     window.open(gDrive, '_blank')
+    // };
 
     render() {
         

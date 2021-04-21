@@ -1,56 +1,24 @@
 
-// .carousel-control-prev-icon
-//     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
-//     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#FFAE42' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
-//     height: 100px
-//     width: 100px
-//     outline: #fffe7a
-//     background: #fffe7a
-
-    //background-size: 100%, 100%
-    //border-radius: 50%
-    //border: 3px solid #12805b
-    //background-image: none
-
-// .carousel-control-next-icon
-//     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%fffe7a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
 
 .carousel
     width: 100%
     overflow: hidden
 
 .carousel-indicators
-    margin-bottom: .5rem
-
-.carousel-indicators .active
-    // background-color:  #ffc60a
-    // background-color: #14213d
-    // background-color: #fffe7a   -->  DAISY  YELLOW ----  VARIABLES.SASS
-    background-color: #12805b
-    opacity: 0.5
+    margin-bottom: .2rem
 
 .carousel-indicators li
+    background-color: #dcdcdc
+    border: 1px solid #333
+    opacity: .8
     cursor: pointer
     height: 12px
     width: 24px
-    background-color: #14213d
-    opacity: .5
-    //background-color: #fff
+    border-radius: 4px
 
+    &:hover
+        background-color: orange
 
-// .carousel-indicators li::after
-//     cursor: progress
-//     height: 12px
-//     width: 24px
-//     border: 1px solid #777
-//     border-radius: 5px
-//     opacity: .7
-//     background-color: #fff
-
-.carousel-inner > .item
-    position: relative
-    display: none
-    -webkit-transition: 0.6s ease-in-out left
-    -moz-transition: 0.6s ease-in-out left
-    -o-transition: 0.6s ease-in-out left
-    transition: 0.6s ease-in-out left
+.carousel-indicators .active
+    background-color: #fffe7a
+   

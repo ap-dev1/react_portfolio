@@ -1,20 +1,5 @@
 
 
-// #Projects
-//     width: 100%
-//     min-height: 100vh
-//     height: auto
-//     display: flex
-//     flex-direction: column
-//     justify-content: space-around
-//     align-items: center
-//     background: white
-//     color: #1B4D3E
-//     color: #333333
-//     font-family: Roboto
-//     /* background: #02aab0 */
-
-// 
 
 .projectRow
     display: flex
@@ -22,11 +7,8 @@
     justify-content: center
     align-items: stretch
     min-width: 40%
-    // margin: 0rem 0 .2rem 0
     margin: 0
     align-items: center
-
-
 
 .projectColumnLeft
     display: flex
@@ -34,11 +16,7 @@
     min-height: 96%
     margin: 5px
     align-items: flex-start
-    //min-width: 40%
-    //max-width: 50%
     width: 60%
-    border: 2px solid #ff0000
-
 
 .projectColumnImages
     display: flex
@@ -47,39 +25,17 @@
     margin: 5px
     text-align: center
     vertical-align: middle
-    //align-items: center
-    //justify-items: flex-start
-    // min-width: 50%
-    // max-width: 60%
     width: 40%
-    border: 2px solid #ff0000
-
-   
  
 .projectTitle
     font-family: Roboto
     font-size: 1.2rem
     text-align: center
     font-weight: 600
-    //background-color: rgb(178, 202, 202)
     width: 100%
-    //padding: .5rem
-    //margin: .2rem
     padding: .2rem
     margin: .2rem
     margin-top: .5rem
-
-
-
-.projectRole
-    font-family: Roboto
-    font-size: .7rem
-    font-weight: 500
-    text-align: left
-    width: 100%
-    padding: .2rem
-    margin: .2rem
-
 
 .section_row
     display: flex
@@ -90,8 +46,6 @@
     margin: 2em 0 2em 0
     align-items: center
 
-
-
 .section_column
     display: flex
     flex-direction: column
@@ -100,8 +54,6 @@
     padding: 1%
     align-items: center
 
-
-
 .section_title
     font-family: Roboto
     font-size: 2.2em
@@ -109,70 +61,57 @@
     color: white
 
 
+.imgZoom
+    transition: all 0.3s ease-out
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -ms-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out
 
-// #Projects h1
+
+.imgZoom:hover
+    z-index: 1
+    transform: scale(2)
+    border: 1px solid darkslategrey
+
+    transition: all 0.3s ease-out
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -ms-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out
+
+// .imageCaption
 //     font-family: Roboto
-//     font-size: 2.2em
-//     text-align: center
-
-
-
-
-
-
-
-// .imgZoom
-//     transition: all 0.3s ease-out
-//     -webkit-transition: all 0.2s ease-out
-//     -moz-transition: all 0.2s ease-out
-//     -ms-transition: all 0.2s ease-out
-//     -o-transition: all 0.2s ease-out
-
-
-// .imgZoom:hover
-//     z-index: 1
-//     transform: scale(2.5)
-//     border: 1px solid darkslategrey
-
-//     transition: all 0.3s ease-out
-//     -webkit-transition: all 0.2s ease-out
-//     -moz-transition: all 0.2s ease-out
-//     -ms-transition: all 0.2s ease-out
-//     -o-transition: all 0.2s ease-out
-
-.imageCaption
-    font-family: Roboto
-    font-size: .7rem
-    text-align: left
-    margin: .1rem
-    font-weight: 300
-    line-height: .8rem
-    color: #333
-    max-width: 400px
-
+//     font-size: .7rem
+//     font-weight: 400
+//     line-height: .8rem
+//     color: #333
+//     text-align: left
+//     margin: .2rem
+//     padding: .2rem
+//     width: 99%
 
 
 .projectOverview
+    background-color: #fff
     font-family: Roboto
-    font-size: .80rem
-    line-height: 1.1rem
+    font-size: .7rem
+    line-height: 1rem
     text-align: left
-    font-weight: 300
-    width: 70%
-    margin: 0rem
+    font-weight: 500
+    margin: .2rem
     padding: .2rem
-    background-color: #ddc4c4
-    //border: 1px solid #444
+    width: 98%
+
 
 .read-or-hide
-    color: rgb(235, 239, 245)
+    color: #09191f  // 1E5060
     cursor: pointer
-    background-color: rgb(202, 202, 202)
     opacity: .7
     padding: .2rem .4rem
     font-size: .7rem
     font-weight: 600
-    font-family: Roboto
+    font-style: italic
 
     &:hover
         color: #fff
@@ -180,21 +119,14 @@
         opacity: 1
 
 
-
-
-
-
 .button_row
     display: flex
     flex-direction: row
+    flex-wrap: wrap
     justify-content: space-around
-    align-items: center
-    padding: 1%
-    margin: 1%    
-    border: 2px solid orange
-    border: 0px solid orange
-    width: 100%
-
+    margin: .2rem
+    padding: .2rem
+    width: 99%
 
 
 .link_google
@@ -245,36 +177,44 @@
 .divTags
     display: flex
     flex-direction: row
-    padding: .1rem
+    margin: .2rem
+    padding: .2rem
     justify-content: flex-start
-    width: 100%
+    width: 99%
     flex-wrap: wrap
-
-
-.projectButtons
-    display: flex
-    flex-direction: row
-    padding: .1rem
-    justify-content: flex-start
-    width: 100%
-    flex-wrap: wrap
-
-    /* align-items: center
-    justify-content: space-evenly
-
-
 
 .projectTag    
     font-size: .8rem
     text-align: center    
-    font-weight: 300
+    font-weight: 400
     padding: .3rem .5rem
     margin: .1rem
     background: rgba(175, 34, 34, .8)
     color: #fff
     font-family: Roboto
 
+.projectTag:hover
+        font-size: .8rem
+        font-weight: 500
+        color: #fffe7a
+        cursor: grab
 
+
+
+        
+
+
+
+    
+
+.projectButtons
+    display: flex
+    flex-direction: row
+    padding: .2rem
+
+    justify-content: flex-start
+    width: 99%
+    flex-wrap: wrap
 
 .projectButtons button
     background: rgb(230, 229, 229)
@@ -287,7 +227,7 @@
     cursor: pointer
     margin: 0.1rem
     font-family: Roboto
-    font-size: .8rem
+    font-size: .7rem
     border-radius: 0px
     font-weight: 400
     /* text-decoration: none */

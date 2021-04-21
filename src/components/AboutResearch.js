@@ -28,7 +28,10 @@ class AboutResearch extends Component {
 
                 {/* <h2>How does behavior change over time, throughout an individual’s lifetime?</h2> */}
 
-                <h2>How do nervous systems learn?</h2>
+                <h2><b>How do nervous systems learn from experience?</b></h2>
+                <h5>or</h5>
+                <h2><i>How do connectoms come about?</i></h2>
+
 
                 <p>As children, our ability to act on our environments is limited. Over time, behavioral repertoires
                 become rich, nuanced, and effective: new behaviors are learned, some fade away, while others

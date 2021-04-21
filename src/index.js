@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 import './App.sass';
-import './styles/background.sass';
+//import './styles/background.sass';
 
 
 ReactDOM.render(

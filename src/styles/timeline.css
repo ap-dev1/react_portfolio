@@ -10,6 +10,10 @@ h1 {
     font-weight: 600;
  }
  
+.brb {
+    background-color: white;
+}
+
  .container {
     width: 80%;
     padding: 50px 0;

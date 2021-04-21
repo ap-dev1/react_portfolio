@@ -1,5 +1,9 @@
-import React, { Component } from 'react';
+
+import React, { Component } from "react"
 import data from '../myData.js'
+import "../styles/header.sass";
+
+
 
 class Header extends Component {
 
