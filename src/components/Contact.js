@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import data from '../myData';
 import {Button} from 'react-bootstrap';
 
+import data from '../myData';
 
-import '../styles/contact.css';
-import '../styles/common_styles.css'
+import '../styles/contact.sass';
+import '../App.sass'
 
 class Contact extends Component {
  
@@ -20,7 +20,6 @@ class Contact extends Component {
 
                 <div id='Contact'>
                     <h1 className='section_title'>Connect</h1>
-
 
                     <div className='section_column'>
                         <label className='lbl_email'>andrei.popa.dev@gmail.com</label>

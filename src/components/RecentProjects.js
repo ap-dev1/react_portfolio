@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import RecentProject from './recentProject';
+import React, { Component } from 'react'
+import RecentProject from './recentProject'
 import infoRecent from "../data/infoRecent"
 
 

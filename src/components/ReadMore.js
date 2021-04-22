@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/projects.css'
+import '../styles/project.sass'
 
 
 const ReadMore = (props) => {

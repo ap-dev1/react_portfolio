@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/research-vitae.sass';
+import '../styles/research.sass';
 
 class MyResearch extends Component {
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import Fade from 'react-reveal/Fade';
 
-import '../styles/footer.css';
+import '../styles/footer.sass';
 
 
 class Footer extends Component {
