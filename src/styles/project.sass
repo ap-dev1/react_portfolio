@@ -1,6 +1,4 @@
 
-
-
 .projectRow
     display: flex
     flex-direction: row
@@ -26,7 +24,7 @@
     text-align: center
     vertical-align: middle
     width: 40%
- 
+
 .projectTitle
     font-family: Roboto
     font-size: 1.2rem
@@ -36,60 +34,6 @@
     padding: .2rem
     margin: .2rem
     margin-top: .5rem
-
-.section_row
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: stretch
-    min-width: 40%
-    margin: 2em 0 2em 0
-    align-items: center
-
-.section_column
-    display: flex
-    flex-direction: column
-    min-height: 96%
-    margin: 1%
-    padding: 1%
-    align-items: center
-
-.section_title
-    font-family: Roboto
-    font-size: 2.2em
-    text-align: center
-    color: white
-
-
-.imgZoom
-    transition: all 0.3s ease-out
-    -webkit-transition: all 0.2s ease-out
-    -moz-transition: all 0.2s ease-out
-    -ms-transition: all 0.2s ease-out
-    -o-transition: all 0.2s ease-out
-
-
-.imgZoom:hover
-    z-index: 1
-    transform: scale(2)
-    border: 1px solid darkslategrey
-
-    transition: all 0.3s ease-out
-    -webkit-transition: all 0.2s ease-out
-    -moz-transition: all 0.2s ease-out
-    -ms-transition: all 0.2s ease-out
-    -o-transition: all 0.2s ease-out
-
-// .imageCaption
-//     font-family: Roboto
-//     font-size: .7rem
-//     font-weight: 400
-//     line-height: .8rem
-//     color: #333
-//     text-align: left
-//     margin: .2rem
-//     padding: .2rem
-//     width: 99%
 
 
 .projectOverview
@@ -103,9 +47,8 @@
     padding: .2rem
     width: 98%
 
-
 .read-or-hide
-    color: #09191f  // 1E5060
+    color: #09191f // 1E5060
     cursor: pointer
     opacity: .7
     padding: .2rem .4rem
@@ -118,63 +61,38 @@
         background-color: rgb(10, 87, 111)
         opacity: 1
 
+    
 
-.button_row
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: space-around
-    margin: .2rem
-    padding: .2rem
-    width: 99%
+// .link_google
+//     font-family: Roboto
+//     text-align: center
+//     background-color: black
+//     background-color: #2d3e50
+//     background-color: #474e5d
+//     color: white
+//     padding: 1em
+//     border: 0
+//     text-decoration: none
+//     border-radius: 5px
+//     margin: 1%
+//     width: fit-content
+//     min-width: 30%
 
+// .link_google:hover
+//     background: #02aab0
+//     background: #5b738d
+//     background: #496481
+//     cursor: pointer
+//     transition: all 0.2s ease-in-out
+//     -webkit-transition: all 0.2s ease-out
+//     -moz-transition: all 0.2s ease-out
+//     -ms-transition: all 0.2s ease-out
+//     -o-transition: all 0.2s ease-out
 
-.link_google
-    font-family: Roboto
-    text-align: center
-    background-color: black
-    background-color: #2d3e50
-    background-color: #474e5d
-    color: white
-    padding: 1em
-    border: 0
-    text-decoration: none
-    border-radius: 5px
-    margin: 1%
-    width: fit-content
-    min-width: 30%
+    
 
-
-
-.link_google:hover
-    background: #02aab0
-    background: #5b738d
-    background: #496481
-    cursor: pointer
-    transition: all 0.2s ease-in-out
-    -webkit-transition: all 0.2s ease-out
-    -moz-transition: all 0.2s ease-out
-    -ms-transition: all 0.2s ease-out
-    -o-transition: all 0.2s ease-out
-
-
-.black_border
-    border: 0px solid black
-
-
-
-.black_border:hover
-    background: #595a5a
-    transition: all 0.2s ease-in-out
-    -webkit-transition: all 0.2s ease-out
-    -moz-transition: all 0.2s ease-out
-    -ms-transition: all 0.2s ease-out
-    -o-transition: all 0.2s ease-out
-
-
-
-
-.divTags
+    
+.projectTags
     display: flex
     flex-direction: row
     margin: .2rem
@@ -183,139 +101,134 @@
     width: 99%
     flex-wrap: wrap
 
-.projectTag    
-    font-size: .8rem
-    text-align: center    
-    font-weight: 400
-    padding: .3rem .5rem
-    margin: .1rem
-    background: rgba(175, 34, 34, .8)
-    color: #fff
-    font-family: Roboto
+    > label
+        font-size: .7rem
+        text-align: center
+        border-radius: 1rem
+        padding: 0.1rem .5rem
+        margin: .1rem .2rem
 
-.projectTag:hover
-        font-size: .8rem
-        font-weight: 500
-        color: #fffe7a
-        cursor: grab
+        background: #14213d
+        font-weight: 400
+        color: #fff
+        font-family: Roboto
 
-
-
-        
+        &:hover
+            font-size: .8rem
+            font-weight: 500
+            color: #fffe7a
+            cursor: grab
 
 
-
-    
-
-.projectButtons
+.projectLinks
     display: flex
     flex-direction: row
     padding: .2rem
-
     justify-content: flex-start
     width: 99%
     flex-wrap: wrap
 
-.projectButtons button
-    background: rgb(230, 229, 229)
-    background: #21B0B0
-    opacity: .8
-    color: #333
-    color: #fff
-    border: 1px solid #2d3e50
-    padding: .3rem 1rem
-    cursor: pointer
-    margin: 0.1rem
-    font-family: Roboto
-    font-size: .7rem
-    border-radius: 0px
-    font-weight: 400
-    /* text-decoration: none */
+    > button
+        background: rgb(230, 229, 229)
+        background: #21B0B0
+        opacity: .8
+        color: #333
+        color: #fff
+        border: 1px solid #2d3e50
+        padding: .2rem .8rem
+        cursor: pointer
+        margin: 0rem 0.2rem
+        font-family: Roboto
+        font-size: .7rem
+        border-radius: 0px
+        font-weight: 400
 
-    transition: all 0.2s ease-out
-    -webkit-transition: all 0.2s ease-out
-    -moz-transition: all 0.2s ease-out
-    -ms-transition: all 0.2s ease-out
-    -o-transition: all 0.2s ease-out
-
-
-
-.projectButtons button:hover
-    background: #1B4D3E
-    background: #496481
-    background: #5b738d 
-    background: #0c3048 
-
-    color:#fff
-    font-weight: 500
-
-    cursor: pointer
-    transition: all 0.2s ease-in-out
-    -webkit-transition: all 0.2s ease-out
-    -moz-transition: all 0.2s ease-out
-    -ms-transition: all 0.2s ease-out
-    -o-transition: all 0.2s ease-out
-
-
-
-
-
-.spanDrive
-    font-size: 1.2em
-    font-weight: 600
-
-
-
-.btnHeader
-    position: relative
-    background: black
-    color: white
-    border: 0px
-    padding: 1em
-    padding-right: 3em
-    padding-left: 3em
-    
-    font-size: 1rem
-    align-self: left
-
-    width: fit-content
-    transition: all 0.2s ease-out
-    -webkit-transition: all 0.2s ease-out
-    -moz-transition: all 0.2s ease-out
-    -ms-transition: all 0.2s ease-out
-    -o-transition: all 0.2s ease-out
-    
-
-
-    .btnHeader :hover
-        background: #02aab0
-        transition: all 0.2s ease-in-out
+        transition: all 0.2s ease-out
         -webkit-transition: all 0.2s ease-out
         -moz-transition: all 0.2s ease-out
         -ms-transition: all 0.2s ease-out
         -o-transition: all 0.2s ease-out
-    
 
-  
+        &:hover
+            background: #1B4D3E
+            background: #496481
+            background: #5b738d
+            background: #0c3048
+            color: #fff
+            font-weight: 500
+            cursor: pointer
+            transition: all 0.2s ease-in-out
+            -webkit-transition: all 0.2s ease-out
+            -moz-transition: all 0.2s ease-out
+            -ms-transition: all 0.2s ease-out
+            -o-transition: all 0.2s ease-out
 
-.timelineYear 
-    display: flex
-    /* height: 100% */
-    font-family: Roboto
-    font-size: 1rem
-    min-width: 10rem
-    width: 100%
+// .spanDrive
+//     font-size: 1.2em
+//     font-weight: 600
 
-    border-right: .2rem solid #2d3e50
-    background-image: linear-gradient(to right, white, white, white, #9eacbc)
+// .btnHeader
+//     position: relative
+//     background: black
+//     color: white
+//     border: 0px
+//     padding: 1em
+//     padding-right: 3em
+//     padding-left: 3em
 
+//     font-size: 1rem
+//     align-self: left
 
+//     width: fit-content
+//     transition: all 0.2s ease-out
+//     -webkit-transition: all 0.2s ease-out
+//     -moz-transition: all 0.2s ease-out
+//     -ms-transition: all 0.2s ease-out
+//     -o-transition: all 0.2s ease-out
 
+//     .btnHeader :hover
+//         background: #02aab0
+//         transition: all 0.2s ease-in-out
+//         -webkit-transition: all 0.2s ease-out
+//         -moz-transition: all 0.2s ease-out
+//         -ms-transition: all 0.2s ease-out
+//         -o-transition: all 0.2s ease-out
 
-.timelineYear h3 
-    flex: 1
-    margin: 7rem 1rem
+// .timelineYear 
+//     display: flex
+//     /* height: 100% */
+//     font-family: Roboto
+//     font-size: 1rem
+//     min-width: 10rem
+//     width: 100%
 
+//     border-right: .2rem solid #2d3e50
+//     background-image: linear-gradient(to right, white, white, white, #9eacbc)
 
+// .imgZoom
+//     transition: all 0.3s ease-out
+//     -webkit-transition: all 0.2s ease-out
+//     -moz-transition: all 0.2s ease-out
+//     -ms-transition: all 0.2s ease-out
+//     -o-transition: all 0.2s ease-out
 
-    
+// .imgZoom:hover
+//     z-index: 1
+//     transform: scale(2)
+//     border: 1px solid darkslategrey
+//     transition: all 0.3s ease-out
+//     -webkit-transition: all 0.2s ease-out
+//     -moz-transition: all 0.2s ease-out
+//     -ms-transition: all 0.2s ease-out
+//     -o-transition: all 0.2s ease-out
+
+// .imageCaption
+//     font-family: Roboto
+//     font-size: .7rem
+//     font-weight: 400
+//     line-height: .8rem
+//     color: #333
+//     text-align: left
+//     margin: .2rem
+//     padding: .2rem
+//     width: 99%

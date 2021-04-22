@@ -3,16 +3,13 @@ import RecentProject from './recentProject';
 import infoRecent from "../data/infoRecent"
 
 
-class ResearchProjects extends Component {
-    
+class RecentProjects extends Component {
 
     render() {
-
-
         return (
 
-            <div id='recentProjects'>
-                {/* <h1>Recent Projects</h1> */}
+            <div id='RecentProjects'>
+                <h1>Recent Activity</h1>
 
                 <div className="recentRow">
                     {infoRecent.map((project) => (
@@ -36,4 +33,4 @@ class ResearchProjects extends Component {
     }
 }
 
-export default ResearchProjects;
+export default RecentProjects;

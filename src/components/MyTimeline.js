@@ -12,7 +12,6 @@ import "../styles/carousel.sass"
 
 
 import PropTypes from "prop-types";
-
 import infoTimeline from "../data/infoTimeline"
 
 
@@ -64,7 +63,7 @@ const MyTimeline = props => {
 
 
         var Tags = e.tags.map((item) => (
-            <label className="projectTagTimeline">{item}</label>
+            <label >{item}</label>
         ))
 
 
@@ -78,9 +77,7 @@ const MyTimeline = props => {
                 content1={e.date.slice(-7)}>
 
                 <div className='timelineContent'>
-
                     <div className='projectColumnLeft'>
-
                         <span className="title">{e.title}</span>
 
                         <ReadMore
@@ -88,20 +85,17 @@ const MyTimeline = props => {
                             overview={myDescription}
                             maxChars={200} />
 
-
                         <ReadMore
                             id="role"
                             overview={e.role}
-                            maxChars={50}                            
-                            />
+                            maxChars={50}
+                        />
 
-                        <div className="divTags">{Tags}</div>
+                        <div className="projectTags">{Tags}</div>
 
-                        <div className="projectButtons">{Buttons}</div>
+                        <div className="projectLinks">{Buttons}</div>
 
-                        
                     </div>
-
 
                     <div className='projectColumnImages'>
                         <ImagesCarousel props={e.img} />
@@ -110,13 +104,9 @@ const MyTimeline = props => {
                             id='caption1'
                             overview={parse(e.citation)}
                             maxChars={100}
-                            // style={{color: '#fff', backgroundColor: 'blue'}} 
+                        // style={{color: '#fff', backgroundColor: 'blue'}} 
                         />
-
-
                     </div>
-
-
                 </div>
             </div>
 
@@ -126,9 +116,19 @@ const MyTimeline = props => {
 
 
     return (
-        <div className="vertical">
-            {eventsMappedToElements}
+
+        <div id='MyTimeline'>
+
+        
+            <h1 >Professional Trajectory</h1>
+
+
+            <div className="vertical">
+                {eventsMappedToElements}
+            </div>
+
         </div>
+
     );
 };
 

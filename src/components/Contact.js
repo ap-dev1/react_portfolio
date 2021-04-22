@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import data from '../myData';
-import '../styles/contact.css';
 import {Button} from 'react-bootstrap';
+
+
+import '../styles/contact.css';
 import '../styles/common_styles.css'
 
 class Contact extends Component {

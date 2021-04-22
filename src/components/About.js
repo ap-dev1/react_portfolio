@@ -12,9 +12,9 @@ class About extends Component {
     //     gDrive: 'https://drive.google.com/drive/folders/1d6QlunZ_zh-mTXB1H2u0C5DQC7Vjmq5U'
     // };
 
-    // scrollToProjects = (e) => {
+    // scrollToTimeline = (e) => {
     //     e.preventDefault()
-    //     document.getElementById('Projects').scrollIntoView({ block: 'start',  behavior: 'smooth' })
+    //     document.getElementById('MyTimeline').scrollIntoView({ block: 'start', behavior: 'smooth' })
     // };
 
     // goToCredentials = (e) => {
@@ -23,12 +23,14 @@ class About extends Component {
     //     window.open(gDrive, '_blank')
     // };
 
+    
     render() {
-        
+
         var Skills = infoSkills.skills.map((item) => {
             return (
-            <label style={{background: item.color, opacity: item.opacity}}>{item.name}</label >
-        )})
+                <label style={{ background: item.color, opacity: item.opacity }}>{item.name}</label >
+            )
+        })
 
 
         return (
@@ -46,7 +48,7 @@ class About extends Component {
 
                     <div className='AboutColumn'>
                         <p className='narrative' >{data.aboutText}</p>
-                        
+
                         <div className='divSkills'>
                             {Skills}
                         </div>
@@ -59,6 +61,8 @@ class About extends Component {
                     </div>
 
                 </div>
+
+                
 
             </div>
 

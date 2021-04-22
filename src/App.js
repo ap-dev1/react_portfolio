@@ -5,7 +5,7 @@ import Header from './components/Header';
 import About from './components/About';
 import RecentProjects from './components/RecentProjects';
 
-// import AboutResearch from './components/AboutResearch';
+import MyResearch from './components/MyResearch';
 // import Projects from './components/Projects';
 // import AboutCV from './components/AboutCV';
 
@@ -24,6 +24,8 @@ class App extends Component {
                 <Header/>
 
                 <About/>
+
+                {/* <MyResearch/> */}
 
                 <RecentProjects/>
 
