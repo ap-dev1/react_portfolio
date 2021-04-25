@@ -1,9 +1,12 @@
 
+
+
+
 import projectAutomata1 from "../assets/prj_img_imperfect_automata.jpg"
 import projectPsych from "../assets/Jackson_Pollock_1952.jpg"
-import placeholder from "../assets/placeholder.png"
+//import placeholder from "../assets/placeholder.png"
 
-import bivariate2012_01 from "../assets/bivariate2012_01.png"
+//import bivariate2012_01 from "../assets/bivariate2012_01.png"
 import bivariate2012_02 from "../assets/bivariate2012_02.png"
 
 import ABAI_2013_01_slide from "../assets/abai_darwin_sqab/ABAI_2013_01_slide.png"
@@ -17,8 +20,10 @@ import ABAI_2014_Andrei from "../assets/abai_darwin_sqab/ABAI_2014_Andrei.png"
 // import ABAI_2017_2 from "../assets/abai_darwin_sqab/ABAI_2017_2.png"
 // import ABAI_2017_3 from "../assets/abai_darwin_sqab/ABAI_2017_3.png"
 // import ABAI_2017_4 from "../assets/abai_darwin_sqab/ABAI_2017_4.png"
+
 import ABAI_2017_5 from "../assets/abai_darwin_sqab/ABAI_2017_5.png"
 import ABAI_2017_6 from "../assets/abai_darwin_sqab/ABAI_2017_6.png"
+
 // import ABAI_2017_7 from "../assets/abai_darwin_sqab/ABAI_2017_7.png"
 // import ABAI_2017_8 from "../assets/abai_darwin_sqab/ABAI_2017_8.png"
 // import ABAI_2017_9 from "../assets/abai_darwin_sqab/ABAI_2017_9.png"
@@ -49,179 +54,318 @@ import SpARC_15_1_Waithe from "../assets/sparc2016/SpARC_15_1_Waithe.png"
 
 import SpARC_16_1_Grissom from "../assets/sparc2016/SpARC_16_1_Grissom.png"
 
+// import chalkboard2 from "../assets/chalkboard2.png"
+
+import ABAI_2010_event from "../assests/ABAI_2010_event.png"
+import ABAI_2011_event from "../assests/ABAI_2011_event.png"
+import ABAI_2012_event from "../assests/ABAI_2012_event.png"
+import mcdowell_popa_2010_paper from "../assests/mcdowell_popa_2010_paper.png"
+import bivariate_mcdowell_popa_calvin from "../assets/bivariate_mcdowell_popa_calvin.png"
+import etbd_adhd_slide_1 from "../assets/etbd_adhd_slide_1.png"
+import phd_committee from "../assets/phd_committee.png"
 
 
+var gDrive = "https://drive.google.com/drive/folders/1d6QlunZ_zh-mTXB1H2u0C5DQC7Vjmq5U?usp=sharing"
 
 var infoTimeline = [
 
 
-    // {title: 'Continuous Education', date: "2018...", 
+    // {
+    //     title: 'Why are you <i>you</i>, and not someone else? ', id: -1, date: "08/14/2007",
     //     role: "",
-    //     hiddenTags: [],
+    //     keywords: [],
     //     tags: [],
-    //     description: "Data Science with Python track (DataCamp, 2018)<br> Python Bootcamp (Udemy, 2018)<br> Machine Learning by Stanford University (Coursera, 2018)<br>SQL Bootcamp (Udemy, 2019)",
-    //     //thumbnail:"",
+    //     // description: "When and how did you happen? Sentience, agency, will, etc. - are they just words meant to ....<br/><br/> How do es society influence biology? Where do genes interact with families? How do nature and nurture mediate each other? <br/><br/> If one would want to observe and influence these interactions, where would one begin? A handful of bio-psycho-sociocultural variables, somehow,give rise to seven billion unique personalities. How? <br/><br/> Statistical jargonaside,to interact is to modify: something, somewhere, must undergo some kind of observabletrans formations.When and where do these transformations occur? How do they map on the plethora of contributing factors and developmental outcomes? What are sentience, agency, will? What role, if any, do they play in human life? ",
+
+    //     description: "The succession of configurations of active states is proposed as the  vehicle  of change in psychological systems and the material and conceptual ,bridge' between high-level theories of brain functioning(e.g., Edelman's Neuronal Darwinism) and theories of behavior change (e.g., Skinner's Behavioral Darwinis m; see  McDowell, 2010, for a parallel). It is the proposed 'medium' for all forms of expression and xperience; as the'interface' between biology and culture; between nurture and nature; the 'source code' of thinking, of doing, of being who we are. We are being written in it as we happen, by low-level Darwinian tendencies (behaviorally manifested as approach and avoidance), with a splash of consciousness",
+
     //     img: [],
-    //     urls: [
-    //         //{ name: "___", link: "___" }, 
-    //     ],
-    //     citation: "", 
+    //     citation: "",
+    //     urls: [{ name: "", link: "" },],
     // },
 
 
-    // {title: 'Courses Tought', date: "2008 - 2018", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["", "", ""],
-    //     description: "Emory University, 2008 - 2012; <br/>  Statistics Lab (Spring 2008); <br/> Research Methods Lab (Fall 2008); <br/> Behavior Modification (for Jack McDowell; Fall 2010, 2011, 2012); <br/> Introduction to Psychology (for Scott Lilienfeld; Fall 2011) <br/> The Evolution of Acquired Behavior, Emory University; my first course (N ~ 50)   <br/>      Visiting Lecturer, Georgia State University; <br/>  Theories of Personality (14 sections); <br/>  Abnormal Psychology (8 sections); <br/>  Introduction to Psychology (8 sections) <br/>   Visiting Assistant Professor of Psychology, Agnes Scott College; <br/>  Senior Seminar: Choice and Preference; <br/>  Introduction to Sociology; <br/>  Research Methods and Design;  <br/>  Introduction to Psychology <br/>  Adjunct Assistant Professor of Psychology, Emory University, Oxford College; <br/>  Introduction to Psychology; <br/> Introduction to Psychobiology",
-    //     img: [],
-    //     urls: [
-    //         //{ name: "___", link: "___" }, 
-    //     ],
-    //     citation: "___", 
-    // },
+    {   id: 1, title: 'A chapter beggins', date: "08/15/2007",
+        role: "GRADUATE STUDENT in Psychology",
+        tags: ["VB.Net", "Excel/VBA", "syntethic data"],
+        keywords: ["edu", ""],
+        description: "I joined McDowell's lab, where I studied experimental behavior analysis, with a focus on mathematical and computational models of choice and preference. I was to graduate six years later, in December 2013.",
+        img: [],
+        citation: "Emory University, Laney Graduate School of Arts and Sciences, Department of Psychology, Cognition and Development program",
+        urls: [
+            //{ name: "", link: "" },
+        ],
+    },
+
+
+    {id: 2, title: 'A Computational Model of Adaptive Behavior Dynamics', date: "05/02/2009", 
+        role: "PRESENTER (invited talk)",
+        tags: [],
+        keywords: ["ETBD", "conference", "Emory University"],
+        description: "My adviser nominated me as a speaker for the Department's annual research festival. I gave a talk on the relation between mathematical and computational models of behavior dynamics.",
+        img: [],
+        urls: [
+            //{ name: "", link: "" }, 
+        ],
+        citation: "Popa, A., & McDowell, J J. (2009). A Computational Model of Adaptive Behavior Dynamics. Emory University, Department of Psychology, Annual Research Festival. Atlanta, GA",
+    },
+
+
+    {id: 3, title: 'Wolfram, Complexity, and a New Kind of Science', date: "07/01/2009",
+        role: "CO-INVESTIGATOR (journal article; research, empirical)",
+        tags: ["Excel/VBA", "hypothesis testing", "model selection", "ensemble fitting", "residual analysis", ],
+        keywords: [""],
+        description: "An exploration of complexity and emergence, and their relevance to behavior analysis; created cumulative records, prepare inter-response time (IRT) distributions,        and calculate average response rates from the outputs of cellular automata.",
+        img: [],
+        urls: [
+            { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/19429227" },
+            { name: "ResGate", link: "https://www.researchgate.net/publication/24414894_Beyond_continuous_mathematics_and_traditional_scientific_analysis_Understanding_and_mining_Wolfram's_A_New_Kind_of_Science" },
+        ],
+        citation: "McDowell, J. J, & Popa, A. (2009). Beyond continuous mathematics and traditional scientific analysis: Understanding and mining Wolfram's A new kind of science. Behavioural Processes, 81, 343-352.",
+    },
 
 
 
-    {title: 'The Emergence of You', date: "09/08/2019",
-        role: "",
-        hiddenTags: [],
-        tags: ["Problem Solving"],
-        description: "Physical forces acting on particles explain how physical systems change over time. Evolutionary forces acting on populations of genomes explain change in the genetic structure of populations across generations. Change in psychological systems - i.e. human development, or learning - is not yet understood. Although dynamic principles have been proposed, their target remained vaguely defined. What are such principles acting on, what kind of empirical transformations do they cause, and how do these transformations explain development?",
-        img: [projectPsych],
+
+    // // // {title: 'Master of Arts', id: 4, date: "20/12/2009", 
+    // // //     tags: ["Master of Arts", "COMMITTEE", "Hamming Distance", "education", "deggree"],
+    // // //     description: "M.A. in Psychology, Cognition and Development Program, Emory University; The Effects of Hamming Distances in a Computational Model of Selection by Consequences",
+    // // //     img: ["___"],
+    // // //     urls: [{ name: "___", link: "___" }, ],
+    // // //     citation: "", 
+    // // // },
+
+
+    {title: 'Absolute reinforcement rates in ETBD', id: 5, date: "05/30/2010", 
+        role: "CO-INVESTIGATOR ... ? masters..?   (research poster)",
+        tags: [],
+        keywords: ["SQAB 2010", "poster",  "conference"],
+        description: "",
+        img: [],
+        urls: [{ name: "", link: "" }, ],
+        citation: "Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX.", 
+    },
+
+
+    { id: 6, title: 'Beyond the molar-molecular debate', date: "05/31/2010", 
+        role: "SPEAKER (invited talk)",
+        tags: ["critical thinking", "problem framing"],
+        keywords: ["ABAI 2010", "invited talk",  "conference"],
+        description: "Complex causation, or beyond the molar-molecular debate",
+        img: [ABAI_2010_event],
+        urls: [
+            { name: "ABAI 2010", link: "???" }, 
+        ],
+        citation: "Popa, A., & McDowell, J J. (2010). Evolutionary Behavior Dynamics causally generates both molar and molecular properties of behavior. Symposium: The Molar-Molecular debate: A further discussion on the unresolved issue. Discussant: William M. Baum, Ph.D. Presented at the 36th Annual Convention of the Association for Behavior Analysis International, San Antonio, TX.", 
+    },
+
+
+    {title: 'Hamming Distances and Changeover Delays', id: 7, date: "08/01/2010",
+        tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection", ],
+        role: "PRINCIPAL INVESTIGATOR (my masters thesis turned in journal article)",
+        keywords: [],
+        description: "My M.A. project (December 2009) and my first peer-reviewed publication as first author.",
+        img: [],
+        urls: [
+            { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/20152891" },
+            { name: "ReshGate", link: "https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences" },
+            { name: "Emory ETD", link: "https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en" },
+            { name: "ProQuest", link: "xxx" },
+            { name: "SQAB 2009", link: "xxx" }
+        ],
+        citation: ["Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434.", "Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX."]
+    },
+
+
+
+
+
+    {id: 8, title: 'Toward a mechanics of adaptive behavior', id: 8, date: "12/01/2010",
+        role: "CO-INVESTIGATOR (journal article, research, empirical)",
+        keywords: [],
+        tags: ["VBA/Excel", "hypothesis testing", "model selection", "ensemble fitting", "residual analysis", ],
+        description: "",
+        img: [mcdowell_popa_2010_paper],
+        urls: [
+            { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/20152891" },
+            { name: "JEAB ?? ", link: "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2929088/" },
+            { name: "ResGate", link: "https://www.researchgate.net/publication/50937156_Toward_a_Mechanics_of_Adaptive_Behavior_Evolutionary_Dynamics_and_Matching_Theory_Statics" },
+        ],
+        citation: "McDowell, J. J, & Popa, A. (2010). Toward a mechanics of adaptive behavior: Evolutionary dynamics and matching theory statics. Journal of the Experimental Analysis of Behavior, 94, 241-260.",
+    },
+
+
+
+    {id: 9, title: 'Impulsivity in ETBD', id: 9, date: "05/30/2011", 
+        role: "SPEAKER (talk)",
+        keywords: ["ABAI 2011", "ETBD", "ADHD"],
+        tags: [],
+        description: "Hamming Distances and mutation rates; also, preliminary human data",
+        img: [ABAI_2011_event],
+        urls: [{ name: "ABAI 2011", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=13494&by=ByArea#s445_0" }, ],
+        citation: "Popa, A., & McDowell, J J. (2011). A Computational Model of Selection by Consequences: Evidence that Mutation is Computationally Equivalent to Impulsivity. Paper presented at the 37th Annual Convention of the Association for Behavior Analysis International, Denver, CO.", 
+    },
+
+
+    {id: 11, title: 'Bivariate Matching', date: "03/01/2012",
+        time: "03/01/2012",
+        keywords: [],
+        tags: ["VBA/Excel", "hypothesis testing", "model selection", "ensemble fitting", "residual analysis", ],
+        role: "CO-INVESTIGATOR (journal article)",
+        description: "Virtual organisms animated by a selectionist theory of behavior dynamics worked on concurrent random interval schedules where both the rate and magnitude of reinforcement were varied. The selectionist theory consists of a set of simple rules of selection, recombination, and mutation that act on a population of potential behaviors by means of a genetic algorithm.An xtension of the power function matching equation, which expresses behavior allocation as a joint function of exponentiated reinforcement rate and reinforcer magnitude ratios, was fitted to the virtual organisms’ data, and over a range of moderate mutation rates was found to provide an excellent description of their behavior without residual trends.The mean exponents in this range of mutation rates were 0.83 for the reinforcement rate ratio and 0.68 for the reinforcer magnitude ratio, which are values that are comparable to those obtained in experiments with live organisms.These findings add to the evidence supporting the selectionist theory, which asserts that the world of behavior we observe and measure is created by evolutionary dynamics.",
+        //img: [bivariate2012_01, bivariate2012_02],
+        img: [bivariate2012_02, bivariate_mcdowell_popa_calvin, ],
+
+        urls: [
+            { name: "NCBI/Pubmed", link: "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/" },
+            { name: "ResGate", link: "https://www.researchgate.net/publication/231176507_Selection_dynamics_in_joint_matching_to_rate_and_magnitude_of_reinforcement" },
+        ],
+        citation: "McDowell, J, J., Popa, A., & Calvin, N. (2012). Selection Dynamics in Joint Matching to Rate and Magnitude of Reinforcement. Journal of the Experimental Analysis of Behavior, 98, 199-212.",
+    },
+
+
+
+
+    {title: 'Social Entanglementnntmtntmtntntnt', id: 12, date: "05/10/2012",
+        role: "STUDY COORDINATOR (as O.R.D.E.R. fellow)",
+        keywords: ["David Lynn (Biological Chemistry)", "Leslie Taylor (Theatre Studies)."],
+        tags: [],
+        description: "On Recent Discoveries by Emory Researchers, or ORDER, is a  ... fellowship ...  Course: Complexity and Emergence: Implications for Psychology ... Teacher/Scholar Fellowship; Research Project: Conformity at a Distance; ... Howard Hughes Teacher/Scholar Award; ...  Fellowship Advisory Board, <br/><br/> Senior course description: Have you ever been sick? Taken birth control or seen a psychologist? Felt unease with the existing explanations in psychology? This course will delve into research in all of these areas, while exploring ways you can engage in research after graduation. You will prepare a proposal for a competitive fellowship or grant, such as NSF. Scholars from Emory with very different backgrounds will guide you through their research, examining how reproductive health and sexuality are portrayed by the media, how behaviors evolve through natural selection, how complexity theories force scientists to reconsider the nature of human experience, the perception of mental health in Haiti, how your immune system fights off respiratory pathogens, and the application of microscopy to neurological disease. This course will include reading and discussions, excursions, and demonstrations. We examine these topics as a basis for conducting research to answer our questions as well as yours.",
+        img: [],
+        citation: "find manuscript.",
+        urls: [
+            { name: "O.R.D.E.R.", link: "http://www.order.emory.edu/about/index.html" },
+            { name: "Google Drive", link: "gDrive" },
+            { name: "Syllabus", link: "http://www.order.emory.edu/documents/sex-drugs-and-vodou-spirits-fall-syllabus.pdf"}
+        ],
+    },
+
+    
+
+
+    {id: 13, title: 'From bit strings to ADHD', date: "05/26/2012", 
+        role: "SPEAKER (talk)",
+        keywords: [],
+        tags: [],
+        description: "",
+        img: [ABAI_2012_event],
+        urls: [{ name: "ABAI 2012", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=17728&by=ByArea#s28_0" }, 
+        { name: "ResearchGate", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=17728&by=ByArea#s28_0" }, ],
+        citation: "Popa, A., & McDowell, J J. (2012). The Computational Theory of Behavior Dynamics Predicts Effects of COD on Behavioral Variability: Evidence from experiments with human participants. Paper presented at the 38th Annual Convention of the Association for Behavior Analysis International, Seattle, WA." 
+    },
+
+
+
+
+    {id: 14, title: 'Complexity, Emergence, and the Behavior of Organisms', date: "05/26/2013", 
+        role: "SPEAKER, ABAI 2012",
+        keywords: [],
+        tags: [ ],
+        description: "Complexity science is rapidly becoming the '<i>spoiled child</i>' of the scientific community, promising to dissolve interdisciplinary barriers and open a new chapter in our understanding of the natural world (Mitchell, 2009). Complex systems are dynamic, adaptive systems, composed from a large number of interconnected parts, and governed by simple, low-level rules that can give rise to novel, emergent features or behaviors. High-level, emergent properties are not readily reducible to the rules that produce them. They appear to be stand-alone entities and behavioral and psychological sciences have traditionally studied them as such (e.g. impact of divorce on children's risk of depression). However, if they are emergent features of a dynamic system, the relations between them cannot, in principle, be causal (divorce → depression). Their co-occurrence is incidental, both being produced by underlying simple rules reiterated over long periods of time. In order to fully understand an emergent property, one must identify the rules that govern the system and the specific conditions under which the property emerges (McDowell & Popa, 2009). This implies a complete shift in focus, from high-level properties to low-level rules and characteristics, opening a fascinating doorway for scholars interested in the behavior of organisms.",
+        img: [ABAI_2013_01_slide, ABAI_2013_05_slide, ABAI_2013_Popa_McDowell_Calvin_1],
+        urls: [{ name: "ABAI 2013", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=28880&by=ByArea#s166_0" }, ],
+        citation: "Popa, A., Calvin, N., & McDowell, J J. (2013). Complexity, Emergence, and the Behavior of Organisms. Paper presented at the 39th Annual Convention of the Association for Behavior Analysis International, Minneapolis, MN." 
+    },
+
+
+    {title: 'Neurotechnologies that Penetrate the Mind', id: 15, date: "11/2013", 
+        role: "EXPERT PANEL",
+        keywords: ["GaTech 2013",  ],
+        tags: [],
+        description: "My interest in this topic grew over the years, as my intellectual pursuits took me closer and closer to neuronal activity. The ability to interfere with neuronal activity in systematic ways implies the possibility to interfere with all phenomena mirrored in said neuronal activity - like editing the code of a computer program. In other words, the ability to affect the dynamic of neuronal activation states implies the ability to interfere with one's perception, thought, and action (live, as it happens), and - by extension - with the individuality that emerges over time (Popa, 2019). <br/> <br/> Popa, Andrei. 2019. “Psychology 2.0: The Emergence of Individuality.” PsyArXiv. September 8. doi:10.31234/osf.io/m87an.",
+        img: [],
         urls: [
             { name: "PsyArXiv", link: "https://psyarxiv.com/m87an/" },
             { name: "ResGate", link: "https://www.researchgate.net/publication/335688963_Psychology_20_The_Emergence_of_Individuality" },
         ],
-        citation: "Popa, Andrei. 2019. “Psychology 2.0: The Emergence of Individuality.” PsyArXiv. September 8. doi:10.31234/osf.io/m87an.",
+       citation: "Expert Panel, Neurotechnologies that Penetrate the Mind, Georgia Institute of Technology (2013)" 
     },
 
 
-    {title: 'Imperfect Automata', date: "09/30/2019",
-        role: "",
-        hiddenTags: [],
-        tags: ["Python", "Tkinter"],
-        description: "Unlike biological systems, automata are deterministic systems, governed by precise rules. The question examined here was: what if every new cell has a small probability to be written incorrectly, i.e. to mutate from 0 to 1 or viceversa. ... Low mutation probabilities facilitated the emergence of new patterns and structures, disconnected from the initial conditions.", 
-        img: [projectAutomata1],
-        urls: [
-            { name: "PsyArXiv", link: "https://psyarxiv.com/wgp4e/" },
-            { name: "GitHub", link: "https://github.com/ap-dev1/automata/" },
-            { name: "ResGate", link: "https://www.researchgate.net/publication/336143797_Imperfect_Automata_Effects_of_mutation_on_the_evolution_of_automaton_01101110_Rule_110" }
-        ],
-        citation: "Popa, Andrei. 2019. “Imperfect Automata: Effects of “mutation” on the Evolution of Automaton 01101110 (rule 110)” PsyArXiv. September 30. doi:10.31234/osf.io/wgp4e.",
-    },
-
-
-    // {title: 'ETBD.py', date: "09/15/2018",
-    //     role: "PRINCIPAL INVESTIGATOR",
-    //     hiddenTags: [],
-    //     tags: ["Python", "SciPy", "SQLite", "Postgres"] ,
-    //     description: "This evolutionary theory of behavior dynamics is similar to the one described in McDowell (2004). ... ",
-    //     img: [placeholder, placeholder],
-    //     urls: [
-    //         //{name: "xxx", link:"xxx"},
-    //         //{name: "GitHub", link: "xxx"}
-    //     ],
-    //     citation: "Get a DOI    2018)",
-    // },
-
-
-    // {title: 'Writing with purpose', date: "05/02/2018",
-    //     tags: [],
-    //     description: "",
-    //     img: [],
-    //     urls: [
-    //         //{name: "xxx", link:"xxx"},
-    //         //{name: "xxx", link: "xxx"}
-    //     ],
-    //     citation: "(Emory University, Oxford College Campus, 2018)"
-    // },
-
-
-
-
-
-
-
-
-
-    {
-        title: 'Triangles!', date: "05/01/2018",
-
-        role: "PRINCIPAL INVESTIGATOR (Oxford College, Emory University, IRB00101193, AM1_IRB00101193)",
-
-        hiddenTags: [],
-        tags: ["VB.NET", "Python", "Pandas", "SciPy", "Matplotlib"],
-
-        description: "Effects of Personality Factors and Environmental Properties on the Variability and Organization of Behavioral and Cognitive Processes. A laboratory invstigation in the effects of positive and negative reinforcement on learning... (Emory University, Oxford College Campus, 2018; with Kenneth Carter)",
-
-        img: [Pos01_1_pos, Neg04_1_neg, Trn04_2_pos, Trn04_3_neg, Trn04_4_ext],
-
-        urls: [
-            //{name: "gDrive", link:"xxx"},
-        ],
-
-        citation: "(Emory University, Oxford College Campus, 2018; with Kenneth Carter)"
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {
-        title: 'Towards a Dynamic Account of Human Development', date: "05/28/2017",
-        role: "",
-        hiddenTags: [],
-        tags: ["ABAI 2017", "talk", "conference"],
-        description: "description",
-        // img: [ABAI_2017_1, ABAI_2017_2, ABAI_2017_3, ABAI_2017_4, ABAI_2017_5, ABAI_2017_6, ABAI_2017_7, ABAI_2017_8, ABAI_2017_9, ABAI_2017_10],
-        img: [ABAI_2017_5, ABAI_2017_6],
-        urls: [{ name: "ABAI 2017", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=53139&by=ByArea#s196_0" },],
-        citation: "Popa, A., (2017). Towards a Dynamic Account of Human Development. Paper presented at the 43rd Annual Convention of the Association for Behavior Analysis International, Denver, CO.",
-    },
-
-
-
-
-    {
-        title: 'Escape behavior on extinction', date: "02/19/2017",
+    {title: 'Complexity, Darwinism, and the Emergence of High-Level Phenotypes (like ADHD)', id: 16, date: "12/24/2013", 
+        keywords: ["Doctor of Philosophy", "dissertation", "education", "deggree"],
+        tags: ["synthetic data", "human data"],
         role: "PRINCIPAL INVESTIGATOR",
-        hiddenTags: [],
-        tags: ["WCALB 2017", "talk", "conference", "Utah"],
-        skills: ["VB.NET", "VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
-        citation: "Popa, A. & Grissom, M. K. (2017). Extinction-Induced Variability on Negatively Reinforced Human Behavior. Paper presented at the Winter Conference on Animal Learning & Behavior, Park City, UT.",
-        description: "A laboratory invstigation in the effects of positive and negative reinforcement on learning... Research conducted in 2016, at Agnes Scott College",
-        img: [wcalb2017_extinction08],
-        urls: [{ name: "WCALB 2017", link: "https://static1.squarespace.com/static/57b732f259cc68697145ea01/t/5b7dbd231ae6cf8700f3d604/1534967075831/Past+Programs+2017.pdf" },],
+        description: ["McDowell (2004) instantiated low-level Darwinian processes in a computational theory of behavior dynamics. The theory causes a population of behaviors to evolve through time under the selection pressure of the environment. It has been tested under a variety of conditions and the emergent outcomes were repeatedly shown to be qualitatively and quantitatively indistinguishable from those displayed by live organisms (McDowell, in press). As empirical evidence accumulates and our understanding of the theory matures, the analogy between biological and behavioral evolution becomes more compelling. Expanding the exploration of this analogy becomes both necessary and fascinating. The main purpose of this project was to explore the effects of mutation and the environment's value and conduciveness on various dimensions of behavioral variability, in continuous choice environments. Secondly, qualitative predictions made by the Evolutionary Theory about the effects of changeover delays (COD) on behavior variability were verified against the behavior of college students in equivalent environments. The continuous choice behavior of college students was correctly predicted on eight out of eight behavioral dimensions. Thirdly, low-level characteristics of students' continuous choice behavior were compared with traditional measures of impulsivity and sustained attention, in an effort to investigate the potential equivalence between mutation and a property of the nervous system that produces impulsivity-like symptoms. The results were inconclusive, likely due to a lack of extreme impulsivity scores in the human sample. The findings presented in this paper provided significant additional evidence for the selectionist account as a valid mechanism of behavior change. In addition, the knowledge generated by the Evolutionary Theory provided important insights about clinically-relevant phenomena, such as disordered variability (or impulsivity) and raise the possibility of using the theory as a platform for simulating the emergence of specific high-level phenotypes. These implications appear even more fascinating considering that a connection with mental health was not explicitly sought, nor can it be traced to the inner-workings of the theory. This challenges our current understanding of mental illness and provides a new way of thinking about the evolution of behavioral repertoires and their emergent high-level characteristics."],
+        img: [ phd_committee , etbd_adhd_slide_1],
+        urls: [
+            { name: "Emory ETD", link: "https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en" },
+            { name: "ProQuest", link: "xxxx" },
+            { name: "Study info", link: "gDrive" },
+         ],
+         citation: "Popa (2013). An Evolutionary Theory of Behavior Dynamics - Complexity, Darwinism, and the Emergence of High-Level Phenotypes. Doctoral Dissertation. Retrieved: https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en. ISBNxxxxxxxxxxxxxxx", 
     },
 
 
-    {
-        title: 'SpARC 2016', date: "04/01/2016",
-        role: "Study Coordinator (Senior Seminar, Choice and Preference)",
-        hiddenTags: ["Agnes Scott College"],
+
+
+    {id: 17, title: 'Multifinality and Equifinality in ETBD',  date: "05/24/2014", 
+        role: "SPEAKER (talk, ABAI 2014)",
+        keywords: ["ABAI 2014", "causation", "complexity"],
+        tags: [],
+        description: "Skinner (1981) suggested that natural selection operates not only at the biological level, but is also responsible for the evolution of behavioral repertoires throughout an organism’s lifetime. McDowell (2004) implemented the selectionist account in a computational theory of behavior dynamics. The theory causes a population of behaviors to evolve through time under the selection pressure exerted by the environment. It has been tested under a variety of conditions and the emergent outcomes were repeatedly  shown to be qualitatively and quantitatively indistinguishable from those displayed by live organisms (McDowell, in press). The present project investigated the effects of various environmental variables (e.g. reward magnitude) on the behavior variability of virtual organisms characterized by various mutation rates. High mutation rates produced behavioral constellations similar to those displayed by ADHD-diagnosed children. These effects were counteracted by arranging richer or more structured environments (higher changeover delay). Interestingly, arranging low-value environments caused organisms characterized by low mutation rates to display abnormally high levels of variability. These findings suggest that similar high-level phenotypes such ADHD may be caused by various combinations of organismic and environmental features (equifinality), during a dynamic process governed by Darwinian forces.",
+        img: [ABAI_2014_Chicago, ABAI_2014_Andrei],
+        urls: [{ name: "ABAI 2014", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=40586&by=ByArea#s30_0" }, ],
+        citation: "Popa, A., Calvin, N., & McDowell, J J. (2014). Multifinality and Equifinality in an Evolutionary Theory of Behavior Dynamics. Paper presented at the 40th Annual Convention of the Association for Behavior Analysis International, Chicago, IL.", 
+    },
+
+
+
+
+    {id: 18, title: 'Towards an Evolutionary Account for the Dynamics of Cognizant Systems', date: "02/13/2015", 
+        role: "SPEAKER (invited talk, Darwin Lectures, GSU)",
+        keywords: [],
+        tags: ["Darwin2015",  "invited talk", "conference"],
+        description: "",
+        img: [Darwin_2015],
+        urls: [
+            //{ name: "", link: "" }, 
+        ],
+        citation: "Popa, A. (2015). Towards an Evolutionary Account for the Dynamics of Cognizant Systems. Darwin Day Lecture Series, Georgia State University, Atlanta, GA.", 
+    },
+
+    {id: 19, title: 'Population Thinking, Psychodiversity, and Human Development', date: "02/09/2016", 
+        role: "SPEAKER (invited talk, Darwin Lectures, GSU)",
+        keywords: ["Darwin2016", "invited talk", "conference"],
+        tags: [],
+        description: "",
+        img: [Darwin_2016],
+        urls: [
+            //{ name: "", link: "" },
+         ],
+        citation: "Popa, A. (2016). Population Thinking, Psychodiversity, and Human Development. Darwin Day Lecture Series, Georgia State University, Atlanta, GA.", 
+    },
+
+
+    {id: 20, title: 'Behavioral Variability in ETBD', date: "03/01/2016",
+        role: "PRINCIPAL INVESTIGATOR (part of my thesis turned journal article)",
+        keywords: ["Popa & McDowell, 2016",],
+        tags: [""],
+        description: "McDowell’s evolutionary theory of behavior dynamics (McDowell, 2004) instantiates populations of behaviors (abstractly represented by integers) that evolve under the selection pressure of the environment in the form of positive reinforcement. Each generation gives rise to the next via low-level Darwinian processes of selection, recombination, and mutation. The emergent patterns can be analyzed and compared to those produced by biological organisms. The purpose of this project was to explore the effects of high mutation rates on behavioral variability in environments that arranged different reinforcer rates and magnitudes. Behavioral variability increased with the rate of mutation. High reinforcer rates and magnitudes reduced these effects; low reinforcer rates and magnitudes augmented them. These results are in agreement with live-organism research on behavioral variability. Various combinations of mutation rates, reinforcer rates, and reinforcer magnitudes produced similar high-level outcomes (equifinality). These findings suggest that the independent variables that describe an experimental condition interact; that is, they do not influence behavior independently. These conclusions have implications for the interpretation of high levels of variability, mathematical undermatching, and the matching theory. The last part of the discussion centers on a potential biological counterpart for the rate of mutation, namely spontaneous fluctuations in the brain’s default mode network.",
+        img: [],
+        urls: [
+            { name: "JEAB", link: "http://onlinelibrary.wiley.com/doi/10.1002/jeab.199/abstract" },
+            { name: "ResGate", link: "https://www.researchgate.net/publication/299382923_Behavioral_variability_in_an_evolutionary_theory_of_behavior_dynamics" },
+        ],
+        citation: "Popa, A., & McDowell, J, J. (2016). Behavioral Variability in an Evolutionary Theory of Behavior Dynamics. The Journal of the Experimental Analysis of Behavior, 105 (2), 270-290.",
+    },
+
+
+
+
+    {id: 21, title: 'SpARC', date: "04/01/2016",
+        time: "04/01/2016",
+        role: "STUDY COORDINATOR",
+        keywords: ["Agnes Scott College"],
         tags: ["VB.Net"],
-        description: "My second opportunity to run my own lab. ... Stimulus control and negative reinforcement in humans. ...The students from my senior seminar on The Dynamics of Choice and Preference contributed three talks and four posters to the Spring Annual Research Conference.",
+        description: "My second opportunity to run my own lab. ... (Senior Seminar, Choice and Preference) ... Stimulus control and negative reinforcement in humans. ...The students from my senior seminar on The Dynamics of Choice and Preference contributed three talks and four posters to the Spring Annual Research Conference.",
         img: [SpARC_01_Adekunle, SpARC_02_1_Tang, SpARC_06_1_Adekunle, SpARC_05_1_Forbes, SpARC_07_1_Shen, SpARC_10_1_Adekunle, SpARC_11_1_Shen, SpARC_12_1_Booher, SpARC_14_1_Shen, SpARC_15_1_Waithe, SpARC_16_1_Grissom],
         urls: [
             { name: "SpARC", link: "https://www.agnesscott.edu/sparc/index.html" },
             { name: "SpARC INDEX", link: "https://www.agnesscott.edu/sparc/" },
         ],
-        citation: "",
-        citations: [
+        //citation: "",
+        citation: [
             "Adekunle, O. & Popa, A. (2016). Higher Payoff or More Options? Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA. ",
 
             "Booher, C. & Popa, A. (2016). Choice Behavior in Unsignaled Environments With and Without Immediate Negative Feedback. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
@@ -242,297 +386,143 @@ var infoTimeline = [
 
 
 
+    {id: 22, title: 'Escape behavior on extinction', date: "02/19/2017",
+        time: "02/19/2017",
+        role: "SPEAKER (talk, WCALB 2017)",
+        keywords: ["WCALB 2017", "talk", "conference", "Utah"],
+        tags: ["VB.NET", "VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
+        citation: "Popa, A. & Grissom, M. K. (2017). Extinction-Induced Variability on Negatively Reinforced Human Behavior. Paper presented at the Winter Conference on Animal Learning & Behavior, Park City, UT.",
+        description: "A laboratory invstigation in the effects of positive and negative reinforcement on learning... Research conducted in 2016, at Agnes Scott College",
+        img: [wcalb2017_extinction08],
+        urls: [{ name: "WCALB 2017", link: "https://static1.squarespace.com/static/57b732f259cc68697145ea01/t/5b7dbd231ae6cf8700f3d604/1534967075831/Past+Programs+2017.pdf" },],
+    },
 
 
 
-    // {title: 'Behavioral Variability in ETBD', date: "03/01/2016",
-    //     role: "PRINCIPAL INVESTIGATOR",
-    //     hiddenTags: [],
-    //     tags: ["Popa & McDowell, 2016", "VB.NET",],
-    //     description: "",
-    //     img: [],
-    //     urls: [
-    //         { name: "JEAB", link: "http://onlinelibrary.wiley.com/doi/10.1002/jeab.199/abstract" },
-    //         { name: "ResGate", link: "https://www.researchgate.net/publication/299382923_Behavioral_variability_in_an_evolutionary_theory_of_behavior_dynamics" },
-    //     ],
-    //     citation: "Popa, A., & McDowell, J, J. (2016). Behavioral Variability in an Evolutionary Theory of Behavior Dynamics. The Journal of the Experimental Analysis of Behavior, 105 (2), 270-290.",
-    // },
+    {id: 23, title: 'Towards a Dynamic Account of Human Development',  date: "05/28/2017",
+        time: "05/28/2017",
+        role: "PRINCIPAL INVESTIGATOR (talk, ABAI 2017)",
+        keywords: ["ABAI 2017", "talk", "conference"],
+        tags: [],
+        description: "description",
+        // img: [ABAI_2017_1, ABAI_2017_2, ABAI_2017_3, ABAI_2017_4, ABAI_2017_5, ABAI_2017_6, ABAI_2017_7, ABAI_2017_8, ABAI_2017_9, ABAI_2017_10],
+        img: [ABAI_2017_5, ABAI_2017_6],
+        urls: [{ name: "ABAI 2017", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=53139&by=ByArea#s196_0" },],
+        citation: "Popa, A., (2017). Towards a Dynamic Account of Human Development. Paper presented at the 43rd Annual Convention of the Association for Behavior Analysis International, Denver, CO.",
+    },
 
 
 
+    {id: 24, title: 'Triangles!', date: "05/01/2018",
+        role: "PRINCIPAL INVESTIGATOR (<i>de facto</i>)",
+        keywords: [],
+        tags: ["VB.NET", "Python", "Pandas", "SciPy", "Matplotlib"],
+        description: "Effects of Personality Factors and Environmental Properties on the Variability and Organization of Behavioral and Cognitive Processes. A laboratory invstigation in the effects of positive and negative reinforcement on learning... (Emory University, Oxford College Campus, 2018; with Kenneth Carter) <br/> <br/>  Emory University,Oxford College, IRB00101193, AM1_IRB00101193  <br/> <br/>  <b><i>I am greateful to Dr. Anderson and Dr. Kenneth Carter for making this project possible. I also thank my research assistants, ... </b></i> ",
 
-
-
-    // {title: 'Population Thinking, Psychodiversity, and Human Development', date: "02/09/2016", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["Darwin2016", "invited talk", "conference"],
-    //     description: "",
-    //     img: [Darwin_2016],
-    //     urls: [{ name: "", link: "" }, ],
-    //     citation: "Popa, A. (2016). Population Thinking, Psychodiversity, and Human Development. Darwin Day Lecture Series, Georgia State University, Atlanta, GA.", 
-    // },
-
-
-
-
-
-    // {title: 'Towards an Evolutionary Account for the Dynamics of Cognizant Systems', date: "02/13/2015", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["Darwin2015",  "invited talk", "conference"],
-    //     description: "",
-    //     img: [Darwin_2015],
-    //     urls: [{ name: "", link: "" }, ],
-    //     citation: "Popa, A. (2015). Towards an Evolutionary Account for the Dynamics of Cognizant Systems. Darwin Day Lecture Series, Georgia State University, Atlanta, GA.", 
-    // },
-
-
-
-
-    // {title: 'More on complex causation: Multifinality and Equifinality', date: "05/24/2014", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["ABAI 2014", "causation", "complexity"],
-    //     description: "___",
-    //     img: [ABAI_2014_Chicago, ABAI_2014_Andrei],
-    //     urls: [{ name: "ABAI 2014", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=40586&by=ByArea#s30_0" }, ],
-    //     citation: "Popa, A., Calvin, N., & McDowell, J J. (2014). Multifinality and Equifinality in an Evolutionary Theory of Behavior Dynamics. Paper presented at the 40th Annual Convention of the Association for Behavior Analysis International, Chicago, IL.", 
-    // },
-
-
-
-
-    // {title: 'Complexity, Darwinism, and the Emergence of High-Level Phenotypes (like ADHD)', date: "12/24/2013", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["Doctor of Philosophy", "dissertation", "education", "deggree"],
-    //     role: "PRINCIPAL INVESTIGATOR",
-    //     description: ["VB.NET", "VBA/Excel"],
-    //     img: [],
-    //     urls: [
-    //         { name: "Emory ETD", link: "https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en" },
-    //         { name: "ProQuest", link: "xxxx" },
-    //         { name: "Study info", link: "xxxx" },
-    //      ],
-    //      citation: "Popa (2013). An Evolutionary Theory of Behavior Dynamics - Complexity, Darwinism, and the Emergence of High-Level Phenotypes. Doctoral Dissertation. Retrieved: https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en. ISBNxxxxxxxxxxxxxxx", 
-    // },
-
-
-
-
-    // {title: 'Expert Panel: Neurotechnologies that Penetrate the Mind', date: "11/2013", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["GaTech 2013",  ],
-    //     description: "Georgia Institute of Technology (2013)",
-    //     img: [],
-    //     urls: [{ name: "", link: ""}, ],
-    //     citation: "" 
-    // },
-
-
-
-
-    // {title: 'Complexity, Emergence, and the Behavior of Organisms', date: "05/26/2013", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["ABAI 2013",  ],
-    //     description: "",
-    //     img: [ABAI_2013_01_slide, ABAI_2013_05_slide, ABAI_2013_Popa_McDowell_Calvin_1],
-    //     urls: [{ name: "ABAI 2013", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=28880&by=ByArea#s166_0" }, ],
-    //     citation: "Popa, A., Calvin, N., & McDowell, J J. (2013). Complexity, Emergence, and the Behavior of Organisms. Paper presented at the 39th Annual Convention of the Association for Behavior Analysis International, Minneapolis, MN." 
-    // },
-
-
-
-
-    // {title: 'From bit strings to ADHD', date: "05/26/2012", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["ABAI 2012"],
-    //     description: "",
-    //     img: ["-----"],
-    //     urls: [{ name: "ABAI 2012", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=17728&by=ByArea#s28_0" }, 
-    //     { name: "ResearchGate", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=17728&by=ByArea#s28_0" }, ],
-    //     citation: "Popa, A., & McDowell, J J. (2012). The Computational Theory of Behavior Dynamics Predicts Effects of COD on Behavioral Variability: Evidence from experiments with human participants. Paper presented at the 38th Annual Convention of the Association for Behavior Analysis International, Seattle, WA." 
-    // },
-
-
-
-
-
-    // {title: 'Social Entanglementnntmtntmtntntnt', date: "05/10/2012",
-    //     role: "Study Coordinator (as O.R.D.E.R. fellow)",
-    //     hiddenTags: [],
-    //     tags: ["David Lynn, ", " ---- ---  "],
-    //     description: "On Recent Discoveries by Emory Researchers, or ORDER, is a  ... fellowship ...  Course: Complexity and Emergence: Implications for Psychology ... Teacher/Scholar Fellowship; Research Project: Conformity at a Distance; ... Howard Hughes Teacher/Scholar Award; ...  Fellowship Advisory Board",
-    //     img: [],
-    //     citation: "find manuscript.",
-    //     urls: [
-    //         { name: "O.R.D.E.R.", link: "http://www.order.emory.edu/about/index.html" },
-    //         { name: "Google Drive", link: "xxx" },
-    //     ],
-    // },
-
-
-
-
-    {
-        title: 'Bivariate Matching', date: "03/01/2012",
-        hiddenTags: [],
-        tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
-        role: "CO-INVESTIGATOR",
-        description: "Virtual organisms animated by a selectionist theory of behavior dynamics worked on concurrent random interval schedules where both the rate and magnitude of reinforcement were varied. The selectionist theory consists of a set of simple rules of selection, recombination, and mutation that act on a population of potential behaviors by means of a genetic algorithm.An xtension of the power function matching equation, which expresses behavior allocation as a joint function of exponentiated reinforcement rate and reinforcer magnitude ratios, was fitted to the virtual organisms’ data, and over a range of moderate mutation rates was found to provide an excellent description of their behavior without residual trends.The mean exponents in this range of mutation rates were 0.83 for the reinforcement rate ratio and 0.68 for the reinforcer magnitude ratio, which are values that are comparable to those obtained in experiments with live organisms.These findings add to the evidence supporting the selectionist theory, which asserts that the world of behavior we observe and measure is created by evolutionary dynamics.",
-        //img: [bivariate2012_01, bivariate2012_02],
-        img: [bivariate2012_02],
+        img: [Pos01_1_pos, Neg04_1_neg, Trn04_2_pos, Trn04_3_neg, Trn04_4_ext],
 
         urls: [
-            { name: "NCBI/Pubmed", link: "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/" },
-            { name: "ResGate", link: "https://www.researchgate.net/publication/231176507_Selection_dynamics_in_joint_matching_to_rate_and_magnitude_of_reinforcement" },
+            {name: "gDrive", link:"gDrive"},
         ],
-        citation: "McDowell, J, J., Popa, A., & Calvin, N. (2012). Selection Dynamics in Joint Matching to Rate and Magnitude of Reinforcement. Journal of the Experimental Analysis of Behavior, 98, 199-212.",
+
+        citation: "(Emory University, Oxford College Campus, 2018)"
     },
 
 
 
 
-    // {title: 'Discussion Panel', date: "08/2011", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["Emory University",  ],
-    //     description: "Teaching Assistant Training and Teaching Opportunity (T.A.T.T.O.), Emory University, Laney Graduate School (2011)",
-    //     img: [],
-    //     urls: [{ name: "", link: ""}, ],
-    //     citation: "" 
-    // },
-
-
-
-
-    // {title: 'Impulsivity in ETBD', date: "05/30/2011", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["ABAI 2011", "ETBD", "ADHD"],
-    //     description: "Hamming Distances and mutation rates; also, preliminary human data",
-    //     img: ["___"],
-    //     urls: [{ name: "ABAI 2011", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=13494&by=ByArea#s445_0" }, ],
-    //     citation: "Popa, A., & McDowell, J J. (2011). A Computational Model of Selection by Consequences: Evidence that Mutation is Computationally Equivalent to Impulsivity. Paper presented at the 37th Annual Convention of the Association for Behavior Analysis International, Denver, CO.", 
-    // },
-
-
-
-
-    // {title: 'Toward a mechanics of adaptive behavior', date: "12/01/2010",
-    //     role: "CO-INVESTIGATOR",
-    //     hiddenTags: [],
-    //     tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
-    //     description: "xxxx",
-    //     img: [],
-    //     urls: [
-    //         { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/20152891" },
-    //         { name: "JEAB ?? ", link: "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2929088/" },
-    //         { name: "ResGate", link: "https://www.researchgate.net/publication/50937156_Toward_a_Mechanics_of_Adaptive_Behavior_Evolutionary_Dynamics_and_Matching_Theory_Statics" },
-    //     ],
-    //     citation: "McDowell, J. J, & Popa, A. (2010). Toward a mechanics of adaptive behavior: Evolutionary dynamics and matching theory statics. Journal of the Experimental Analysis of Behavior, 94, 241-260.",
-    // },
-
-
-
-    // {title: 'Hamming Distances and Changeover Delays', date: "08/01/2010",
-    //     tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection", ],
-    //     role: "PRINCIPAL INVESTIGATOR",
-    //     hiddenTags: [],
-    //     description: "My M.A. project (December 2009) and my first peer-reviewed publication as first author",
-    //     img: [],
-    //     urls: [
-    //         { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/20152891" },
-    //         { name: "ReshGate", link: "https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences" },
-    //         { name: "Emory ETD", link: "https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en" },
-    //         { name: "ProQuest", link: "xxx" },
-    //         { name: "SQAB 2009", link: "xxx" }
-    //     ],
-    //     citation: ["Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434.", "Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX."]
-    // },
-
-
-
-    // {title: 'Beyond the molar-molecular debate', date: "05/31/2010", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["ABAI 2010", "talk",  "conference"],
-    //     description: "Complex causation, or beyond the molar-molecular debate (ABAI 2010)",
-    //     img: [],
-    //     urls: [{ name: "___", link: "___" }, ],
-    //     citation: "Popa, A., & McDowell, J J. (2010). Evolutionary Behavior Dynamics causally generates both molar and molecular properties of behavior. Symposium: The Molar-Molecular debate: A further discussion on the unresolved issue. Discussant: William M. Baum, Ph.D. Presented at the 36th Annual Convention of the Association for Behavior Analysis International, San Antonio, TX.", 
-    // },
-
-
-
-    // {title: 'Absolute reinforcement rates in ETBD', date: "05/30/2010", 
-    //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["SQAB 2010", "poster",  "conference"],
+    // {title: 'Writing with purpose', id: 25, date: "05/02/2018",
+    //     role: "SPEAKER",
+    //     tags: [],
     //     description: "",
     //     img: [],
-    //     urls: [{ name: "", link: "" }, ],
-    //     citation: "Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX.", 
+    //     urls: [
+    //         //{name: "xxx", link:"xxx"},
+    //         //{name: "xxx", link: "xxx"}
+    //     ],
+    //     citation: "(Emory University, Oxford College Campus, 2018)"
     // },
 
 
 
-    // // // {title: 'Master of Arts', date: "20/12/2009", 
-    // // //     tags: ["Master of Arts", "COMMITTEE", "Hamming Distance", "education", "deggree"],
-    // // //     description: "M.A. in Psychology, Cognition and Development Program, Emory University; The Effects of Hamming Distances in a Computational Model of Selection by Consequences",
-    // // //     img: ["___"],
-    // // //     urls: [{ name: "___", link: "___" }, ],
-    // // //     citation: "", 
-    // // // },
+
+    // {title: 'ETBD.py', id: 26, date: "09/15/2018",
+    //     role: "PRINCIPAL INVESTIGATOR",
+    //     keywords: [],
+    //     tags: ["Python", "SciPy", "SQLite", "Postgres"] ,
+    //     description: "This evolutionary theory of behavior dynamics is similar to the one described in McDowell (2004). ... ",
+    //     img: [placeholder, placeholder],
+    //     urls: [
+    //         //{name: "xxx", link:"xxx"},
+    //         //{name: "GitHub", link: "xxx"}
+    //     ],
+    //     citation: "Get a DOI    2018)",
+    // },
 
 
 
-    // {title: 'Wolfram, Complexity, and a New Kind of Science', date: "07/01/2009",
+
+    {id: 27, title: 'Imperfect Automata',  date: "09/30/2019",
+        role: "",
+        keywords: [],
+        tags: ["Python", "Tkinter"],
+        description: "Unlike biological systems, automata are deterministic systems, governed by precise rules. The question examined here was: what if every new cell has a small probability to be written incorrectly, i.e. to mutate from 0 to 1 or viceversa. ... Low mutation probabilities facilitated the emergence of new patterns and structures, disconnected from the initial conditions.", 
+        img: [projectAutomata1],
+        urls: [
+            { name: "PsyArXiv", link: "https://psyarxiv.com/wgp4e/" },
+            { name: "GitHub", link: "https://github.com/ap-dev1/automata/" },
+            { name: "ResGate", link: "https://www.researchgate.net/publication/336143797_Imperfect_Automata_Effects_of_mutation_on_the_evolution_of_automaton_01101110_Rule_110" }
+        ],
+        citation: "Popa, Andrei. 2019. “Imperfect Automata: Effects of “mutation” on the Evolution of Automaton 01101110 (rule 110)” PsyArXiv. September 30. doi:10.31234/osf.io/wgp4e.",
+    },
+
+
+
+    {id: 28, title: 'The Emergence of You', date: "09/08/2019",
+        time: "09/08/2019",
+        role: "PRINCIPAL INVESTIGATOR",
+        keywords: [],
+        tags: ["Problem Solving"],
+        description: "Physical forces acting on particles explain how physical systems change over time. Evolutionary forces acting on populations of genomes explain change in the genetic structure of populations across generations. Change in psychological systems - i.e. human development, or learning - is not yet understood. Although dynamic principles have been proposed, their target remained vaguely defined. What are such principles acting on, what kind of empirical transformations do they cause, and how do these transformations explain development?",
+        img: [projectPsych],
+        urls: [
+            { name: "PsyArXiv", link: "https://psyarxiv.com/m87an/" },
+            { name: "ResGate", link: "https://www.researchgate.net/publication/335688963_Psychology_20_The_Emergence_of_Individuality" },
+        ],
+        citation: "Popa, Andrei. 2019. “Psychology 2.0: The Emergence of Individuality.” PsyArXiv. September 8. doi:10.31234/osf.io/m87an.",
+    },
+
+
+
+
+    // {title: 'Courses Tought', id: 29, date: "2008 - 2018", 
     //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection"],
-    //     role: "CO-INVESTIGATOR",
-    //     description: "An exploration of complexity and emergence, and their relevance to behavior analysis.",
+    //     keywords: [],
+    //     tags: ["", "", ""],
+    //     description: "Emory University, 2008 - 2012; <br/>  TATTO , Statistics Lab (Spring 2008); <br/> Research Methods Lab (Fall 2008); <br/> Behavior Modification (for Jack McDowell; Fall 2010, 2011, 2012); <br/> Introduction to Psychology (for Scott Lilienfeld; Fall 2011) <br/> The Evolution of Acquired Behavior, Emory University; my first course (N ~ 50)   <br/>      Visiting Lecturer, Georgia State University; <br/>  Theories of Personality (14 sections); <br/>  Abnormal Psychology (8 sections); <br/>  Introduction to Psychology (8 sections) <br/>   Visiting Assistant Professor of Psychology, Agnes Scott College; <br/>  Senior Seminar: Choice and Preference; <br/>  Introduction to Sociology; <br/>  Research Methods and Design;  <br/>  Introduction to Psychology <br/>  Adjunct Assistant Professor of Psychology, Emory University, Oxford College; <br/>  Introduction to Psychology; <br/> Introduction to Psychobiology",
     //     img: [],
     //     urls: [
-    //         { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/19429227" },
-    //         { name: "ResGate", link: "https://www.researchgate.net/publication/24414894_Beyond_continuous_mathematics_and_traditional_scientific_analysis_Understanding_and_mining_Wolfram's_A_New_Kind_of_Science" },
+    //         //{ name: "___", link: "___" }, 
     //     ],
-    //     citation: "McDowell, J. J, & Popa, A. (2009). Beyond continuous mathematics and traditional scientific analysis: Understanding and mining Wolfram's A new kind of science. Behavioural Processes, 81, 343-352.",
+    //     citation: "___", 
     // },
 
 
-
-    // {title: 'Emory Talk 2009', date: "05/02/2009", 
+    // {title: 'Continuous Education', id: 31, date: "2018...", 
     //     role: "",
-    //     hiddenTags: [],
-    //     tags: ["ETBD", "talk", "conference"],
-    //     hiddenTags: [],
-    //     description: "OVERVIEW_OF_ETBD",
-    //     img: [],
-    //     urls: [{ name: "", link: "" }, ],
-    //     citation: "Emory University, Department of Psychology, Annual Research Festival. Atlanta, GA",
-    // },
-
-
-
-    // {title: 'A chapter beggins', date: "08/15/2007", 
-    //     role: "",
-    //     hiddenTags: [],
+    //     keywords: [],
     //     tags: [],
-    //     description: "I started my work on mathematical and computational models of adaptive behavior (Emory University, McDowell's lab)",
+    //     description: "Data Science with Python track (DataCamp, 2018)<br> Python Bootcamp (Udemy, 2018)<br> Machine Learning by Stanford University (Coursera, 2018)<br>SQL Bootcamp (Udemy, 2019)",
+    //     //thumbnail:"",
     //     img: [],
-    //     citation: "",
-    //     urls: [{ name: "", link: "" },],
+    //     urls: [
+    //         //{ name: "___", link: "___" }, 
+    //     ],
+    //     citation: "", 
     // },
 
 
 
 ]
-
 
 export default infoTimeline;

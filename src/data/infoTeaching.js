@@ -3,6 +3,20 @@
 
 var infoTeaching = [
 
+        // {title: 'TATTO workshop', id: 10, date: "08/2011", 
+    //     role: "CO-TEACHER",
+    //     keywords: [],
+    //     tags: ["Emory University",  ],
+    //     description: "Teaching Assistant Training and Teaching Opportunity (T.A.T.T.O.), Emory University, Laney Graduate School (2011)",
+    //     img: [],
+    //     urls: [{ name: "", link: ""}, ],
+    //     citation: "" 
+    // },
+
+
+
+
+
     {
         id: 1,
         name: "intro",

@@ -7,6 +7,7 @@ import ReadMore from "./ReadMore";
 import ImagesCarousel from "./ImagesCarousel";
 
 import "../styles/timeline.sass"
+
 import "../styles/project.sass"
 import "../styles/carousel.sass"
 
@@ -16,15 +17,10 @@ import infoTimeline from "../data/infoTimeline"
 
 
 
+
 const MyTimeline = props => {
 
     let { events, orientation, startFrom } = props;
-
-    if (startFrom === 'last') {
-        events = events.reverse();
-    }
-
-    events = infoTimeline
 
     var goToLink = (e) => {
         e.preventDefault()
@@ -37,63 +33,115 @@ const MyTimeline = props => {
     const eventsMappedToElements = events.map((e, i) => {
 
 
-        // TAGS, IMAGES, BUTTONS, -----------------------------------------
-        var Buttons = e.urls.map((item) => (
-            <button
-                id={item.link}
-                title={item.link}
-                onClick={goToLink}
-            >{item.name}
-            </button>
-        ))
+        // var Buttons = e.urls.map((item) => (
+        //     <button
+        //         id={item.link}
+        //         title={item.link}
+        //         onClick={goToLink}
+        //     >{item.name}
+        //     </button>
+        // ))
 
-        // var Images = e.img.map((item) => {
-        //     if (!null) {
-        //         console.log(e)
-        //     }
-        //     return (
-        //         <img src={item}
-        //             alt={item.title}
-        //             title={item.imgTitle}
-        //             style={{ maxWidth: 300 / e.img.length, minWidth: 150, margin: '.1rem' }}
-        //             className="imgZoom"
-        //         ></img>
-        //     )
-        // })
+        var Links = null;
+        if (e.urls.length > 0) {
+            Links = e.urls.map((item) => (
+                <button
+                    id={item.link}
+                    title={item.link}
+                    onClick={goToLink}
+                >{item.name}
+                </button>
 
+            ))
 
+        }
+
+        
         var Tags = e.tags.map((item) => (
-            <label >{item}</label>
+            <label >{parse(item)}</label>
         ))
-
-
 
         var myDescription = parse(e.description)
 
+
+        if (e.id === -1) {
+            return (
+                <div
+                    style={{
+                        padding: '0px 175px',
+                        position: 'relative',
+                    }}
+                    key={e.id}
+                    id={e.time}
+                //content1={e.date.slice(-7)}
+                //content1={e.date}
+                >
+
+                    <div
+                        className='timelineContent'
+                        style={{
+                            border: '1px solid #999',
+                            backgroundColor: '#f2f4f8',
+                            opacity: 1,
+                            color: '#444',
+                            borderRadius: '1rem',
+                        }}>
+                        <div>
+
+                            <span
+                                className="title"
+                                style={{
+                                    fontSize: '1.2rem',
+                                    textAlign: 'center',
+                                    color: '#333',
+                                    margin: '2rem'
+                                }}
+                            >
+                                {parse(e.title)}
+                            </span>
+
+                            <p style={{
+                                fontSize: '.8rem',
+                                fontFamily: 'Roboto, sans-serif',
+                                lineHeight: '1.3rem',
+                                maxWidth: '700px',
+                                margin: '0rem 0rem 1rem 3rem'
+
+                            }}
+                            >{myDescription}</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            )
+        }
+
         return (
 
-            <div className="timelineItem right"
-                key={e.date}
-                content1={e.date.slice(-7)}>
+            <div className='timelineItem right'
+                key={e.time}
+                id={e.time}
+                //content1={e.date.slice(-7)}
+                content1={e.date}>
 
                 <div className='timelineContent'>
                     <div className='projectColumnLeft'>
-                        <span className="title">{e.title}</span>
+                        <span className="title">{parse(e.title)}</span>
 
                         <ReadMore
-                            id="descrp"
-                            overview={myDescription}
-                            maxChars={200} />
-
-                        <ReadMore
-                            id="role"
                             overview={e.role}
                             maxChars={50}
                         />
 
+                        <ReadMore
+                            overview={myDescription}
+                            maxChars={200} />
+
+
                         <div className="projectTags">{Tags}</div>
 
-                        <div className="projectLinks">{Buttons}</div>
+                        <div className="projectLinks">{Links}</div>
 
                     </div>
 
@@ -101,7 +149,7 @@ const MyTimeline = props => {
                         <ImagesCarousel props={e.img} />
 
                         <ReadMore
-                            id='caption1'
+                            //id='caption1'
                             overview={parse(e.citation)}
                             maxChars={100}
                         // style={{color: '#fff', backgroundColor: 'blue'}} 
@@ -119,9 +167,7 @@ const MyTimeline = props => {
 
         <div id='MyTimeline'>
 
-        
             <h1 >Professional Trajectory</h1>
-
 
             <div className="vertical">
                 {eventsMappedToElements}
@@ -139,7 +185,7 @@ MyTimeline.propTypes = {
         PropTypes.shape({
             time: PropTypes.string.isRequired,
             title: PropTypes.string.isRequired,
-            desc: PropTypes.string.isRequired
+            //desc: PropTypes.string.isRequired
         })
     ).isRequired,
     orientation: PropTypes.oneOf(["horizontal", "vertical"]).isRequired,
@@ -150,7 +196,8 @@ MyTimeline.propTypes = {
 
 MyTimeline.defaultProps = {
     orientation: "vertical",
-    startFrom: "last"
+    startFrom: "first",
+    events: infoTimeline
 };
 
 

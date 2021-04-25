@@ -9,7 +9,7 @@ class RecentProjects extends Component {
         return (
 
             <div id='RecentProjects'>
-                <h1>Recent Activity</h1>
+                <h1>Recent</h1>
 
                 <div className="recentRow">
                     {infoRecent.map((project) => (

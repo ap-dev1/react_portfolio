@@ -17,12 +17,15 @@ function ImagesCarousel({ props }) {
 
         return (
 
-            <Carousel.Item  >
+            <Carousel.Item  key={item.imgTitle} id={item.imgTitle}>
                 <img
                     src={item}
                     alt={item.title}
                     title={item.imgTitle}
                     style={{ maxWidth: 300 }}
+                    key={item.imgTitle}
+                    id={item.imgTitle}
+                    
                     //className='imgZoom'
                 />
 

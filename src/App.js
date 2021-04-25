@@ -32,7 +32,7 @@ class App extends Component {
                 <MyTimeline 
                     events={infoTimeline}
                     orientation = "vertical"
-                    startFrom = "last"
+                    startFrom = "first"
                     />
                 
 

@@ -7,7 +7,7 @@ class NavMain extends Component {
 
     toAbout = (e) => {
         e.preventDefault()
-        document.getElementById('About').scrollIntoView({ block: 'end', behavior: 'smooth' })
+        document.getElementById('About').scrollIntoView({ block: 'start', behavior: 'smooth' })
     };
 
     toRecent = (e) => {
@@ -20,6 +20,10 @@ class NavMain extends Component {
         document.getElementById('MyTimeline').scrollIntoView({ block: 'start', behavior: 'smooth' })
     };
 
+    toContact = (e) => {
+        e.preventDefault()
+        document.getElementById('Contact').scrollIntoView({ block: 'start', behavior: 'smooth' })
+    };
 
     render() {
         return (
@@ -36,7 +40,12 @@ class NavMain extends Component {
                 <button id='btnTimeline'
                     onClick={this.toTimeline}
                     title="Professional trajectory">Timeline</button>
-                    
+
+                <button id='btnContact'
+                    onClick={this.toContact}
+                    title="Contact info">Contact</button>
+
+
             </div>
         );
     }

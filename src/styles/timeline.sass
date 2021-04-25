@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Lato&family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Josefin+Sans&family=Lato&family=Open+Sans&display=swap')
 
 $totalWidth: 90%
 $itemWidth: 90%
@@ -6,21 +10,28 @@ $leftMargin: 10%
 $beforeBorder: #e45a10
 $triangleLeft: #880e4f
 $specialColor: #02aab0
+$specialColor1: #03767a
 
 $backgroundColor: #fff
 $timelineColor: #333
 
-$circleBackground: #81d0f5 // 83c2d5
+// $circleBackground: #81d0f5 // 81d0f5, 83c2d5  
+$circleBackground: #81d0f5 // 81d0f5, 83c2d5  
 $circleBorder: #333 //14213d 0b5970
 
 $contentColor: #fff
 //$_bacground_1: #edf9fe
 $dateColor: #14213d
 
+$light-grey: #f2f4f8
+$dark-grey: #222
+
+
+
 .time
     display: inline-block
     width: 100%
-    font-size: 14px
+    font-size: 13px
     margin-bottom: 0px
 
 .title
@@ -28,11 +39,19 @@ $dateColor: #14213d
     width: 100%
     font-size: 16px
     color: #000
-    margin-top: 15px
-    margin-bottom: 15px
-
+    margin-top: 10px
+    // margin-bottom: 15px
+    margin-bottom: 0px
     text-align: left
-    font-family: Roboto
+    // font-family: Roboto
+    font-weight: 400
+    // font-family: Montserrat, sans-serif
+    font-family: Montserrat, sans-serif
+
+// .narrative
+//     font-weight: 400
+//     font-family: Montserrat, sans-serif
+//     font-family: Lato, sans-serif
 
 .desc
     margin: 0
@@ -58,10 +77,16 @@ $dateColor: #14213d
     transition: ease-in
     transition-duration: 3s
     font-family: Roboto
-    
+    position: relative
+    //width: $totalWidth
+    //left: 5%
+    background-color: $backgroundColor
+
     > h1
         color: #fff
-        background-image: linear-gradient(to bottom, #009297, #02aab0, #fff)
+        //background-image: linear-gradient(to bottom, #009297, #02aab0, #fff)
+        background-image: linear-gradient(to bottom,  #03767a  , #009297, #02aab0, #fff)
+
         font-weight: 400
         width: 100%
         text-align: center
@@ -71,24 +96,18 @@ $dateColor: #14213d
         padding-bottom: 4rem
         font-family: Roboto
 
-
-
-
-
-/*  VERTICAL  */
-
 .vertical
     position: relative
     width: $totalWidth
     left: 5%
-    //padding: 15px
     background-color: $backgroundColor
 
 .vertical:after
     content: ""
     position: absolute
-    width: 2px
-    background-color: $timelineColor
+    width: 1px
+    // background-color: $timelineColor
+    background-color: #999
     top: 0
     bottom: 0
     left: $leftMargin
@@ -104,7 +123,7 @@ $dateColor: #14213d
 .vertical .timelineContent
     background-color: $contentColor
     padding: 0px
-    color: #333
+    //color: #333
     font-family: Roboto
     font-size: 13px
     display: flex
@@ -130,12 +149,22 @@ $dateColor: #14213d
     z-index: 1
     content: ""
     position: absolute
-    width: 20px
-    height: 20px
-    background-color: $circleBackground
-    border: 3px solid $circleBorder
-    top: 19px
     border-radius: 50%
+
+    // width: 20px
+    // height: 20px
+    // background-color: $circleBackground
+    // border: 3px solid $circleBorder
+    // top: 19px
+    width: 12px
+    height: 12px
+    //background-color: #999
+    // border: 1px solid $circleBorder
+    border: 1px solid #999
+    background-color: $light-grey
+    //opacity: .6
+    top: 20px
+
 
 .vertical .timelineItem.right
     left: $leftMargin
@@ -144,26 +173,25 @@ $dateColor: #14213d
     left: 35px
     border-width: 10px 10px 10px 0
     border-color: transparent $triangleLeft transparent transparent
+    color: #555
+    text-align: left
 
 .vertical .timelineItem.right::after
-    left: -5px
+    left: -1px
     max-width: 30px
 
-
-
- 
 //  @media screen and (max-width: 768px) 
 //     .container:before 
 //        left: 8px
 //        width: 2px
-    
+
 //     .timeline-block 
 //        width: 100%
 //        margin-bottom: 30px
-    
+
 //     .timeline-block-right 
 //        float: none
-    
+
 //     .timeline-block-left 
 //        float: none
 //        direction: ltr
