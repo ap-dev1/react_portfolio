@@ -54,15 +54,22 @@ import SpARC_15_1_Waithe from "../assets/sparc2016/SpARC_15_1_Waithe.png"
 
 import SpARC_16_1_Grissom from "../assets/sparc2016/SpARC_16_1_Grissom.png"
 
-// import chalkboard2 from "../assets/chalkboard2.png"
+import ABAI_2010_event from "../assets/ABAI_2010_event.png"
 
-import ABAI_2010_event from "../assests/ABAI_2010_event.png"
-import ABAI_2011_event from "../assests/ABAI_2011_event.png"
-import ABAI_2012_event from "../assests/ABAI_2012_event.png"
-import mcdowell_popa_2010_paper from "../assests/mcdowell_popa_2010_paper.png"
+
+import ABAI_2011_event from "../assets/ABAI_2011_event.png"
+import ABAI_2012_event from "../assets/ABAI_2012_event.png"
+import mcdowell_popa_2010_paper from "../assets/mcdowell_popa_2010_paper.png"
 import bivariate_mcdowell_popa_calvin from "../assets/bivariate_mcdowell_popa_calvin.png"
 import etbd_adhd_slide_1 from "../assets/etbd_adhd_slide_1.png"
 import phd_committee from "../assets/phd_committee.png"
+
+import ow02 from "../assets/2018_oxford_writing/ow02.png"
+import ow03 from "../assets/2018_oxford_writing/ow03.png"
+import ow07 from "../assets/2018_oxford_writing/ow07.png"
+import ow08 from "../assets/2018_oxford_writing/ow08.png"
+import ow09 from "../assets/2018_oxford_writing/ow09.png"
+
 
 
 var gDrive = "https://drive.google.com/drive/folders/1d6QlunZ_zh-mTXB1H2u0C5DQC7Vjmq5U?usp=sharing"
@@ -127,13 +134,13 @@ var infoTimeline = [
 
 
 
-    // // // {title: 'Master of Arts', id: 4, date: "20/12/2009", 
-    // // //     tags: ["Master of Arts", "COMMITTEE", "Hamming Distance", "education", "deggree"],
-    // // //     description: "M.A. in Psychology, Cognition and Development Program, Emory University; The Effects of Hamming Distances in a Computational Model of Selection by Consequences",
-    // // //     img: ["___"],
-    // // //     urls: [{ name: "___", link: "___" }, ],
-    // // //     citation: "", 
-    // // // },
+    // // // // {title: 'Master of Arts', id: 4, date: "20/12/2009", 
+    // // // //     tags: ["Master of Arts", "COMMITTEE", "Hamming Distance", "education", "deggree"],
+    // // // //     description: "M.A. in Psychology, Cognition and Development Program, Emory University; The Effects of Hamming Distances in a Computational Model of Selection by Consequences",
+    // // // //     img: ["___"],
+    // // // //     urls: [{ name: "___", link: "___" }, ],
+    // // // //     citation: "", 
+    // // // // },
 
 
     {title: 'Absolute reinforcement rates in ETBD', id: 5, date: "05/30/2010", 
@@ -160,7 +167,7 @@ var infoTimeline = [
     },
 
 
-    {title: 'Hamming Distances and Changeover Delays', id: 7, date: "08/01/2010",
+    { id: 7, title: 'Hamming Distances and Changeover Delays', date: "08/01/2010",
         tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection", ],
         role: "PRINCIPAL INVESTIGATOR (my masters thesis turned in journal article)",
         keywords: [],
@@ -173,7 +180,8 @@ var infoTimeline = [
             { name: "ProQuest", link: "xxx" },
             { name: "SQAB 2009", link: "xxx" }
         ],
-        citation: ["Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434.", "Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX."]
+        citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434. <br/> Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX."
+        // citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434."
     },
 
 
@@ -268,7 +276,7 @@ var infoTimeline = [
     },
 
 
-    {title: 'Neurotechnologies that Penetrate the Mind', id: 15, date: "11/2013", 
+    {id: 15, title: 'Neurotechnologies that Penetrate the Mind', date: "11/2013", 
         role: "EXPERT PANEL",
         keywords: ["GaTech 2013",  ],
         tags: [],
@@ -282,11 +290,11 @@ var infoTimeline = [
     },
 
 
-    {title: 'Complexity, Darwinism, and the Emergence of High-Level Phenotypes (like ADHD)', id: 16, date: "12/24/2013", 
+    {id: 16, title: 'Complexity, Darwinism, and the Emergence of High-Level Phenotypes (like ADHD)',  date: "12/24/2013", 
         keywords: ["Doctor of Philosophy", "dissertation", "education", "deggree"],
         tags: ["synthetic data", "human data"],
         role: "PRINCIPAL INVESTIGATOR",
-        description: ["McDowell (2004) instantiated low-level Darwinian processes in a computational theory of behavior dynamics. The theory causes a population of behaviors to evolve through time under the selection pressure of the environment. It has been tested under a variety of conditions and the emergent outcomes were repeatedly shown to be qualitatively and quantitatively indistinguishable from those displayed by live organisms (McDowell, in press). As empirical evidence accumulates and our understanding of the theory matures, the analogy between biological and behavioral evolution becomes more compelling. Expanding the exploration of this analogy becomes both necessary and fascinating. The main purpose of this project was to explore the effects of mutation and the environment's value and conduciveness on various dimensions of behavioral variability, in continuous choice environments. Secondly, qualitative predictions made by the Evolutionary Theory about the effects of changeover delays (COD) on behavior variability were verified against the behavior of college students in equivalent environments. The continuous choice behavior of college students was correctly predicted on eight out of eight behavioral dimensions. Thirdly, low-level characteristics of students' continuous choice behavior were compared with traditional measures of impulsivity and sustained attention, in an effort to investigate the potential equivalence between mutation and a property of the nervous system that produces impulsivity-like symptoms. The results were inconclusive, likely due to a lack of extreme impulsivity scores in the human sample. The findings presented in this paper provided significant additional evidence for the selectionist account as a valid mechanism of behavior change. In addition, the knowledge generated by the Evolutionary Theory provided important insights about clinically-relevant phenomena, such as disordered variability (or impulsivity) and raise the possibility of using the theory as a platform for simulating the emergence of specific high-level phenotypes. These implications appear even more fascinating considering that a connection with mental health was not explicitly sought, nor can it be traced to the inner-workings of the theory. This challenges our current understanding of mental illness and provides a new way of thinking about the evolution of behavioral repertoires and their emergent high-level characteristics."],
+        description: "McDowell (2004) instantiated low-level Darwinian processes in a computational theory of behavior dynamics. The theory causes a population of behaviors to evolve through time under the selection pressure of the environment. It has been tested under a variety of conditions and the emergent outcomes were repeatedly shown to be qualitatively and quantitatively indistinguishable from those displayed by live organisms (McDowell, in press). As empirical evidence accumulates and our understanding of the theory matures, the analogy between biological and behavioral evolution becomes more compelling. Expanding the exploration of this analogy becomes both necessary and fascinating. The main purpose of this project was to explore the effects of mutation and the environment's value and conduciveness on various dimensions of behavioral variability, in continuous choice environments. Secondly, qualitative predictions made by the Evolutionary Theory about the effects of changeover delays (COD) on behavior variability were verified against the behavior of college students in equivalent environments. The continuous choice behavior of college students was correctly predicted on eight out of eight behavioral dimensions. Thirdly, low-level characteristics of students' continuous choice behavior were compared with traditional measures of impulsivity and sustained attention, in an effort to investigate the potential equivalence between mutation and a property of the nervous system that produces impulsivity-like symptoms. The results were inconclusive, likely due to a lack of extreme impulsivity scores in the human sample. The findings presented in this paper provided significant additional evidence for the selectionist account as a valid mechanism of behavior change. In addition, the knowledge generated by the Evolutionary Theory provided important insights about clinically-relevant phenomena, such as disordered variability (or impulsivity) and raise the possibility of using the theory as a platform for simulating the emergence of specific high-level phenotypes. These implications appear even more fascinating considering that a connection with mental health was not explicitly sought, nor can it be traced to the inner-workings of the theory. This challenges our current understanding of mental illness and provides a new way of thinking about the evolution of behavioral repertoires and their emergent high-level characteristics.",
         img: [ phd_committee , etbd_adhd_slide_1],
         urls: [
             { name: "Emory ETD", link: "https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en" },
@@ -358,28 +366,16 @@ var infoTimeline = [
         role: "STUDY COORDINATOR",
         keywords: ["Agnes Scott College"],
         tags: ["VB.Net"],
-        description: "My second opportunity to run my own lab. ... (Senior Seminar, Choice and Preference) ... Stimulus control and negative reinforcement in humans. ...The students from my senior seminar on The Dynamics of Choice and Preference contributed three talks and four posters to the Spring Annual Research Conference.",
+        description: "My second opportunity to run my own lab. ... (Senior Seminar, Choice and Preference) ... Stimulus control and negative reinforcement in humans. ...The students from my senior seminar on The Dynamics of Choice and Preference contributed three talks and four posters to the Spring Annual Research Conference. Managing this enterprise would have been challenging at best without my research assistants - Alessandra Xi Zhang and Olivia Zivot, to whom I am grateful.",
         img: [SpARC_01_Adekunle, SpARC_02_1_Tang, SpARC_06_1_Adekunle, SpARC_05_1_Forbes, SpARC_07_1_Shen, SpARC_10_1_Adekunle, SpARC_11_1_Shen, SpARC_12_1_Booher, SpARC_14_1_Shen, SpARC_15_1_Waithe, SpARC_16_1_Grissom],
         urls: [
             { name: "SpARC", link: "https://www.agnesscott.edu/sparc/index.html" },
             { name: "SpARC INDEX", link: "https://www.agnesscott.edu/sparc/" },
         ],
-        //citation: "",
-        citation: [
-            "Adekunle, O. & Popa, A. (2016). Higher Payoff or More Options? Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA. ",
-
-            "Booher, C. & Popa, A. (2016). Choice Behavior in Unsignaled Environments With and Without Immediate Negative Feedback. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-
-            "Forbes, V., & Popa, A. (2016). Human Choice Behaviors Before and After Extinction. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-
-            "Grissom, M. K., & Popa, A. (2016). Effects of Extinction on Human Escape Behavior. Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-
-            "Shen, R. & Popa, A. (2016). Is Competition Sufficient to Increase the Motivation to “Do Well”? Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-
-            "Tang, X., & Popa, A. (2016). Choice Behavior in Low Discriminability Conditions: Effects of the Operant Class Size. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-
-            "Waithe, O. Y., & Popa, A. (2016). The Effects of Imagery on Psychological Discomfort. Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-        ]
+        citation: "The Spring Annual Research Conference is held at Agnes Scott each April to provide students and faculty with an opportunity to present their work to the campus community.As an interdisciplinary conference, SpARC fosters essential connections across academic disciplines and encourages an ongoing dialogue between the liberal arts and sciences.",
+        // citation: "The Spring Annual Research Conference is held at Agnes Scott each April to provide students and faculty with an opportunity to present their work to the campus community.As an interdisciplinary conference, SpARC fosters essential connections across academic disciplines and encourages an ongoing dialogue between the liberal arts and sciences. My mentees (bold font) and I contributed five (5) posters and three (3) talks, counting towards ~15% of all research projects presented at SpARC 2016. Note that all eight were novel contributions to the field. I would like to take this opportunity to thank my former students and research assistants, AlessandraXi Zhangand Olivia Zivot. Without their contribution, managing this enterprise would have been challenging at best.",
+        citations: 
+            "Adekunle, O. & Popa, A. (2016). Higher Payoff or More Options? Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA. <br/> Booher, C. & Popa, A. (2016). Choice Behavior in Unsignaled Environments With and Without Immediate Negative Feedback. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.<br/> Forbes, V., & Popa, A. (2016). Human Choice Behaviors Before and After Extinction. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.<br/> Grissom, M. K., & Popa, A. (2016). Effects of Extinction on Human Escape Behavior. Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.<br/> Shen, R. & Popa, A. (2016). Is Competition Sufficient to Increase the Motivation to “Do Well”? Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.<br/> Tang, X., & Popa, A. (2016). Choice Behavior in Low Discriminability Conditions: Effects of the Operant Class Size. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.<br/> Waithe, O. Y., & Popa, A. (2016). The Effects of Imagery on Psychological Discomfort. Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
     },
 
 
@@ -425,39 +421,39 @@ var infoTimeline = [
             {name: "gDrive", link:"gDrive"},
         ],
 
-        citation: "(Emory University, Oxford College Campus, 2018)"
+        citation: "(Emory University, Oxford Campus, 2018)"
     },
 
 
 
 
-    // {title: 'Writing with purpose', id: 25, date: "05/02/2018",
-    //     role: "SPEAKER",
-    //     tags: [],
-    //     description: "",
-    //     img: [],
-    //     urls: [
-    //         //{name: "xxx", link:"xxx"},
-    //         //{name: "xxx", link: "xxx"}
-    //     ],
-    //     citation: "(Emory University, Oxford College Campus, 2018)"
-    // },
+    {id: 25, title: 'Writing with purpose', date: "05/02/2018",
+        role: "SPEAKER",
+        tags: [],
+        description: "",
+        img: [ ow02, ow03, ow07, ow08, ow09],
+        urls: [
+            //{name: "xxx", link:"xxx"},
+            //{name: "xxx", link: "xxx"}
+        ],
+        citation: "(Emory University, Oxford Campus, 2018)"
+    },
 
 
 
 
-    // {title: 'ETBD.py', id: 26, date: "09/15/2018",
-    //     role: "PRINCIPAL INVESTIGATOR",
-    //     keywords: [],
-    //     tags: ["Python", "SciPy", "SQLite", "Postgres"] ,
-    //     description: "This evolutionary theory of behavior dynamics is similar to the one described in McDowell (2004). ... ",
-    //     img: [placeholder, placeholder],
-    //     urls: [
-    //         //{name: "xxx", link:"xxx"},
-    //         //{name: "GitHub", link: "xxx"}
-    //     ],
-    //     citation: "Get a DOI    2018)",
-    // },
+    {id: 26, title: 'ETBD.py', date: "09/15/2018",
+        role: "PRINCIPAL INVESTIGATOR",
+        keywords: [],
+        tags: ["Python", "SciPy", "SQLite", "Postgres"] ,
+        description: "This evolutionary theory of behavior dynamics is similar to the one described in McDowell (2004). ... ",
+        img: [],
+        urls: [
+            //{name: "xxx", link:"xxx"},
+            //{name: "GitHub", link: "xxx"}
+        ],
+        citation: "Get a DOI    2018)",
+    },
 
 
 

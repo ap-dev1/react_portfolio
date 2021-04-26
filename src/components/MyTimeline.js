@@ -130,7 +130,7 @@ const MyTimeline = props => {
                         <span className="title">{parse(e.title)}</span>
 
                         <ReadMore
-                            overview={e.role}
+                            overview={parse(e.role)}
                             maxChars={50}
                         />
 

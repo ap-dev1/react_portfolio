@@ -44,7 +44,7 @@ $dark-grey: #222
     margin-bottom: 0px
     text-align: left
     // font-family: Roboto
-    font-weight: 400
+    font-weight: 600
     // font-family: Montserrat, sans-serif
     font-family: Montserrat, sans-serif
 
@@ -102,6 +102,20 @@ $dark-grey: #222
     left: 5%
     background-color: $backgroundColor
 
+
+
+//.vertical:before
+    //content: ""
+    //position: absolute
+    //width: 1px
+    // background-color: $timelineColor
+    //background-color: #e60808
+    //top: 0
+    //bottom: 0
+    //left: $leftMargin
+    //margin-left: 4px
+
+
 .vertical:after
     content: ""
     position: absolute
@@ -144,6 +158,7 @@ $dark-grey: #222
     font-weight: 500
     color: $dateColor
     opacity: 1
+    //border: 1px solid #333
 
 .vertical .timelineItem::after
     z-index: 1
@@ -175,10 +190,14 @@ $dark-grey: #222
     border-color: transparent $triangleLeft transparent transparent
     color: #555
     text-align: left
+    //border: 1px solid #333
+
 
 .vertical .timelineItem.right::after
     left: -1px
     max-width: 30px
+    border: 1px solid #333
+
 
 //  @media screen and (max-width: 768px) 
 //     .container:before 
