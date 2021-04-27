@@ -1,7 +1,7 @@
 
 
 import { useState } from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Image } from 'react-bootstrap'
 import "../styles/carousel.sass";
 
 
@@ -18,16 +18,29 @@ function ImagesCarousel({ props }) {
         return (
 
             <Carousel.Item  key={item.imgTitle} id={item.imgTitle}>
-                <img
+                
+                <Image 
                     src={item}
                     alt={item.title}
                     title={item.imgTitle}
                     style={{ maxWidth: 300 }}
                     key={item.imgTitle}
                     id={item.imgTitle}
-                    
-                    //className='imgZoom'
+                    thumbnail
+                    fluid
+                
                 />
+
+
+                {/* <img
+                    src={item}
+                    alt={item.title}
+                    title={item.imgTitle}
+                    style={{ maxWidth: 300 }}
+                    key={item.imgTitle}
+                    id={item.imgTitle}
+                    className='imgZoom'
+                /> */}
 
                 {/* <Carousel.Caption>
                     <p>{item.caption}</p>

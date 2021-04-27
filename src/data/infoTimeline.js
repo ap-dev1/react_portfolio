@@ -92,7 +92,8 @@ var infoTimeline = [
     // },
 
 
-    {   id: 1, title: 'A chapter beggins', date: "08/15/2007",
+    {id: 1, title: 'A chapter beggins', date: "08/15/2007",
+        type: ' ',
         role: "GRADUATE STUDENT in Psychology",
         tags: ["VB.Net", "Excel/VBA", "syntethic data"],
         keywords: ["edu", ""],
@@ -106,6 +107,7 @@ var infoTimeline = [
 
 
     {id: 2, title: 'A Computational Model of Adaptive Behavior Dynamics', date: "05/02/2009", 
+        type: '(invited talk, Emory University)',
         role: "PRESENTER (invited talk)",
         tags: [],
         keywords: ["ETBD", "conference", "Emory University"],
@@ -119,6 +121,7 @@ var infoTimeline = [
 
 
     {id: 3, title: 'Wolfram, Complexity, and a New Kind of Science', date: "07/01/2009",
+        type: '(journal article, empirical research)',
         role: "CO-INVESTIGATOR (journal article; research, empirical)",
         tags: ["Excel/VBA", "hypothesis testing", "model selection", "ensemble fitting", "residual analysis", ],
         keywords: [""],
@@ -143,8 +146,9 @@ var infoTimeline = [
     // // // // },
 
 
-    {title: 'Absolute reinforcement rates in ETBD', id: 5, date: "05/30/2010", 
-        role: "CO-INVESTIGATOR ... ? masters..?   (research poster)",
+    {id: 5, title: 'Absolute reinforcement rates in ETBD', date: "05/30/2010", 
+        type: '(research poster)',
+        role: "CO-INVESTIGATOR ... ? masters..?   ()",
         tags: [],
         keywords: ["SQAB 2010", "poster",  "conference"],
         description: "",
@@ -155,6 +159,7 @@ var infoTimeline = [
 
 
     { id: 6, title: 'Beyond the molar-molecular debate', date: "05/31/2010", 
+    type: '(invited talk, ABAI)',
         role: "SPEAKER (invited talk)",
         tags: ["critical thinking", "problem framing"],
         keywords: ["ABAI 2010", "invited talk",  "conference"],
@@ -168,6 +173,7 @@ var infoTimeline = [
 
 
     { id: 7, title: 'Hamming Distances and Changeover Delays', date: "08/01/2010",
+        type: '(Masters Thesis)',
         tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection", ],
         role: "PRINCIPAL INVESTIGATOR (my masters thesis turned in journal article)",
         keywords: [],
@@ -180,7 +186,7 @@ var infoTimeline = [
             { name: "ProQuest", link: "xxx" },
             { name: "SQAB 2009", link: "xxx" }
         ],
-        citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434. <br/> Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX."
+        citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434. <br/> <br/> Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX."
         // citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434."
     },
 
@@ -188,7 +194,8 @@ var infoTimeline = [
 
 
 
-    {id: 8, title: 'Toward a mechanics of adaptive behavior', id: 8, date: "12/01/2010",
+    {id: 8, title: 'Toward a mechanics of adaptive behavior', date: "12/01/2010",
+        type: '(journal article, empirical research)',
         role: "CO-INVESTIGATOR (journal article, research, empirical)",
         keywords: [],
         tags: ["VBA/Excel", "hypothesis testing", "model selection", "ensemble fitting", "residual analysis", ],
@@ -203,8 +210,22 @@ var infoTimeline = [
     },
 
 
+    // {id: 8.1, title: 'The Terminal Link Effect',  date: "04/10/2011", 
+    // type: '(Qualifying Exam)',
+    //     role: "",
+    //     keywords: ["candidacy"],
+    //     tags: [],
+    //     description: "The \"Qual\" is the last requirement on the way to PhD. It marks the transition from graduate student to doctoral candidate.<br/></br> I am grateful to the members of the committee - Rob Hampton, Irwin Waldman, and Phil Wolff - for yet another thought-provoking experience.",
+    //     img: [],
+    //     urls: [
+    //         //{ name: "", link: "" }, 
+    //     ],
+    //     citation: "", 
+    // },
 
-    {id: 9, title: 'Impulsivity in ETBD', id: 9, date: "05/30/2011", 
+
+    {id: 9, title: 'Impulsivity in ETBD',  date: "05/30/2011", 
+    type: '(contributed talk, ABAI 2011)',
         role: "SPEAKER (talk)",
         keywords: ["ABAI 2011", "ETBD", "ADHD"],
         tags: [],
@@ -216,6 +237,7 @@ var infoTimeline = [
 
 
     {id: 11, title: 'Bivariate Matching', date: "03/01/2012",
+    type: '(journal article, empirical research)',
         time: "03/01/2012",
         keywords: [],
         tags: ["VBA/Excel", "hypothesis testing", "model selection", "ensemble fitting", "residual analysis", ],
@@ -235,12 +257,13 @@ var infoTimeline = [
 
 
     {title: 'Social Entanglementnntmtntmtntntnt', id: 12, date: "05/10/2012",
+    type: '(O.R.D.E.R. fellow, study coordinator)',
         role: "STUDY COORDINATOR (as O.R.D.E.R. fellow)",
         keywords: ["David Lynn (Biological Chemistry)", "Leslie Taylor (Theatre Studies)."],
         tags: [],
-        description: "On Recent Discoveries by Emory Researchers, or ORDER, is a  ... fellowship ...  Course: Complexity and Emergence: Implications for Psychology ... Teacher/Scholar Fellowship; Research Project: Conformity at a Distance; ... Howard Hughes Teacher/Scholar Award; ...  Fellowship Advisory Board, <br/><br/> Senior course description: Have you ever been sick? Taken birth control or seen a psychologist? Felt unease with the existing explanations in psychology? This course will delve into research in all of these areas, while exploring ways you can engage in research after graduation. You will prepare a proposal for a competitive fellowship or grant, such as NSF. Scholars from Emory with very different backgrounds will guide you through their research, examining how reproductive health and sexuality are portrayed by the media, how behaviors evolve through natural selection, how complexity theories force scientists to reconsider the nature of human experience, the perception of mental health in Haiti, how your immune system fights off respiratory pathogens, and the application of microscopy to neurological disease. This course will include reading and discussions, excursions, and demonstrations. We examine these topics as a basis for conducting research to answer our questions as well as yours.",
+        description: "On Recent Discoveries by Emory Researchers, or ORDER, is a  ... fellowship ...  Course: Complexity and Emergence: Implications for Psychology ... Teacher/Scholar Fellowship; Research Project: Conformity at a Distance; ... Howard Hughes Teacher/Scholar Award; ...  Fellowship Advisory Board, <br/><br/> I am greatfeul to the fellowship coordinator, David Lynn (Biological Chemistry) and Leslie Taylor (Theatre Studies), for one of the most valuable learning experiences of my life.",
         img: [],
-        citation: "find manuscript.",
+        citation: "",
         urls: [
             { name: "O.R.D.E.R.", link: "http://www.order.emory.edu/about/index.html" },
             { name: "Google Drive", link: "gDrive" },
@@ -252,10 +275,11 @@ var infoTimeline = [
 
 
     {id: 13, title: 'From bit strings to ADHD', date: "05/26/2012", 
+    type: '(contributed talk, ABAI 2012)',
         role: "SPEAKER (talk)",
         keywords: [],
         tags: [],
-        description: "",
+        description: "Popa and McDowell (2010) showed that the Hamming Distance, a particular mathematical feature of McDowell’s Evolutionary Theory of Behavior Dynamics (ETBD; McDowell, 2004, 2010) is computationally equivalent to the changeover delay (COD; Findley, 1954) used in experiments with live organisms. Popa and McDowell (2011) suggested that increasing the computational COD requirement reduces behavioral variability in a virtual organism animated by the ETBD. The present paper further investigated a wide range of computational COD values and used the results to formulate predictions about the effects of COD requirements on the behavioral variability of humans in concurrent-schedules environments. As predicted by ETBD, the rate of switching between alternatives was systematically decreased by increased COD requirements. These results provide further support for the ETBD as a valid account of behavior dynamics, showing that it is not only able to produce outcomes congruent with known behavior statics (the Matching Law; McDowell & Popa, 2010), but it can also formulate predictions about the behavior of live organisms. Moreover, these findings suggest that high behavioral variability may be a natural outcome of the selection pressure exerted by unstructured environments. The implications for ADHD-symptoms are discussed within the framework provided by previous research (Neuringer, 2010; Taylor et al, 2010).",
         img: [ABAI_2012_event],
         urls: [{ name: "ABAI 2012", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=17728&by=ByArea#s28_0" }, 
         { name: "ResearchGate", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=17728&by=ByArea#s28_0" }, ],
@@ -266,7 +290,8 @@ var infoTimeline = [
 
 
     {id: 14, title: 'Complexity, Emergence, and the Behavior of Organisms', date: "05/26/2013", 
-        role: "SPEAKER, ABAI 2012",
+    type: '(contributed talk, ABAI 2013)',
+        role: "SPEAKER, ABAI 2013",
         keywords: [],
         tags: [ ],
         description: "Complexity science is rapidly becoming the '<i>spoiled child</i>' of the scientific community, promising to dissolve interdisciplinary barriers and open a new chapter in our understanding of the natural world (Mitchell, 2009). Complex systems are dynamic, adaptive systems, composed from a large number of interconnected parts, and governed by simple, low-level rules that can give rise to novel, emergent features or behaviors. High-level, emergent properties are not readily reducible to the rules that produce them. They appear to be stand-alone entities and behavioral and psychological sciences have traditionally studied them as such (e.g. impact of divorce on children's risk of depression). However, if they are emergent features of a dynamic system, the relations between them cannot, in principle, be causal (divorce → depression). Their co-occurrence is incidental, both being produced by underlying simple rules reiterated over long periods of time. In order to fully understand an emergent property, one must identify the rules that govern the system and the specific conditions under which the property emerges (McDowell & Popa, 2009). This implies a complete shift in focus, from high-level properties to low-level rules and characteristics, opening a fascinating doorway for scholars interested in the behavior of organisms.",
@@ -277,6 +302,7 @@ var infoTimeline = [
 
 
     {id: 15, title: 'Neurotechnologies that Penetrate the Mind', date: "11/2013", 
+    type: '(expert panel)',
         role: "EXPERT PANEL",
         keywords: ["GaTech 2013",  ],
         tags: [],
@@ -291,6 +317,7 @@ var infoTimeline = [
 
 
     {id: 16, title: 'Complexity, Darwinism, and the Emergence of High-Level Phenotypes (like ADHD)',  date: "12/24/2013", 
+    type: '(doctoral dissertation)',
         keywords: ["Doctor of Philosophy", "dissertation", "education", "deggree"],
         tags: ["synthetic data", "human data"],
         role: "PRINCIPAL INVESTIGATOR",
@@ -308,6 +335,7 @@ var infoTimeline = [
 
 
     {id: 17, title: 'Multifinality and Equifinality in ETBD',  date: "05/24/2014", 
+        type: '(contributed talk, ABAI 2014)',
         role: "SPEAKER (talk, ABAI 2014)",
         keywords: ["ABAI 2014", "causation", "complexity"],
         tags: [],
@@ -321,9 +349,10 @@ var infoTimeline = [
 
 
     {id: 18, title: 'Towards an Evolutionary Account for the Dynamics of Cognizant Systems', date: "02/13/2015", 
+        type: '(invited talk, Darwin Day Lecture Series, GSU)',
         role: "SPEAKER (invited talk, Darwin Lectures, GSU)",
-        keywords: [],
-        tags: ["Darwin2015",  "invited talk", "conference"],
+        keywords: ["Darwin2015",  "invited talk", "conference"],
+        tags: [],
         description: "",
         img: [Darwin_2015],
         urls: [
@@ -333,6 +362,7 @@ var infoTimeline = [
     },
 
     {id: 19, title: 'Population Thinking, Psychodiversity, and Human Development', date: "02/09/2016", 
+        type: '(invited talk, Darwin Day Lecture Series, GSU)',
         role: "SPEAKER (invited talk, Darwin Lectures, GSU)",
         keywords: ["Darwin2016", "invited talk", "conference"],
         tags: [],
@@ -346,10 +376,11 @@ var infoTimeline = [
 
 
     {id: 20, title: 'Behavioral Variability in ETBD', date: "03/01/2016",
+        type: '(journal article, empirical research)',
         role: "PRINCIPAL INVESTIGATOR (part of my thesis turned journal article)",
         keywords: ["Popa & McDowell, 2016",],
         tags: [""],
-        description: "McDowell’s evolutionary theory of behavior dynamics (McDowell, 2004) instantiates populations of behaviors (abstractly represented by integers) that evolve under the selection pressure of the environment in the form of positive reinforcement. Each generation gives rise to the next via low-level Darwinian processes of selection, recombination, and mutation. The emergent patterns can be analyzed and compared to those produced by biological organisms. The purpose of this project was to explore the effects of high mutation rates on behavioral variability in environments that arranged different reinforcer rates and magnitudes. Behavioral variability increased with the rate of mutation. High reinforcer rates and magnitudes reduced these effects; low reinforcer rates and magnitudes augmented them. These results are in agreement with live-organism research on behavioral variability. Various combinations of mutation rates, reinforcer rates, and reinforcer magnitudes produced similar high-level outcomes (equifinality). These findings suggest that the independent variables that describe an experimental condition interact; that is, they do not influence behavior independently. These conclusions have implications for the interpretation of high levels of variability, mathematical undermatching, and the matching theory. The last part of the discussion centers on a potential biological counterpart for the rate of mutation, namely spontaneous fluctuations in the brain’s default mode network.",
+        description: "... The purpose of this project was to explore the effects of high mutation rates on behavioral variability in environments that arranged different reinforcer rates and magnitudes. Behavioral variability increased with the rate of mutation. High reinforcer rates and magnitudes reduced these effects; low reinforcer rates and magnitudes augmented them. These results are in agreement with live-organism research on behavioral variability. Various combinations of mutation rates, reinforcer rates, and reinforcer magnitudes produced similar high-level outcomes (equifinality). These findings suggest that the independent variables that describe an experimental condition interact; that is, they do not influence behavior independently. These conclusions have implications for the interpretation of high levels of variability, mathematical undermatching, and the matching theory. The last part of the discussion centers on a potential biological counterpart for the rate of mutation, namely spontaneous fluctuations in the brain’s default mode network.",
         img: [],
         urls: [
             { name: "JEAB", link: "http://onlinelibrary.wiley.com/doi/10.1002/jeab.199/abstract" },
@@ -362,6 +393,7 @@ var infoTimeline = [
 
 
     {id: 21, title: 'SpARC', date: "04/01/2016",
+        type: '(empirical research)',
         time: "04/01/2016",
         role: "STUDY COORDINATOR",
         keywords: ["Agnes Scott College"],
@@ -383,6 +415,7 @@ var infoTimeline = [
 
 
     {id: 22, title: 'Escape behavior on extinction', date: "02/19/2017",
+        type: '(contributed talk, WCALB 2017)',
         time: "02/19/2017",
         role: "SPEAKER (talk, WCALB 2017)",
         keywords: ["WCALB 2017", "talk", "conference", "Utah"],
@@ -396,6 +429,7 @@ var infoTimeline = [
 
 
     {id: 23, title: 'Towards a Dynamic Account of Human Development',  date: "05/28/2017",
+        type: '(contributed talk, ABAI 2017)',
         time: "05/28/2017",
         role: "PRINCIPAL INVESTIGATOR (talk, ABAI 2017)",
         keywords: ["ABAI 2017", "talk", "conference"],
@@ -410,6 +444,7 @@ var infoTimeline = [
 
 
     {id: 24, title: 'Triangles!', date: "05/01/2018",
+        type: '(empirical research)',
         role: "PRINCIPAL INVESTIGATOR (<i>de facto</i>)",
         keywords: [],
         tags: ["VB.NET", "Python", "Pandas", "SciPy", "Matplotlib"],
@@ -428,6 +463,7 @@ var infoTimeline = [
 
 
     {id: 25, title: 'Writing with purpose', date: "05/02/2018",
+    type: '(invited talk, Emory University - Oxford Campus)',
         role: "SPEAKER",
         tags: [],
         description: "",
@@ -443,6 +479,7 @@ var infoTimeline = [
 
 
     {id: 26, title: 'ETBD.py', date: "09/15/2018",
+    type: '(research, computational modelling)',
         role: "PRINCIPAL INVESTIGATOR",
         keywords: [],
         tags: ["Python", "SciPy", "SQLite", "Postgres"] ,
@@ -459,6 +496,7 @@ var infoTimeline = [
 
 
     {id: 27, title: 'Imperfect Automata',  date: "09/30/2019",
+    type: '(research, computational modelling)',
         role: "",
         keywords: [],
         tags: ["Python", "Tkinter"],
@@ -475,6 +513,7 @@ var infoTimeline = [
 
 
     {id: 28, title: 'The Emergence of You', date: "09/08/2019",
+        type: '(conceptual development)',
         time: "09/08/2019",
         role: "PRINCIPAL INVESTIGATOR",
         keywords: [],

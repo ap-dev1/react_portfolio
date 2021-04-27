@@ -29,20 +29,14 @@ const MyTimeline = props => {
     };
 
 
-    // MAP EVERYTHING, -----------------------------------------
     const eventsMappedToElements = events.map((e, i) => {
 
-
-        // var Buttons = e.urls.map((item) => (
-        //     <button
-        //         id={item.link}
-        //         title={item.link}
-        //         onClick={goToLink}
-        //     >{item.name}
-        //     </button>
-        // ))
-
         var Links = null;
+        var Tags = null;
+        var myDescription = ""
+        var date_type = ""
+
+
         if (e.urls.length > 0) {
             Links = e.urls.map((item) => (
                 <button
@@ -51,17 +45,31 @@ const MyTimeline = props => {
                     onClick={goToLink}
                 >{item.name}
                 </button>
-
             ))
-
         }
 
-        
-        var Tags = e.tags.map((item) => (
-            <label >{parse(item)}</label>
-        ))
+        if (e.tags.length > 0) {
+            Tags = e.tags.map((item) => (
+                <label >{parse(item)}</label>
+            ))
+        }
 
-        var myDescription = parse(e.description)
+        if (e.description !== "") {
+            myDescription = parse(e.description)
+        }
+
+
+        // if (e.date !== "" & e.type !== "") {
+        //     let s1 = e.date
+        //     let s2 = e.type
+        //     let s3 = s1 + ' '  + s2
+
+        //     date_type = s3
+
+        // }
+
+
+
 
 
         if (e.id === -1) {
@@ -123,16 +131,19 @@ const MyTimeline = props => {
                 key={e.time}
                 id={e.time}
                 //content1={e.date.slice(-7)}
-                content1={e.date}>
+                //content1={parse(e.date + " " + <br/> + e.role)} >
+                content1={parse(e.date)} >
 
                 <div className='timelineContent'>
                     <div className='projectColumnLeft'>
                         <span className="title">{parse(e.title)}</span>
+                        <span className="eventType">{parse(e.type)}</span>
 
-                        <ReadMore
-                            overview={parse(e.role)}
-                            maxChars={50}
-                        />
+                        {/* <ReadMore
+                            overview={parse(e.type)}
+                            maxChars={100}
+                            fontColor={'#999'}
+                        /> */}
 
                         <ReadMore
                             overview={myDescription}

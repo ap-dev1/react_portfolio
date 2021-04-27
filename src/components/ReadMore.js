@@ -16,7 +16,7 @@ const ReadMore = (props) => {
 
         if (props.overview.length > maxChars) {
             return (
-                <p className="projectOverview">
+                <p className="projectOverview" style={{color: props.fontColor}}>
                     {isReadMore ? props.overview.slice(0, maxChars) : props.overview}
                     <span
                         title="read more"

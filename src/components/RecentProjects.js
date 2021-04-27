@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import RecentProject from './recentProject'
 import infoRecent from "../data/infoRecent"
 
+import ContinuousEducation from './ContinuousEducation'
+
 
 class RecentProjects extends Component {
 
@@ -9,9 +11,10 @@ class RecentProjects extends Component {
         return (
 
             <div id='RecentProjects'>
-                <h1>Recent</h1>
+                <h1>CURRENT PROJECTS </h1>
 
                 <div className="recentRow">
+                    {/* <h2>Projects</h2> */}
                     {infoRecent.map((project) => (
 
                         <RecentProject
@@ -23,10 +26,10 @@ class RecentProjects extends Component {
                             img={project.img}
                             urls={project.urls}
                         ></RecentProject>
-
                     ))}
-
                 </div>
+
+                <ContinuousEducation/>
 
             </div>
         );
