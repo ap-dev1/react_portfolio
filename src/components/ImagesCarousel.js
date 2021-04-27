@@ -23,7 +23,8 @@ function ImagesCarousel({ props }) {
                     src={item}
                     alt={item.title}
                     title={item.imgTitle}
-                    style={{ maxWidth: 300 }}
+                    style={{ maxWidth: 300, maxHeight: 300, objectFit: 'contain' }}
+                    
                     key={item.imgTitle}
                     id={item.imgTitle}
                     thumbnail

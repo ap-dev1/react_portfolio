@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/project.sass'
+import parse from 'html-react-parser';
 
 
 const ReadMore = (props) => {

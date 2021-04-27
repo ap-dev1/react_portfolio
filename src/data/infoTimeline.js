@@ -70,7 +70,7 @@ import ow07 from "../assets/2018_oxford_writing/ow07.png"
 import ow08 from "../assets/2018_oxford_writing/ow08.png"
 import ow09 from "../assets/2018_oxford_writing/ow09.png"
 
-
+import bluefootedboobies3 from "../assets/bluefootedboobies3.png"
 
 var gDrive = "https://drive.google.com/drive/folders/1d6QlunZ_zh-mTXB1H2u0C5DQC7Vjmq5U?usp=sharing"
 
@@ -91,14 +91,15 @@ var infoTimeline = [
     //     urls: [{ name: "", link: "" },],
     // },
 
+    // I have enough base knowledge to know i need to know, and the work ethics to get there
 
     {id: 1, title: 'A chapter beggins', date: "08/15/2007",
-        type: ' ',
+        type: 'GRADUATE STUDENT in Psychology',
         role: "GRADUATE STUDENT in Psychology",
         tags: ["VB.Net", "Excel/VBA", "syntethic data"],
         keywords: ["edu", ""],
         description: "I joined McDowell's lab, where I studied experimental behavior analysis, with a focus on mathematical and computational models of choice and preference. I was to graduate six years later, in December 2013.",
-        img: [],
+        img: [bluefootedboobies3],
         citation: "Emory University, Laney Graduate School of Arts and Sciences, Department of Psychology, Cognition and Development program",
         urls: [
             //{ name: "", link: "" },
@@ -294,7 +295,7 @@ var infoTimeline = [
         role: "SPEAKER, ABAI 2013",
         keywords: [],
         tags: [ ],
-        description: "Complexity science is rapidly becoming the '<i>spoiled child</i>' of the scientific community, promising to dissolve interdisciplinary barriers and open a new chapter in our understanding of the natural world (Mitchell, 2009). Complex systems are dynamic, adaptive systems, composed from a large number of interconnected parts, and governed by simple, low-level rules that can give rise to novel, emergent features or behaviors. High-level, emergent properties are not readily reducible to the rules that produce them. They appear to be stand-alone entities and behavioral and psychological sciences have traditionally studied them as such (e.g. impact of divorce on children's risk of depression). However, if they are emergent features of a dynamic system, the relations between them cannot, in principle, be causal (divorce → depression). Their co-occurrence is incidental, both being produced by underlying simple rules reiterated over long periods of time. In order to fully understand an emergent property, one must identify the rules that govern the system and the specific conditions under which the property emerges (McDowell & Popa, 2009). This implies a complete shift in focus, from high-level properties to low-level rules and characteristics, opening a fascinating doorway for scholars interested in the behavior of organisms.",
+        description: "Complexity science is rapidly becoming the 'spoiled child' of the scientific community, promising to dissolve interdisciplinary barriers and open a new chapter in our understanding of the natural world (Mitchell, 2009). Complex systems are dynamic, adaptive systems, composed from a large number of interconnected parts, and governed by simple, low-level rules that can give rise to novel, emergent features or behaviors. High-level, emergent properties are not readily reducible to the rules that produce them. They appear to be stand-alone entities and behavioral and psychological sciences have traditionally studied them as such (e.g. impact of divorce on children's risk of depression). However, if they are emergent features of a dynamic system, the relations between them cannot, in principle, be causal (divorce → depression). Their co-occurrence is incidental, both being produced by underlying simple rules reiterated over long periods of time. In order to fully understand an emergent property, one must identify the rules that govern the system and the specific conditions under which the property emerges (McDowell & Popa, 2009). This implies a complete shift in focus, from high-level properties to low-level rules and characteristics, opening a fascinating doorway for scholars interested in the behavior of organisms.",
         img: [ABAI_2013_01_slide, ABAI_2013_05_slide, ABAI_2013_Popa_McDowell_Calvin_1],
         urls: [{ name: "ABAI 2013", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=28880&by=ByArea#s166_0" }, ],
         citation: "Popa, A., Calvin, N., & McDowell, J J. (2013). Complexity, Emergence, and the Behavior of Organisms. Paper presented at the 39th Annual Convention of the Association for Behavior Analysis International, Minneapolis, MN." 
