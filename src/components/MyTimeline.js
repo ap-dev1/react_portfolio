@@ -1,7 +1,6 @@
 
 import React from "react"
 import parse from 'html-react-parser';
-import DayJS from 'react-dayjs';
 
 import ReadMore from "./ReadMore";
 import ImagesCarousel from "./ImagesCarousel";
