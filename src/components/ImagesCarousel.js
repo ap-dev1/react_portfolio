@@ -17,35 +17,27 @@ function ImagesCarousel({ props }) {
 
         return (
 
-            <Carousel.Item  key={item.imgTitle} id={item.imgTitle}>
-                
-                <Image 
+            <Carousel.Item key={item.imgTitle} id={item.imgTitle}
+                style={{
+                    maxWidth: '600px', 
+                    //maxHeight: '300px',
+                    backgroundColor: '#f2f4f8',
+                    marginBottom: '.5rem',
+                    padding: '.0rem'
+                }}
+            >
+
+                <Image
                     src={item}
                     alt={item.title}
                     title={item.imgTitle}
-                    style={{ maxWidth: 300, maxHeight: 300, objectFit: 'contain' }}
-                    
-                    key={item.imgTitle}
-                    id={item.imgTitle}
-                    thumbnail
-                    fluid
-                
-                />
-
-
-                {/* <img
-                    src={item}
-                    alt={item.title}
-                    title={item.imgTitle}
-                    style={{ maxWidth: 300 }}
                     key={item.imgTitle}
                     id={item.imgTitle}
                     className='imgZoom'
-                /> */}
+                    thumbnail
+                    //fluid                
+                />
 
-                {/* <Carousel.Caption>
-                    <p>{item.caption}</p>
-                </Carousel.Caption> */}
 
             </Carousel.Item>
         )
@@ -66,6 +58,7 @@ function ImagesCarousel({ props }) {
             controls={false}
             indicators={showIndicators}
         >
+
             {MyImages}
 
         </Carousel>

@@ -6,7 +6,6 @@ import ReadMore from "./ReadMore";
 import ImagesCarousel from "./ImagesCarousel";
 
 import "../styles/timeline.sass"
-
 import "../styles/project.sass"
 import "../styles/carousel.sass"
 
@@ -34,6 +33,7 @@ const MyTimeline = props => {
         var Tags = null;
         var myDescription = ""
         var date_type = ""
+        //var Citation
 
 
         if (e.urls.length > 0) {
@@ -57,6 +57,16 @@ const MyTimeline = props => {
             myDescription = parse(e.description)
         }
 
+        // if (e.citation !== "") {
+        //     var myCitation = parse(e.citation)
+
+        //     Citation =  <ReadMore
+        //                     overview={myCitation}
+        //                     maxChars={200}
+        //                     style={{fontSize: '.7rem', border: 0, padding: 0, backgroundColor: '#fff'}}
+        //                 />
+            
+        // }
 
         // if (e.date !== "" & e.type !== "") {
         //     let s1 = e.date
@@ -138,32 +148,35 @@ const MyTimeline = props => {
                         <span className="title">{parse(e.title)}</span>
                         <span className="eventType">{parse(e.type)}</span>
 
-                        {/* <ReadMore
-                            overview={parse(e.type)}
-                            maxChars={100}
-                            fontColor={'#999'}
-                        /> */}
 
                         <ReadMore
                             overview={myDescription}
-                            maxChars={200} />
+                            maxChars={600} />
 
+                        <div className="divSkills" style={{fontSize: '.7rem'}} >{Tags}</div>
 
-                        <div className="projectTags">{Tags}</div>
+                        <div className="divLinks" style={{fontSize: '.7rem'}}>{Links}</div>
 
-                        <div className="projectLinks">{Links}</div>
 
                     </div>
 
                     <div className='projectColumnImages'>
+
                         <ImagesCarousel props={e.img} />
 
-                        <ReadMore
-                            //id='caption1'
-                            overview={parse(e.citation)}
-                            maxChars={100}
-                        // style={{color: '#fff', backgroundColor: 'blue'}} 
-                        />
+                        <p style={{
+                            fontSize: '.8rem',
+                            lineHeight: '1rem',
+                            textAlign: 'left',
+                            
+                            // backgroundColor: '#001A1A',
+                            // color: '#d1ffff',
+                            backgroundColor: '#fff',
+                            color: '#001A1A',
+                            padding: '.2rem .5rem',
+                            marginRight: '.5rem',
+                            width: '100%'}}>{e.citation}</p>
+
                     </div>
                 </div>
             </div>

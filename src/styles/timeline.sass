@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Lato&family=Open+Sans&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Josefin+Sans&family=Lato&family=Open+Sans&display=swap')
 
+@import './_divSkills'
+@import './_divLinks'
+
 $totalWidth: 90%
 $itemWidth: 90%
 $leftMargin: 10%
@@ -27,6 +30,17 @@ $light-grey: #f2f4f8
 $dark-grey: #222
 
 
+// $duration: 0.2s
+
+// @mixin transition($duration) 
+//     -webkit-transition: $duration
+//     -moz-transition: $duration
+//     -ms-transition: $duration
+//     -o-transition: $duration
+//     transition: $duration
+
+// @include transition(.2s)
+
 
 .time
     display: inline-block
@@ -37,42 +51,18 @@ $dark-grey: #222
 .title
     display: inline-block
     width: 100%
-    font-size: 16px
-    color: #000
+    font-size: 1.2rem
+    color: #222
     margin-top: 10px
-    // margin-bottom: 15px
-    margin-bottom: 0px
+    margin-bottom: 5px
     text-align: left
-    // font-family: Roboto
     font-weight: 600
-    // font-family: Montserrat, sans-serif
     font-family: Montserrat, sans-serif
 
-// .narrative
-//     font-weight: 400
-//     font-family: Montserrat, sans-serif
-//     font-family: Lato, sans-serif
 
 .desc
     margin: 0
 
-// #eventDate
-//     width: fit-content
-//     margin-left: 100px
-//     padding-top: 10px
-//     color: #333
-//     font-family: Roboto
-//     font-size: 14px
-
-.eventType
-    color: #555
-    margin-top: 0rem
-    margin-bottom: 1rem
-    font-size: .6rem
-    font-family: Courier New, Courier, monospace
-    font-weight: 300
-    text-transform: uppercase
-//----------------------------
 
 #MyTimeline
     width: 100%
@@ -80,19 +70,17 @@ $dark-grey: #222
     height: auto
     display: flex
     flex-direction: column
-    justify-content: left
-    align-items: left
-    transition: ease-in
-    transition-duration: 3s
+
+    justify-content: center
+    
     font-family: Roboto
+    
     position: relative
-    //width: $totalWidth
-    //left: 5%
+    
     background-color: $backgroundColor
 
     > h1
         color: #fff
-        //background-image: linear-gradient(to bottom, #009297, #02aab0, #fff)
         background-image: linear-gradient(to bottom,  #03767a  , #009297, #02aab0, #fff)
 
         font-weight: 400
@@ -147,14 +135,15 @@ $dark-grey: #222
     padding: 0px
     //color: #333
     font-family: Roboto
-    font-size: 13px
+    font-size: .8rem
     display: flex
     flex-direction: row
     //flex-direction: column
     width: 100%
     margin-bottom: 4rem
 
-// Show date or year as "content1":
+
+// the DATE --------------------------------- 
 .vertical .timelineItem:before
     z-index: 1
     content: attr(content1)
@@ -168,6 +157,9 @@ $dark-grey: #222
     opacity: 1
     //border: 1px solid #333
 
+
+
+// the CIRCLE --------------------------------- 
 .vertical .timelineItem::after
     z-index: 1
     content: ""

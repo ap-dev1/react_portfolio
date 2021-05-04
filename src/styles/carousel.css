@@ -1,0 +1,27 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-indicators {
+  margin-bottom: .2rem;
+}
+
+.carousel-indicators li {
+  background-color: #dcdcdc;
+  border: 1px solid #333;
+  opacity: .8;
+  cursor: pointer;
+  height: 12px;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.carousel-indicators li:hover {
+  background-color: orange;
+}
+
+.carousel-indicators .active {
+  background-color: #fffe7a;
+}
+/*# sourceMappingURL=carousel.css.map */

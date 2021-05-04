@@ -1,25 +1,44 @@
 
 
+.dummy
+    background-color: #003333
+    color: #d1ffff
+
+
 .carousel
     width: 100%
-    overflow: hidden
+    max-height: 100% 
+    //overflow: hidden
 
 .carousel-indicators
     margin-bottom: .2rem
 
 .carousel-indicators li
-    background-color: #dcdcdc
-    border: 1px solid #333
+    background-color: #003333
+    border: 1px solid #000
     opacity: .8
     cursor: pointer
-    height: 12px
-    width: 24px
-    border-radius: 4px
-    //object-fit: cover
+    height: 30px
+    width: 50px
+    border-radius: 10px
+    bottom: 10px
 
     &:hover
-        background-color: orange
+        background-color: #008080
+        opacity: 1
 
 .carousel-indicators .active
-    background-color: #fffe7a
+    background-color: #00cccc
+    border: 2px solid #000
+    opacity: 1
    
+
+
+.imgZoom
+    border: 1px solid #333
+    object-fit: contain
+
+    //objectFit: 'contain', 
+
+    &:hover
+        transform: scale(1)

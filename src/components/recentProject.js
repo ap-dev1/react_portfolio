@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import Card from "react-bootstrap/Card";
+
 import "../styles/recent.sass"
 
 class RecentProject extends Component {
@@ -33,17 +34,15 @@ class RecentProject extends Component {
         return (
 
             <Card className='recentCard'>
-
                 <Card.Body>
+
                     <Card.Title className='recentTitle'>{this.props.title}</Card.Title>
 
-                    <div className='recentTags'>{Tags}</div>
-                   
+                    <div className='divSkills'>{Tags}</div>
+
                     <Card.Text> {this.props.overview} </Card.Text>
-              
-                    <div className='recentLinkButtons'>
-                        {Buttons}
-                    </div>
+
+                    <div className='divLinks'>{Buttons}</div>
 
                 </Card.Body>
             </Card>

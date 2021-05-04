@@ -1,0 +1,55 @@
+#nav1 {
+  position: fixed;
+  bottom: 35vh;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  opacity: 0;
+  z-index: 2;
+  transition: all 1.5s ease-in;
+  -webkit-transition: all 1.5s ease-in;
+  -moz-transition: all 1.5s ease-in;
+  -ms-transition: all 1.5s ease-in;
+  -o-transition: all 1.5s ease-in;
+}
+
+#nav1 > button {
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  opacity: .6;
+  font-size: .9rem;
+  margin: .0rem;
+  cursor: pointer;
+  font-family: 'Roboto';
+  padding: 1rem 1.7rem;
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+}
+
+#nav1 > button:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+}
+/*# sourceMappingURL=navbar.css.map */

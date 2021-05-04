@@ -1,128 +1,67 @@
 import React, { Component } from 'react'
 import { Table } from "react-bootstrap"
 
-import python_udemy from '../assets/python_udemy.png'
-import react_udemy from '../assets/react_udemy.png'
-import ml_coursera from '../assets/ml_coursera.png'
-import django_udemy from '../assets/django_udemy.png'
-import ds_data_camp from '../assets/ds_data_camp.png'
-//import sql_udemy from "../assets/sql_udemy.png"
+import certificate_python from '../assets/stripes/certificate_python.png'
+import certificate_web_dev from '../assets/stripes/certificate_web_dev.png'
+import certificate_ml from '../assets/stripes/certificate_ml_coursera.png'
+import certificate_django from '../assets/stripes/certificate_django.png'
+import certificate_ds_data_camp from '../assets/stripes/certificate_ds_data_camp.png'
+import certificate_sql from "../assets/stripes/certificate_sql.png"
+import certificate_nlp from "../assets/stripes/certificate_sql.png"
+import certificate_d3_react from "../assets/stripes/certificate_sql.png"
 
-import placeholder from "../assets/placeholder.png"
+
+var certificates = [
+    { name: "D3 with React", date: "12-31-2020", link: "https://www.udemy.com/certificate/UC-1a8d660a-bfef-4f05-a54d-2bf3abb00acf/", img: certificate_d3_react, notes: "" },
+    { name: "NLP", date: "06-30-2020", link: "https://www.udemy.com/certificate/UC-484a14d9-7ae0-4569-b3eb-606f03649571/", img: certificate_nlp, notes: "" },
+    { name: "Web Development with React and Node", date: "06-30-2020", link: "https://www.udemy.com/certificate/UC-9ee6c9ba-94e1-4a02-9d5e-4aee303e5c1a/", img: certificate_web_dev, notes: "" },
+
+    { name: "Django Bootcamp", date: "06-09-2020", link: "https://www.udemy.com/certificate/UC-797bf1ab-2cf1-4823-b226-6dd3e5f0ac79/", img: certificate_django, notes: "" },
+    { name: "Data Science", date: "2019", link: "", img: certificate_ds_data_camp, notes: "" },
+
+    { name: "Machine Learning", date: "12/2018", link: "coursera.org/verify/UJ88SUYL735J", img: certificate_ml, notes: "" },
+    { name: "SQL Bootcamp", date: "12/08/2018", link: "https://www.udemy.com/certificate/UC-Y3NY4DGH/", img: certificate_sql, notes: "" },
+
+    { name: "Python 3 Bootcamp", date: "10-02-2018", link: "https://www.udemy.com/certificate/UC-1ZA6WABW/", img: certificate_python, notes: "" },
+
+]
 
 
 class ContinuousEducation extends Component {
 
     render() {
+
+        var MyEntries = certificates.map((item) => {
+            return (
+                <tr>
+                    <td style={{ color: "#777" }}>{item.date.slice(-4)}</td>
+                    <td>{item.name}</td>
+
+                    <td style={{ textAlign: 'left' }}>
+                        <img src={item.img} alt={item.name} height='20px'></img>
+                    </td>
+                </tr>
+
+
+            )
+        })
+
         return (
 
 
-            // <div className="recentRow">
-
-            //     <table className='table-edu-continuous'>
-
-            //         <tr>
-            //             <th colspan='2'>CONTINUOUS EDUCATION</th>
-            //         </tr>
-
-            //         <tr>
-            //             <td>Python Bootcamp (Udemy, 2018)</td>
-            //             <td style={{ textAlign: 'center' }}>
-            //                 <img
-            //                     src={python_udemy}
-            //                     alt='Python 3 Bootcamp'
-            //                 >
-            //                 </img>
-            //             </td>
-            //         </tr>
-
-            //         <tr>
-            //             <td>Data Science with Python track (DataCamp, 2018)</td>
-            //             <td style={{ textAlign: 'center' }}>
-            //                 <img
-            //                     src={ds_data_camp}
-            //                     alt='Data Science track with Python'></img>
-            //             </td>
-            //         </tr>
-
-            //         <tr>
-            //             <td>Machine Learning by Stanford University (Coursera, 2018)</td>
-
-            //             <td style={{ textAlign: 'center' }}>
-            //                 <img
-            //                     src={ml_coursera}
-            //                     alt='coursera.org/verify/UJ88SUYL735J' ></img>
-            //             </td>
-            //         </tr>
-
-            //         <tr>
-            //             <td>SQL Bootcamp (Udemy, 2019)</td>
-            //             <td style={{ textAlign: 'center' }}>
-            //                 <img
-            //                     src={placeholder}
-            //                     alt='SQL Bootcamp' ></img>
-            //             </td>
-            //         </tr>
-
-            //         <tr>
-            //             <td>Web Dev with Django (Udemy, 2020</td>
-            //             <td style={{ textAlign: 'center' }}>
-            //                 <img
-            //                     src={django_udemy}
-            //                     alt='Django' ></img>
-            //             </td>
-            //         </tr>
-
-            //         <tr>
-            //             <td>Web Dev with React (Udemy, 2020)</td>
-            //             <td style={{ textAlign: 'center' }}>
-            //                 <img src={react_udemy} alt='React' ></img>
-            //             </td>
-            //         </tr>
-            //     </table>
-            // </div>
-
-
-
-            <div className="recentRow" >
+            <div className="recentRow">
                 <table className='table-edu-continuous'>
 
                     <tr>
-                        <th colspan='2'>CONTINUOUS EDUCATION</th>
+                        <th colspan='3'>Post-doctoral training</th>
                     </tr>
 
-                    <tr>
-                        <td>2020</td>
-                        <td>Web Dev with Django (Udemy)</td>
-                    </tr>
+                    {MyEntries}
 
-                    <tr>
-                        <td>2020</td>
-                        <td>Web Dev with React (Udemy)</td>
-                    </tr>
-
-                    <tr>
-                        <td>2019</td>
-                        <td>SQL Bootcamp (Udemy)</td>
-                    </tr>
-
-                    <tr>
-                        <td>2018</td>
-                        <td>Python Bootcamp (Udemy)</td>
-                    </tr>
-
-                    <tr>
-                        <td>2018</td>
-                        <td>Data Science with Python track (DataCamp)</td>
-                    </tr>
-
-                    <tr>
-                        <td>2018</td>
-                        <td>Machine Learning by Stanford University (Coursera)</td>
-                    </tr>
-                   
                 </table>
             </div>
+
+
 
         );
     }

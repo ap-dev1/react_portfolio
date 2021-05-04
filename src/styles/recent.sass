@@ -1,29 +1,11 @@
+@import './_divSkills'
+@import './_divLinks'
+@import './_fullscreen'
 
-#RecentProjects
-    width: 100%
-    min-height: 100vh
-    height: auto
-    display: flex
-    flex-direction: column
+@import './_table-edu-continuous'
 
-    //justify-content: space-around
-    justify-content: center
 
-    align-items: center
 
-    background: #fff
-    color: #000000c6
-
-    
-    transition: ease-in
-    transition-duration: 3s
-    font-family: Roboto
-
-    > h1
-        color: #333
-        font-weight: 400
-        margin-bottom: 2.5rem
-        margin-top: 2.5rem
 
 .recentRow
     display: flex
@@ -34,127 +16,19 @@
     //background: rgba(175, 34, 34, .8)
 
 .recentCard
-    width: 20rem
-    height: auto
+    width: 30rem
+    //height: auto
     margin: .5rem
     border: 0px solid grey
     background: #f0f0f0
     color: #333
     font-family: Roboto
-    font-weigth: 300
+    font-weight: 300
 
 .recentTitle
     text-align: center
     margin: .5rem
-    color: #000
-    font-weight: 300
-    font-size: 1.6rem
-
-.recentTags
-    display: flex
-    flex-direction: row
-    padding: .1rem
-    justify-content: flex-start
-    width: 100%
-
-    > label
-        font-size: .7rem
-        text-align: center
-        padding: 0.1rem .5rem
-        margin: .1rem
-        //background: #14213d
-        background: rgba(175, 34, 34, 1)
-        opacity: .8
-        font-weight: 400
-        color: #fff
-        font-family: Roboto
-
-        &:hover
-            cursor: pointer
-            color: yellow
-            font-size: .8rem
-            font-weight: 500
-
-.recentLinkButtons
-    align-self: flex-end
-    display: flex
-    flex-direction: row
-    padding: .2rem
-    justify-content: flex-start
-    width: 100%
-    flex-wrap: wrap
-
-    > button
-        // background: rgb(230, 229, 229)
-        background: #21B0B0
-        opacity: .8
-        color: #fff
-        border: 1px solid #2d3e50
-        padding: .1rem .33rem
-        cursor: pointer
-        margin: 0.1rem
-        font-family: Roboto
-        font-size: .7rem
-        border-radius: 0px
-        font-weight: 400
-        transition: all 0.2s ease-out
-        -webkit-transition: all 0.2s ease-out
-        -moz-transition: all 0.2s ease-out
-        -ms-transition: all 0.2s ease-out
-        -o-transition: all 0.2s ease-out
-
-        &:hover
-            // background: #1B4D3E
-            // background: #496481
-            // background: #5b738d
-            background: #0c3048
-
-            color: #fff
-            font-weight: 500
-
-            //cursor: pointer
-            transition: all 0.2s ease-in-out
-            -webkit-transition: all 0.2s ease-out
-            -moz-transition: all 0.2s ease-out
-            -ms-transition: all 0.2s ease-out
-            -o-transition: all 0.2s ease-out
-
-.table-edu-continuous
-    margin-top: 2.5rem
-    margin-bottom: 2.5rem
-    min-width: 100%
-    color: #333
-    font-family: Montserrat, sans-serif
-    font-size: 1rem
+    margin-bottom: 2rem
+    color: #222
     font-weight: 400
-    border-bottom: 2px solid #bfbfbf
-
-.table-edu-continuous th
-    text-align: left
-    border-bottom:  1px solid #bfbfbf
-    color: #333
-    font-size: 1.4rem
-    font-weight: 500
-
-.table-edu-continuous td
-    //border-bottom: 1px solid #bfbfbf
-    padding: .5rem .5rem
-
-.table-edu-continuous td img
-    width: 120px
-    height: 70px
-    border: '1px solid #333'
-    transition: all 0.2s ease-in
-    -webkit-transition: all 0.2s ease-in
-    -moz-transition: all 0.2s ease-in
-    -ms-transition: all 0.2s ease-in
-    -o-transition: all 0.2s ease-in
-
-    &:hover
-        cursor: pointer
-        transform: scale(3)
-        transition: all 0.2s ease-out
-        -webkit-transition: all 0.2s ease-out
-        -moz-transition: all 0.2s ease-out
-        -ms-transition: all 0.2s ease-out
-        -o-transition: all 0.2s ease-out
+    font-size: 1.5rem

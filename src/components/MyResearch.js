@@ -24,7 +24,7 @@ class MyResearch extends Component {
 
         return (
 
-            <div id='MyResearch'>
+            <div id='MyResearch'  className='fullscreen light'>
                 <h1>Research</h1>
                 <h5>- past, present, future -</h5>
 
