@@ -18,7 +18,7 @@ class Contact extends Component {
     render() {
         return (
 
-            <div id='Contact' className='fullscreen dark'>
+            <div id='Contact' className='fullscreen dark darker'>
 
                 <h1 className='section_title'>Connect</h1>
 

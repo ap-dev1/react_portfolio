@@ -34,7 +34,7 @@ class ContinuousEducation extends Component {
         var MyEntries = certificates.map((item) => {
             return (
                 <tr>
-                    <td style={{ color: "#777" }}>{item.date.slice(-4)}</td>
+                    <td style={{ color: "#fafafa" }}>{item.date.slice(-4)}</td>
                     <td>{item.name}</td>
 
                     <td style={{ textAlign: 'left' }}>
@@ -48,16 +48,12 @@ class ContinuousEducation extends Component {
 
         return (
 
-
-            <div className="recentRow">
+            <div >
                 <table className='table-edu-continuous'>
-
                     <tr>
                         <th colspan='3'>Post-doctoral training</th>
                     </tr>
-
                     {MyEntries}
-
                 </table>
             </div>
 

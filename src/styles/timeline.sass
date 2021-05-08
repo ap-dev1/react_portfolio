@@ -19,7 +19,7 @@ $backgroundColor: #fff
 $timelineColor: #333
 
 // $circleBackground: #81d0f5 // 81d0f5, 83c2d5  
-$circleBackground: #81d0f5 // 81d0f5, 83c2d5  
+$circleBackground: #81d0f5 // 81d0f5, 83c2d5
 $circleBorder: #333 //14213d 0b5970
 
 $contentColor: #fff
@@ -28,7 +28,6 @@ $dateColor: #14213d
 
 $light-grey: #f2f4f8
 $dark-grey: #222
-
 
 // $duration: 0.2s
 
@@ -40,7 +39,6 @@ $dark-grey: #222
 //     transition: $duration
 
 // @include transition(.2s)
-
 
 .time
     display: inline-block
@@ -59,10 +57,8 @@ $dark-grey: #222
     font-weight: 600
     font-family: Montserrat, sans-serif
 
-
 .desc
     margin: 0
-
 
 #MyTimeline
     width: 100%
@@ -70,18 +66,18 @@ $dark-grey: #222
     height: auto
     display: flex
     flex-direction: column
-
     justify-content: center
-    
     font-family: Roboto
-    
     position: relative
-    
     background-color: $backgroundColor
+    margin-top: .5rem
+    margin-bottom: .5rem
+    // padding-top: .5rem
+    // padding-bottom: .5rem
 
     > h1
         color: #fff
-        background-image: linear-gradient(to bottom,  #03767a  , #009297, #02aab0, #fff)
+        background-image: linear-gradient(to bottom, #03767a , #009297, #02aab0, #fff)
 
         font-weight: 400
         width: 100%
@@ -98,8 +94,6 @@ $dark-grey: #222
     left: 5%
     background-color: $backgroundColor
 
-
-
 //.vertical:before
     //content: ""
     //position: absolute
@@ -111,13 +105,16 @@ $dark-grey: #222
     //left: $leftMargin
     //margin-left: 4px
 
+// THE ACTUAL TIMELINE  ----------------------------------------------
 
 .vertical:after
     content: ""
     position: absolute
     width: 1px
     // background-color: $timelineColor
-    background-color: #999
+    //background-color: #999
+    background-color: #075e61
+
     top: 0
     bottom: 0
     left: $leftMargin
@@ -142,8 +139,7 @@ $dark-grey: #222
     width: 100%
     margin-bottom: 4rem
 
-
-// the DATE --------------------------------- 
+// the DATE -------------------------------------------------------------
 .vertical .timelineItem:before
     z-index: 1
     content: attr(content1)
@@ -157,29 +153,18 @@ $dark-grey: #222
     opacity: 1
     //border: 1px solid #333
 
-
-
-// the CIRCLE --------------------------------- 
+// the CIRCLE -----------------------------------------------------------
 .vertical .timelineItem::after
     z-index: 1
     content: ""
     position: absolute
     border-radius: 50%
-
-    // width: 20px
-    // height: 20px
-    // background-color: $circleBackground
-    // border: 3px solid $circleBorder
-    // top: 19px
     width: 12px
     height: 12px
-    //background-color: #999
-    // border: 1px solid $circleBorder
-    border: 1px solid #999
-    background-color: $light-grey
-    //opacity: .6
+    border: 2px solid #075e61
+    //background-color: $light-grey
+    background-color: #075e61
     top: 20px
-
 
 .vertical .timelineItem.right
     left: $leftMargin
@@ -190,15 +175,13 @@ $dark-grey: #222
     border-color: transparent $triangleLeft transparent transparent
     color: #555
     text-align: left
-    //border: 1px solid #333
     width: 60px
-
 
 .vertical .timelineItem.right::after
     left: -1px
     max-width: 30px
-    border: 1px solid #333
-
+    //border: 1px solid #333
+    border: 1px solid #075e61
 
 //  @media screen and (max-width: 768px) 
 //     .container:before 

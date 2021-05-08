@@ -6,7 +6,7 @@ import infoOrange from "../assets/info-orange.png"
 import acronyms from "../assets/acronyms.png"
 
 import parse from 'html-react-parser'
-import { Popover, Button, OverlayTrigger } from "react-bootstrap"
+import { Popover, Button, OverlayTrigger, Navbar, NavDropdown, Nav } from "react-bootstrap"
 
 var nav_main_info = "<b>ABAI</b>: Association for Behavior Analysis International<br/> <b>C&D</b>: Cognition and Development<br/> <b>WCALB</b>: Winter Conference of Learning and Behavior<br/>  <b>Emory ETD</b>: Emory Theses and Disertations<br/>"
 
@@ -21,6 +21,11 @@ class NavMain extends Component {
     toRecent = (e) => {
         e.preventDefault()
         document.getElementById('RecentProjects').scrollIntoView({ block: 'start', behavior: 'smooth' })
+    };
+
+    toParkour = (e) => {
+        e.preventDefault()
+        document.getElementById('Parkour').scrollIntoView({ block: 'start', behavior: 'smooth' })
     };
 
     toTimeline = (e) => {
@@ -79,8 +84,8 @@ class NavMain extends Component {
             <OverlayTrigger trigger="click" placement="left" overlay={popover1}>
                 <img
                     id='navInfo'
-                    //src={infoOrange}
-                    src={acronyms}
+                    src={infoOrange}
+                //src={acronyms}
 
                 />
 
@@ -88,6 +93,7 @@ class NavMain extends Component {
 
             </OverlayTrigger>
         )
+
 
         return (
             <div id='nav1'>
@@ -98,13 +104,29 @@ class NavMain extends Component {
 
                 <ExampleImg />
 
+                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse> */}
+                
                 <button id='btnAbout'
                     onClick={this.toAbout}
                     title="Skills, overview">About</button>
 
                 <button id='btnRecent'
                     onClick={this.toRecent}
-                    title="Recent projects, continuous education">Recent</button>
+                    title="current projects">Current</button>
+
+                <button id='btnParkour'
+                    onClick={this.toParkour}
+                    title="Background">PARKOUR!</button>
 
                 <button id='btnTimeline'
                     onClick={this.toTimeline}

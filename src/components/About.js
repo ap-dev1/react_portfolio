@@ -35,7 +35,7 @@ class About extends Component {
 
         return (
 
-            <div id='About'  className='fullscreen dark'>
+            <div id='About'  className='fullscreen dark darker'>
 
                 <h1 >About me</h1>
 

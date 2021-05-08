@@ -119,34 +119,34 @@ var infoTimeline = [
     //     urls: [{ name: "", link: "" },],
     // },
 
-    // I have enough base knowledge to know i need to know, and the work ethics to get there
+    //I have enough base knowledge to know i need to know, and the work ethics to get there
 
-    {id: 1, title: "Computational Behavior Analysis", date: "08/15/2007",
-        type: 'Emory University, Laney Graduate School of Arts and Sciences, Department of Psychology, Cognition and Development program',
-        role: "GRADUATE STUDENT in Psychology",
-        tags: ["VB.Net", "Excel/VBA", "syntethic data", "research design", "computational modelling", "reinforcement learning", "curve fitting", "surface fitting", "residual analysis", "model selection"],
-        keywords: ["edu", ""],
-        description: "In August 2017 I transfered from Phil Wolff's lab to Jack McDowell's lab. For the next six years I was to study mathematical and computational models of choice and preference - a sub-field of experimental behavior analysis. Dr. Wolf continued to play a formative role, including serving on all my milestone committees, for which I am grateful: Masters (2009), Qualifying Exam (2011), and Dissertation (2013).",
-        //img: [bluefootedboobies22],
-        img: [etbd_storyboard1, etbd_storyboard2, etbd_storyboard3, etbd_storyboard4, etbd_storyboard5, etbd_storyboard6, ], 
-        citation: "",
-        urls: [
-            //{ name: "", link: "" },
-        ],
-    },
-
-    // {id: 2, title: 'A Computational Model of Adaptive Behavior Dynamics', date: "05/02/2009", 
-    //     type: 'invited talk, Emory University',
-    //     role: "(invited talk)",
-    //     tags: [],
-    //     keywords: ["ETBD", "conference", "Emory University"],
-    //     description: "My adviser nominated me as a speaker for the Department's annual research festival. I gave a talk on the relation between mathematical and computational models of behavior dynamics.",
-    //     img: [],
+    // {id: 1, title: "Computational Behavior Analysis", date: "08/15/2007",
+    //     type: 'Emory University, Laney Graduate School of Arts and Sciences, Department of Psychology, Cognition and Development program',
+    //     role: "GRADUATE STUDENT in Psychology",
+    //     tags: ["VB.Net", "Excel/VBA", "syntethic data", "research design", "computational modelling", "reinforcement learning", "curve fitting", "surface fitting", "residual analysis", "model selection"],
+    //     keywords: ["edu", ""],
+    //     description: "In August 2017 I transfered from Phil Wolff's lab to Jack McDowell's lab. For the next six years I was to study mathematical and computational models of choice and preference - a sub-field of experimental behavior analysis. Dr. Wolf continued to play a formative role, including serving on all my milestone committees, for which I am grateful: Masters (2009), Qualifying Exam (2011), and Dissertation (2013).",
+    //     //img: [bluefootedboobies22],
+    //     img: [etbd_storyboard1, etbd_storyboard2, etbd_storyboard3, etbd_storyboard4, etbd_storyboard5, etbd_storyboard6, ], 
+    //     citation: "",
     //     urls: [
-    //         //{ name: "", link: "" }, 
+    //         //{ name: "", link: "" },
     //     ],
-    //     citation: "Popa, A., & McDowell, J J. (2009). A Computational Model of Adaptive Behavior Dynamics. Emory University, Department of Psychology, Annual Research Festival. Atlanta, GA",
     // },
+
+    {id: 2, title: 'A Computational Model of Adaptive Behavior Dynamics', date: "05/02/2009", 
+        type: 'invited talk, Emory University',
+        role: "(invited talk)",
+        tags: [],
+        keywords: ["ETBD", "conference", "Emory University"],
+        description: "My adviser nominated me as a speaker for the Department's annual research festival. I gave a talk on the relation between mathematical and computational models of behavior dynamics.",
+        img: [],
+        urls: [
+            //{ name: "", link: "" }, 
+        ],
+        citation: "Popa, A., & McDowell, J J. (2009). A Computational Model of Adaptive Behavior Dynamics. Emory University, Department of Psychology, Annual Research Festival. Atlanta, GA",
+    },
 
 
     {id: 3, title: 'Wolfram, Complexity, and a New Kind of Science', date: "07/01/2009",
@@ -168,13 +168,16 @@ var infoTimeline = [
     },
 
 
-    // // // // {title: 'Master of Arts', id: 4, date: "20/12/2009", 
-    // // // //     tags: ["Master of Arts", "COMMITTEE", "Hamming Distance", "education", "deggree"],
-    // // // //     description: "M.A. in Psychology, Cognition and Development Program, Emory University; The Effects of Hamming Distances in a Computational Model of Selection by Consequences",
-    // // // //     img: ["___"],
-    // // // //     urls: [{ name: "___", link: "___" }, ],
-    // // // //     citation: "", 
-    // // // // },
+    {title: 'Master of Arts', id: 4, date: "20/12/2009", 
+        type: "Masters's Thesis",
+        tags: ["Master of Arts", "COMMITTEE", "Hamming Distance", "education", "deggree"],
+        description: "M.A. in Psychology, Cognition and Development Program, Emory University; The Effects of Hamming Distances in a Computational Model of Selection by Consequences",
+        img: [],
+        urls: [
+            //{ name: "___", link: "___" }, 
+        ],
+        citation: "", 
+    },
 
 
     // {id: 5, title: 'Absolute reinforcement rates in ETBD', date: "05/30/2010", 
@@ -203,23 +206,23 @@ var infoTimeline = [
     // },
 
 
-    // { id: 7, title: 'Hamming Distances and Changeover Delays', date: "08/01/2010",
-    //     type: 'Masters Thesis',
-    //     tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection", ],
-    //     role: "PRINCIPAL INVESTIGATOR (my masters thesis turned in journal article)",
-    //     keywords: [],
-    //     description: "My M.A. project (December 2009) and my first peer-reviewed publication as first author.",
-    //     img: [],
-    //     urls: [
-    //         { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/20152891" },
-    //         { name: "ReshGate", link: "https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences" },
-    //         { name: "Emory ETD", link: "https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en" },
-    //         { name: "ProQuest", link: "xxx" },
-    //         { name: "SQAB 2009", link: "xxx" }
-    //     ],
-    //     citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434. <br/> <br/> Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX."
-    //     // citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434."
-    // },
+    { id: 7, title: 'Hamming Distances and Changeover Delays', date: "08/01/2010",
+        type: 'Masters Thesis',
+        tags: ["VBA/Excel", "hypothesis testing", "ensemble fitting", "residual analysis", "model selection", ],
+        role: "PRINCIPAL INVESTIGATOR (my masters thesis turned in journal article)",
+        keywords: [],
+        description: "My M.A. project (December 2009) and my first peer-reviewed publication as first author.",
+        img: [],
+        urls: [
+            { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/20152891" },
+            { name: "ReshGate", link: "https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences" },
+            { name: "Emory ETD", link: "https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en" },
+            { name: "ProQuest", link: "xxx" },
+            { name: "SQAB 2009", link: "xxx" }
+        ],
+        citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434. <br/> <br/> Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX."
+        // citation: "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434."
+    },
 
 
 
@@ -241,30 +244,32 @@ var infoTimeline = [
     },
 
 
-    // {id: 8.1, title: 'The Terminal Link Effect',  date: "04/10/2011", 
-    // type: '(Qualifying Exam)',
-    //     role: "",
-    //     keywords: ["candidacy"],
-    //     tags: [],
-    //     description: "The \"Qual\" is the last requirement on the way to PhD. It marks the transition from graduate student to doctoral candidate.<br/></br> I am grateful to the members of the committee - Rob Hampton, Irwin Waldman, and Phil Wolff - for yet another thought-provoking experience.",
-    //     img: [],
-    //     urls: [
-    //         //{ name: "", link: "" }, 
-    //     ],
-    //     citation: "", 
-    // },
+    {id: 8.1, title: 'The Terminal Link Effect',  date: "04/10/2011", 
+    type: '(Qualifying Exam)',
+        role: "",
+        keywords: ["candidacy"],
+        tags: [],
+        description: "The \"Qual\" is the last requirement on the way to PhD. It marks the transition from graduate student to doctoral candidate.<br/></br> I am grateful to the members of the committee - Rob Hampton, Irwin Waldman, and Phil Wolff - for yet another thought-provoking experience.",
+        img: [],
+        urls: [
+            //{ name: "", link: "" }, 
+        ],
+        citation: "", 
+    },
 
 
-    // {id: 9, title: 'Impulsivity in ETBD',  date: "05/30/2011", 
-    //     type: 'talk, ABAI 2011',
-    //     role: "SPEAKER (talk)",
-    //     keywords: ["ABAI 2011", "ETBD", "ADHD"],
-    //     tags: [],
-    //     description: "Hamming Distances and mutation rates; also, preliminary human data",
-    //     img: [ABAI_2011_event],
-    //     urls: [{ name: "ABAI 2011", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=13494&by=ByArea#s445_0" }, ],
-    //     citation: "Popa, A., & McDowell, J J. (2011). A Computational Model of Selection by Consequences: Evidence that Mutation is Computationally Equivalent to Impulsivity. Paper presented at the 37th Annual Convention of the Association for Behavior Analysis International, Denver, CO.", 
-    // },
+
+    
+    {id: 9, title: 'Impulsivity in ETBD',  date: "05/30/2011", 
+        type: 'talk, ABAI 2011',
+        role: "SPEAKER (talk)",
+        keywords: ["ABAI 2011", "ETBD", "ADHD"],
+        tags: [],
+        description: "Hamming Distances and mutation rates; also, preliminary human data",
+        img: [ABAI_2011_event],
+        urls: [{ name: "ABAI 2011", link: "https://www.abainternational.org/events/program-details/event-detail.aspx?sid=13494&by=ByArea#s445_0" }, ],
+        citation: "Popa, A., & McDowell, J J. (2011). A Computational Model of Selection by Consequences: Evidence that Mutation is Computationally Equivalent to Impulsivity. Paper presented at the 37th Annual Convention of the Association for Behavior Analysis International, Denver, CO.", 
+    },
 
 
     {id: 11, title: 'Bivariate Matching', date: "03/01/2012",
@@ -275,7 +280,7 @@ var infoTimeline = [
         role: "CO-INVESTIGATOR (journal article)",
         description: "ABSTRACT. Virtual organisms animated by a selectionist theory of behavior dynamics worked on concurrent random interval schedules where both the rate and magnitude of reinforcement were varied. The selectionist theory consists of a set of simple rules of selection, recombination, and mutation that act on a population of potential behaviors by means of a genetic algorithm.An xtension of the power function matching equation, which expresses behavior allocation as a joint function of exponentiated reinforcement rate and reinforcer magnitude ratios, was fitted to the virtual organisms’ data, and over a range of moderate mutation rates was found to provide an excellent description of their behavior without residual trends.The mean exponents in this range of mutation rates were 0.83 for the reinforcement rate ratio and 0.68 for the reinforcer magnitude ratio, which are values that are comparable to those obtained in experiments with live organisms.These findings add to the evidence supporting the selectionist theory, which asserts that the world of behavior we observe and measure is created by evolutionary dynamics.",
         //img: [bivariate2012_02],
-        img: [bivariate2012_01, bivariate2012_02, bivariate_mcdowell_popa_calvin,  ],
+        img: [bivariate2012_02, bivariate_mcdowell_popa_calvin,  ],
 
         urls: [
             { name: "NCBI/Pubmed", link: "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3449856/" },

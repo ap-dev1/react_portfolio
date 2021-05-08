@@ -24,7 +24,7 @@ class MyResearch extends Component {
 
         return (
 
-            <div id='MyResearch'  className='fullscreen light'>
+            <div id='MyResearch' className='fullscreen light'>
                 <h1>Research</h1>
                 <h5>- past, present, future -</h5>
 
@@ -34,7 +34,7 @@ class MyResearch extends Component {
                 <h5>or</h5>
                 <h2><i>How do connectoms come about?</i></h2>
 
-
+{/* 
                 <p>As children, our ability to act on our environments is limited. Over time, behavioral repertoires
                 become rich, nuanced, and effective: new behaviors are learned, some fade away, while others
                 become highly contextual. The basic principles that underlie these changes, that is, the
@@ -42,22 +42,22 @@ class MyResearch extends Component {
                 I approach this question from two, converging directions. I use computational modelling to
                 implement dynamic theories of behavior change. In parallel, I use human laboratory studies to
                 explore the fine-grained structure and temporal organization of adaptive behavior and to verify
-computational findings.</p>
+computational findings.</p> */}
 
                 <h2>Behavioral repertoires as Complex Systems</h2>
-                <p>One of the more successful accounts (for an overview, see McDowell, 2013b) was inspired by
-                the analogy between learning and biological evolution (Pringle, 1951). The basic idea is
-                straightforward: it proposes that, much like the phenotypes in a biopopulation, behavioral
+                <p>One of the more successful accounts was inspired by the analogy between learning and biological evolution (Pringle, 1951). The basic idea is straightforward: it proposes that, much like the phenotypes in a biopopulation, behavioral
                 repertoires are shaped by low-level processes of selection and variation . These processes
                 operate locally, here -and- now , and allow organisms to adapt in dynamic environments. Over
-                time, they produce behavioral structures and properties that cannot be predicted, ad principia ,
-                by examining the processes themselves. These high-level properties are called emergent and
+                time, they produce behavioral structures and properties that are difficult to predict
+                by examining the processes themselves. 
+                
+                These high-level properties are called emergent and
                 systems that exhibit emergence are referred to as complex systems (Holland, 1998; also in
                 NOVA, 2007). Their dynamics can be studied computationally, as discussed in McDowell and
                 Popa (2009): implement the system’s parts and processes in an abstract form, allow the system
                 to evolve, and compare the emergent behavior with the behavior of biological organisms.
                 http://www.pbs.org/wgbh/nova/nature/emergence.html
-</p>
+                </p>
 
                 <h2>Computational Darwinism</h2>
 
@@ -76,7 +76,7 @@ occasions, can acquire reinforcers; non-target behaviors are never reinforced.</
                 phenotype. Non-reinforced emissions result in more dispersed, variable populations. The
 emissions are recorded and analyzed as if they were the behaviors of a biological organism.</p>
 
-                <h1>PRE-CANDIDACY WORK (2007-2010)</h1>
+                {/* <h1>PRE-CANDIDACY WORK (2007-2010)</h1>
 
                 <h2>Agreement with mathematical descriptors of steady-state behavior</h2>
                 <p>The field of quantitative analysis of behavior generated a wealth of fine-grained knowledge
@@ -91,9 +91,9 @@ emissions are recorded and analyzed as if they were the behaviors of a biologica
                 variance preference patterns (pVAF > 98%) and yielded parameter values for sensitivity to
                 reinforcement rate ( a r ~ 0.8) and magnitude ( a m ~ 0.6) indistinguishable from those observed in live
                 organisms. These outcomes emerged, unguided, from the reiteration of Darwinian rules,
-providing support for the evolutionary account of behavior dynamics.</p>
+providing support for the evolutionary account of behavior dynamics.</p> */}
 
-                <h2>Changeover Delay, in the real world (COD) and in the computational model (Hamming COD )</h2>
+                {/* <h2>Changeover Delay, in the real world (COD) and in the computational model (Hamming COD )</h2>
                 <p>The everyday is filled with distractions that can interfere with activities that require sustained
                 effort. One solution is to make switching between activities more difficult. A common practice is
                 to arrange a changeover delay (COD; Findley, 1958): a short interval contingent on switching
@@ -103,9 +103,9 @@ providing support for the evolutionary account of behavior dynamics.</p>
                 is functionally equivalent with the changeover delay (COD) arranged in experiments with living
                 organisms: high values produced fewer changeovers and higher sensitivity to reinforcement
 (and vice-versa). In this document, I denote this variable with COMP COD (HD COD).</p>
+ */}
 
-
-                <h1>DISSERTATION</h1>
+                {/* <h1>DISSERTATION</h1>
                 <h2>1. Mutation rate , environmental characteristics, and maladaptive behavioral variability</h2>
                 <p>In the model, each emission, or response, triggers a Darwinian cycle. After selection and
                 recombination create a new population, it is affected by mutation : a certain percent of behaviors,
@@ -156,13 +156,13 @@ experimental duration and very high reinforcement rates.</p>
                 the nervous system. For example, if mutation rate and the level of spontaneous
                 fluctuations in the brain’s default mode network (DMN) are functionally equivalent, then
                 choice-behavior that correlates with high levels of DMN fluctuations should match that
-produced by high mutation rates, as discussed in Popa & McDowell (2016).</p>
+produced by high mutation rates, as discussed in Popa & McDowell (2016).</p> */}
 
 
-                <h1>CURRENT WORK AND FUTURE DIRECTIONS</h1>
+                {/* <h1>CURRENT WORK AND FUTURE DIRECTIONS</h1> */}
 
 
-                <p>Currently, I am developing an evolutionary model that, in addition to selection events (positive
+                {/* <p>Currently, I am developing an evolutionary model that, in addition to selection events (positive
                 reinforcement), implements elimination events and contextual cues . The first step is to test the
                 current implementation in single- and concurrent-schedule environments, by comparing its
                 outcomes against known mathematical descriptors. Preliminary studies on choice behavior
@@ -190,10 +190,10 @@ implementation.</p>
                 others). Similarly, the human procedure can be expanded to “multiplayer mode” (so to speak).
                 Bridging the two will allow humans to interact with other humans and/or with digital agents. Will
                 they recognize the difference between human and computer by behavior alone? Will they
-cooperate? Compete? Avoid each other? Will in-groups and out-groups spontaneously emerge?</p>
+cooperate? Compete? Avoid each other? Will in-groups and out-groups spontaneously emerge?</p> */}
 
 
-                <h1>SIGNIFICANCE</h1>
+                {/* <h1>SIGNIFICANCE</h1>
                 <p>The question that drives my research, how behavior changes over time , is directly relevant to all
                 phenomena in which adaptive behavior plays a significant role, from child rearing and
                 personality development, to global warming and artificial intelligence. My approach is inherently
@@ -203,7 +203,7 @@ cooperate? Compete? Avoid each other? Will in-groups and out-groups spontaneousl
                 domains, I seek to make fundamental contributions to our understanding of the basic principles
                 that underlie moment-to-moment changes in voluntary action, cognitive processes, and their
                 underlying neuronal activity; in other words, about the emergence of psychodiversity and
-individuality.</p>
+individuality.</p> */}
 
 
 

@@ -81,58 +81,58 @@ const MyTimeline = props => {
 
 
 
-        if (e.id === -1) {
-            return (
-                <div
-                    style={{
-                        padding: '0px 175px',
-                        position: 'relative',
-                    }}
-                    key={e.id}
-                    id={e.time}
-                //content1={e.date.slice(-7)}
-                //content1={e.date}
-                >
+        // if (e.id === -1) {
+        //     return (
+        //         <div
+        //             style={{
+        //                 padding: '0px 175px',
+        //                 position: 'relative',
+        //             }}
+        //             key={e.id}
+        //             id={e.time}
+        //         //content1={e.date.slice(-7)}
+        //         //content1={e.date}
+        //         >
 
-                    <div
-                        className='timelineContent'
-                        style={{
-                            border: '1px solid #999',
-                            backgroundColor: '#f2f4f8',
-                            opacity: 1,
-                            color: '#444',
-                            borderRadius: '1rem',
-                        }}>
-                        <div>
+        //             <div
+        //                 className='timelineContent'
+        //                 style={{
+        //                     border: '1px solid #999',
+        //                     backgroundColor: '#f2f4f8',
+        //                     opacity: 1,
+        //                     color: '#444',
+        //                     borderRadius: '1rem',
+        //                 }}>
+        //                 <div>
 
-                            <span
-                                className="title"
-                                style={{
-                                    fontSize: '1.2rem',
-                                    textAlign: 'center',
-                                    color: '#333',
-                                    margin: '2rem'
-                                }}
-                            >
-                                {parse(e.title)}
-                            </span>
+        //                     <span
+        //                         className="title"
+        //                         style={{
+        //                             fontSize: '1.2rem',
+        //                             textAlign: 'center',
+        //                             color: '#333',
+        //                             margin: '2rem'
+        //                         }}
+        //                     >
+        //                         {parse(e.title)}
+        //                     </span>
 
-                            <p style={{
-                                fontSize: '.8rem',
-                                fontFamily: 'Roboto, sans-serif',
-                                lineHeight: '1.3rem',
-                                maxWidth: '700px',
-                                margin: '0rem 0rem 1rem 3rem'
+        //                     <p style={{
+        //                         fontSize: '.8rem',
+        //                         fontFamily: 'Roboto, sans-serif',
+        //                         lineHeight: '1.3rem',
+        //                         maxWidth: '700px',
+        //                         margin: '0rem 0rem 1rem 3rem'
 
-                            }}
-                            >{myDescription}</p>
+        //                     }}
+        //                     >{myDescription}</p>
+        //                 </div>
+        //             </div>
+        //         </div>
+        //     )
+        // };
 
-                        </div>
-                    </div>
 
-                </div>
-            )
-        }
 
         return (
 
@@ -153,7 +153,7 @@ const MyTimeline = props => {
                             overview={myDescription}
                             maxChars={600} />
 
-                        <div className="divSkills" style={{fontSize: '.7rem'}} >{Tags}</div>
+                        {/* <div className="divSkills" style={{fontSize: '.7rem'}} >{Tags}</div> */}
 
                         <div className="divLinks" style={{fontSize: '.7rem'}}>{Links}</div>
 
@@ -190,7 +190,7 @@ const MyTimeline = props => {
 
         <div id='MyTimeline'>
 
-            <h1 >Professional Trajectory</h1>
+            {/* <h1 >Professional Trajectory</h1> */}
 
             <div className="vertical">
                 {eventsMappedToElements}

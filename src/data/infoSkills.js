@@ -11,7 +11,7 @@ var skills = [
 
     {id: 4,  name: "JavaScript", scope: ["transport, client"] , color: "#14213d", opacity: strong},
     {id: 5,  name: "React.js", scope: ["client"] , color: "#14213d", opacity: weak},
-    {id: 6,  name: "jQuery", scope: ["transport"] , color: "#14213d", opacity: weak},
+    //{id: 6,  name: "jQuery", scope: ["transport"] , color: "#14213d", opacity: weak},
     {id: 7,  name: "D3.js", scope: ["visualize"] , color: "#14213d", opacity: weak},
     {id: 8,  name: "Node.JS", scope: ["transport"] , color: "#14213d", opacity: weak},
 
@@ -25,7 +25,7 @@ var skills = [
     {id: 15,  name: "Tkinter", scope: "" , color: "#14213d", opacity: weak},
     {id: 16,  name: "Matplotlib", scope: "visualize", color: "#14213d" , opacity: weak},
 
-    {id: 17,  name: "RDS / Postgres", scope: ["storage and retrieval"], color: "#14213d" , opacity: strong},
+    {id: 17,  name: "Postgres", scope: ["storage and retrieval"], color: "#14213d" , opacity: strong},
     {id: 18,  name: "DynamoDB", scope: ["storage and retrieval"] , color: "#14213d", opacity: strong},
     {id: 19,  name: "MongoDB/Atlas", scope: ["storage and retrieval"] , color: "#14213d", opacity: strong},
     {id: 20,  name: "SQLite", scope: ["storage and retrieval"] , color: "#14213d", opacity: strong},
