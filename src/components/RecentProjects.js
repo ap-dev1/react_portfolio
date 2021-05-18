@@ -8,7 +8,7 @@ import ContinuousEducation from "./ContinuousEducation";
 class RecentProjects extends Component {
   render() {
     return (
-      <div id="RecentProjects" className="fullscreen light">
+      <div id="RecentProjects" className="fullscreen darker">
         <h1>Current projects </h1>
 
         <div className="recentRow">

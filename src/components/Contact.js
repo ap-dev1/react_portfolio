@@ -14,9 +14,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div id="Contact" className="fullscreen dark darker">
-        {/* <h1 className='section_title'>Connect</h1> */}
-
+      <div id="Contact" className="fullscreen light">
         <h1>Connect</h1>
 
         <div className="section_column">
@@ -34,23 +32,21 @@ class Contact extends Component {
           </button>
         </div>
 
-        <table style={{ width: "60%", margin: "auto" }}>
-          {infoContact.slice(1, -1).map((link, index) => (
+        <table className="table_contact">
+          {infoContact.slice(1).map((link, index) => (
             <tr key={index}>
-              <td style={{ width: "30%" }}>
+              <td>
                 <Button
                   name={link.url}
                   title={link.url}
-                  className="link_google"
                   onClick={this.goToLink}
-                  style={{ color: "#e3e3e3", padding: ".5rem" }}
                 >
                   {link.name}
                 </Button>
               </td>
 
-              <td style={{ width: "70%" }}>
-                <p style={{ maxWidth: "500px" }}>{parse(link.info)}</p>
+              <td>
+                <p>{parse(link.info)}</p>
               </td>
             </tr>
           ))}

@@ -15,8 +15,47 @@ import {
   Nav,
 } from "react-bootstrap";
 
-var nav_main_info =
-  "<b>ABAI</b>: Association for Behavior Analysis International<br/> <b>C&D</b>: Cognition and Development<br/> <b>WCALB</b>: Winter Conference of Learning and Behavior<br/>  <b>Emory ETD</b>: Emory Theses and Disertations<br/>";
+var infoAcronyms = [
+  {
+    term: "ETBD",
+    meaning: "evolutionary theory of behavior dynamics",
+    link: "www",
+  },
+  { term: "COD", meaning: "Changeover Delay", link: "www" },
+  {
+    term: "Hamming Distance",
+    meaning:
+      "The number of diferences between two bit strings of equal length; in strings 1110 and 0011 the third bit is identical and the other three are different, so HD = 3.",
+    link: "https://en.wikipedia.org/wiki/Hamming_distance",
+  },
+  {
+    term: "ABAI",
+    meaning: "Association for Behavior Analysis International",
+    link: "https://www.abainternational.org/welcome.aspx",
+  },
+  // {
+  //   term: "SQAB",
+  //   meaning: "Society for Quantitative Analysis of Behavior",
+  //   link: "https://www.sqab.org/",
+  // },
+  {
+    term: "IRB",
+    meaning: "Institutional Review Board",
+    link: "http://www.irb.emory.edu/",
+  },
+
+  {
+    term: "ETD",
+    meaning: "Emory Theses and Disertations",
+    link: "https://etd.library.emory.edu/",
+  },
+
+  {
+    term: "WCALB",
+    meaning: "Winter Conference of Learning and Behavior",
+    link: "WWWWWWW",
+  },
+];
 
 var headers = [
   "About",
@@ -81,60 +120,19 @@ class NavMain extends Component {
 
   render() {
     const popover1 = (
-      <Popover id="popover-basic" style={{ width: "auto", opacity: 0.8 }}>
-        {/* <Popover.Title as="h3"></Popover.Title> */}
+      <Popover id="popover-basic" className="pop-over">
         <Popover.Content>
-          <table style={{ fontSize: ".8rem" }}>
-            <tr style={{ margin: ".2rem" }}>
-              <td style={{ margin: ".2rem" }}>
-                <b>ETD</b>
-              </td>
-              <td
-                style={{
-                  textAlign: "left",
-                  overflowWrap: true,
-                  width: "fit-content",
-                }}
-              >
-                Emory Theses and Dissertations
-              </td>
-            </tr>
-
-            <tr style={{ margin: ".2rem" }}>
-              <td style={{ margin: ".2rem" }}>
-                <b>IRB</b>
-              </td>
-              <td style={{ textAlign: "left", overflowWrap: true }}>
-                Institutional Review Board
-              </td>
-            </tr>
-
-            <tr style={{ margin: ".2rem" }}>
-              <td style={{ margin: ".2rem" }}>
-                <b>C&D</b>
-              </td>
-              <td style={{ textAlign: "left", overflowWrap: true }}>
-                Cognition & Development
-              </td>
-            </tr>
-
-            <tr style={{ margin: ".2rem" }}>
-              <td style={{ margin: ".2rem" }}>
-                <b>ABAI</b>
-              </td>
-              <td style={{ textAlign: "left", wordWrap: true }}>
-                Association for Behavior Analysis International
-              </td>
-            </tr>
-
-            <tr style={{ margin: ".2rem" }}>
-              <td style={{ margin: ".2rem" }}>
-                <b>WCALB</b>
-              </td>
-              <td style={{ textAlign: "left", overflowWrap: true }}>
-                Winter Conference of Learning and Behavior
-              </td>
-            </tr>
+          <table className="table_acronyms">
+            {infoAcronyms.map((item) => {
+              return (
+                <tr>
+                  <td>
+                    <b>{item.term}</b>
+                  </td>
+                  <td> {item.meaning} </td>
+                </tr>
+              );
+            })}
           </table>
         </Popover.Content>
       </Popover>
@@ -154,16 +152,7 @@ class NavMain extends Component {
             opacity: 0.9,
           }}
         >
-          {" "}
-          acronyms
-          {/* <img
-            src={infoOrange}
-            style={{
-              width: "25px",
-              marginLeft: "10px",
-              transform: "scale(.75)",
-            }}
-          /> */}
+          {"acronyms"}
         </button>
       </OverlayTrigger>
     );
@@ -184,30 +173,23 @@ class NavMain extends Component {
         <button
           onClick={this.toChapter1}
           title="Chapter 1"
-          //style={{ color: "#FFFF00" }}
           style={{ borderRadius: "25px" }}
         >
           2007 - 2010
-          <br />
-          Hamming COD
         </button>
         <button
           onClick={this.toChapter2}
           title="Chapter 2"
-          //style={{ color: "#FFFF00" }}
           style={{ borderRadius: "25px" }}
         >
           2011 - 2013
-          <br />
-          Computational ADHD
         </button>
         <button
           onClick={this.toChapter3}
           title="Chapter 3"
-          //style={{ color: "#4be63d" }}
           style={{ borderRadius: "25px" }}
         >
-          2014 - 2017
+          2014 - 2018
         </button>
         <button
           onClick={this.toChapter4}
@@ -219,7 +201,6 @@ class NavMain extends Component {
         <button
           onClick={this.toRecent}
           title="current projects"
-          //style={{ color: "#4be63d" }}
           style={{ borderRadius: "5px" }}
         >
           Current work

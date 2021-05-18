@@ -19,6 +19,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+
         <About />
 
         <div
@@ -42,22 +43,17 @@ class App extends Component {
           </div>
         </div>
 
-        {/* <div style={{ width: "100%", height: "20px" }}></div> */}
-
         <Chapter1 />
 
-        {/* <div style={{ width: "100%", height: "50px" }}></div> */}
         <div className="between-chapters"></div>
 
         <MyTimeline
-          events={infoTimeline.slice(0, -1)}
+          events={infoTimeline.slice(0, 5)}
           orientation="vertical"
           startFrom="first"
         />
 
         <Chapter2 />
-
-        {/* <div style={{ width: "100%", height: "50px" }}></div> */}
 
         <div className="between-chapters"></div>
 
@@ -69,12 +65,10 @@ class App extends Component {
 
         <Chapter3 />
 
-        {/* <div style={{ width: "100%", height: "50px" }}></div> */}
-
         <div className="between-chapters"></div>
 
         <MyTimeline
-          events={infoTimeline.slice(12, -1)}
+          events={infoTimeline.slice(12, -3)}
           orientation="vertical"
           startFrom="first"
         />
@@ -84,7 +78,7 @@ class App extends Component {
         {/* <div style={{ width: "100%", height: "50px" }}></div> */}
 
         <MyTimeline
-          events={infoTimeline.slice(20, -1)}
+          events={infoTimeline.slice(-3)}
           orientation="vertical"
           startFrom="first"
         />

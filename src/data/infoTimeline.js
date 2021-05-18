@@ -669,13 +669,13 @@ var infoTimeline = [
     keywords: [],
     tags: ["VB.NET", "Python", "Pandas", "SciPy", "Matplotlib"],
     description:
-      "Effects of Personality Factors and Environmental Properties on the Variability and Organization of Behavioral and Cognitive Processes. A laboratory invstigation in the effects of positive and negative reinforcement on learning... (Emory University, Oxford College Campus, 2018; with Kenneth Carter) <br/> <br/>  Emory University,Oxford College, IRB00101193, AM1_IRB00101193  <br/> <br/>  <b><i>I am greateful to Dr. Ken Anderson and Dr. Kenneth Carter for making this project possible and my research assistants, for  I also thank my research assistants, ... </b></i> ",
+      "Here I compared positively reinforced behavior and avoidance behavior in symmetrical environments (Popa & Carter, 2018). I am greateful to Dr. Ken Anderson and Dr. Kenneth Carter for making this project possible. More details will follow.",
 
     img: [Pos01_1_pos, Neg04_1_neg, Trn04_2_pos, Trn04_3_neg, Trn04_4_ext],
 
     urls: [{ name: "gDrive", link: "gDrive" }],
 
-    citation: "(Emory University, Oxford Campus, 2018)",
+    citation: "Emory University, Oxford College, IRB00101193, AM1_IRB00101193",
   },
 
   {
@@ -691,26 +691,26 @@ var infoTimeline = [
       //{name: "xxx", link:"xxx"},
       //{name: "xxx", link: "xxx"}
     ],
-    citation: "citation",
+    citation: "invited talk, Emory University, Oxford Campus",
   },
 
-  {
-    id: 26,
-    title: "ETBD.py",
-    date: "09/15/2018",
-    type: "(research, computational modelling)",
-    role: "PRINCIPAL INVESTIGATOR",
-    keywords: [],
-    tags: ["Python", "SciPy", "SQLite", "Postgres"],
-    description:
-      "This evolutionary theory of behavior dynamics is similar to the one described in McDowell (2004). ... ",
-    img: [],
-    urls: [
-      //{name: "xxx", link:"xxx"},
-      //{name: "GitHub", link: "xxx"}
-    ],
-    citation: "Get a DOI    2018)",
-  },
+  // {
+  //   id: 26,
+  //   title: "ETBD.py",
+  //   date: "09/15/2018",
+  //   type: "(research, computational modelling)",
+  //   role: "PRINCIPAL INVESTIGATOR",
+  //   keywords: [],
+  //   tags: ["Python", "SciPy", "SQLite", "Postgres"],
+  //   description:
+  //     "This evolutionary theory of behavior dynamics is similar to the one described in McDowell (2004). ... ",
+  //   img: [],
+  //   urls: [
+  //     //{name: "xxx", link:"xxx"},
+  //     //{name: "GitHub", link: "xxx"}
+  //   ],
+  //   citation: "Get a DOI    2018)",
+  // },
 
   {
     id: 27,
@@ -760,7 +760,7 @@ var infoTimeline = [
 
   {
     id: 29,
-    title: "Card Sorting project",
+    title: "MERN project",
     date: "10/2020",
     type: "MERN app",
     time: "10/01/2020",
@@ -774,7 +774,7 @@ var infoTimeline = [
       "RDS/Postgres",
     ],
     description:
-      "My first MERN project, a sandbox I used to  Before switching to MongoDB/Atlas, I used DynamoDB for authentication and RDS for storing user data.",
+      "My first MERN project was a card sorting activity, that entailed authentication, choosing a few cards from a stack, and storing the selection. Note that it wasn't a MERN project from the beginning: before switching to MongoDB I used DynamoDB for authentication and RDS for storing user data.",
     img: [projectCardSorting],
     urls: [
       { name: "GitHub", link: "https://github.com/ap-dev1/personal_values" },
@@ -782,38 +782,38 @@ var infoTimeline = [
     citation: "",
   },
 
-  {
-    title: "Courses Tought",
-    id: 29,
-    date: "2008 - 2018",
-    role: "",
-    keywords: [],
-    tags: ["", "", ""],
-    description:
-      "Emory University, 2008 - 2012; <br/>  TATTO , Statistics Lab (Spring 2008); <br/> Research Methods Lab (Fall 2008); <br/> Behavior Modification (for Jack McDowell; Fall 2010, 2011, 2012); <br/> Introduction to Psychology (for Scott Lilienfeld; Fall 2011) <br/> The Evolution of Acquired Behavior, Emory University; my first course (N ~ 50)   <br/>      Visiting Lecturer, Georgia State University; <br/>  Theories of Personality (14 sections); <br/>  Abnormal Psychology (8 sections); <br/>  Introduction to Psychology (8 sections) <br/>   Visiting Assistant Professor of Psychology, Agnes Scott College; <br/>  Senior Seminar: Choice and Preference; <br/>  Introduction to Sociology; <br/>  Research Methods and Design;  <br/>  Introduction to Psychology <br/>  Adjunct Assistant Professor of Psychology, Emory University, Oxford College; <br/>  Introduction to Psychology; <br/> Introduction to Psychobiology",
-    img: [],
-    urls: [
-      //{ name: "___", link: "___" },
-    ],
-    citation: "___",
-  },
+  // {
+  //   title: "Courses Tought",
+  //   id: 29,
+  //   date: "2008 - 2018",
+  //   role: "",
+  //   keywords: [],
+  //   tags: ["", "", ""],
+  //   description:
+  //     "Emory University, 2008 - 2012; <br/>  TATTO , Statistics Lab (Spring 2008); <br/> Research Methods Lab (Fall 2008); <br/> Behavior Modification (for Jack McDowell; Fall 2010, 2011, 2012); <br/> Introduction to Psychology (for Scott Lilienfeld; Fall 2011) <br/> The Evolution of Acquired Behavior, Emory University; my first course (N ~ 50)   <br/>      Visiting Lecturer, Georgia State University; <br/>  Theories of Personality (14 sections); <br/>  Abnormal Psychology (8 sections); <br/>  Introduction to Psychology (8 sections) <br/>   Visiting Assistant Professor of Psychology, Agnes Scott College; <br/>  Senior Seminar: Choice and Preference; <br/>  Introduction to Sociology; <br/>  Research Methods and Design;  <br/>  Introduction to Psychology <br/>  Adjunct Assistant Professor of Psychology, Emory University, Oxford College; <br/>  Introduction to Psychology; <br/> Introduction to Psychobiology",
+  //   img: [],
+  //   urls: [
+  //     //{ name: "___", link: "___" },
+  //   ],
+  //   citation: "___",
+  // },
 
-  {
-    title: "Continuous Education",
-    id: 31,
-    date: "2018...",
-    role: "",
-    keywords: [],
-    tags: [],
-    description:
-      "Data Science with Python track (DataCamp, 2018)<br> Python Bootcamp (Udemy, 2018)<br> Machine Learning by Stanford University (Coursera, 2018)<br>SQL Bootcamp (Udemy, 2019)",
-    //thumbnail:"",
-    img: [],
-    urls: [
-      //{ name: "___", link: "___" },
-    ],
-    citation: "",
-  },
+  //   {
+  //     title: "Continuous Education",
+  //     id: 31,
+  //     date: "2018...",
+  //     role: "",
+  //     keywords: [],
+  //     tags: [],
+  //     description:
+  //       "Data Science with Python track (DataCamp, 2018)<br> Python Bootcamp (Udemy, 2018)<br> Machine Learning by Stanford University (Coursera, 2018)<br>SQL Bootcamp (Udemy, 2019)",
+  //     //thumbnail:"",
+  //     img: [],
+  //     urls: [
+  //       //{ name: "___", link: "___" },
+  //     ],
+  //     citation: "",
+  //   },
 ];
 
 export default infoTimeline;
