@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/project.sass'
+import "./sassy/event-a.sass"
+
 import parse from 'html-react-parser';
 
 
@@ -18,7 +20,7 @@ const ReadMore = (props) => {
         if (props.overview.length > maxChars) {
             return (
                 <p className="projectOverview" style={{color: props.fontColor}}>
-                    {isReadMore ? props.overview.slice(0, maxChars) : props.overview}
+                    {isReadMore ? parse(props.overview).slice(0, maxChars) : props.overview}
                     <span
                         title="read more"
                         onClick={toggleReadMore} className="read-or-hide"

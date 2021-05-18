@@ -1,83 +1,102 @@
+import React, { Component } from "react";
 
-import React, { Component } from 'react';
+import Header from "./components/Header";
+import About from "./components/About";
+import RecentProjects from "./components/RecentProjects";
+import MyTimeline from "./components/MyTimeline";
+import Contact from "./components/Contact";
 
-import Header from './components/Header';
-import About from './components/About';
-import RecentProjects from './components/RecentProjects';
-import MyTimeline from './components/MyTimeline';
-import Contact from './components/Contact';
+import infoTimeline from "./data/infoTimeline";
 
-import infoTimeline from "./data/infoTimeline"
+import Chapter1 from "./components/chapters/Chapter1";
+import Chapter2 from "./components/chapters/Chapter2";
 
-import Parkour from './components/chapters/Parkour'
-import EtbdAndMe from './components/chapters/EtbdAndMe'
-
-import IntroETBD from './components/chapters/IntroETDB'
-import PhdProject from './components/chapters/PhdProject'
-
-import Postdoc1 from './components/chapters/Postdoc1'
-import Postdoc2 from './components/chapters/Postdoc2'
-
-
+import Chapter3 from "./components/chapters/Chapter3";
+import Chapter4 from "./components/chapters/Chapter4";
 
 class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <About />
 
-    render() {
-        return (
-            <div >
-                <Header />
+        <div
+          style={{
+            width: "100%",
+            height: "100vh",
+            textAlign: "center",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-around",
+            fontSize: "16px",
+            fontFamily: "Roboto",
+            color: "#1B4D3E",
+          }}
+        >
+          <div>
+            <p>
+              Neuronal activity can be represented computationally, <br />
+              but the brain is not a computational machine.
+            </p>
+          </div>
+        </div>
 
-                <About />
+        {/* <div style={{ width: "100%", height: "20px" }}></div> */}
 
-                <RecentProjects />
+        <Chapter1 />
 
+        {/* <div style={{ width: "100%", height: "50px" }}></div> */}
+        <div className="between-chapters"></div>
 
-                {/* <IntroETBD />
+        <MyTimeline
+          events={infoTimeline.slice(0, -1)}
+          orientation="vertical"
+          startFrom="first"
+        />
 
+        <Chapter2 />
 
-                <MyTimeline
-                    events={infoTimeline.slice(0, 6)}
-                    orientation="vertical"
-                    startFrom="first"
-                    />
+        {/* <div style={{ width: "100%", height: "50px" }}></div> */}
 
-                <PhdProject />
+        <div className="between-chapters"></div>
 
+        <MyTimeline
+          events={infoTimeline.slice(5, 12)}
+          orientation="vertical"
+          startFrom="first"
+        />
 
-                <MyTimeline
-                    events={infoTimeline.slice(6, 12)}
-                    orientation="vertical"
-                    startFrom="first"
-                    />
+        <Chapter3 />
 
+        {/* <div style={{ width: "100%", height: "50px" }}></div> */}
 
-                <Postdoc1 />
+        <div className="between-chapters"></div>
 
+        <MyTimeline
+          events={infoTimeline.slice(12, -1)}
+          orientation="vertical"
+          startFrom="first"
+        />
 
-                <MyTimeline
-                    events={infoTimeline.slice(12, 18)}
-                    orientation="vertical"
-                    startFrom="first"
-                    />
+        <Chapter4 />
 
+        {/* <div style={{ width: "100%", height: "50px" }}></div> */}
 
-                <Postdoc2 />
+        <MyTimeline
+          events={infoTimeline.slice(20, -1)}
+          orientation="vertical"
+          startFrom="first"
+        />
 
+        <div className="between-chapters"></div>
 
-                <MyTimeline
-                    events={infoTimeline.slice(18, -1)}
-                    orientation="vertical"
-                    startFrom="first"
-                    /> */}
+        <RecentProjects />
 
-
-                <Contact />
-
-
-            </div>
-        );
-    }
-
+        <Contact />
+      </div>
+    );
+  }
 }
 
 export default App;
