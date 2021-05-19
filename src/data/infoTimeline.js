@@ -502,7 +502,9 @@ var infoTimeline = [
     keywords: ["Darwin2015", "invited talk", "conference"],
     tags: [],
     description: "requires description",
-    img: [darwin_2015_15, darwin_2015_18, Darwin_2015],
+    // img: [darwin_2015_15, darwin_2015_18, Darwin_2015],
+    img: [darwin_2015_18, Darwin_2015],
+
     urls: [
       //{ name: "", link: "" },
     ],
@@ -519,9 +521,15 @@ var infoTimeline = [
     keywords: ["Darwin2016", "invited talk", "conference"],
     tags: [],
     description: "requires description",
+    // img: [
+    //   darwin_2016_slide_03,
+    //   darwin_2016_slide_04,
+    //   darwin_2016_slide_06,
+    //   darwin_2016_slide_07,
+    //   darwin_2016_slide_08,
+    //   Darwin_2016,
+    // ],
     img: [
-      darwin_2016_slide_03,
-      darwin_2016_slide_04,
       darwin_2016_slide_06,
       darwin_2016_slide_07,
       darwin_2016_slide_08,
@@ -572,8 +580,9 @@ var infoTimeline = [
     role: "STUDY COORDINATOR",
     keywords: ["Agnes Scott College"],
     tags: ["VB.Net"],
-    description:
-      "My second opportunity to run my own lab. ... (Senior Seminar, Choice and Preference) ... Stimulus control and negative reinforcement in humans. ...The students from my senior seminar on The Dynamics of Choice and Preference contributed three talks and four posters to the Spring Annual Research Conference. Managing this enterprise would have been challenging at best without my research assistants - Alessandra Xi Zhang and Olivia Zivot, to whom I am grateful.",
+    description: "",
+    // description:
+    //   "My second opportunity to run my own lab. ... (Senior Seminar, Choice and Preference) ... Stimulus control and negative reinforcement in humans. ...The students from my senior seminar on The Dynamics of Choice and Preference contributed three talks and four posters to the Spring Annual Research Conference. Managing this enterprise would have been challenging at best without my research assistants - Alessandra Xi Zhang and Olivia Zivot, to whom I am grateful.",
     img: [
       SpARC_01_Adekunle,
       SpARC_02_1_Tang,
@@ -686,12 +695,38 @@ var infoTimeline = [
     role: "SPEAKER",
     tags: [],
     description: "requires description",
-    img: [ow02, ow03, ow07, ow08, ow09],
+    //img: [ow02, ow03, ow07, ow08, ow09],
+    img: [ow08, ow09],
+
     urls: [
       //{name: "xxx", link:"xxx"},
       //{name: "xxx", link: "xxx"}
     ],
     citation: "invited talk, Emory University, Oxford Campus",
+  },
+
+  {
+    id: 27,
+    title: "The Shape of Will",
+    date: "09/08/2019",
+    type: "preprint",
+    time: "09/08/2019",
+    role: "PRINCIPAL INVESTIGATOR",
+    keywords: [],
+    tags: ["Problem Solving"],
+    description:
+      "Physical forces acting on particles explain how physical systems change over time. Evolutionary forces acting on populations of genomes explain change in the genetic structure of populations across generations. Change in psychological systems - i.e. human development, or learning - is not yet understood. Although dynamic principles have been proposed, their target remained vaguely defined. What are such principles acting on, what kind of empirical transformations do they cause, and how do these transformations explain development?",
+    //img: [projectPsych],
+    img: [change_in_state_2],
+    urls: [
+      { name: "PsyArXiv", link: "https://psyarxiv.com/m87an/" },
+      {
+        name: "ResGate",
+        link: "https://www.researchgate.net/publication/335688963_Psychology_20_The_Emergence_of_Individuality",
+      },
+    ],
+    citation:
+      "Popa, Andrei. 2019. “Psychology 2.0: The Emergence of Individuality.” PsyArXiv. September 8. doi:10.31234/osf.io/m87an.",
   },
 
   // {
@@ -713,7 +748,7 @@ var infoTimeline = [
   // },
 
   {
-    id: 27,
+    id: 28,
     title: "Imperfect Automata",
     date: "09/30/2019",
     type: "preprint",
@@ -733,29 +768,6 @@ var infoTimeline = [
     ],
     citation:
       "Popa, Andrei. 2019. “Imperfect Automata: Effects of “mutation” on the Evolution of Automaton 01101110 (rule 110)” PsyArXiv. September 30. doi:10.31234/osf.io/wgp4e.",
-  },
-
-  {
-    id: 28,
-    title: "The Shape of Will",
-    date: "09/08/2019",
-    type: "preprint",
-    time: "09/08/2019",
-    role: "PRINCIPAL INVESTIGATOR",
-    keywords: [],
-    tags: ["Problem Solving"],
-    description:
-      "Physical forces acting on particles explain how physical systems change over time. Evolutionary forces acting on populations of genomes explain change in the genetic structure of populations across generations. Change in psychological systems - i.e. human development, or learning - is not yet understood. Although dynamic principles have been proposed, their target remained vaguely defined. What are such principles acting on, what kind of empirical transformations do they cause, and how do these transformations explain development?",
-    img: [projectPsych],
-    urls: [
-      { name: "PsyArXiv", link: "https://psyarxiv.com/m87an/" },
-      {
-        name: "ResGate",
-        link: "https://www.researchgate.net/publication/335688963_Psychology_20_The_Emergence_of_Individuality",
-      },
-    ],
-    citation:
-      "Popa, Andrei. 2019. “Psychology 2.0: The Emergence of Individuality.” PsyArXiv. September 8. doi:10.31234/osf.io/m87an.",
   },
 
   {
