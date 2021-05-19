@@ -86,28 +86,28 @@ class NavMain extends Component {
   toChapter1 = (e) => {
     e.preventDefault();
     document
-      .getElementById("Chapter1")
+      .getElementById("ch1")
       .scrollIntoView({ block: "start", behavior: "smooth" });
   };
 
   toChapter2 = (e) => {
     e.preventDefault();
     document
-      .getElementById("Chapter2")
+      .getElementById("ch2")
       .scrollIntoView({ block: "start", behavior: "smooth" });
   };
 
   toChapter3 = (e) => {
     e.preventDefault();
     document
-      .getElementById("Chapter3")
+      .getElementById("ch3")
       .scrollIntoView({ block: "start", behavior: "smooth" });
   };
 
   toChapter4 = (e) => {
     e.preventDefault();
     document
-      .getElementById("Chapter4")
+      .getElementById("ch4")
       .scrollIntoView({ block: "start", behavior: "smooth" });
   };
 
@@ -172,28 +172,28 @@ class NavMain extends Component {
 
         <button
           onClick={this.toChapter1}
-          title="Chapter 1"
+          title="one"
           style={{ borderRadius: "25px" }}
         >
           2007 - 2010
         </button>
         <button
           onClick={this.toChapter2}
-          title="Chapter 2"
+          title="two"
           style={{ borderRadius: "25px" }}
         >
           2011 - 2013
         </button>
         <button
           onClick={this.toChapter3}
-          title="Chapter 3"
+          title="three"
           style={{ borderRadius: "25px" }}
         >
           2014 - 2018
         </button>
         <button
           onClick={this.toChapter4}
-          title="Chapter 4"
+          title="four"
           style={{ borderRadius: "25px" }}
         >
           2018 - 2019
