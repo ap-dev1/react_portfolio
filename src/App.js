@@ -8,11 +8,11 @@ import Contact from "./components/Contact";
 
 import infoTimeline from "./data/infoTimeline";
 
-import Chapter1 from "./components/chapters/Chapter1";
-import Chapter2 from "./components/chapters/Chapter2";
+import Chapter1 from "./components/background/Chapter1";
+import Chapter2 from "./components/background/Chapter2";
 
-import Chapter3 from "./components/chapters/Chapter3";
-import Chapter4 from "./components/chapters/Chapter4";
+import Chapter3 from "./components/background/Chapter3";
+import Chapter4 from "./components/background/Chapter4";
 
 class App extends Component {
   render() {

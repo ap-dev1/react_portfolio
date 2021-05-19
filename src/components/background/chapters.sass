@@ -1,0 +1,289 @@
+// text-transform: uppercase
+// font-variant: small-caps
+
+    
+// @import '../styles/_divSkills'
+// @import '../styles/_fullscreen'
+
+// $daisy: #fffe7a
+// $background-color1: #1B4D3E
+// $background-color2: #02aab0
+
+// $lightCyan: #59ebf0
+// $specialColor: #02aab0
+// $specialColor1: #03767a
+
+//  NEW  NAMES
+$light-color: #e5e5e5
+$dark-color: #02AAB0
+$dark-color1: #075E61
+    
+$dark-color2: #023638
+$dark-color3: #001e1f
+
+$rowBorder: 1px solid #ff6005
+//$rowBorder: 1px solid #78f8a2
+
+// $font-h1: 2.5rem Arial, sans-serif
+// $font-h2: 2.0rem Arial, sans-serif
+// $font-h3: 1.5rem Arial, sans-serif
+// $font-text: 0.8rem Arial, sans-serif
+
+.star
+    font-size: 1rem
+    color: #92fa00
+    //color: #f4f900
+
+
+#frame-wrapper
+    width: 600px
+    height: 250px
+    border: 1px solid #fff
+    overflow: hidden
+
+    &:hover
+        cursor: pointer
+
+#scaled-frame
+    border: 0px
+    width: 1000px
+    height: 600px
+
+#scaled-frame
+    transform: scale(.6)
+    -moz-transform: scale(0.6)
+    -moz-transform-origin: 0 0
+    -o-transform: scale(0.6)
+    -o-transform-origin: 0 0
+    -webkit-transform: scale(0.6)
+    -webkit-transform-origin: 0 0
+
+.etbd-and-me
+    background-image: linear-gradient(to right, $dark-color2, $dark-color2, $dark-color1, $dark-color2, $dark-color2)
+    color: $light-color
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 50px 50px
+    margin: 1rem 0 1rem 0
+    color: #fff
+
+    > h1
+        text-align: center
+        margin: 2rem 0rem 2rem 0rem
+        font-size: 3rem
+        font-family: 'Roboto Slab', serif
+        font-weight: 400
+        letter-spacing: 2px
+
+
+    
+.between-chapters
+    width: 100%
+    height: 20px
+
+.chapter
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    //justify-content: top
+    //justify-content: center
+    padding-top: 3rem
+    background: $dark-color1
+    color: #d6d6d6
+    
+
+.chapterRow
+    padding: 1rem 5% 2rem 5%
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    justify-content: center
+
+
+
+
+.chapterCol
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    margin: 0rem 2rem
+    padding: 0rem .5rem .5rem .5rem
+    vertical-align: auto
+    //border: 1px solid red
+
+
+.chapter-title
+    font-family: "Roboto Slab", serif
+    max-width: 600px
+    width: 100%
+    font-size: 2.2rem
+    font-weight: 500
+    letter-spacing: 1px
+    color: #ffffff
+
+.chapter-sub-title
+    max-width: 600px
+    padding-bottom: .5rem
+    font-family: 'Roboto Slab', serif
+    //font-variant: small-caps
+    margin-bottom: .5rem
+    font-size: 1.3rem
+    color: #eaeaea
+    color: #fff
+    font-weight: 500
+   
+
+.p-left
+    max-width: 600px
+    padding-left: 1rem
+    padding-right: 1rem
+    font-size: 1rem
+    font-family: Roboto, sans-serif
+    margin: .5rem 0rem, 1rem 0rem
+    text-align: justify
+    text-justify: inter-character
+
+
+.spanYears
+    border-bottom: 1px solid #aaaaaa
+    margin-bottom: .5rem
+    font-size: 1.5rem
+    font-weight: 500
+    padding-bottom: .5rem
+    margin-bottom: 1rem
+    font-family: 'Roboto Slab', serif
+
+.link515
+    color: #97c8f5
+    width: 100%
+    padding-left: 0rem
+    margin-bottom: .5rem
+    padding-top: 0
+    font-weight: 400
+    font-family: 'Roboto' sans-serif
+
+
+.chapterSkills
+    width: 100%
+    max-width: 600px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    padding: .1rem
+    justify-content: stretch
+
+    > label
+        font-size: 1rem
+        text-align: center
+        padding: .1rem .4rem
+        margin: .2rem
+        border-radius: 0rem
+        color: #fff
+        background: rgb(20, 33, 61)
+        opacity: .7
+
+        &:hover
+            color: yellow
+            opacity: 1
+
+
+.read-more-hook
+    max-width: 550px
+    font-family: 'Roboto' sans-serif
+    font-family: Arial, Helvetica, sans-serif
+    font-size: .9rem
+    line-height: 1.3rem
+    text-align: left
+    font-weight: 400
+    width: 100%
+    //color: #fff
+    padding: .2rem
+    margin-bottom: 1rem
+    text-align: justify
+    text-justify: inter-character
+
+
+.expand-and-hide
+    // color: #387f99
+    // color: #016164
+    // color: #b00802
+    // color: #aaa638
+
+    // color: #ccfcfe
+    // color: #ccfee7
+    // color: #0253b0
+    // color: #4be63d
+    // color: #03f3fc
+    color: #a1e68f
+
+    color: #46dd20
+    color: #a1e68f
+
+    cursor: pointer
+    opacity: .8
+    padding: .2rem .4rem
+    font-size: .9rem
+    font-weight: 500
+    font-style: italic
+
+    &:hover
+        color: #fff
+        background-color: rgb(10, 87, 111)
+        opacity: 1
+
+
+
+.mainImageWrapper
+    width: 100%
+    height: 400px
+    margin-bottom: .5rem
+    border: 1px solid #04a361
+
+.thumbnailsWrapper
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    padding: 0
+    justify-content: stretch
+
+    > label
+        padding: 0
+        margin: .0rem .3rem .0rem 0rem
+        opacity: .8
+        border: 1px solid #007a47
+        width: 150px
+        height: 100px
+
+        &:hover
+            opacity: 1
+            transform: scale(1.5)
+
+.tableBasic
+    font-family: Montserrat
+    font-size: 14px
+    width: 100%
+    color: #fff
+    margin: 1rem
+
+    > tr
+        font-weight: 300
+        width: 100%
+
+        > th
+            text-align: center
+
+            > label
+                color: #fff
+                font-size: 16px
+                font-weight: 400
+                background-color: #222
+                border-radius: 30%
+                padding: 1rem 2rem
