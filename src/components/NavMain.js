@@ -25,7 +25,7 @@ var infoAcronyms = [
   {
     term: "Hamming Distance",
     meaning:
-      "The number of diferences between two bit strings of equal length; in strings 1110 and 0011 the third bit is identical and the other three are different, so HD = 3.",
+      "The number of diferences between two bit strings of equal length; in strings 1110 and 0011 one bit is the same and three are different, so the Hamming Distance = 3.",
     link: "https://en.wikipedia.org/wiki/Hamming_distance",
   },
   {
@@ -203,7 +203,7 @@ class NavMain extends Component {
           title="current projects"
           style={{ borderRadius: "5px" }}
         >
-          Current work
+          Current projects
         </button>
         <button
           id="btnContact"

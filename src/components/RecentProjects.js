@@ -25,7 +25,7 @@ class RecentProjects extends Component {
           ))}
         </div>
 
-        {/* <ContinuousEducation/> */}
+        <ContinuousEducation />
       </div>
     );
   }

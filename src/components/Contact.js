@@ -15,7 +15,7 @@ class Contact extends Component {
   render() {
     return (
       <div id="Contact" className="fullscreen light">
-        <h1>Connect</h1>
+        <h1>Contact</h1>
 
         <div className="section_column">
           <label className="lbl_email">andrei.popa.dev@gmail.com</label>
