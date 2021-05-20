@@ -100,7 +100,6 @@ export default function D3path() {
           width: "300px",
           height: "300px",
           margin: "100px auto 0px auto",
-
           backgroundColor: "#075e61",
         }}
         id="myPath"

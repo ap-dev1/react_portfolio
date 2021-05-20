@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-//import NavMainInfo from "./NavMainInfo.js"
+import NavAcronyms from "./NavAcronyms.js";
 import "../styles/navbar.sass";
 
-import infoOrange from "../assets/info-orange.png";
-import infoGreen from "../assets/info_green.png";
-
 import parse from "html-react-parser";
+
 import {
   Popover,
   Button,
@@ -15,204 +13,106 @@ import {
   Nav,
 } from "react-bootstrap";
 
-var infoAcronyms = [
+var infoSections = [
   {
-    term: "ETBD",
-    meaning: "evolutionary theory of behavior dynamics",
-    link: "www",
-  },
-  { term: "COD", meaning: "Changeover Delay", link: "www" },
-  {
-    term: "Hamming Distance",
-    meaning:
-      "The number of diferences between two bit strings of equal length; in strings 1110 and 0011 one bit is the same and three are different, so the Hamming Distance = 3.",
-    link: "https://en.wikipedia.org/wiki/Hamming_distance",
+    id: "About",
+    name: "Profile",
+    color: "#fff",
+    background: "#000000",
+    borderRadius: "5px",
+    padding: "1rem 1.7rem",
+    info: "about",
   },
   {
-    term: "ABAI",
-    meaning: "Association for Behavior Analysis International",
-    link: "https://www.abainternational.org/welcome.aspx",
+    id: "ch1",
+    name: "2007 - 2010",
+    color: "#f9f9f9",
+    background: "#000000",
+    borderRadius: "25px",
+    padding: ".5rem 1.2rem",
+    info: "ETBD, Hamming Distances, Changeover Delay, Masters Thesis",
   },
-  // {
-  //   term: "SQAB",
-  //   meaning: "Society for Quantitative Analysis of Behavior",
-  //   link: "https://www.sqab.org/",
-  // },
   {
-    term: "IRB",
-    meaning: "Institutional Review Board",
-    link: "http://www.irb.emory.edu/",
+    id: "ch2",
+    name: "2011 - 2013",
+    color: "#f9f9f9",
+    background: "#000000",
+    borderRadius: "25px",
+    padding: ".5rem 1.2rem",
+    info: "Mutation, DMN, ADHD, Fast Matching, Dissertation",
   },
-
   {
-    term: "ETD",
-    meaning: "Emory Theses and Disertations",
-    link: "https://etd.library.emory.edu/",
+    id: "ch3",
+    name: "2014 - 2018",
+    //color: "#45a085",
+    color: "#f9f9f9",
+    background: "#000000",
+    borderRadius: "25px",
+    padding: ".5rem 1.2rem",
+    info: "Beyond positive reinforcement: aversive conditioning, stimulus control",
   },
-
   {
-    term: "WCALB",
-    meaning: "Winter Conference of Learning and Behavior",
-    link: "WWWWWWW",
+    id: "ch4",
+    name: "2018 - 2019",
+    color: "#f9f9f9",
+    background: "#000000",
+    borderRadius: "25px",
+    info: "The dynamics of human development",
+    padding: ".5rem 1.2rem",
   },
-];
-
-var headers = [
-  "About",
-  "RecentProjects",
-  "Chapter1",
-  "Chapter2",
-  "Chapter3",
-  "Chapter4",
-  "Contact",
+  {
+    id: "RecentProjects",
+    name: "Recent projects",
+    color: "#fff",
+    background: "#000000",
+    borderRadius: "5px",
+    padding: "1rem 1.7rem",
+    info: "React, Node, Python, web sockets, etc..",
+  },
+  //{ id: "Courses", name: "Courses", color: "#fff", info: "info" },
+  {
+    id: "Contact",
+    name: "Contact",
+    color: "#fff",
+    background: "#000000",
+    borderRadius: "5px",
+    //info: "online ",
+    padding: "1rem 1.7rem",
+  },
 ];
 
 class NavMain extends Component {
-  toAbout = (e) => {
+  navigateToSection(e) {
     e.preventDefault();
-
+    var mySection = e.currentTarget.name;
     document
-      .getElementById("About")
+      .getElementById(mySection)
       .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
-  toRecent = (e) => {
-    e.preventDefault();
-    document
-      .getElementById("RecentProjects")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
-  toChapter1 = (e) => {
-    e.preventDefault();
-    document
-      .getElementById("ch1")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
-  toChapter2 = (e) => {
-    e.preventDefault();
-    document
-      .getElementById("ch2")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
-  toChapter3 = (e) => {
-    e.preventDefault();
-    document
-      .getElementById("ch3")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
-  toChapter4 = (e) => {
-    e.preventDefault();
-    document
-      .getElementById("ch4")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
-  toContact = (e) => {
-    e.preventDefault();
-    document
-      .getElementById("Contact")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
+  }
 
   render() {
-    const popover1 = (
-      <Popover id="popover-basic" className="pop-over">
-        <Popover.Content>
-          <table className="table_acronyms">
-            {infoAcronyms.map((item) => {
-              return (
-                <tr>
-                  <td>
-                    <b>{item.term}</b>
-                  </td>
-                  <td> {item.meaning} </td>
-                </tr>
-              );
-            })}
-          </table>
-        </Popover.Content>
-      </Popover>
-    );
-
-    var ExampleImg = () => (
-      <OverlayTrigger trigger="click" placement="left" overlay={popover1}>
+    var NavButtons = infoSections.map((item) => {
+      return (
         <button
-          id="navInfo"
+          onClick={this.navigateToSection}
+          name={item.id}
+          title={item.info}
           style={{
-            fontSize: "16px",
-            width: "100%",
-            marginBottom: "35px",
-            fontFamily: "Roboto",
-            background: "#023638",
-            color: "#78f8a2",
-            opacity: 0.9,
+            //borderRadius: item.borderRadius,
+            color: item.color,
+            //backgroundColor: item.background,
+            backgroundColor: "#070c0a",
           }}
         >
-          {"acronyms"}
+          {item.name}
         </button>
-      </OverlayTrigger>
-    );
+      );
+    });
 
     return (
       <div id="nav1">
-        <ExampleImg />
-
-        <button
-          onClick={this.toAbout}
-          title="Skills, overview"
-          name="About"
-          style={{ borderRadius: "5px" }}
-        >
-          About
-        </button>
-
-        <button
-          onClick={this.toChapter1}
-          title="one"
-          style={{ borderRadius: "25px" }}
-        >
-          2007 - 2010
-        </button>
-        <button
-          onClick={this.toChapter2}
-          title="two"
-          style={{ borderRadius: "25px" }}
-        >
-          2011 - 2013
-        </button>
-        <button
-          onClick={this.toChapter3}
-          title="three"
-          style={{ borderRadius: "25px" }}
-        >
-          2014 - 2018
-        </button>
-        <button
-          onClick={this.toChapter4}
-          title="four"
-          style={{ borderRadius: "25px" }}
-        >
-          2018 - 2019
-        </button>
-        <button
-          onClick={this.toRecent}
-          title="current projects"
-          style={{ borderRadius: "5px" }}
-        >
-          Current projects
-        </button>
-        <button
-          id="btnContact"
-          onClick={this.toContact}
-          title="Contact info"
-          style={{ borderRadius: "5px" }}
-        >
-          Contact
-        </button>
+        <NavAcronyms />
+        {NavButtons}
       </div>
     );
   }
