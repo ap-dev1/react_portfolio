@@ -36,7 +36,7 @@ const data = {
     //         url: 'https://github.com/ap-dev1',
     //         key: 2,
     //         image_src: 'link_github_logo1.png',
-            
+
     //         info: 'info',
     //     },
     //     {
@@ -44,7 +44,7 @@ const data = {
     //         url: '',
     //         key: 3,
     //         image_src: 'link_researchgate_profile1.png',
-            
+
     //         info: 'info',
     //     },
     //     {
@@ -52,7 +52,7 @@ const data = {
     //         url: 'https://scholar.google.com/citations?user=-C2nxZsAAAAJ',
     //         key: 4,
     //         image_src: 'src/assets/link_images/link_google_scholar.jpg',
-            
+
     //         info: 'info',
     //     },
     //     {
@@ -60,7 +60,7 @@ const data = {
     //         url: 'http://www.linkedin.com/in/andrei-popa-evd',
     //         key: 5,
     //         image_src: 'link_linkedin_3.png',
-            
+
     //         info: 'info',
     //     },
     //     {
@@ -68,7 +68,7 @@ const data = {
     //         url: 'https://osf.io/8hz5f/',
     //         key: 6,
     //         image_src: 'src/assets/link_images/link_PsyArXiv_OSF_profile.png',
-            
+
     //         info: 'info',
     //     },
 

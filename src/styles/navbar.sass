@@ -6,31 +6,29 @@ $lightCyan: #59ebf0
 
 #navInfo
     width: 120px
-    margin: 2rem auto 2rem auto
-    opacity: .7
+    margin-top: -6rem
+    position: absolute
+    padding: 1.1rem .5rem
 
     &:hover
         cursor: pointer
-        opacity: .9
 
     
 #nav1
     position: fixed
-    top: 10vh
-    bottom: 10vh
-    right: 20px
+    top: 7rem
+    right: 1rem
+    min-bottom: 9rem
+    //background-color: grey
+
     display: flex
     flex-direction: column
-    width: fit-content
-    height: 80vh
-    //border: 1px solid #063a2a
-    //justify-content: space-evenly
-    //justify-content: top
+    max-width: 175px
+    max-height: 100%
+    height: fit-content
+    align-items: top
+    padding-top: 0
 
-    //background-color:  #f9f9f9
-    //background-color:  #070c0a
-
-    opacity: 0.9
     z-index: 2
 
     transition: all 1s ease-in
@@ -39,16 +37,23 @@ $lightCyan: #59ebf0
     -ms-transition: all 1s ease-in
     -o-transition: all 1s ease-in
 
+    &:last-child
+        margin-bottom: 0
+
+    
+
     > button
-        
-        opacity: .8
-        border: 1px solid #000000
-        font-size: .9rem
-        margin: .0rem
-        margin-bottom: .5rem
+        border: 1px solid #070C0A
+        margin-bottom: .1rem
+        min-width: 150px
+        width: 175px
+        //font-size: .8rem
+        height: auto
         cursor: pointer
-        font-family: 'Roboto'
-        padding: 1rem 1.5rem
+        // font-family: 'Roboto'
+        // padding: 1.1rem .5rem
+        word-wrap: break-word
+
         transition: all .2s ease-in
         -webkit-transition: all .2s ease-in
         -moz-transition: all .2s ease-in
@@ -58,12 +63,97 @@ $lightCyan: #59ebf0
         &:hover
             opacity: 1
             transform: scale(1.1)
-            font-size: 1rem
+            color: #f7fa33
 
             transition: all .2s ease-in
             -webkit-transition: all .2s ease-in
             -moz-transition: all .2s ease-in
             -ms-transition: all .2s ease-in
             -o-transition: all .2s ease-in
+
+        &:nth-child(4)
+                margin-bottom: 1rem
+
+        &:nth-child(9)
+                margin-bottom: 1rem
+
+
+.navRegular
+    opacity: .7
+    color: #fff
+    background-color: #070C0A
+    font-size: .9rem
+    padding: 1.1rem .5rem
+
+    
+.navDemo
+    opacity: .7
+    background: transparent url("../assets/demo_white_mouse_wider_icon.png") no-repeat right
+    background-color: #070C0A
+    font-weight: 500
+    //text-align: left
+    color: #ededed
+    font-family: 'Iceland', cursive
+    font-size: 1.3rem
+    padding: 1.1rem 2rem 1.1rem .5rem
+
+    // &:span
+    //     text-align: left
+
+    //     &:last-child
+    //         text-align: center
+
+
+.background
+    //font-family: 'Iceland', cursive
+    //font-size: 1.1rem
+
+
+.currentView
+    opacity: 1
+    //transform: scale(1.1)
+    color: #f7fa33
+
+    //font-size: 1rem
+    //border: 1px solid #f27f05
+    z-index: 0
+    border: none
+
+
+
+
+.inactive
+    opacity: .7
+    //transform: scale(1)
+    color: #ededed
+    border: 1px solid #070C0A
+    z-index: 1
+    //border: transparent
+
+
+
+// // YELLOW INDICATOR
+
+// .indicator
+//     position: absolute
+//     z-index: 1
+//     width: 100%
+//     height: 10px
+//     border: none
+//     background-color: #fff700
+    //opacity: 1
+
+
+// .indicator
+//     position: absolute
+//     z-index: 10
+//     width: 0
+//     height: 0
+//     margin-left: 4px
+//     border-top: 10px solid transparent
+//     border-bottom: 10px solid transparent
+//     border-left: 15px solid #fff700
+//     border-left: 15px solid #070c0a
+//     border-left: 15px solid #82e2ff
 
 

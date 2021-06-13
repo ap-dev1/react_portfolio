@@ -10,13 +10,13 @@ $specialProjectFont: Roboto, sans-serif
     margin-right: 1rem
     align-items: flex-start
     width: 50%
-    max-width: 550px
+    max-width: 500px
     padding: 5px
     padding-top: 0rem
     margin-top: .1rem
     // border: 1px solid #888
     // border-radius: 5px
-    // background-color: #f0f0f0
+    // background-color: #021f1d
 
 .projectColumnImages
     display: flex
@@ -49,26 +49,28 @@ $specialProjectFont: Roboto, sans-serif
 .title
     //display: inline-block
     width: 100%
-    font-size: 1.1rem
+    font-size: 1.2rem
     color: #222
-    color: #444
-
-    margin-top: 10px
-    margin-bottom: 5px
+    //color: #444
+    margin-top: .8rem
+    margin-bottom: .5rem
     text-align: left
-    font-weight: 500
-    font-family: 'Roboto Slab', serif
+    font-weight: 400
+    font-family: 'Roboto Slab', sans-serif
+    color: #0d433f
+
 
 
 .projectOverview
-    font-family: $specialProjectFont
-    font-size: .9rem
+    font-family: 'Roboto Slab', serif
+    //font-family: $specialProjectFont
+    font-size: .85rem
     line-height: 1.3rem
     text-align: left
     font-weight: 400
     width: 100%
     color: #444
-    padding: .5rem
+    //padding: .5rem
     margin-bottom: .2rem
     border-bottom: 1px solid #aaaaaa
     text-align: justify
@@ -107,6 +109,23 @@ $specialProjectFont: Roboto, sans-serif
 
     &:hover
         color: #222
+    
+
+.authors
+    width: 100%
+    font-size: .8rem
+    color: #0d433f
+    padding: .5rem 0
+    margin-bottom: .5rem
+    font-weight: 400
+    //font-family: 'Iceland', cursive
+    font-family: 'Roboto Slab', sans-serif
+
+    
+
+    &:hover
+        color: #222
+        cursor: pointer
     
 
 .eventType
@@ -153,7 +172,18 @@ $specialProjectFont: Roboto, sans-serif
 
 
 .imgZoom
-    border: 2px solid #002728
+    border: 1px solid #000
+    width: 600px
+    transition: all .3s ease-in
+    -webkit-transition: all .3s ease-in
+    -moz-transition: all .3s ease-in
+    -ms-transition: all .3s ease-in
+    -o-transition: all .3s ease-in
 
     &:hover
+        transition: all .3s ease-in
+        -webkit-transition: all .3s ease-in
+        -moz-transition: all .3s ease-in
+        -ms-transition: all .3s ease-in
+        -o-transition: all .3s ease-in
         transform: scale(1)

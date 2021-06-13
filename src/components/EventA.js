@@ -10,7 +10,6 @@ var thissss = "is an exact copy of MyTimeline, before changing item format, afte
 
 // import "../styles/timeline.sass"
 // import "../styles/project.sass"
-// import "../styles/carousel.sass"
 
 // import PropTypes from "prop-types";
 // import infoTimeline from "../data/infoTimeline"
@@ -67,7 +66,7 @@ var thissss = "is an exact copy of MyTimeline, before changing item format, afte
 //         //                     maxChars={200}
 //         //                     style={{fontSize: '.7rem', border: 0, padding: 0, backgroundColor: '#fff'}}
 //         //                 />
-            
+
 //         // }
 
 //         // if (e.date !== "" & e.type !== "") {
@@ -149,7 +148,7 @@ var thissss = "is an exact copy of MyTimeline, before changing item format, afte
 //                     <div className='projectColumnLeft'>
 
 
-                        
+
 //                         <span className="title">{parse(e.title)}</span>
 //                         <span className="eventType">{parse(e.type)}</span>
 
@@ -172,7 +171,7 @@ var thissss = "is an exact copy of MyTimeline, before changing item format, afte
 //                             fontSize: '.8rem',
 //                             lineHeight: '1rem',
 //                             textAlign: 'left',
-                            
+
 //                             // backgroundColor: '#001A1A',
 //                             // color: '#d1ffff',
 //                             backgroundColor: '#fff',

@@ -14,20 +14,64 @@
 .AboutColumn
     display: flex
     flex-direction: column
-    justify-content: space-between
-    justify-items: space-between
     height: 100%
     margin: 0rem .5rem
     padding: 0rem .5rem
-    font-size: 1.2rem
-
+    font-size: 1rem
 
 .narrative
     text-align: justify
     text-justify: inter-character
-    line-height: 1.4em
-    width: 500px
+    line-height: 1.5em
+    width: 550px
     margin: .0rem .2rem 1rem .2rem
     padding: .1rem
     
     
+.wrapperEducation
+    padding: .5rem
+    border-radius: .5rem 
+    background-color: $dark-color3
+    //border: 1px ridge $dark-color3
+    //width: 100%
+    //margin-bottom: .5rem
+    margin-top: .5rem
+
+    transition: all .2s ease-in
+    -webkit-transition: all .2s ease-in
+    -moz-transition: all .2s ease-in
+    -ms-transition: all .2s ease-in
+    -o-transition: all .2s ease-in
+    
+    &:hover
+
+        background-color: $darkest-color
+        transition: all .2s ease-in
+        -webkit-transition: all .2s ease-in
+        -moz-transition: all .2s ease-in
+        -ms-transition: all .2s ease-in
+        -o-transition: all .2s ease-in
+
+    
+#tableEducation
+    width: 100%
+    font-family: "Roboto", sans-serif
+    font-size: .9rem
+    //border: 1px solid #fff
+    padding: 1rem
+    
+
+#tableEducation tr
+    margin-bottom: 1rem
+    //border: 1px solid #fff
+
+#tableEducation tr td
+    min-width: 60px
+    padding: .3rem .5rem
+    overflow-wrap: break-word
+    margin-bottom: 1rem
+    color: #dcdcdc
+
+    &:nth-child(1)
+        text-align: center
+        

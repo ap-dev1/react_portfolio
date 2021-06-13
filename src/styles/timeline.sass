@@ -59,8 +59,8 @@ $dark-grey: #222
     font-family: Roboto
     position: relative
     background-color: $backgroundColor
-    margin-top: .5rem
-    margin-bottom: .5rem
+    margin-top: 1rem
+    margin-bottom: 5rem
     // padding-top: .5rem
     // padding-bottom: .5rem
 
@@ -93,53 +93,50 @@ $dark-grey: #222
     //left: $leftMargin
     //margin-left: 4px
 
+
 // THE ACTUAL TIMELINE  ----------------------------------------------
 
 .vertical:after
     content: ""
     position: absolute
     width: 1px
-    // background-color: $timelineColor
-    //background-color: #999
     background-color: #075e61
+    background-color: #0d433f
 
     top: 0
     bottom: 0
     left: $leftMargin
     margin-left: 4px
+    opacity: .5
+
 
 .vertical .timelineItem
     width: $itemWidth
-    //padding: 10px 45px
-    padding: 0px 150px
+    padding: 0px 100px
     position: relative
     text-align: left
+
 
 .vertical .timelineContent
     background-color: $contentColor
     padding: 0px
-    //color: #333
     font-family: Roboto
     font-size: .8rem
     display: flex
     flex-direction: row
-    //flex-direction: column
     width: 100%
     margin-bottom: 4rem
 
-// the DATE -------------------------------------------------------------
+
+// the DATE ----------------------------   wtf?
 .vertical .timelineItem:before
     z-index: 1
     content: attr(content1)
+    width: fit-content
     height: auto
     position: absolute
     top: 17px
-    width: fit-content
-    font-size: 14px
-    font-weight: 500
-    color: $dateColor
-    opacity: 1
-    //border: 1px solid #333
+
 
 // the CIRCLE -----------------------------------------------------------
 .vertical .timelineItem::after
@@ -149,40 +146,32 @@ $dark-grey: #222
     border-radius: 50%
     width: 12px
     height: 12px
-    border: 2px solid #075e61
-    //background-color: $light-grey
-    background-color: #075e61
-    top: 20px
+    border: 2px solid #070c0a
+    background-color: #02aab0
+    border: 2px solid #0d433f
+    background-color: #b8f1ee
+    top: 22px
+
 
 .vertical .timelineItem.right
     left: $leftMargin
 
+
+// DATE
 .vertical .timelineItem.right:before
-    left: 25px
+    left: -100px
     border-width: 10px 0px 10px 0
     border-color: transparent $triangleLeft transparent transparent
-    color: #555
     text-align: left
-    width: 60px
+    width: fit-content
+
+    font-size: 1rem
+    font-weight: 500
+    color: $dateColor
+    opacity: 1
+    color: #0d433f
 
 .vertical .timelineItem.right::after
     left: -1px
     max-width: 30px
-    //border: 1px solid #333
     border: 1px solid #075e61
-
-//  @media screen and (max-width: 768px) 
-//     .container:before 
-//        left: 8px
-//        width: 2px
-
-//     .timeline-block 
-//        width: 100%
-//        margin-bottom: 30px
-
-//     .timeline-block-right 
-//        float: none
-
-//     .timeline-block-left 
-//        float: none
-//        direction: ltr

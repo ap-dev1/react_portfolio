@@ -14,75 +14,75 @@ import ReadMoreHook from "./ReadMoreHook";
 import CollapseHook from "./CollapseHook";
 
 class Chapter1 extends Component {
-  render() {
-    var skills = [
-      "Excel/VBA",
-      "syntethic data",
-      "research design",
-      "experimental control",
-      "hypothesis testing",
-      "exploratory analysis",
-      "ensemble fitting",
-      "residual analysis",
-      "model selection",
-      "regression",
-    ];
+    render() {
+        var skills = [
+            "Excel/VBA",
+            "syntethic data",
+            "research design",
+            "experimental control",
+            "hypothesis testing",
+            "exploratory analysis",
+            "ensemble fitting",
+            "residual analysis",
+            "model selection",
+            "regression",
+        ];
 
-    var Skills = skills.map((s) => {
-      return <label>{s}</label>;
-    });
+        var Skills = skills.map((s) => {
+            return <label key={s}>{s}</label>;
+        });
 
-    return (
-      <div id="ch1" className="chapter">
-        <div className="chapterRow">
-          <div className="chapterCol">
-            <h1 className="chapter-title">Learning, ETBD, and Me</h1>
-            <span className="spanYears">2007 - 2010 </span>
-            <p className="p-left">
-              In August 2007 I joined Dr. McDowell's lab of experimental
-              behavior analysis, where I studied the dynamics of choice and
-              preference in digital and human agents.
+        return (
+            <div id="ch1" className="chapter">
+                <div className="chapterRow">
+                    <div className="chapterCol">
+                        <h1 className="chapter-title">Learning, ETBD, and me</h1>
+                        <span className="spanYears">2007 - 2010 </span>
+                        <p className="p-left">
+                            In August 2007 I joined Dr. McDowell's lab of experimental
+                            behavior analysis, where I studied the dynamics of choice and
+                            preference in digital and human agents.
             </p>
 
-            <p className="p-left">
-              For the first three years I worked exclusively with synthetic data
-              produced by ETBD - a computational implementation of the
-              Skinnerian analogy between positive reinforcement and natural
-              selection (Skinner, 1981; McDowell, 2004). This was my
-              introduction to behavior analysis, the world of cellular automata,
-              complexity, and emergence, and to computational modelling.
+                        <p className="p-left">
+                            For the first three years I worked exclusively with synthetic data
+                            produced by ETBD - a computational implementation of the
+                            Skinnerian analogy between positive reinforcement and natural
+                            selection (Skinner, 1981; McDowell, 2004). This was my
+                            introduction to behavior analysis, the world of cellular automata,
+                            complexity, and emergence, and to computational modelling.
             </p>
 
-            <p className="p-left">
-              During this time, I assisted with the verification of ETBD against
-              mathematical models of choice behavior and I explored a
-              computational variable and its functional equivalent in the real
-              world.
+                        <p className="p-left">
+                            During this time, I assisted with the verification of ETBD against
+                            mathematical models of choice behavior and I explored a
+                            computational variable and its functional equivalent in the real
+                            world.
             </p>
 
-            <div className="chapterSkills">{Skills}</div>
-          </div>
+                        <div className="chapterSkills">{Skills}</div>
+                    </div>
 
-          <div className="chapterCol">
-            <h2 className="chapter-sub-title">
-              Verifying computational theories
+                    <div className="chapterCol">
+                        <h2 className="chapter-sub-title">
+                            Verifying computational theories
             </h2>
-            <ReadMoreHook
-              maxChars={300}
-              overview="Computational theories are abstract representations of the  world, and ETBD is no exception: behaviors are represented by numbers and target classes are represented by ranges. As for  agents, they are represented by populations of numbers that are transformed, generation after generation, by simple rules of <i>selection</i>, <i>recombination</i>, and <i>mutation</i>. The emerging patterns are then compared with those exhibited by living agents under similar experimental conditions.<br/> <br/>For these comparisons to be meaningful, the variables and rules that make ETBD must map on the real world. <i>Selection</i>, for example was shown to be functionally equivalent to positive reinforcement, which means that numbers and ranges are also suitable representations of operant responses and operant classes, espectivelly."
-            />
+                        <ReadMoreHook
+                            maxChars={300}
+                            overview="Computational theories are abstract representations of the  world, and ETBD is no exception: behaviors are represented by numbers and target classes are represented by ranges. As for  agents, they are represented by populations of numbers that are transformed, generation after generation, by simple rules of <i>selection</i>, <i>recombination</i>, and <i>mutation</i>. The emerging patterns are then compared with those exhibited by living agents under similar experimental conditions.<br/> <br/>For these comparisons to be meaningful, the variables and rules that make ETBD must map on the real world. <i>Selection</i>, for example was shown to be functionally equivalent to positive reinforcement, which means that numbers and ranges are also suitable representations of operant responses and operant classes, espectivelly."
+                        />
 
-            <h2 className="chapter-sub-title">
-              Hamming Distances, class similarity,
+                        <h2 className="chapter-sub-title">
+                            Hamming Distances, class similarity,
               <br /> and Changeover Delays
             </h2>
 
-            <ReadMoreHook
-              maxChars={300}
-              overview="<i>You know when you click a button and it takes a while to load? The waiting time is an accidental changeover delay</i>.<br/><br/>When two sources of reinforcement - A and B - are simoultaneously available, the agent can be reinforced for responding on A, for responding on B, or for <i>switching</i>back and forth - which can be a problem for studies of choice. An effective strategy for preventing switching from being reinforced is to attach a cost to it, often in the form of a <i>changeover delay</i>, or COD: a few seconds during which reinfrocement is not available. <br/><br/>For my masters project, I explored a possible COD counterpart in ETBD, namely the Hamming Distance that separates the target classes. My findings revealed a complex relation between the structure of the target classes and their location on the continuum of integers (Popa, 2009; Popa & McDowell, 2010). <br/> Subsequent analyses on the same data showed that COD-like effects depend on the Hamming Distances between each operant and every other operant in the two target classes. <br/><br/>Essentially, the relation provides a measure of the overall genotypic similarity between the target classes: the average number of bits for a behavior in one class to change over to the “other” class (Popa, 2013; pp.19-21; figure 4, page 111)."
-            />
+                        <ReadMoreHook
+                            maxChars={300}
+                            overview="<i>You know when you click a button and it takes a while to load? The waiting time is an accidental changeover delay</i>.<br/><br/>When two sources of reinforcement - A and B - are simoultaneously available, the agent can be reinforced for responding on A, for responding on B, or for <i>switching</i>back and forth - which can be a problem for studies of choice. An effective strategy for preventing switching from being reinforced is to attach a cost to it, often in the form of a <i>changeover delay</i>, or COD: a few seconds during which reinfrocement is not available. <br/><br/>For my masters project, I explored a possible COD counterpart in ETBD, namely the Hamming Distance that separates the target classes. My findings revealed a complex relation between the structure of the target classes and their location on the continuum of integers (Popa, 2009; Popa & McDowell, 2010). <br/> Subsequent analyses on the same data showed that COD-like effects depend on the Hamming Distances between each operant and every other operant in the two target classes. <br/><br/>Essentially, the relation provides a measure of the overall genotypic similarity between the target classes: the average number of bits for a behavior in one class to change over to the “other” class (Popa, 2013; pp.19-21; figure 4, page 111)."
+                        />
 
-            {/* <h2>Disrupted Neuronal Activity as Formal Cause for ADHD</h2>
+                        {/* <h2>Disrupted Neuronal Activity as Formal Cause for ADHD</h2>
               <ReadMoreHook
                 maxChars={500}
                 style={{ backgroundColor: "#02aab0" }}
@@ -93,7 +93,7 @@ class Chapter1 extends Component {
  <br/><br/> The variation in ADHD scores in the sample was too low to detect potential effects, but by this time I already had what I wanted, and more. The experimental procedure captured the difference between the No-COD and COD-2s conditions very well. At the same time, after analyzing the data produced by ETBD, I figured out how different combinations of mutation, selection, and Hamming COD work at molecular level to produce ADHD-like symptoms in ETBD. This led me to propose that ADHD is an emergent property of disrupted neuronal dynamics and that mutation may have a counterpart in the  brain's Default Mode Network (DMN).  "
               /> */}
 
-            {/* <p
+                        {/* <p
                 style={
                   {
                     //fontFamily: "Montserrat",
@@ -129,11 +129,11 @@ class Chapter1 extends Component {
                 Institute Teacher-Scholar Award (2012) and an invitation to
                 serve on the O.R.D.E.R. 2012-13 advisory board.
               </p> */}
-          </div>
-        </div>
-      </div>
-    );
-  }
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Chapter1;

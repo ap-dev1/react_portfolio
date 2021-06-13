@@ -2,14 +2,15 @@
 
 
 #  Custom:
-src/components/entries
-/PULA
-muie.css
-/ignored_res
-SubscribeMailchimp.js
-.drafts.html
-chapters
-order
+# src/components/entries
+# /PULA
+# muie.css
+# /ignored_res
+# SubscribeMailchimp.js
+# .drafts.html
+# /Chapter1.js
+# order
+
 
 /.env
 
@@ -17,6 +18,10 @@ order
 /node_modules
 /.pnp
 .pnp.js
+# /src/components/background/
+
+FastMatchingDemo.js
+fast_matching_demo.sass
 
 # testing
 /coverage

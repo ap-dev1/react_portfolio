@@ -14,83 +14,86 @@ import Chapter2 from "./components/background/Chapter2";
 import Chapter3 from "./components/background/Chapter3";
 import Chapter4 from "./components/background/Chapter4";
 
+import FastMatchingDemo from "./components/background/FastMatchingDemo"
+
+import TeachingExperience from "./components/Teaching"
+import References from "./components/References"
+
+
 class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
 
-        <About />
 
-        <div
-          style={{
-            width: "100%",
-            height: "100vh",
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-around",
-            fontSize: "16px",
-            fontFamily: "Roboto",
-            color: "#1B4D3E",
-          }}
-        >
-          <div>
-            <p>
-              Neuronal activity can be represented computationally, <br />
-              but the brain is not a computational machine.
-            </p>
-          </div>
-        </div>
+    render() {
 
-        <Chapter1 />
 
-        <div className="between-chapters"></div>
 
-        <MyTimeline
-          events={infoTimeline.slice(0, 5)}
-          orientation="vertical"
-          startFrom="first"
-        />
 
-        <Chapter2 />
+        return (
+            <div>
+                <Header />
+                <About />
+                <RecentProjects />
 
-        <div className="between-chapters"></div>
 
-        <MyTimeline
-          events={infoTimeline.slice(5, 12)}
-          orientation="vertical"
-          startFrom="first"
-        />
 
-        <Chapter3 />
+                <div id="Background1">
+                    <Chapter1 />
+                    <MyTimeline
+                        events={infoTimeline.slice(0, 7)}
+                        orientation="vertical"
+                        startFrom="first"
+                    />
+                </div>
 
-        <div className="between-chapters"></div>
 
-        <MyTimeline
-          events={infoTimeline.slice(12, -3)}
-          orientation="vertical"
-          startFrom="first"
-        />
+                <div id="Background2">
+                    <Chapter2 />
+                    <MyTimeline
+                        events={infoTimeline.slice(7, 13)}
+                        orientation="vertical"
+                        startFrom="first"
+                    />
+                    <FastMatchingDemo />
+                </div>
 
-        <Chapter4 />
 
-        {/* <div style={{ width: "100%", height: "50px" }}></div> */}
+                {/* <div id="FastMatching" className="fullscreen">
+                    <FastMatchingDemo />
+                </div> */}
 
-        <MyTimeline
-          events={infoTimeline.slice(-3)}
-          orientation="vertical"
-          startFrom="first"
-        />
 
-        <div className="between-chapters"></div>
 
-        <RecentProjects />
+                <div id="Background3">
+                    <Chapter3 />
+                    <MyTimeline
+                        events={infoTimeline.slice(13, -6)}
+                        orientation="vertical"
+                        startFrom="first"
+                    />
+                </div>
 
-        <Contact />
-      </div>
-    );
-  }
+
+                <div id="Background4">
+                    <Chapter4 />
+                    <MyTimeline
+                        events={infoTimeline.slice(-6)}
+                        orientation="vertical"
+                        startFrom="first"
+                    />
+                </div>
+
+                <TeachingExperience />
+
+
+                <References />
+
+
+                <Contact />
+
+
+            </div>
+        );
+    }
 }
 
 export default App;

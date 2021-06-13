@@ -1,121 +1,150 @@
 import React, { Component } from "react";
 import NavAcronyms from "./NavAcronyms.js";
+//import NavMainIndicator from "./NavMainIndicator";
+
 import "../styles/navbar.sass";
 
 import parse from "html-react-parser";
+import infoNav from "../data/infoNav"
 
-import {
-  Popover,
-  Button,
-  OverlayTrigger,
-  Navbar,
-  NavDropdown,
-  Nav,
-} from "react-bootstrap";
 
-var infoSections = [
-  {
-    id: "About",
-    name: "Profile",
-    color: "#fff",
-    background: "#000000",
-    borderRadius: "5px",
-    padding: "1rem 1.7rem",
-    info: "about",
-  },
-  {
-    id: "ch1",
-    name: "2007 - 2010",
-    color: "#f9f9f9",
-    background: "#000000",
-    borderRadius: "25px",
-    padding: ".5rem 1.2rem",
-    info: "ETBD, Hamming Distances, Changeover Delay, Masters Thesis",
-  },
-  {
-    id: "ch2",
-    name: "2011 - 2013",
-    color: "#f9f9f9",
-    background: "#000000",
-    borderRadius: "25px",
-    padding: ".5rem 1.2rem",
-    info: "Mutation, DMN, ADHD, Fast Matching, Dissertation",
-  },
-  {
-    id: "ch3",
-    name: "2014 - 2018",
-    //color: "#45a085",
-    color: "#f9f9f9",
-    background: "#000000",
-    borderRadius: "25px",
-    padding: ".5rem 1.2rem",
-    info: "Beyond positive reinforcement: aversive conditioning, stimulus control",
-  },
-  {
-    id: "ch4",
-    name: "2018 - 2019",
-    color: "#f9f9f9",
-    background: "#000000",
-    borderRadius: "25px",
-    info: "The dynamics of human development",
-    padding: ".5rem 1.2rem",
-  },
-  {
-    id: "RecentProjects",
-    name: "Recent projects",
-    color: "#fff",
-    background: "#000000",
-    borderRadius: "5px",
-    padding: "1rem 1.7rem",
-    info: "React, Node, Python, web sockets, etc..",
-  },
-  //{ id: "Courses", name: "Courses", color: "#fff", info: "info" },
-  {
-    id: "Contact",
-    name: "Contact",
-    color: "#fff",
-    background: "#000000",
-    borderRadius: "5px",
-    //info: "online ",
-    padding: "1rem 1.7rem",
-  },
-];
 
 class NavMain extends Component {
-  navigateToSection(e) {
-    e.preventDefault();
-    var mySection = e.currentTarget.name;
-    document
-      .getElementById(mySection)
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  }
+    /* 
+    
+        // NOT HERE, AND NOT BOUND BY THE BUTTON.
+        // MOVE IT IN App.js, later.
+        
+    
+        componentDidMount() {
+    
+            // Create the observer template:
+            var observer = new IntersectionObserver(entries => {
+    
+                entries.forEach(entry => {
+                    if (entry.isIntersecting === true & entry.intersectionRatio > .3) {
+    
+                        console.log('entry', entry.target.id, entry.intersectionRatio);
+    
+                        if (document.getElementsByClassName("currentView").length > 0) {
+                            document.getElementsByClassName("currentView")[0].classList.remove("currentView")
+                        }
+    
+                        let myBtn = document.getElementById(`btn${entry.target.id}`)
+                        myBtn.classList.add("currentView")
+                    }
+                });
+            }, { threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95] });
+    
+            // Apply the observer to every navigation button:
+            var myButtons = document.querySelectorAll(".btnNavigation");
+            var myGoodButtons = []
+    
+            myButtons.forEach(btn => {
+                if (btn.id !== "btnFastMatchingDemo") {
+                    myGoodButtons.push(btn)
+                }
+            })
+    
+            myGoodButtons.forEach(item => {
+                let section = document.getElementById(item.name)
+                observer.observe(section);
+            });
+        }
+    
+     */
 
-  render() {
-    var NavButtons = infoSections.map((item) => {
-      return (
-        <button
-          onClick={this.navigateToSection}
-          name={item.id}
-          title={item.info}
-          style={{
-            //borderRadius: item.borderRadius,
-            color: item.color,
-            //backgroundColor: item.background,
-            backgroundColor: "#070c0a",
-          }}
-        >
-          {item.name}
-        </button>
-      );
-    });
+    navigateToSection(e) {
+        e.preventDefault();
 
-    return (
-      <div id="nav1">
-        <NavAcronyms />
-        {NavButtons}
-      </div>
-    );
-  }
+        if (document.getElementsByClassName("currentView").length > 0) {
+            document.getElementsByClassName("currentView")[0].classList.remove("currentView")
+        }
+
+        // set class:
+        e.currentTarget.classList.add("currentView")
+
+        // navigate:
+        var mySection = e.currentTarget.name;
+
+        document
+            .getElementById(mySection)
+            .scrollIntoView({ block: "start", behavior: "smooth" })
+    }
+
+
+
+    // navigate to target element sectionName
+    highlightSectionTab(sectionNode) {
+        if (document.getElementsById("currentView").length > 0) {
+            document.getElementsByClassName("currentView")[0].classList.remove("currentView")
+        }
+        sectionNode.classList.add("currentView")
+    }
+
+    //=================================================
+
+    // isScrolledIntoView = (el) => {
+    //     var rect = el.getBoundingClientRect()
+    //     var elemTop = rect.top
+    //     var elemBottom = rect.bottom
+    //     var isVisible = (elemTop >= 50) && (elemBottom <= window.innerHeight)
+    //     console.log("visible", isVisible)
+    //     return isVisible
+    // }
+
+
+    //=================================================
+
+    detectScrollLocation = () => {
+        document.onscroll = (event) => {
+            console.log(window.scrollY)
+        }
+    }
+
+    render() {
+
+        var NavButtons = infoNav.map((item) => {
+
+            return (
+                <button
+                    onClick={this.navigateToSection}
+                    // id={item.btnID}
+                    id={"btn" + item.sectionID}
+                    key={item.info} // definetely different
+                    name={item.sectionID}
+                    title={item.info}
+                    className={item.btnClass}
+                >
+                    {parse(item.btnText)}
+                </button>
+
+
+                // <button
+                //     onClick={this.navigateToSection}
+                //     id={"btn" + item.id}
+                //     key={"btn" + item.id}
+                //     name={item.id}
+                //     title={item.info}
+                //     className={item.class}
+                // >
+                //     {parse(item.name)}
+                // </button>
+            );
+        });
+
+
+        return (
+            <div id="nav1">
+                <NavAcronyms />
+
+                {NavButtons}
+
+
+
+            </div>
+        );
+    }
 }
 
 export default NavMain;
