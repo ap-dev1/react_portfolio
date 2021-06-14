@@ -673,8 +673,17 @@ var infoTimeline = [
         type: "research study, human choice",
         time: "04/01/2016",
         role: "STUDY COORDINATOR",
-        authors: ["<sup>U</sup>Grissom & Popa (2016)", "Shen & Popa (2016)", "<sup>U</sup>Waithe & Popa (2016)", "<sup>U</sup>Adekunle & Popa (2016)", "<sup>U</sup>Booher & Popa (2016)", "<sup>U</sup>Forbes & Popa (2016)", "<sup>U</sup>Tang & Popa (2016)"],
-        keywords: ["Agnes Scott College"],
+        authors: [
+            "<sup>U</sup>Adekunle & Popa (2016)",
+            "<sup>U</sup>Booher & Popa (2016)",
+            "<sup>U</sup>Forbes & Popa (2016)",
+            "<sup>U</sup>Grissom & Popa (2016)",
+            "<sup>U</sup>Shen & Popa (2016)",
+            "<sup>U</sup>Tang & Popa (2016)",
+            "<sup>U</sup>Waithe & Popa (2016)",
+        ],
+        keywords: ["Agnes Scott College"
+        ],
         tags: ["VB.Net"],
         description: "",
         // description:
@@ -902,9 +911,9 @@ var infoTimeline = [
             "RDS/Postgres",
         ],
         description:
-            "My first MERN project was a simple card sorting activity: choose five cards from a deck of 80. It entails user registration and authentication, the activity itself, storing the five choices as a new session, and redirecting the user to an updated home page."
+            "My first MERN project - a simple card sorting activity: choose five cards from a deck of 80. It entails user registration and authentication, the activity itself, storing the five choices as a new session, and redirecting the user to an updated home page."
             +
-            "The first version was deployed via AWS and used DynamoDB for authentication data and RDS/Postgres for session data. The second version was deployed on Heroku and used MongoDB/Atlas for all app data.",
+            "The first version was deployed with AWS and used DynamoDB for authentication data and RDS/Postgres for session data. The second version was deployed on Heroku and used MongoDB/Atlas for all app data.",
 
         img: [projectCardSorting],
         urls: [
@@ -962,7 +971,7 @@ var infoTimeline = [
 
         ],
         description:
-            "My first MERN project was a card sorting activity, that entailed authentication, choosing a few cards from a stack, and storing the selection. Note that it wasn't a MERN project from the beginning: before switching to MongoDB I used DynamoDB for authentication and RDS for storing user data.",
+            "description",
         img: [projectCardSorting],
         urls: [
             { name: "GitHub", link: "https://github.com/ap-dev1/personal_values" },

@@ -111,21 +111,40 @@ $specialProjectFont: Roboto, sans-serif
         color: #222
     
 
-.authors
+.divAuthors
+    display: flex
+    flex-direction: row
+    padding: 0
+    justify-content: flex-start
     width: 100%
-    font-size: .8rem
-    color: #0d433f
-    padding: .5rem 0
-    margin-bottom: .5rem
-    font-weight: 400
-    //font-family: 'Iceland', cursive
-    font-family: 'Roboto Slab', sans-serif
+    flex-wrap: wrap
 
+.authors
+    //width: 100%
+    font-size: .9rem
+    padding: .2rem .5rem .2rem 0
+    margin: .2rem
+    font-weight: 400
+    text-align: center
+    border-radius: 0rem
+
+    color: #0d433f
+    color: #202020
+
+    background-color: #fff
     
+    // font-family: 'Roboto Slab', sans-serif
+    // font-family: 'Raleway', sans-serif
+    // font-family: 'Viaoda Libre', cursive
+    font-family: 'Times New Roman', Times, serif
+
 
     &:hover
-        color: #222
+        color: #000
         cursor: pointer
+        background-color: #0d433f
+        background-color: #ffe291
+
     
 
 .eventType

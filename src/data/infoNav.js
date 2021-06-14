@@ -43,7 +43,7 @@ var infoNav = [
     {
         sectionID: "FastMatchingDemo",
         btnText: "DEMO",
-        info: "15 seconds, concurrent VI VI, high reinforcement rates, with or without a COD.",
+        info: "Fast Matching demo session: 15 seconds, concurrent VI VI, high reinforcement rates, with or without a COD.",
         btnClass: "navDemo btnNavigation"
     },
     {

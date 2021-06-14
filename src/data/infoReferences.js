@@ -50,13 +50,13 @@ var infoReferences = [
     },
 
 
-    // {
-    //     id: "[6]",
-    //     authors: "Popa (2011)",
-    //     committee: "Irwin Waldman, Phil Wolff, Rob Hampton (chair)",
-    //     keywords: ["Qualifying Exam, concurrent schedules, chained schedules, extinction"],
-    //     citation: "xxx"
-    // },
+    {
+        id: "[6]",
+        authors: "Popa (2011)",
+        committee: "Irwin Waldman, Phil Wolff, Rob Hampton (chair)",
+        keywords: ["Qualifying Exam, concurrent schedules, chained schedules, extinction"],
+        citation: "TBA"
+    },
 
     {
         id: "[7]",
@@ -77,8 +77,8 @@ var infoReferences = [
     // {
     //     id: "[9]",
     //     authors: "Popa et. al (2012)",
-    //     keywords: [],
-    //     citation: ""
+    //     keywords: ["ORDER, O.R.D.E.R."],
+    //     citation: "Social action at a distance."
     // },
 
 
@@ -139,6 +139,36 @@ var infoReferences = [
     },
 
 
+
+
+
+
+
+
+
+    {
+        id: "[20]",
+        authors: "<sup>U</sup>Adekunle & Popa (2016)",
+        keywords: "keywords",
+        citation: "<sup>U</sup>Adekunle, O. & Popa, A. (2016). <i>Higher Payoff or More Options? Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
+    },
+
+
+    {
+        id: "[21]",
+        authors: "<sup>U</sup>Booher & Popa (2016)",
+        keywords: "keywords",
+        citation: "<sup>U</sup>Booher, C. & Popa, A. (2016). <i>Choice Behavior in Unsignaled Environments With and Without Immediate Negative Feedback. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
+    },
+
+
+    {
+        id: "[22]",
+        authors: "<sup>U</sup>Forbes & Popa (2016)",
+        citation: "<sup>U</sup>Forbes, V., & Popa, A. (2016). <i>Human Choice Behaviors Before and After Extinction. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
+        keywords: "keywords",
+    },
+
     {
         id: "[17]",
         authors: "<sup>U</sup>Grissom & Popa (2016)",
@@ -149,41 +179,9 @@ var infoReferences = [
 
     {
         id: "[18]",
-        authors: "<sup>U</sup> Shen & Popa (2016).",
+        authors: "<sup>U</sup>Shen & Popa (2016)",
         keywords: "keywords",
         citation: "<sup>U</sup>Shen, R. & Popa, A. (2016). <i>Is Competition Sufficient to Increase the Motivation to “Do Well”</i>? Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-    },
-
-
-    {
-        id: "[19]",
-        authors: "<sup>U</sup> Waithe & Popa (2016)",
-        keywords: "keywords",
-        citation: "<sup>U</sup>Waithe, O. Y., & Popa, A. (2016). <i>The Effects of Imagery on Psychological Discomfort</i>. Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-    },
-
-
-    {
-        id: "[20]",
-        authors: "<sup>U</sup> Adekunle & Popa (2016)",
-        keywords: "keywords",
-        citation: "<sup>U</sup>Adekunle, O. & Popa, A. (2016). <i>Higher Payoff or More Options? Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-    },
-
-
-    {
-        id: "[21]",
-        authors: "<sup>U</sup> Booher & Popa (2016)",
-        keywords: "keywords",
-        citation: "<sup>U</sup>Booher, C. & Popa, A. (2016). <i>Choice Behavior in Unsignaled Environments With and Without Immediate Negative Feedback. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-    },
-
-
-    {
-        id: "[22]",
-        authors: "<sup>U</sup> Forbes & Popa (2016)",
-        citation: "<sup>U</sup>Forbes, V., & Popa, A. (2016). <i>Human Choice Behaviors Before and After Extinction. Poster presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
-        keywords: "keywords",
     },
 
     {
@@ -193,12 +191,15 @@ var infoReferences = [
         keywords: "keywords",
     },
 
-    // {
-    //     id: "[24]",
-    //     authors: "<sup>U</sup>",
-    //     citation: "xxx",
-    //     keywords: [],
-    // },
+    {
+        id: "[19]",
+        authors: "<sup>U</sup>Waithe & Popa (2016)",
+        keywords: "keywords",
+        citation: "<sup>U</sup>Waithe, O. Y., & Popa, A. (2016). <i>The Effects of Imagery on Psychological Discomfort</i>. Paper presented at the Spring Annual Research Conference, Agnes Scott College, Decatur, GA.",
+    },
+
+
+
     {
         id: "[25]",
         authors: "Popa & Grissom (2017)",
@@ -214,12 +215,12 @@ var infoReferences = [
         citation: "Popa, A., (2017). <i>Towards a Dynamic Account of Human Development. Paper presented at the 43rd Annual Convention of the Association for Behavior Analysis International, Denver, CO.",
     },
 
-    // {
-    //     id: "[27]",
-    //     authors: "Popa & Carter (2018)",
-    //     keywords: [],
-    //     citation: "xxx",
-    // },
+    {
+        id: "[27]",
+        authors: "Popa & Carter (2018)",
+        keywords: [],
+        citation: "TBA",
+    },
 
 
     {

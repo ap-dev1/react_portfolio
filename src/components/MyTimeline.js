@@ -77,33 +77,28 @@ const MyTimeline = (props) => {
         }
 
 
-        var authors = []
+        var Authors = []
 
         if (e.authors) {
-            e.authors.map(author => {
+
+            Authors = e.authors.map(author => {
 
                 if (author) {
-                    //console.log(author)
-                    authors.push(
-                        <span className="authors" title={e.citation} >{e.authors}</span>
-                    )
-                } else {
-                    console.log(e.citation)
+
+                    var rf = infoReferences.filter(item => item.authors === author)
+
+                    if (rf[0]) {
+                        return (
+                            <span className="authors" title={parse(rf[0].citation)} >{parse(author)}</span>
+                        )
+                    } else {
+                        console.log("err:", e.title, author)
+                    }
+
+
                 }
-                //let a = infoReferences.author
-                //let b = infoReferences.
-                //console.log(a)
-
-                // return (
-                //     
-                // )
-
             })
-        } else {
-            console.log(e.title)
         }
-
-
 
 
         return (
@@ -114,7 +109,8 @@ const MyTimeline = (props) => {
                 id={e.time}
             >
                 <div className="timelineContent">
-                    {/* -------------------       EventA starts     ---------------------- */}
+
+                    {/* -------------------       Event A      ---------------------- */}
 
                     <div className="projectColumnLeft">
 
@@ -122,14 +118,15 @@ const MyTimeline = (props) => {
 
                         <ReadMore maxChars={300} overview={Description} />
 
-                        <span className="authors" title={e.citation} >{e.authors}</span>
+                        <div className="divAuthors">
+                            {Authors}
+                        </div>
 
                         <div className="divLinks" style={{ fontSize: ".7rem" }}>
                             {Links}
                         </div>
 
-                        {/* <span className="eventType">{parse(e.citation)}
-                                </span> */}
+
                     </div>
 
                     <div className="projectColumnImages">

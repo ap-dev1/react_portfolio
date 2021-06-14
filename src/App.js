@@ -31,31 +31,46 @@ class App extends Component {
         return (
             <div>
                 <Header />
+
                 <About />
+
                 <RecentProjects />
 
 
                 <Chapter1 />
+
                 <MyTimeline
                     events={infoTimeline.slice(0, 7)}
                     orientation="vertical"
                     startFrom="first"
                 />
 
+
                 <Chapter2 />
+
                 <MyTimeline
-                    events={infoTimeline.slice(7, 13)}
+                    events={infoTimeline.slice(7, 11)}
                     orientation="vertical"
                     startFrom="first"
+                    style={{ marginBottom: "0rem" }}
                 />
+
                 <FastMatchingDemo />
 
 
-                {/* <div id="FastMatching" className="fullscreen">
-                    <FastMatchingDemo />
-                </div> */}
+                <MyTimeline
+                    events={infoTimeline.slice(11, 13)}
+                    orientation="vertical"
+                    startFrom="first"
+                />
+
+
+
+
+
 
                 <Chapter3 />
+
                 <MyTimeline
                     events={infoTimeline.slice(13, -6)}
                     orientation="vertical"
@@ -63,6 +78,7 @@ class App extends Component {
                 />
 
                 <Chapter4 />
+
                 <MyTimeline
                     events={infoTimeline.slice(-6)}
                     orientation="vertical"
