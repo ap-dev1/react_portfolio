@@ -9,7 +9,9 @@ class RecentProjects extends Component {
     render() {
         return (
             <div id="Recent" className="fullscreen light">
+
                 <h1>Current projects </h1>
+
 
                 <div className="recentRow">
                     {infoRecent.map((project) => (

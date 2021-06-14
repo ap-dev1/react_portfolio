@@ -140,7 +140,7 @@ var infoTimeline = [
         id: 2, title: 'A Computational Model of Adaptive Behavior Dynamics', date: "05/02/2009",
         type: 'invited talk, Emory University',
         role: "invited talk",
-        authors: "Popa & McDowell (2008)",
+        authors: ["Popa & McDowell (2008)"],
         tags: [],
         keywords: ["ETBD", "conference", "Emory University"],
         description: "My adviser nominated me as a speaker for the Department's annual research festival. I gave a talk on the relation between mathematical and computational models of behavior dynamics.",
@@ -158,7 +158,7 @@ var infoTimeline = [
         title: "Wolfram, Complexity, and a New Kind of Science",
         date: "07/01/2009",
         type: "journal article",
-        authors: "McDowell & Popa (2009)",
+        authors: ["McDowell & Popa (2009)"],
         role: "CO-INVESTIGATOR (journal article; research, empirical)",
         tags: [
             "Excel/VBA",
@@ -167,7 +167,7 @@ var infoTimeline = [
             "ensemble fitting",
             "residual analysis",
         ],
-        authors: "McDowell & Popa (2009)",
+        authors: ["McDowell & Popa (2009)"],
         keywords: ["Wolfram", "complex systems", "emergence", "Elementary Cellular Automata", "cellular automaton"],
         fig_captions: [
             "Fig. 5. Image of a section of cellular automaton output, a cumulative record, and a log IRT survivor plot for a Rule 22 (top row) and a Rule 30 (bottom row) cellular automaton. The cumulative records and log survivor plots were constructed from a column of the cellular automaton output where each black cell was taken to represent a response.",
@@ -242,7 +242,7 @@ var infoTimeline = [
             "education",
             "deggree",
         ],
-        authors: "Popa (2009)",
+        authors: ["Popa (2009)"],
         committee: "Prof. Jack McDowell (chair), Prof. Eugene Emory, Prof. Philip Wolff",
         keywords: ["Masters Thesis", "ETBD", "Hamming Distances", "Changeover Delay", "matching", "sensitivity",],
         description:
@@ -273,7 +273,7 @@ var infoTimeline = [
         title: "Beyond the molar-molecular debate",
         date: "05/31/2010",
         type: "invited talk",
-        authors: ["Popa & McDowell, 2010"],
+        authors: ["Popa & McDowell (2010)"],
         role: "invited talk",
         tags: ["problem framing"],
         keywords: ["ABAI 2010", "invited talk", "conference"],
@@ -559,7 +559,7 @@ var infoTimeline = [
         date: "05/24/2014",
         type: "talk, ABAI 2014",
         role: "SPEAKER (talk, ABAI 2014)",
-        authors: "Popa, Calvin, & McDowell (2014)",
+        authors: ["Popa, Calvin, & McDowell (2014)"],
         keywords: ["ABAI 2014", "causation", "complexity"],
         tags: [],
         description:
@@ -587,7 +587,7 @@ var infoTimeline = [
         date: "02/13/2015",
         type: "invited talk, Darwin Day Lecture Series, GSU",
         role: "SPEAKER (invited talk, Darwin Lectures, GSU)",
-        authors: "Popa (2015)",
+        authors: ["Popa (2015)"],
 
         keywords: ["Darwin2015", "invited talk", "conference"],
         tags: [],
@@ -608,7 +608,7 @@ var infoTimeline = [
         date: "02/09/2016",
         type: "invited talk, Darwin Day Lecture Series, GSU",
         role: "SPEAKER (invited talk, Darwin Lectures, GSU)",
-        authors: "Popa (2016)",
+        authors: ["Popa (2016)"],
         keywords: ["Darwin2016", "invited talk", "conference"],
         tags: [],
         description: "The average is an illusion; only the population is real. Departures from the average are signal to be explained, not noise to be removed. Diversity is the natural state of populations, therefore the emergence of diversity is what needs to be explained. Ta-daaa (Popa, 2019)",
@@ -641,7 +641,7 @@ var infoTimeline = [
         date: "03/01/2016",
         type: "journal article",
         role: "PRINCIPAL INVESTIGATOR (part of my thesis turned journal article)",
-        authors: "Popa & McDowell (2016)",
+        authors: ["Popa & McDowell (2016)"],
 
         keywords: ["Popa & McDowell, 2016"],
         tags: [],
@@ -710,7 +710,7 @@ var infoTimeline = [
         type: "talk, WCALB 2017",
         time: "02/19/2017",
         role: "SPEAKER (talk, WCALB 2017)",
-        authors: "Popa & Grissom (2017)",
+        authors: ["Popa & Grissom (2017)"],
 
         keywords: ["WCALB 2017", "talk", "conference", "Utah"],
         tags: [
@@ -747,7 +747,7 @@ var infoTimeline = [
         type: "talk, ABAI 2017",
         time: "05/28/2017",
         role: "PRINCIPAL INVESTIGATOR (talk, ABAI 2017)",
-        authors: "Popa (2017)",
+        authors: ["Popa (2017)"],
 
         keywords: ["ABAI 2017", "talk", "conference"],
         tags: [],
@@ -794,7 +794,7 @@ var infoTimeline = [
         date: "05/02/2018",
         type: "invited talk, Emory University, Oxford Campus",
         role: "invited talk",
-        authrors: "Popa (2018)",
+        authrors: ["Popa (2018)"],
 
         tags: [],
         description: "requires description",
@@ -816,6 +816,8 @@ var infoTimeline = [
     //     type: "(research, computational modelling)",
     //     role: "PRINCIPAL INVESTIGATOR",
     //     keywords: [],
+    //     authors: [],
+
     //     tags: ["Python", "SciPy", "SQLite", "Postgres"],
     //     description:
     //         "This evolutionary theory of behavior dynamics is similar to the one described in McDowell (2004). ... ",
@@ -834,7 +836,7 @@ var infoTimeline = [
         type: "preprint",
         time: "09/08/2019",
         role: "PRINCIPAL INVESTIGATOR",
-        authors: "Popa (2019)",
+        authors: ["Popa (2019)"],
         keywords: [],
         tags: ["Problem Solving"],
         description:
@@ -853,13 +855,15 @@ var infoTimeline = [
     },
 
 
+
+
     {
         id: 28,
         title: "Imperfect Automata",
         date: "09/30/2019",
         type: "preprint",
         role: "",
-        authors: "Popa (2019)",
+        authors: ["Popa (2019)"],
 
         keywords: [],
         tags: ["Python", "Tkinter"],
@@ -888,6 +892,8 @@ var infoTimeline = [
         time: "10/05/2020",
         role: "",
         keywords: [],
+        authors: [],
+
         tags: [
             "React",
             "Node/Express",
@@ -917,6 +923,8 @@ var infoTimeline = [
         time: "10/06/2020",
         role: "",
         keywords: [],
+        authors: [],
+
         tags: [
             "MERN",
             "React",
@@ -944,6 +952,8 @@ var infoTimeline = [
         time: "01/01/2021",
         role: "",
         keywords: [],
+        authors: [],
+
         tags: [
             "MERN",
             "React",
@@ -970,6 +980,8 @@ var infoTimeline = [
         time: "01/02/2021",
         role: "",
         keywords: [],
+        authors: [],
+
         tags: [
             "MERN",
             "React",

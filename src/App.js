@@ -35,52 +35,39 @@ class App extends Component {
                 <RecentProjects />
 
 
+                <Chapter1 />
+                <MyTimeline
+                    events={infoTimeline.slice(0, 7)}
+                    orientation="vertical"
+                    startFrom="first"
+                />
 
-                <div id="Background1">
-                    <Chapter1 />
-                    <MyTimeline
-                        events={infoTimeline.slice(0, 7)}
-                        orientation="vertical"
-                        startFrom="first"
-                    />
-                </div>
-
-
-                <div id="Background2">
-                    <Chapter2 />
-                    <MyTimeline
-                        events={infoTimeline.slice(7, 13)}
-                        orientation="vertical"
-                        startFrom="first"
-                    />
-                    <FastMatchingDemo />
-                </div>
+                <Chapter2 />
+                <MyTimeline
+                    events={infoTimeline.slice(7, 13)}
+                    orientation="vertical"
+                    startFrom="first"
+                />
+                <FastMatchingDemo />
 
 
                 {/* <div id="FastMatching" className="fullscreen">
                     <FastMatchingDemo />
                 </div> */}
 
+                <Chapter3 />
+                <MyTimeline
+                    events={infoTimeline.slice(13, -6)}
+                    orientation="vertical"
+                    startFrom="first"
+                />
 
-
-                <div id="Background3">
-                    <Chapter3 />
-                    <MyTimeline
-                        events={infoTimeline.slice(13, -6)}
-                        orientation="vertical"
-                        startFrom="first"
-                    />
-                </div>
-
-
-                <div id="Background4">
-                    <Chapter4 />
-                    <MyTimeline
-                        events={infoTimeline.slice(-6)}
-                        orientation="vertical"
-                        startFrom="first"
-                    />
-                </div>
+                <Chapter4 />
+                <MyTimeline
+                    events={infoTimeline.slice(-6)}
+                    orientation="vertical"
+                    startFrom="first"
+                />
 
                 <TeachingExperience />
 

@@ -9,6 +9,7 @@ import "../styles/project.sass";
 
 import PropTypes from "prop-types";
 import infoTimeline from "../data/infoTimeline";
+import infoReferences from "../data/infoReferences"
 
 import "./sassy/event-a.sass";
 
@@ -27,9 +28,7 @@ const MyTimeline = (props) => {
         var Links = null;
         var Tags = null;
         var Description = "";
-        var date_type = "";
-        var Citation;
-        var Captions;
+        var Citation = "";
 
         if (e.urls.length > 0) {
             Links = e.urls.map((item) => (
@@ -51,76 +50,6 @@ const MyTimeline = (props) => {
             Citation = parse(e.citation);
         }
 
-        // if (e.citation !== "") {
-        //     var myCitation = parse(e.citation)
-
-        //     Citation =  <ReadMore
-        //                     overview={myCitation}
-        //                     maxChars={200}
-        //                     style={{fontSize: '.7rem', border: 0, padding: 0, backgroundColor: '#fff'}}
-        //                 />
-
-        // }
-
-        // if (e.date !== "" & e.type !== "") {
-        //     let s1 = e.date
-        //     let s2 = e.type
-        //     let s3 = s1 + ' '  + s2
-
-        //     date_type = s3
-
-        // }
-
-        // if (e.id === -1) {
-        //     return (
-        //         <div
-        //             style={{
-        //                 padding: '0px 175px',
-        //                 position: 'relative',
-        //             }}
-        //             key={e.id}
-        //             id={e.time}
-        //         //content1={e.date.slice(-7)}
-        //         //content1={e.date}
-        //         >
-
-        //             <div
-        //                 className='timelineContent'
-        //                 style={{
-        //                     border: '1px solid #999',
-        //                     backgroundColor: '#f2f4f8',
-        //                     opacity: 1,
-        //                     color: '#444',
-        //                     borderRadius: '1rem',
-        //                 }}>
-        //                 <div>
-
-        //                     <span
-        //                         className="title"
-        //                         style={{
-        //                             fontSize: '1.2rem',
-        //                             textAlign: 'center',
-        //                             color: '#333',
-        //                             margin: '2rem'
-        //                         }}
-        //                     >
-        //                         {parse(e.title)}
-        //                     </span>
-
-        //                     <p style={{
-        //                         fontSize: '.8rem',
-        //                         fontFamily: 'Roboto, sans-serif',
-        //                         lineHeight: '1.3rem',
-        //                         maxWidth: '700px',
-        //                         margin: '0rem 0rem 1rem 3rem'
-
-        //                     }}
-        //                     >{myDescription}</p>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     )
-        // };
 
         let months = [
             "Jan ",
@@ -145,8 +74,37 @@ const MyTimeline = (props) => {
             let moIndex = parseInt(e.date.slice(0, 2));
             let mo = months[moIndex - 1];
             DisplayedDate = mo + e.date.slice(-4);
-
         }
+
+
+        var authors = []
+
+        if (e.authors) {
+            e.authors.map(author => {
+
+                if (author) {
+                    //console.log(author)
+                    authors.push(
+                        <span className="authors" title={e.citation} >{e.authors}</span>
+                    )
+                } else {
+                    console.log(e.citation)
+                }
+                //let a = infoReferences.author
+                //let b = infoReferences.
+                //console.log(a)
+
+                // return (
+                //     
+                // )
+
+            })
+        } else {
+            console.log(e.title)
+        }
+
+
+
 
         return (
             <div
@@ -175,10 +133,11 @@ const MyTimeline = (props) => {
                     </div>
 
                     <div className="projectColumnImages">
-                        {/* <span className="figure-caption">{e.citation}</span> */}
 
                         <ImagesCarousel props={e.img} />
                     </div>
+
+
                 </div>
             </div>
         );
