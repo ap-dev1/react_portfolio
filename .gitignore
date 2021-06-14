@@ -20,8 +20,8 @@
 .pnp.js
 # /src/components/background/
 
-FastMatchingDemo.js
-fast_matching_demo.sass
+#FastMatchingDemo.js
+#fast_matching_demo.sass
 
 # testing
 /coverage
