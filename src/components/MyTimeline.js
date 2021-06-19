@@ -32,9 +32,16 @@ const MyTimeline = (props) => {
 
         if (e.urls.length > 0) {
             Links = e.urls.map((item) => (
-                <button key={item.link} id={item.link} title={item.link} onClick={goToLink}>
-                    {item.name}
-                </button>
+                <button
+                    key={item.link}
+                    id={item.link}
+                    title={item.link}
+                    onClick={goToLink}
+                //style={{ background: "url('../assets/icon_link.png') no-repeat", }}
+
+                >
+                    { item.name}
+                </button >
             ));
         }
 

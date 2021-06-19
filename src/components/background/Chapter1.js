@@ -38,7 +38,8 @@ class Chapter1 extends Component {
                     <div className="chapterCol">
                         <h1 className="chapter-title">Learning, ETBD, and me</h1>
                         <span className="spanYears">2007 - 2010 </span>
-                        <p className="p-left">
+
+                        <p id="ch1_p1" className="p-left">
                             In August 2007 I joined Dr. McDowell's lab of experimental
                             behavior analysis, where I studied the dynamics of choice and
                             preference in digital and human agents.

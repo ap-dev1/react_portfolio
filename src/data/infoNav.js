@@ -29,13 +29,13 @@ var infoNav = [
     //  ==========    BACKGROUND     ==========
 
     {
-        sectionID: "Background1",
+        sectionID: "ch1",
         btnText: "Modeling behavior",
         info: "Pre-candidacy work, 2007-2010: computational modelling, ETBD, Hamming Distances, Changeover Delay, Masters Thesis",
         btnClass: "navRegular btnNavigation background"
     },
     {
-        sectionID: "Background2",
+        sectionID: "ch2",
         btnText: "From bits to brain",
         info: "Dissertation (2010-2013): Mutation rate, Default Mode Network, ADHD, Fast Matching, Dissertation",
         btnClass: "navRegular btnNavigation background"
@@ -47,13 +47,13 @@ var infoNav = [
         btnClass: "navDemo btnNavigation"
     },
     {
-        sectionID: "Background3",
+        sectionID: "ch3",
         btnText: "The other side of learning",
         info: "(2014 - 2018) Beyond positive reinforcement: aversive conditioning, stimulus control",
         btnClass: "navRegular btnNavigation background"
     },
     {
-        sectionID: "Background4",
+        sectionID: "ch4",
         btnText: "The shape of will",
         info: "The dynamics of human development, from society to genes and back. You're welcome!",
         btnClass: "navRegular btnNavigation background"

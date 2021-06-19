@@ -29,7 +29,7 @@ class Chapter2 extends Component {
 
                         <span className="spanYears">2011 - 2013</span>
 
-                        <p className="p-left">
+                        <p id="ch2_p1" className="p-left">
                             For my dissertation project I conducted a massive exploration into
                             ETBD's innerworkings and I designed and implemented an
                             experimental procedure that allowed me to compare ETBD and human

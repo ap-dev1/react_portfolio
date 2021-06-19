@@ -28,17 +28,6 @@ var infoRecent = [
         citation: '',
     },
 
-    // {
-    //     id: 3, title: 'Card Sorting App',
-    //     tags: ["MongoDB/Atlas", "Node/Express", "React"],
-    //     description: 'My first MERN app. Before switching to MongoDB/Atlas, the app was relying on AWS: DynamoDB for authentication and RDS for storing user data. ',
-    //     img: [projectCardSorting],
-    //     urls: [
-    //         { name: "GitHub", link: 'https://github.com/ap-dev1/personal_values' },
-    //     ],
-    //     citation: '',
-    // },
-
 
 
 

@@ -48,7 +48,7 @@ class Chapter4 extends Component {
 
                         <span className="spanYears">2019 - now</span>
 
-                        <p className="p-left">
+                        <p id="ch4_p1" className="p-left">
                             <i>
                                 Nothing exists in "society" without existing in individuals.
               </i>

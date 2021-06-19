@@ -71,7 +71,7 @@ class RefList extends Component {
 
             <div id="refSection" >
 
-                <h1>References</h1>
+                <h1 id="refMarker1" >References</h1>
                 <span className="undergraduate"><sup>U</sup> = undergraduate colaborator</span>
 
                 <div className="refBody">

@@ -44,7 +44,7 @@ class Chapter3 extends Component {
                             </i>
                         </p> */}
 
-                        <p className="p-left">
+                        <p id="ch3_p1" className="p-left">
                             After graduation I focused my research on stimulus control and
                             aversive conditioning phenomena: punishment, escape, and
                             avoidance.

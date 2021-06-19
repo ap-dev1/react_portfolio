@@ -21,6 +21,7 @@ class Contact extends Component {
                     <label className="lbl_email">andrei.popa.dev@gmail.com</label>
 
                     <button
+                        id="btnEmail"
                         className="btn_email"
                         onClick={() =>
                             navigator.clipboard
@@ -55,7 +56,7 @@ class Contact extends Component {
 
                 </table>
 
-                <div className="footer" fixed="bottom">
+                <div id="myFooter" className="footer" fixed="bottom">
                     <span>
                         End of site.
             <br />

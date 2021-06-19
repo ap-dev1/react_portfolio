@@ -31,7 +31,7 @@ class About extends Component {
 
                 <div className='AboutRow'>
 
-                    <div className='AboutColumn'>
+                    <div id="divProfilePic" className='AboutColumn'>
                         {data.ShowAboutImage ? <img src={data.aboutImage} alt='Dr. Andrei Popa'
                             height='400px' style={{ borderRadius: ".5rem" }}
                         ></img> : null}

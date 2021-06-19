@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
 import { svg } from "d3";
-import "../sassy/fast_matching_demo.sass"
+// import {*} from "./matchingHelpers.js"
+import parse from "html-react-parser";
+import { ProgressBar } from "react-bootstrap"
 
 export default class FastMatchingDemo extends Component {
 
@@ -90,6 +92,21 @@ export default class FastMatchingDemo extends Component {
         let svgMatching = d3.select("#svgMatching")
         svgMatching.on("click", this.evaluateResponse);
 
+        svgMatching
+            .append("text")
+            .attr("class", "introTexts")
+            .attr("x", 220)
+            .attr("y", 70)
+            .attr("fill", 'rgb(50, 50, 50)')
+            .attr("font-size", ".9rem")
+            .attr("font-family", 'Montserrat')
+            .text("Click anywhere to begin.")
+
+
+
+        // RESET ALL TIMERS: 
+
+
 
         this.setState({
             cod1_duration: 0,
@@ -166,21 +183,36 @@ export default class FastMatchingDemo extends Component {
         // If this is the first event, start the simulation: 
 
         if (timeStart === 0) {
+
+
             this.setState({ timeStart: performance.now(), timeElapsed: 0 });
+
+            //var intro_texts = ["introText1", "introText11", "introText2", "introText22", "introText222"]
+
+            d3.selectAll(".introTexts").remove()
+
+
 
             let overallInterval = d3.interval((te) => {
                 this.setState({ progress: te })
+
                 if (te > timelimit) {
                     let svg = d3.select("#svgMatching")
                     svg.on("click", null);
                     overallInterval.stop()
                     let gSummary = d3.select("#svgRecord").append("g").attr("id", "gSummary")
                 }
+
+                // else {
+                //     d3.select("#progressLine").attr("x1", ).attr("x2")
+                // }
+
             }, 250);
 
 
 
             // The first two Random Intervals, between 1000 and 5000 ms, from an exponential with mean 1/RI mean. I use integers here to remove the microseconds. When the timers exceed the intervals, reinforcement becomes available.
+
             let int1 = parseInt(d3.randomExponential(1, 5)(this.state.RI1) * 1000);
             let int2 = parseInt(d3.randomExponential(1, 5)(this.state.RI2) * 1000);
             d3.timeout((elapsed1) => {
@@ -194,8 +226,7 @@ export default class FastMatchingDemo extends Component {
             // EVENTS PER SESSION (15s):
             let r1min = `${1 / this.state.RI1 * this.state.timeLimit}`
             let r2min = `${1 / this.state.RI2 * this.state.timeLimit}`
-            // console.log("RI 1 schedules", 1 / this.state.RI1, "events/s, so ", r1min, "per session")
-            // console.log("RI 2 schedules ", 1 / this.state.RI2, "events/s, so ", r2min, "per session")
+
 
         } else {
             this.setState({
@@ -234,13 +265,14 @@ export default class FastMatchingDemo extends Component {
         var cod2_status = this.state.cod2_status
 
 
-        // EVENT COORDINATES: 
+
+        // EVENT COORDINATES:
+
         var x = e.offsetX;
         var y = e.offsetY;
 
 
         // EVALUATE EVENT CLASS: B1, B2, Be
-
 
         // --------------------------------------------------------------   B1
         if (d3.polygonContains(this.state.class1, [x, y])) {
@@ -283,8 +315,8 @@ export default class FastMatchingDemo extends Component {
                             this.setState({ codColor: "#282c34" })
                         }
 
-
                         cod1.stop()
+
                     }, cod1_duration);
 
 
@@ -571,27 +603,51 @@ export default class FastMatchingDemo extends Component {
         svgRecord.append("text").text("time (s)")
             .attr("x", 350).attr("y", 250).attr("font-size", "1rem").attr("fill", 'rgb(200, 200, 200').attr("font-weight", 300)
 
-        // DRAW PROGRESS LINE & TEXT:
-        // let progressText = svgRecord.append("text").attr("transform", `translate(35, 10)`).attr("id", "progressText")
-        //     .attr("x", scaleTime(this.state.progress + 1))
-        //     .attr("y", scaleResponses(28))
-        //     .attr("fill", "lightgrey")
-        //     .attr("font-size", ".9rem")
-        //     .text(this.state.progress)
+
+        svgRecord
+            .append("text")
+            .attr("class", "introTexts")
+            .attr("id", "introText1")
+            .attr("x", 150)
+            .attr("y", 100)
+            .attr("fill", "rgb(178, 245, 245)")
+            .attr("font-size", "1.75rem")
+            .attr("font-family", 'Iceland')
+            .attr("font-weight", "300")
+            .attr("text-align", "center")
+            .attr("word-wrap", "wrap")
+            .text("Fast Matching")
+
+        svgRecord
+            .append("text")
+            .attr("class", "introTexts")
+            .attr("id", "introText11")
+            .attr("x", 200)
+            .attr("y", 150)
+            .attr("fill", "rgb(178, 245, 245)")
+            .attr("font-size", "1.5rem")
+            .attr("font-family", 'Iceland')
+            .attr("font-weight", "300")
+            .attr("text-align", "center")
+            .attr("word-wrap", "wrap")
+            .text("demo")
 
 
 
-        // gProgress.append("line")
-        //     .attr("id", "progressLine")
-        //     .attr("x1", scaleTime(this.state.timeElapsed))
-        //     .attr("y1", scaleResponses(0))
-        //     .attr("x2", scaleTime(this.state.timeElapsed))
-        //     .attr("y2", scaleResponses(this.state.recordHeight))
-        //     .attr("stroke", "lightgrey")
-        //     .attr("stroke-width", 1)
-        //     .attr("stroke-linecap", "round");
-
-        // .attr("stroke-dasharray", "8,2")
+        svgRecord.append("line")
+            .attr("id", "progressLine")
+            .attr("x1", () => {
+                return scaleTime(this.state.timeElapsed)
+            })
+            .attr("y1", scaleResponses(0))
+            .attr("x2", () => {
+                scaleTime(this.state.timeElapsed)
+            })
+            .attr("y2", scaleResponses(this.state.recordHeight))
+            .attr("stroke", "lightgrey")
+            .attr("stroke-width", 1)
+            .attr("stroke-linecap", "round")
+            .attr("stroke-dasharray", "8,2")
 
 
         // SENSITIVITY AND BIAS:
@@ -604,29 +660,9 @@ export default class FastMatchingDemo extends Component {
             .append("svg")
             .attr("id", "svgMatching")
             .attr("width", "100%")
-            .attr("height", "100%");
+            .attr("height", "100%")
 
         svg.on("click", this.evaluateResponse);
-
-        // svg
-        //     .append("rect")
-        //     .attr("x", 320)
-        //     .attr("y", 125)
-        //     .attr("width", 100)
-        //     .attr("height", 50)
-        //     .attr("opacity", 0.7)
-        //     .attr("fill", "rgb(121, 47, 0)");
-
-        // svg
-        //     .append("rect")
-        //     .attr("x", 450)
-        //     .attr("y", 125)
-        //     .attr("width", 100)
-        //     .attr("height", 50)
-        //     .attr("opacity", 0.7)
-        //     .attr("fill", "rgb(6, 45, 6)");
-
-
 
         svg
             .append("rect")
@@ -645,6 +681,40 @@ export default class FastMatchingDemo extends Component {
             .attr("height", this.state.lever2[3])
             .attr("opacity", 0.5)
             .attr("fill", "rgb(6, 45, 6)");
+
+        svg
+            .append("text")
+            .attr("class", "introTexts")
+            .attr("id", "introText2")
+            .attr("x", 30)
+            .attr("y", 30)
+            .attr("font-size", ".9rem")
+            .attr("font-family", 'Montserrat')
+            .attr("fill", 'rgb(50, 50, 50)')
+            .text("Clicking inside the marked regions may result in points.")
+
+        svg
+            .append("text")
+            .attr("class", "introTexts")
+            .attr("id", "introText22")
+            .attr("x", 30)
+            .attr("y", 55)
+            .attr("font-size", ".9rem")
+            .attr("font-family", 'Montserrat')
+            .attr("fill", 'rgb(50, 50, 50)')
+            .text("Obtain as many as you can. You have 15 seconds.")
+
+
+        svg
+            .append("text")
+            .attr("class", "introTexts")
+            .attr("id", "introText222")
+            .attr("x", 30)
+            .attr("y", 80)
+            .attr("fill", 'rgb(50, 50, 50)')
+            .attr("font-size", ".9rem")
+            .attr("font-family", 'Montserrat')
+            .text("Click anywhere to begin.")
     }
 
 
@@ -663,6 +733,8 @@ export default class FastMatchingDemo extends Component {
             p0sec.classList.add("inEffect")
 
         }
+
+        console.log(e.currentTarget.value + "s")
     }
 
 
@@ -671,14 +743,6 @@ export default class FastMatchingDemo extends Component {
 
             <div class="matchingMetaWrapper">
 
-                <div className="demoTitle">
-                    <h2>Fast Matching <br />demo</h2>
-
-                    <span>Click the experimental area to begin</span>
-
-
-
-                </div>
 
                 <div id="FastMatchingDemo" className="matchingWrapper">
                     <div className="top">
@@ -703,13 +767,6 @@ export default class FastMatchingDemo extends Component {
                                     }}
                                 ></path>
 
-                                {/* <text id="te" x={this.state.progress / 1000} y={30} text={this.state.progress} fill="lightgrey" style={{
-
-                                offsetX: 50,
-                                fontSize: ".9rem",
-                                zIndex: 0,
-                                position: "relative",
-                            }}></text> */}
 
 
 
@@ -730,7 +787,7 @@ export default class FastMatchingDemo extends Component {
 
                             <div className="divSlider">
 
-                                <p className="inEffect" id="p0sec" >0s</p>
+                                <p className="inEffect" id="p0sec" title="No changeover delay">0s</p>
 
                                 <input
                                     type="range"
@@ -744,14 +801,9 @@ export default class FastMatchingDemo extends Component {
                                     onInput={this.sliderChange}
                                 >{this.value}</input>
 
-                                <p className="inotInEffect" id="p2sec">2s</p>
+                                <p className="notInEffect" id="p2sec">2s</p>
                             </div>
 
-                            <progress
-                                // value={this.state.timeLimit * 1000 - this.state.progress}
-                                value={this.state.progress}
-                                max={this.state.timeLimit * 1000}>
-                            </progress>
 
 
                             <table>
@@ -773,14 +825,83 @@ export default class FastMatchingDemo extends Component {
 
                                     <tr>
                                         <td colSpan="2" style={{
-                                            textAlign: "center", borderTop: "1px solid rgb(100, 100, 100)",
-                                            padding: ".5rem"
+                                            textAlign: "center",
+                                            borderTop: "1px solid rgb(100, 100, 100)",
+                                            padding: ".1rem"
                                         }}>{this.state.CO} changeovers</td>
                                     </tr>
                                 </tbody>
-
-
                             </table>
+
+
+
+                            {/* <table id="basicSummary">
+
+                                <thead>
+                                    <td className="color1"> L</td>
+                                    <td > CO</td>
+                                    <td className="color2">R</td>
+
+                                </thead>
+
+                                <tbody>
+                                    <tr >
+                                        <td className="color1"> L</td>
+                                        <td > CO</td>
+                                        <td className="color2">R</td>
+                                    </tr>
+
+                                    <tr >
+                                        <td className="color1">{this.state.B1}</td>
+                                        <td style={{
+                                            //textAlign: "center", 
+                                            //borderTop: "1px solid rgb(100, 100, 100)",
+                                            padding: ".1rem"
+                                        }}>{this.state.CO}</td>
+
+                                        <td className="color2">{this.state.B2}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td className="color1">{this.state.Points1}</td>
+                                        <td style={{
+                                            //textAlign: "center",
+                                            //borderTop: "1px solid rgb(100, 100, 100)",
+                                            padding: ".1rem"
+                                        }}>{"n/a"}</td>
+                                        <td className="color2">{this.state.Points2}</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table> */}
+
+
+
+
+                            <div className="divProgress">
+                                <progress
+                                    value={this.state.progress}
+                                    max={this.state.timeLimit * 1000}
+                                    className="prBar"
+                                >
+
+                                </progress>
+
+                                <label style={{
+                                    color: "rgb(178, 245, 245)",
+
+                                    padding: ".5rem",
+                                    height: "auto",
+                                    fontSize: ".9rem",
+                                    zIndex: 0,
+                                    width: "100%",
+                                    textAlign: "center"
+                                }}
+                                >
+                                    {parseInt(this.state.progress / 1000)} s
+                                </label>
+                            </div>
 
                             <button id="btnResetDemo" onClick={this.resetDemo}>reset</button>
 

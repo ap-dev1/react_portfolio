@@ -10,7 +10,11 @@ class RecentProjects extends Component {
         return (
             <div id="Recent" className="fullscreen light">
 
-                <h1>Current projects </h1>
+                <h1>Recent projects </h1>
+
+                <div id="recentIntro" className="recentRow">
+                    <p>I find it easier to learn by doing, so when I  These pet projects are in various stages of development. They are constantly being updated and updated, depending on what  and so depending on when you visit the   </p>
+                </div>
 
 
                 <div className="recentRow">
@@ -27,7 +31,7 @@ class RecentProjects extends Component {
                     ))}
                 </div>
 
-                {/* <ContinuousEducation /> */}
+
             </div>
         );
     }

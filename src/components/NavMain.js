@@ -10,49 +10,7 @@ import infoNav from "../data/infoNav"
 
 
 class NavMain extends Component {
-    /* 
-    
-        // NOT HERE, AND NOT BOUND BY THE BUTTON.
-        // MOVE IT IN App.js, later.
-        
-    
-        componentDidMount() {
-    
-            // Create the observer template:
-            var observer = new IntersectionObserver(entries => {
-    
-                entries.forEach(entry => {
-                    if (entry.isIntersecting === true & entry.intersectionRatio > .3) {
-    
-                        console.log('entry', entry.target.id, entry.intersectionRatio);
-    
-                        if (document.getElementsByClassName("currentView").length > 0) {
-                            document.getElementsByClassName("currentView")[0].classList.remove("currentView")
-                        }
-    
-                        let myBtn = document.getElementById(`btn${entry.target.id}`)
-                        myBtn.classList.add("currentView")
-                    }
-                });
-            }, { threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95] });
-    
-            // Apply the observer to every navigation button:
-            var myButtons = document.querySelectorAll(".btnNavigation");
-            var myGoodButtons = []
-    
-            myButtons.forEach(btn => {
-                if (btn.id !== "btnFastMatchingDemo") {
-                    myGoodButtons.push(btn)
-                }
-            })
-    
-            myGoodButtons.forEach(item => {
-                let section = document.getElementById(item.name)
-                observer.observe(section);
-            });
-        }
-    
-     */
+
 
     navigateToSection(e) {
         e.preventDefault();

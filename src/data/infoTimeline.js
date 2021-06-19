@@ -230,43 +230,43 @@ var infoTimeline = [
 
     // ALSO, SQAB 2010: Popa, A., & McDowell, J J. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at the Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX.,
 
-    {
-        id: 4,
-        title: "M.A. in Psychology, Emory University",
-        date: "12/20/2009",
-        type: "Masters's Thesis",
-        role: "Master of Arts",
-        tags: [
-            "Master of Arts",
-            "Hamming Distance",
-            "education",
-            "deggree",
-        ],
-        authors: ["Popa (2009)"],
-        committee: "Prof. Jack McDowell (chair), Prof. Eugene Emory, Prof. Philip Wolff",
-        keywords: ["Masters Thesis", "ETBD", "Hamming Distances", "Changeover Delay", "matching", "sensitivity",],
-        description:
-            "I defended my Masters Thesis in October 2009, in front of a committee composed of Dr. Jack McDowell (chair), Dr. Eugene Emory, and Dr. Phil Wolff. In 2010 I submitted it to Behavioral Processes, where it was published later that year.",
-        img: [paper_hamming_2010],
-        fig_captions: [
-            "Fig. 6. Distribution of exponents. The left panel illustrates the frequency of exponents obtained when the difference between HD between and HD within was equal to or larger than 3. The right panel illustrates the frequency of exponents obtained when the difference between HD between and HD within was smaller than 2.",
-        ],
+    // {
+    //     id: 4.1,
+    //     title: "M.A. in Psychology, Emory University",
+    //     date: "12/20/2009",
+    //     type: "Masters's Thesis",
+    //     role: "Master of Arts",
+    //     tags: [
+    //         "Master of Arts",
+    //         "Hamming Distance",
+    //         "education",
+    //         "deggree",
+    //     ],
+    //     authors: ["Popa (2009)"],
+    //     committee: "Prof. Jack McDowell (chair), Prof. Eugene Emory, Prof. Philip Wolff",
+    //     keywords: ["Masters Thesis", "ETBD", "Hamming Distances", "Changeover Delay", "matching", "sensitivity",],
+    //     description:
+    //         "I defended my Masters Thesis in October 2009, in front of a committee composed of Dr. Jack McDowell (chair), Dr. Eugene Emory, and Dr. Phil Wolff. In 2010 I submitted it to Behavioral Processes, where it was published later that year.",
+    //     img: [paper_hamming_2010],
+    //     fig_captions: [
+    //         "Fig. 6. Distribution of exponents. The left panel illustrates the frequency of exponents obtained when the difference between HD between and HD within was equal to or larger than 3. The right panel illustrates the frequency of exponents obtained when the difference between HD between and HD within was smaller than 2.",
+    //     ],
 
-        urls: [
-            {
-                name: "Emory ETD",
-                link: "https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en",
-            },
-            { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/20152891" },
-            {
-                name: "ReshGate",
-                link: "https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences",
-            },
-        ],
+    //     urls: [
+    //         {
+    //             name: "Emory ETD",
+    //             link: "https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en",
+    //         },
+    //         { name: "Pubmed", link: "http://www.ncbi.nlm.nih.gov/pubmed/20152891" },
+    //         {
+    //             name: "ReshGate",
+    //             link: "https://www.researchgate.net/publication/41427297_The_effect_of_Hamming_distances_in_a_computational_model_of_selection_by_consequences",
+    //         },
+    //     ],
 
-        citation:
-            "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434.",
-    },
+    //     citation:
+    //         "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. Behavioural Processes, 84, 428-434.",
+    // },
 
     {
         id: 6,

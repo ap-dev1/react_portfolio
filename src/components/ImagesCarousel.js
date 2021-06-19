@@ -15,15 +15,11 @@ function ImagesCarousel({ props }) {
             <Carousel.Item
                 key={item.imgTitle}
                 id={item.imgTitle}
-                style={{
-                    maxWidth: "600px",
-                    maxHeight: "400px",
-                    margin: "auto",
-                    //maxHeight: '300px',
-                    // backgroundColor: '#f2f4f8',
-                    // marginBottom: '.5rem',
-                    // padding: '.0rem'
-                }}
+            // style={{
+            //     maxWidth: "350px",
+            //     maxHeight: "250px",
+            //     margin: "auto",
+            // }}
             >
                 <Image
                     src={item}
