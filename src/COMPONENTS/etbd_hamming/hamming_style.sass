@@ -1,0 +1,211 @@
+/** .attr("transform", (d) => {
+                if (d === 511) {
+                    return "translate(-45,0)rotate(-60)"
+                } else if (d === 512) {
+                    return "translat elsee(-5,0)rotate(-60)"
+                }
+            })
+    .style("text-anchor", "start")
+         **/
+    
+@import '../../styles/_colors'
+
+
+$fassxdrgfs: #fbff00 
+$fasxfvrfsg: #fbff00
+
+
+.rect_hover
+    stroke: cyan
+    stroke-width: 1px
+
+    &:hover
+        cursor: pointer
+        opacity: .2
+        scale: .98
+        transform: translate(3px,2px)
+
+//==================================================================
+#divHeatMapHook
+    width: 100%
+    height: auto
+    background-color: $svgLightGreen
+
+    #svgHeatMapHook
+        width: 100%
+        height: 250px
+        background-color: $svgLightGreen
+       
+//==================================================================
+#divScatter
+    width: 100%
+    height: auto
+    background-color: $svgLightGreen
+
+    #svgScatter
+        width: 100%
+        height: 250px
+        background-color: $svgLightGreen
+       
+//================================================================
+// divHeatMap is inside divHamming:
+// #69b3a2
+#divHeatMap
+    width: 100%
+    height: auto
+    border: 1px solid $svgLightGreen
+    position: relative
+    margin-top: 10px
+
+
+    #svgHeatMap
+        width: 100%
+        height: 250px
+        //background-color: $svgLightGreen
+        border: 1px solid $svgLightGreen
+
+
+.heatmapX line, path
+    //stroke: rgb(28, 255, 28)
+    stroke: rgb(218, 255, 181)
+    //stroke-width: 0
+
+.heatmapX text
+    //color: rgb(28, 255, 28)
+    //color: #eeeeee
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 14px
+
+.heatmapY line, path
+    //stroke: rgb(28, 255, 28)
+    stroke: rgb(218, 255, 181)
+    //stroke-width: 0
+
+.heatmapY text
+    color: rgb(28, 255, 28)
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 14px
+// ==========================================================        
+
+.scatterX line, path
+    //stroke: rgb(28, 255, 28)
+    stroke: rgb(218, 255, 181)
+
+.scatterX text
+    //color: rgb(28, 255, 28)
+    color: #ddd
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 14px
+
+.scatterY line, path
+    //stroke: rgb(28, 255, 28)
+    stroke: rgb(218, 255, 181)
+
+.scatterY text
+    color: rgb(28, 255, 28)
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 14px
+//=================================================
+
+
+#divHamming
+    width: 550px
+    //height: 250px
+    height: auto
+    // background-color: $svgLightGreen
+    //position: absolute
+
+    #svgHamming
+        width: 100%
+        //height: 100%
+        height: 250px
+        //background-color: transparrent
+        background-color: $svgLightGreen
+        // box-shadow: -4px 4px 10px 4px #b2f0da
+        // box-shadow: -4px 4px 4px #6bae96
+                
+        .axisLine line, path
+            stroke: #c4d5d0
+            //stroke: $svgLightGreen
+            opacity: .6
+
+        .axisLine text
+            //color: #c4d5d0
+            color: #adadad
+            font-size: 10px
+            font-family: Arial, Helvetica, sans-serif
+
+    
+
+.hammingLine
+    font-size: 10px
+
+.hammingLine line, path
+        //stroke: rgb(28, 255, 28)
+        stroke: rgb(170, 170, 170)
+
+.hammingLine text
+        color: rgb(170, 170, 170)
+
+        font-family: Arial, Helvetica, sans-serif
+
+
+
+.hammingLineOrange
+    font-size: 10px
+
+.hammingLineOrange line, path
+        stroke: rgb(255, 128, 49)
+
+.hammingLineOrange text
+    color: rgb(255, 128, 49)
+    font-family: Arial, Helvetica, sans-serif
+
+
+.hammingBar
+    opacity: .8
+
+    &:hover
+        cursor: pointer
+        opacity: .1
+
+
+
+.boundary
+    draggable: true
+    stroke: #ffffff
+    stroke-width: 10
+    stroke-dasharray: 0
+    opacity: .8
+
+    &:hover
+        cursor: pointer
+        opacity: 1
+
+        //stroke: #3bffce
+
+.boundary.left
+    stroke: rgb(28, 255, 28)
+    stroke-width: 6
+.boundary.right
+    stroke: rgb(255, 128, 49)    
+    stroke-width: 6
+
+    // colorGreen = 'rgb(28, 255, 28)'
+    // colorOrange = 'rgb(255, 128, 49)'
+
+// .boundaryLine path
+//     stroke: #6cffff
+//     stroke-width: 3
+//     stroke-dasharray: 5
+
+
+
+.yellowLine line, path
+    stroke: $svgLightGreen
+    //opacity: 0
+
+.yellowLine text
+    color: #c4d5d0
+    font-size: 10px
+    font-family: Arial, Helvetica, sans-serif

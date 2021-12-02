@@ -1,0 +1,431 @@
+// @import "./_svg_record.sass"
+// @import "./_agent_history.sass"
+@import "./_neon_signs.sass"
+// @import "./_active_generation.sass"
+//@import "./_selection_new.sass"
+// @import "./_recombination_new.sass"
+@import "./_btn_next.sass"
+
+@import "./recombination/radio_bit.sass"
+
+// @import "./_table_engraved.sass"
+
+
+@import "./rechooks/radio_hook.sass"
+
+
+//@import "./_parent_population.sass"
+    
+// @import "./_neon_signs"
+// @import "./_population.sass"
+// @import "./_recombination.sass"
+// @import "./_next_population.sass"
+
+// @import "./_mutation.sass"
+// @import "./_button_classes.sass"
+
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Reenie+Beanie&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Hi+Melody&family=Reenie+Beanie&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Hi+Melody&family=Pangolin&family=Reenie+Beanie&display=swap')
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Hi+Melody&family=Pangolin&family=Reenie+Beanie&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=East+Sea+Dokdo&family=Gaegu:wght@300;400&family=Hi+Melody&family=Pangolin&family=Reenie+Beanie&family=Sedgwick+Ave&display=swap')
+
+// font-family: 'Reenie Beanie', cursive
+// font-family: 'Hi Melody', cursive
+// font-family: 'Caveat', cursive
+// font-family: 'Pangolin', cursive
+// font-family: 'Architects Daughter', cursive    
+// font-family: 'East Sea Dokdo', cursive
+// font-family: 'Gaegu', cursive
+// font-family: 'Sedgwick Ave', cursive
+    
+//---------------------------------
+
+// animation: pulsate 0.11s ease-in-out infinite alternate
+
+//#350e073b  mutation
+//#3a3a3a9d  recombination
+//#f18a353b  selection
+//#7036063b  selection
+
+//#350e073b  
+//#350e073b  
+
+
+$blue-intense: #0062cc
+
+$blue-opaque: #0063cc90
+
+$blue-light: #b2cfef
+
+
+
+
+// ----------------------  AGENT HISTORY:
+.btn_history
+    width: 40px
+    height: 30px
+    margin: auto 0px
+    background-color: transparent
+    border: 0px solid #8585852d
+    color: #bbb
+    transition: .2s
+
+    &:hover
+        background-color: #0f1b37
+        transition: .2s
+
+        
+    
+
+.btn_history[title="mutant"]
+    color: #f56565
+
+
+.btn_history[title = "emited"]
+    color: #ddd
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e5ff00, 0 0 82px #e5ff00, 0 0 92px #e5ff00, 0 0 102px #e5ff00, 0 0 151px #e5ff00
+
+.btn_history[title="reinforced"]
+    color: #ffee00
+    text-shadow: 0 0 7px #cacac6, 0 0 10px #cacac6, 0 0 21px #cacac6, 0 0 42px #c9d654, 0 0 82px #c9d654, 0 0 92px #c9d654, 0 0 102px #c9d654, 0 0 151px #c9d654
+
+
+
+
+// ----------------------  EMISSION:
+.btn_ems
+    width: 40px
+    height: 30px
+    margin: auto 0px
+
+    background-color: transparent
+    border: 0px solid #8585852d
+    color: #bbb
+    cursor: pointer
+    transition: .2s
+
+    &:hover
+        background-color: #0f1b37
+        transition: .2s
+
+
+
+.btn_ems[title="mutant"]
+    color: #f56565
+
+.btn_ems[title = "emited"]
+    color: #ddd
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e5ff00, 0 0 82px #e5ff00, 0 0 92px #e5ff00, 0 0 102px #e5ff00, 0 0 151px #e5ff00
+
+.btn_ems[title="reinforced"]
+    color: #ffee00
+    text-shadow: 0 0 7px #cacac6, 0 0 10px #cacac6, 0 0 21px #cacac6, 0 0 42px #c9d654, 0 0 82px #c9d654, 0 0 92px #c9d654, 0 0 102px #c9d654, 0 0 151px #c9d654
+
+
+
+//----------------------  SELECTION
+
+.btn-selection
+    width: 40px
+    height: 30px
+    margin: auto 0px
+
+    color: $blue-light
+    border: 1px solid $blue-opaque
+    
+    cursor: pointer
+    font-size: 14px
+    padding-top: 4px
+    text-align: center
+    background: transparent
+    transition: .2s
+
+    &:hover
+        background-color: #0f1b37
+        transition: .2s
+
+
+.btn-selection[title="reinforced"]
+    background-color: #dae950
+
+
+
+
+
+
+
+//----------------------  PARENTS:
+
+.parents-wrapper
+    width: fit-content
+    margin: 0px auto
+    display: inline-flex
+    padding: 0px
+    flex-wrap: wrap
+    justify-content: center
+    justify-items: stretch
+    justify-content: space-evenly
+
+    > label
+        font-size: 18px
+        font-weight: 400
+        width: 60px
+        margin: auto 10px auto auto
+        color: #bbb
+        font-family: 'Gaegu', cursive
+        
+
+
+
+
+//.btn-selection:hover
+    //background-color: #dae950
+    // border: 1px solid #e9508d
+    // color: #e9508d
+    //transition: .5s
+    
+    
+
+
+//.btn-selection::active
+    //border: 5px solid #0ddfee
+    //color: #0ddfee
+    //transition: .5s
+
+
+// .btn-selection::focus
+//     //border: 1px solid #50e976
+//     color: #e9508d
+//     transition: .5s
+
+// .btn-selection[dataParent="true"]
+//     background-color: #50e95d
+//     transition: 1s
+//     background: transparent
+
+
+.btn-pair
+    width: 40px
+    height: 50px
+    margin: 0px 5px
+    border: 1px solid #0062cc
+    cursor: pointer
+    font-size: 14px
+    padding: 0px
+    text-align: center
+    background: transparent
+    color: #bbb
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+
+    > span
+        width: 100%
+        height: 50%
+        margin: 0px
+        padding: 2px
+
+
+//----------------------  CHILDREN (same wrapper as PARENTS, above):
+
+.btn-child
+    width: 40px
+    height: 30px
+    margin: auto 0px
+    border: 1px solid $blue-opaque
+
+    
+    cursor: pointer
+    font-size: 14px
+    padding-top: 4px
+    text-align: center
+    background: transparent
+    color: #00ccb8
+    display: flex
+    flex-direction: column
+
+
+.btn-child[title="mutant"]
+    color: #c55858
+
+
+    
+//----------------------  SETTINGS:
+
+.div-setting
+    display: flex
+    flex-direction: column
+    width: 100%
+    padding: 10px 20x
+    margin: 10px auto
+    border: 0px solid #aaa
+    background: transparent
+    box-shadow: -3px -3px 10px #566596 inset, 3px 3px 10px #566596
+    font-size: 11px
+    color: #888
+
+
+
+//---------------------------------
+
+.svg_record
+    width: 250px
+    height: 150px
+    margin: 5px auto
+    background-color: #1D2731
+    border: 1px solid #555
+
+.x_axis line, path
+    stroke: #fff
+    stroke-dasharray: 0
+
+.x_axis text
+    color: #0000008c
+    background-color:  #fbff00
+    border: 1px solid #222
+    font-size: 10px
+    font-family: Arial, Helvetica, sans-serif
+
+    &:hover
+        cursor: pointer
+        fill: #000000
+
+.y_axis line, path
+    stroke: #fff
+    stroke-dasharray: 0
+
+.y_axis text
+    color: #444
+    
+
+
+// -------------------------------------
+
+#divAgentHistory
+    border: 1px solid #555
+    margin: 5px auto
+    font-size: 12px
+    text-align: center
+    
+    table
+        margin: auto
+        width: 100%
+        text-align: center
+
+        tr th
+            color: #76e8ce
+            font-size: 12px
+            width: 40px
+            height: 30px
+            background-color: #555
+            cursor: pointer
+
+            &:hover
+                background-color: #222
+                color: #eee
+
+        tr td
+            color: #e5dcdc
+            font-size: 12px
+            width: 30px
+            height: 30px
+            cursor: pointer
+
+            &:hover
+                background-color: #222
+                color: #eee
+
+
+//---------------------------------
+
+// .light_on
+//     color: #2de7ff
+//     text-shadow: 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa
+
+//---------------------------------
+
+#Select2Parents
+    margin: 5px 0
+    width: 100%
+    padding: 5px
+    display: flex
+    flex-direction: row
+    justify-items: center
+
+//-------------------------------------
+
+// #04f681
+// #09de77b6
+// #09de771c
+
+    
+.toggle_parent
+    height: 30px
+    width: 30px
+    padding: 5px
+    font-size: 13px
+    background: transparent
+
+    input[value="?"]
+        color: #fd4b4b
+
+// .toggle_parent[value="?"]
+//     background-color: #fd4b4b
+
+// [title~="whatever"]
+//     color: #ff0000
+//     font-size: 18px
+
+
+.transition_2s
+    color: #985555
+    border: 1px solid #555
+    transition: all 2s
+    -webkit-transition: all 2s
+    -moz-transition: all 2s
+    -o-transition: all 2s
+    -ms-transition: all 2s
+
+    
+//-------------------------------------
+
+
+// .btn_population:not([value="?"])
+//     color: #222
+
+
+
+// .btn_population[value="?"]
+//     color: #ff0000
+
+
+//---------------------------------------
+
+.div_test
+    font-size: 16px
+    width: 50px
+    height: 50px
+    margin: auto
+    border: 1px solid orange
+    text-align: center
+    padding: 10px
+
+
+.div_test[title="div_title"]
+    color: #eb4e4e
+
+.div_test[value="aaa"]
+    color: #5beb4e
+
+// .div_test222[title="div_title"]
+//     color: #eb4e4e
+
+// .div_test:not([value="?"])
+//     background-color: "#eb4e4e"

@@ -1,52 +1,65 @@
 import React, { Component } from "react";
 
-import Header from "./components/Header";
-import About from "./components/About";
-import RecentProjects from "./components/RecentProjects";
-import MyTimeline from "./components/MyTimeline";
-import Contact from "./components/Contact";
+import infoTimeline from "./DATA/infoTimeline";
 
-import infoTimeline from "./data/infoTimeline";
-
-import Chapter1 from "./components/background/Chapter1";
-import Chapter2 from "./components/background/Chapter2";
-
-import Chapter3 from "./components/background/Chapter3";
-import Chapter4 from "./components/background/Chapter4";
-
-//import FastMatchingDemo from "./components/matching/FastMatchingDemo"
-import MatchingDemoItem from "./components/matching/MatchingDemoItem"
-
-import TeachingExperience from "./components/Teaching"
-
-import References from "./components/References"
+import HeaderSection from "./COMPONENTS/header_files/HeaderSection";
+import About from "./COMPONENTS/about_files/AboutSection";
+import MyTimeline from "./COMPONENTS/timeline_files/MyTimeline";
+import Chapter01 from "./COMPONENTS/background/Chapter01";
+// import Chapter02 from "./COMPONENTS/background/Chapter02";
+// import Chapter03 from "./COMPONENTS/background/Chapter03";
+import Chapter04 from "./COMPONENTS/background/Chapter04";
+import RecentProjects from "./COMPONENTS/recent/RecentProjects";
+import TeachingExperience from "./COMPONENTS/teaching/TeachingSection";
+import Contact from "./COMPONENTS/contact/ContactSection";
+//import References from "./COMPONENTS/references/ReferencesSection";
+import MyVitae from "./COMPONENTS/vitae/MyVitae";
 
 
 class App extends Component {
 
+    assignClasses = () => {
+        // let x = document.getElementById("12/20/2009")
+        // let y = x.childNodes[0]
+        // let z = y.childNodes[0]
+
+        // let title = z.childNodes[0]
+        // let par = z.childNodes[1]
+
+        // x.style.backgroundColor = "#1D2731"
+        // x.style.width = "70%"
+        // //x.parentElement.style.backgroundColor = "#1D2731"
+        // x.parentNode.style.backgroundColor = "red"
+        // y.style.backgroundColor = "#1D2731"
+        // y.style.padding = "0rem 1rem"
+
+        // z.style.backgroundColor = "#1D2731"
+
+        // title.style.color = "yellow"
+        // par.style.color = "#ccc"
+
+        // console.log(z.childNodes)
+    }
+
 
     componentDidMount() {
-
         var navigationMarkers = [
-            { markerID: "columnHeader", navButtonID: "btnmyHeader", },
+            //{ markerID: "columnHeader", navButtonID: "btnmyHeader", },
             { markerID: "divProfilePic", navButtonID: "btnAbout", },
             { markerID: "recentIntro", navButtonID: "btnRecent", },
-            { markerID: "ch1_p1", navButtonID: "btnch1", },
-            { markerID: "ch2_p1", navButtonID: "btnch2", },
-            { markerID: "demo", navButtonID: "btnFastMatchingDemo", },
-            { markerID: "ch3_p1", navButtonID: "btnch3", },
+            { markerID: "researchTrajectory", navButtonID: "btnresearchTrajectory", },
+            { markerID: "ch01_p1", navButtonID: "btnch01", },
+            // { markerID: "ch2_p1", navButtonID: "btnch2", },
+            // { markerID: "08/17/2011", navButtonID: "btn08/17/2011", },
+            { markerID: "12/24/2013", navButtonID: "btn12/24/2013", },
             { markerID: "ch4_p1", navButtonID: "btnch4", },
-            { markerID: "divTeachingCards", navButtonID: "btnteachingSection", },
-            { markerID: "refMarker1", navButtonID: "btnrefSection", },
+            { markerID: "teachingSection", navButtonID: "btnteachingSection", },
+            { markerID: "sectionVitae", navButtonID: "btnsectionVitae", },
             { markerID: "btnEmail", navButtonID: "btnContact", },
         ]
 
-        let observerOptions = {
-            root: null,
-            threshold: 0,
-            //rootMargin: "-150px"
+        let observerOptions = { root: null, threshold: 0, }
 
-        }
 
         var observer = new IntersectionObserver(function (entries, observer) {
             entries.forEach(entry => {
@@ -59,7 +72,7 @@ class App extends Component {
                 let navButton = document.getElementById(navButtonID)
 
                 if (document.getElementsByClassName("currentView").length > 0) {
-                    console.log("at least one element with class CURRENT VIEW, removed.")
+                    //console.log("at least one element with class CURRENT VIEW, removed.")
                     document.getElementsByClassName("currentView")[0].classList.remove("currentView")
                 }
 
@@ -73,6 +86,8 @@ class App extends Component {
         navigationMarkers.forEach(marker => {
             observer.observe(document.getElementById(marker.markerID))
         })
+
+        //this.assignClasses()
     }
 
 
@@ -80,79 +95,59 @@ class App extends Component {
 
     render() {
 
-
-
-
         return (
             <div>
-                <Header />
+                <HeaderSection />
 
                 <About />
 
-                <RecentProjects />
-
-
-                <Chapter1 />
-
-                <MyTimeline
-                    events={infoTimeline.slice(0, 7)}
-                    orientation="vertical"
-                    startFrom="first"
-                />
-
-
-                <Chapter2 />
-
-                <MyTimeline
-                    events={infoTimeline.slice(7, 11)}
-                    orientation="vertical"
-                    startFrom="first"
-                    style={{ marginBottom: "0rem" }}
-                />
-
-
-
-                {/* <FastMatchingDemo /> */}
-                <MatchingDemoItem style={{ marginBottom: "0rem" }} />
-
-
-
-
-                <MyTimeline
-                    events={infoTimeline.slice(11, 13)}
-                    orientation="vertical"
-                    startFrom="first"
-                    style={{ marginTop: "0rem" }}
-
-                />
-
-
-
-
-
-
-                <Chapter3 />
-
-                <MyTimeline
-                    events={infoTimeline.slice(13, -6)}
-                    orientation="vertical"
-                    startFrom="first"
-                />
-
-                <Chapter4 />
-
-                <MyTimeline
-                    events={infoTimeline.slice(-6)}
-                    orientation="vertical"
-                    startFrom="first"
-                />
+                {/* <div style={{
+                    width: "100%",
+                    height: "50px",
+                    backgroundImage: "linear-gradient(to bottom, #1d2731 , orange, #1A2930)"
+                }}></div> */}
 
                 <TeachingExperience />
 
-                <References />
 
+                <div id="researchTrajectory"
+                    className="fullscreen research"
+                    style={{
+                        backgroundColor: "#ff0000d0",
+                        color: '#fff',
+                        marginTop: "0rem",
+                        marginBottom: "0rem",
+                    }}
+                >
+                    <h1>Research Trajectory</h1>
+                    <h1>2007 - 2019</h1>
+                </div>
+
+
+                <Chapter01 />
+
+
+
+                <MyTimeline
+                    events={infoTimeline.slice(0, 14)}
+                    orientation="vertical"
+                    startFrom="first"
+                />
+
+                <Chapter04 />
+
+                <MyTimeline
+                    events={infoTimeline.slice(14)}
+                    orientation="vertical"
+                    startFrom="first"
+                />
+
+                <RecentProjects />
+
+                <MyVitae />
 
                 <Contact />
+
 
 
             </div>

@@ -1,0 +1,342 @@
+.projectColumnImagesMatching
+    //display: flex
+    //flex-direction: column
+    //min-height: 96%
+    //align-items: center
+    //margin: 0rem 0 auto 1.5rem
+    //padding: 5px
+    //padding-top: .5rem
+    text-align: left
+    vertical-align: middle
+    //width: 50%
+
+    
+.lever
+    opacity: .5
+
+    // transition: all .2s ease-in
+    // -webkit-transition: all .2s ease-in
+    // -moz-transition: all .2s ease-in
+    // -ms-transition: all .2s ease-in
+    // -o-transition: all .2s ease-in
+
+    &:active
+        opacity: .7
+        transform: scale(0.98)
+        transform: translate(2px, 2px)
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24)
+        
+
+        
+.activeLever
+    // transition: all .2s ease-in
+    // -webkit-transition: all .2s ease-in
+    // -moz-transition: all .2s ease-in
+    // -ms-transition: all .2s ease-in
+    // -o-transition: all .2s ease-in
+    opacity: .7
+    transform: scale(0.98)
+    transform: translate(2px, 2px)
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24)
+    
+    
+
+
+//---------------------------------------------------------
+.demoTitle
+    width: 300px    
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    margin: auto
+
+    >h2
+        text-align: center
+        width: 100%
+        font-size: 1.2rem
+        margin-bottom: 5rem
+
+    >span
+        text-align: center
+        max-width: 100%
+        font-size: .8rem
+        margin: 1rem
+        word-wrap: wrap
+
+//---------------------------------------------------------
+.matchingMetaWrapper
+    width: 610px
+    margin: auto
+    display: flex
+    flex-direction: row
+    padding-bottom: 0rem
+    //background-color: #7af56a
+    background-color: #ffffff
+
+.matchingWrapper 
+    display: flex
+    flex-direction: column
+    width: 610px
+    height: 610px
+    margin: 0rem auto
+    //border: 1px solid #282c34
+    //background-color: rgb(255, 191, 28)
+    background-color: #1D2731
+
+
+.top 
+  display: flex
+  flex-direction: row
+  margin: auto
+  background-color: #282c34
+  width: 100%
+  height: 250px
+  border: 1px solid rgb(178, 245, 245)
+  border: 1px solid rgb(24, 102, 102)
+  margin-bottom: 10px
+
+.bottom
+  display: flex
+  flex-direction: row
+  width: 100%
+  height: 50%
+  border: 1px solid rgb(24, 102, 102)
+
+#demo
+    background-color: #f9f8fd
+
+
+    width: 100%
+    height: 100%
+
+//---------------------------------------------------------
+
+.top-parameters 
+    display: flex
+    flex-direction: column
+    background-color: #282c34
+    margin-left: 10px
+    width: 30%
+    max-height: 100%
+    // justify-content: flex-start
+    // justify-items: flex-start
+    justify-content: flex-start
+    //justify-items: flex-start
+    position: relative
+    // font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace
+    border-left: 1px solid rgb(100, 100, 100)
+    
+    
+    border: 1px solid rgb(24, 102, 102)
+    // margin-left: 10px
+    
+
+.top-parameters table
+    //border: 1px solid #fff
+    //border: 1px solid rgb(19, 77, 77)
+
+    //border: 1px solid rgb(24, 102, 102)
+
+
+    width: 90%
+    margin: 1rem auto 1rem auto
+    color: rgb(220, 220, 220)
+    //font-size: .9rem
+    text-align: center
+    //font-family: 'Courier New', Courier, monospace
+    font-family: Roboto
+    font-weight: 300
+    background-color: #282c34
+    opacity: .7
+
+
+
+.row1
+    background-color: #111
+
+    
+
+.top-parameters table td
+    //margin: .1rem
+    padding: .1rem
+    text-align: center
+    //border: 1px solid #555
+    font-size: 1rem
+
+
+.color1
+    color: rgb(255, 128, 49)
+
+.color2
+    color: rgb(28, 255, 28)
+    
+.changeovers
+    color: #fff
+    
+
+
+#btnCOD 
+    position: absolute
+    color:#282c34
+    background-color: #282c34
+    left: -75px
+    margin: .5rem auto
+    width: 50px
+    height: 50px
+    font-size: .8rem
+    padding: 1rem .5rem
+    border: 1px solid rgb(178, 245, 245)
+    border: 1px solid rgb(17, 141, 141)
+    border-radius: 50%
+    border: none
+
+
+.divProgress
+    width: 100%
+    display: flex
+    flex-direction: row
+
+        
+.prBar
+    position: absolute
+    width: 90%
+    height: 40px
+    background: #282c34
+    color: rgb(255, 191, 28)
+    margin-left: 5%
+    border: 1px solid rgb(19, 77, 77)
+    //transform: rotate(180deg)
+    
+.prBar::-moz-progress-bar
+    background: rgb(255, 191, 28)
+
+
+.prBar::-webkit-progress-value 
+    background: rgb(255, 191, 28)
+
+
+
+    
+
+.timeElapsed
+    width: 100%
+    font-size: 1rem
+    
+
+.top-parameters label 
+  margin: .1rem
+  padding: .1rem 1rem
+  text-align: left
+  color: #333
+  font-size: .9rem
+  
+
+.top-parameters p 
+  margin: .5rem auto
+  padding: .1rem
+  text-align: center
+  font-size: 1rem
+
+.divSlider 
+    display: flex
+    flex-direction: row
+    width: 90%
+    justify-content: space-evenly
+    margin: 0rem auto
+    padding: .6rem 0
+    background-color: #282c34
+
+.divSlider p 
+    margin: .2rem auto
+    width: fit-content
+    text-align: center
+    font-size: 1rem
+    padding: .6rem .7rem
+
+.inEffect
+    border: 1px solid #00fff2
+    color:  #00fff2
+    border-radius: 50%
+    background-color: #010b1d
+    background-color: #000000
+
+    
+.divSlider p .notInEffect
+    color: rgb(122, 51, 51) 
+
+
+.divSlider input[type="range"]  
+    appearance:none
+    border: 1px solid rgb(51, 126, 136)
+    height: 20px
+    width: 30%
+    margin: auto
+    padding: .2rem
+    background-color: transparent    
+    font-size: 1rem
+    
+
+
+
+.divStartReset
+    width: 100%
+    display: flex
+    flex-direction: row
+    margin: .2rem 0
+    padding: .2rem 2.5%
+
+    > button
+        font-size: .9rem
+        font-family: Roboto
+        color:#d0d0d0
+        border: 1px solid rgb(38, 121, 99)
+        margin: auto
+        padding-top: .5rem
+        padding-bottom: .5rem
+        border-radius: 10px
+        background-color: transparent
+
+        &:hover
+            background-color: rgb(19, 77, 77)
+            cursor: pointer
+            color: #fff
+
+        &:first-child
+            width: 60%
+            color:  rgb(34, 193, 150)
+            color:  rgb(40, 244, 189)
+
+
+        &:last-child
+            width: 30%
+            background-color: transparent
+            border: 1px solid rgba(255, 191, 95, 0.529)
+            color: rgba(255, 191, 95, 0.529)
+
+            &:hover
+                background-color: rgb(77, 49, 19)
+                color: rgb(255, 211, 211)
+                cursor: pointer
+
+        
+
+
+.matching-results 
+  display: flex
+  flex-direction: column
+
+  width: 70%
+  max-height: 100%
+  padding: 0px
+
+.matching-results .scatter 
+  border: 1px solid grey
+  background-color: rgb(243, 239, 239)
+  width: 200px
+  height: 200px
+  
+
+//---------------------------------------------------------
+
+

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Lato&family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Josefin+Sans&family=Lato&family=Open+Sans&display=swap')
+
+@import '../../styles/_divSkills'
+@import '../../styles/_divLinks'
+@import '../../styles/_colors'
+
+@import './eventDefault.sass'
+@import './project.sass'
+
+$icon_graduation: './icon_graduation_yellow.jpg'
+
+$timelineWidth: 100%
+//$leftMargin: 15%
+//$itemWidth: 70%
+$leftMargin: 10%
+$itemWidth: 75%
+
+// research trajectory: #ff0000d0
+
+// $timelineBackground: #11775e
+// $contentBackground: #5a7e74
+
+// $timelineBackground: #dff5d7
+// $contentBackground: #d7f5ed
+
+// $timelineBackground: #fbffff
+// $contentBackground: #dff5d7
+
+// $timelineBackground: #02382a
+// $contentBackground: #02382a
+
+// $timelineBackground: #083c5d
+// $contentBackground: #31271d
+
+// $timelineBackground: #274235
+// $contentBackground: #274235
+    
+.timeline
+    width: $timelineWidth
+    position: relative
+    background-color: $timelineBackground
+    padding-top: 5rem
+    padding-bottom: 5rem
+
+
+//LINE:
+.timeline:after
+    content: ""
+    position: absolute
+    width: 1px
+    background-color: #222333
+    top: 0
+    bottom: 0
+    left: $leftMargin
+    margin-left: 12px
+
+
+// ITEM:
+.timeline .item
+    width: $itemWidth
+    left: $leftMargin
+    position: relative
+    text-align: left
+    margin: 1rem 0rem 
+    padding: .5rem .5rem .5rem 50px
+    
+    
+.timeline .item:first-child
+    margin-top: 0rem
+
+.timeline .item:last-child
+    margin-bottom: 0rem
+
+
+
+// item DATE:
+.timeline .item:before
+    z-index: 1
+    content: attr(content1)
+    left: -200px
+    width: 180px
+    padding: .2rem
+    position: absolute
+    text-align: right
+    font-size: .8rem
+    top: 44px
+    color: #aaa
+
+
+//item CIRCLE:
+.timeline .item::after
+    content: ""
+    z-index: 1
+    position: absolute
+    font-family: Roboto
+    width: 14px
+    height: 14px
+    border-radius: 50%
+    border: 1px solid #444
+    left: 6px
+    top: 50px
+    background-color: #168d6f
+
+
+
+// CONTENT:
+.timeline .itemContent
+    width: 100%
+    background-color: $contentBackground
+    padding: .5rem .5rem 1rem .5rem
+    display: flex
+    flex-direction: row
+    //border: 1px solid cyan
+    //box-shadow: 10px 8px 20px #1d2a30
+    //box-shadow: 10px 8px 8px #333, -10px -8px 8px #ccc 
+    //box-shadow: 10px 8px 4px #aaa
+
+/** 
+    
+        RESEARCH STUDY: 
+
+    **/
+
+
+
+
+/** 
+    
+        ACADEMIC MILESTONE: 
+
+    **/
+
+
+.timeline .item:nth-child(6) .itemContent .rowImages .imgWrapper
+    margin: .5rem
+    opacity: .10
+    transition: all .2s ease-in
+    -webkit-transition: all .2s ease-in
+    -moz-transition: all .2s ease-in
+    -ms-transition: all .2s ease-in
+    -o-transition: all .2s ease-in
+
+    &:hover
+        opacity: .8
+        cursor: pointer
+        transition: all .2s ease-in
+        -webkit-transition: all .2s ease-in
+        -moz-transition: all .2s ease-in
+        -ms-transition: all .2s ease-in
+        -o-transition: all .2s ease-in
+
+
+.timeline .item:nth-child(10) .itemContent .rowImages
+    justify-content: space-around
+
+.timeline .item:nth-child(10) .itemContent .rowImages .imgWrapper
+    margin: .5rem
+    opacity: .10
+    transition: all .2s ease-in
+    -webkit-transition: all .2s ease-in
+    -moz-transition: all .2s ease-in
+    -ms-transition: all .2s ease-in
+    -o-transition: all .2s ease-in
+
+
+    &:hover
+        opacity: .8
+        cursor: pointer
+        transition: all .2s ease-in
+        -webkit-transition: all .2s ease-in
+        -moz-transition: all .2s ease-in
+        -ms-transition: all .2s ease-in
+        -o-transition: all .2s ease-in
+
+.timeline .item:nth-child(10) .itemContent .rowImages .imgWrapper .img
+    width: 170px
+    height: 120px
+    transition: all .2s ease-in
+    -webkit-transition: all .2s ease-in
+    -moz-transition: all .2s ease-in
+    -ms-transition: all .2s ease-in
+    -o-transition: all .2s ease-in
+
+    &:hover
+        scale: 2 
+        transition: all .2s ease-in
+        -webkit-transition: all .2s ease-in
+        -moz-transition: all .2s ease-in
+        -ms-transition: all .2s ease-in
+        -o-transition: all .2s ease-in
+
+.timeline .item:nth-child(5) .itemContent
+    //background-color: #274235
+    //background-image: linear-gradient(to right, #1c3026 , #070c09 ,#070c09 ,#070c09,  #1c3026)
+    //border-radius: 20px
+    // background-image: linear-gradient(to right, #1c3026 , #070c09 ,#070c09 ,#070c09,  #1c3026, to bottom, #1c3026 , #070c09 ,#070c09 ,#070c09,  #1c3026)
+
+    
+
+.timeline .item:nth-child(3):before
+    top: 35px
+
+.timeline .item:nth-child(5):before
+    top: 35px
+        
+.timeline .item:nth-child(7):before
+    top: 35px
+
+
+.timeline .item:nth-child(3):after
+    border: 1px solid #000
+    background-image: url('./icon_graduation_yellow2.png')
+    width: 40px
+    height: 40px
+    left: -8px
+    top: 25px
+
+.timeline .item:nth-child(5):after
+    border: 1px solid #000
+    background-image: url('./icon_qual.png')
+    width: 40px
+    height: 40px
+    left: -8px
+    top: 25px
+        
+.timeline .item:nth-child(7):after
+    border: 1px solid #000
+    background-image: url('./icon_graduation_yellow2.png')
+    width: 40px
+    height: 40px
+    left: -8px
+    top: 25px
+
+
+// .timeline .item:nth-child(11):before
+//     font-family: 'Yellowtail', cursive
+//     font-size: 2rem
+
+// .timeline .item:nth-child(15):before
+//     font-family: 'Yellowtail', cursive
+//     font-size: 2rem
+
+// .timeline .item:nth-child(4) .itemContent
+//     background-color: #eeea84
+//     color: #333
+
+// .timeline .item:nth-child(5) .itemContent
+//     background-color: #d32f2398
+
+// .timeline .item:nth-child(6) .itemContent
+//     background-color: #d32f2398
+
+    
+// .timeline .item:nth-child(8) .itemContent
+//     background-color: #eeea84
+//     color: #333
+
+// .timeline .item:nth-child(9) .itemContent
+//     background-color: #d32f2398
+
+// .timeline .item:nth-child(10) .itemContent
+//     background-color: #d32f2398
+
+// .timeline .item:nth-child(11) .itemContent
+//     background-color: #d32f2398
+
+// .timeline .item:nth-child(14) .itemContent
+//     background-color: #eeea84
+//     color: #333
+
+
+// --------------------------------------------
+
+// .timeline .item:nth-child(4) .projectColumnLeft .title
+//     font-family: "'Yellowtail', cursive"
+//     color: #222
+//     text-align: center
+
+// .timeline .item:nth-child(6) .projectColumnLeft .title
+//     color: "#fff"
+
+// .timeline .item:nth-child(8) .projectColumnLeft .title
+//     font-family: "'Yellowtail', cursive"
+//     color: #222
+//     text-align: center
+
+// .timeline .item:nth-child(14) .projectColumnLeft .title
+//     font-family: "'Yellowtail', cursive"
+//     color: #222
+//     text-align: center
+
+
+//-----------------------------------------------
+
+// TITLE
+// .timeline .item.right:nth-child(1) .projectColumnLeft .title
+//     background-color: #FF652F

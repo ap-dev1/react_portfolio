@@ -1,0 +1,68 @@
+$baseColor: #195247
+$clr_checkbox: #ebf5fc
+$clr_text: #195247
+
+
+
+.div_cbx
+    margin: auto
+    padding: 5px
+    display: flex
+    flex-direction: row
+    height: auto
+    vertical-align: middle
+    
+
+.cbx_mutation 
+    background-color: transparent
+    position: relative 
+    cursor: pointer
+    width: 25px
+    height: 30px
+
+
+.cbx_input 
+    position: absolute
+    opacity: 0
+
+.cbx_text
+    background-color: transparent
+    width: 20px
+    height: 100%    
+    color: #5ee4dd
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 14px
+    cursor: pointer
+
+.cbx_text[value="?"]
+    color: #3aee73
+
+
+.cbx_input:checked ~.cbx_text 
+    background-color: #721414
+
+
+.cbx_text_mutated
+    width: 40px
+    height: 30px
+    color: #5ee4dd
+    background-color: transparent
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 10px
+    margin-left: 10px
+    font-size: 14px
+    cursor: pointer
+
+
+.cbx_text_mutated[value="NaN"]
+    color: #3aee73
+
+.cbx_text_mutated[value="0"]
+    color: #3aee73
+
+   

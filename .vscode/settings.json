@@ -1,0 +1,51 @@
+{
+    "editor.semanticTokenColorCustomizations": null,
+    "workbench.colorCustomizations": {
+        
+    },
+    // "editor.tokenColorCustomizations": null
+
+    "editor.tokenColorCustomizations": {
+        //"comments": "#585858",
+        "comments": "#585858",
+
+        //"variable.other.readwrite.js": "#FF0000",
+        //"functions": "#8e0793",
+        //"functions": "#c269c7",
+
+        "textMateRules": [
+            {
+                "scope": ["entity.name.function"],
+                "settings": {
+                    //"foreground": "#f099f5",
+                    //"foreground": "#DCDCAA",  // default
+                    // "foreground": "#e6e656", 
+                    "foreground": "#e6e656d5", 
+
+                }
+            },
+            {
+                "scope": ["variable.other.readwrite"],
+                "settings": {
+                    //"foreground": "#9CDCFE"  // default
+                    // "foreground": "#45f1bd",  // 
+                    "foreground": "#45f1bdc4",  // 
+
+                    //"fontStyle": "italic"
+                }
+            },
+            {
+                "scope": ["storage.type"],
+                "settings": {
+                    //"foreground": "#9CDCFE"  // default
+                    "foreground": "#2e6ea0",  // 
+                    "fontStyle": "italic"
+                }
+            },
+        
+        
+        ],
+    },
+    "editor.parameterHints.enabled": false,
+}
+                        

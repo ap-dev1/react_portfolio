@@ -20,9 +20,12 @@
 .pnp.js
 # /src/components/background/
 
+/src/components/zzz_not_used
+
 #FastMatchingDemo.js
 #fast_matching_demo.sass
 mini-map.sass
+infoTimeline_bkp.js
 
 # testing
 /coverage

@@ -1,0 +1,220 @@
+
+//     background-color: #76323f  //OXEBLOOD
+//     background-color: #1A2930  //Denim
+//     background-color: #1d2731 // ivory black
+//     background-color: #11775e
+//     background-color: #777511
+
+
+#teachingSection
+    width: 100%
+    min-height: 100vh
+    //align-items: center
+    display: flex
+    flex-direction: row
+    justify-content: center
+    background-color: #11775e
+    padding-top: 5rem
+
+
+.col1
+    width: 20%
+    min-height: 100%
+    margin-right: .5rem 
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    //border: 2px solid red
+
+
+    .divIntro
+        display: flex
+        flex-direction: column
+        width: 90%
+        margin: 0rem auto 1rem auto
+        padding: 2rem 0
+        color: #ddd
+        background-color: #073529
+        // border: 1px solid #ffffff8e
+        //box-shadow: -2px -2px 14px #ffffff8e
+        box-shadow: 10px 14px 9px #6a8f6cb6
+        border-radius: 10px
+        
+        .title
+            margin: 1rem 0 .5rem 0
+            font-size: 2rem
+            text-align: center
+
+        .subtitle
+            margin: .5rem 0
+            font-size: .8rem
+            text-align: center
+
+
+    .divSchools
+        display: flex
+        flex-direction: column
+        width: 100%
+        margin: 1rem 0
+        //padding: 1rem
+        //color: #ddd
+        // background-color: #0c5240
+        //border: 1px solid #ffffff8e
+        //box-shadow: -2px -2px 14px #ffffff8e
+        //box-shadow: 0px 4px 9px #000000ef
+        //border-radius: 10px
+        //flex-wrap: wrap
+        //justify-content: r
+        justify-items: right
+        padding-left: 30%        
+        
+        button
+            margin: .5rem 0
+            font-size: .8rem
+            padding: 1rem
+            text-align: left
+            width: 90%
+            word-wrap: break-word
+            background-color: #073529
+            border: none
+            color: #ffffffcb
+            //box-shadow: 2px 4px 2px #6a8f6cb6
+            //border-radius: 10px
+            margin-right: .5rem
+
+            &:hover
+                cursor: pointer
+                color: #fff
+                background-color: #011812
+
+            
+
+
+.col2
+    width: 45%
+    margin-right: 0rem 
+    margin-left: .5rem 
+    display: flex
+    flex-direction: column
+
+
+
+    .teachingCards
+        width: 100%
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        //padding-bottom: 1rem
+        //border: 1px solid #ffffff8e
+        background-color: #0c5240
+        // box-shadow: -2px -2px 14px #ffffff8e
+        box-shadow: 4px 4px 6px #000000ef
+        border-radius: 15px
+        padding: 1rem .5rem
+
+        .card
+            // width: 8.5rem
+            // height: 11rem
+            // font-family: Roboto
+            // color: #777
+            // padding-top: .5rem
+            // margin: .5rem
+
+            width: 11rem
+            height: 10rem
+            font-family: Roboto
+            color: #777
+            //padding: 2rem
+            margin: 1rem
+            //border-radius: 50%
+            opacity: .6
+
+            &:hover
+                opacity: 1
+
+
+            .title
+                padding: 1rem
+                margin-top: 1.2rem
+                font-family: Roboto
+                font-size: .9rem
+                line-height: 1.5rem
+                color: #fff
+                text-align: center
+        
+
+// -------------------------------------------
+
+
+.divTeachingForces
+    font-family: Roboto, sans-serif
+    max-width: 40%
+    margin: auto
+    //display: flex
+    //flex-direction: column
+    text-align: center
+    //justify-content: space-between
+    height: 300px
+    border: 1px solid #fff
+    background-color: #a8b5c2
+
+
+// .divTeachingCards
+//     display: flex
+//     flex-direction: row
+//     flex-wrap: wrap
+//     justify-content: center
+//     justify-content: center
+//     padding-bottom: 2rem
+
+.teachingCard
+    font-family: "Roboto", serif
+    width: 250px
+    height: 250px
+    border: 1px solid #002527
+    border-radius: .2rem
+    margin: .3rem .3rem
+    padding: 2rem .3rem
+    background-color: #003F43
+    background-color: #b5b5b5
+    //background-color: #045b61
+    //background-color: #eaeaea
+
+    color: #dddddd
+    line-height: 1.5rem
+    transition: all .2s ease-in
+        -webkit-transition: all .2s ease-in
+        -moz-transition: all .2s ease-in
+        -ms-transition: all .2s ease-in
+        -o-transition: all .2s ease-in
+        transform: scale(1.1)
+    
+    > p
+        color: #00ffdd
+
+        &:nth-child(1)
+            font-size: .75rem
+            color: #fbff00
+            color: #070707
+            letter-spacing: 1px
+            //padding-top: 3rem
+            text-align: center
+            //text-transform: uppercase
+            font-weight: 400
+            
+            
+        // &:nth-child(2)
+        //     font-color: .8rem
+
+        // &:nth-child(3)
+        //     font-size: .5rem
+
+    &:hover
+        cursor: pointer
+        transition: all .2s ease-in
+        -webkit-transition: all .2s ease-in
+        -moz-transition: all .2s ease-in
+        -ms-transition: all .2s ease-in
+        -o-transition: all .2s ease-in
+        transform: scale(1.5)
