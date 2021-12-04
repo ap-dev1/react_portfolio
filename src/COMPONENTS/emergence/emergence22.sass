@@ -57,12 +57,99 @@
 //#350e073b  
 //#350e073b  
 
+//---------------------------------
+
+// VS CODE SETTINGS COLORS: 
+
+// key,    entity.other.attribute-name.js, #9CDCFE
+// key,    entity.other.attribute-name.js, #9cdcfeab
+
+
+    
+// nanoid: entity.name.function.js, #E6E656D5
+// className, entity.other.attribute-name.js, #9CDCFE
+
+// width: 
+//      semantic token type: variable.other.property.js, #9CDCFE
+//      textmate scopes: meta.object-literal.key.js, #9CDCFE
+
+// single-quote, 
+// string.quoted.double.js, #CE9178 
+// comment:  highlight it? 
+
+
+
+//---------------------------------
 
 $blue-intense: #0062cc
 
 $blue-opaque: #0063cc90
+$blue-opaque1: #0063cc2f
 
 $blue-light: #b2cfef
+
+$_fitness1: #0400ff
+$_fitness2: #ff6200
+
+
+
+
+
+// AUTOMATE: ----------------------------------
+.btn-automate
+    //background-image: url('../../assets/automate-icon-19-40px.png')
+    // background-image: url('../../assets/automate_icon_orange_25px.png')
+    background-image: url('../../assets/automate_icon_metal_30px.png')
+    
+
+    
+    background-color: transparent
+    border: none
+    width: 30px
+    height: 30px
+    cursor: pointer
+    margin: auto
+    margin-right: 20px
+    position: sticky
+    opacity: .5
+    transition: .5s
+
+
+    &:hover
+        box-shadow: 2px 2px 2px 2px #1e1e1e
+        opacity: 1
+        transition: .5s
+
+
+
+// SWAP populations: -----------------------------
+.btn-swap
+    // background-image: url('../../assets/icon_swap_30px.png')
+
+    background-image: url('../../assets/icon_swap_blue_30px.png')
+
+    background-color: transparent
+    border: none
+    width: 30px
+    height: 30px
+    cursor: pointer
+    margin: auto -30px auto 30px
+    //margin-right: -50px
+        // margin-right: 20px
+
+    position: sticky
+    opacity: .5
+    transition: .5s
+
+
+    &:hover
+        box-shadow: 2px 2px 2px 2px #1e1e1e
+        opacity: 1
+        transition: .5s
+
+
+// ----------------------  FITNESS GRADIENT::
+
 
 
 
@@ -138,6 +225,7 @@ $blue-light: #b2cfef
     margin: auto 0px
 
     color: $blue-light
+    color: #bbb
     border: 1px solid $blue-opaque
     
     cursor: pointer
@@ -165,62 +253,37 @@ $blue-light: #b2cfef
 
 .parents-wrapper
     width: fit-content
-    margin: 0px auto
-    display: inline-flex
+    margin: 5px auto 
+    display: flex
+    flex-direction: row
     padding: 0px
-    flex-wrap: wrap
     justify-content: center
     justify-items: stretch
     justify-content: space-evenly
 
     > label
-        font-size: 18px
+        font-size: 14px
         font-weight: 400
         width: 60px
         margin: auto 10px auto auto
-        color: #bbb
+        color: #a9afca
         font-family: 'Gaegu', cursive
         
 
-
-
-
-//.btn-selection:hover
-    //background-color: #dae950
-    // border: 1px solid #e9508d
-    // color: #e9508d
-    //transition: .5s
-    
-    
-
-
-//.btn-selection::active
-    //border: 5px solid #0ddfee
-    //color: #0ddfee
-    //transition: .5s
-
-
-// .btn-selection::focus
-//     //border: 1px solid #50e976
-//     color: #e9508d
-//     transition: .5s
-
-// .btn-selection[dataParent="true"]
-//     background-color: #50e95d
-//     transition: 1s
-//     background: transparent
 
 
 .btn-pair
     width: 40px
     height: 50px
     margin: 0px 5px
-    border: 1px solid #0062cc
+    border: 0px solid $blue-opaque
     cursor: pointer
-    font-size: 14px
+    font-size: 12px
     padding: 0px
     text-align: center
     background: transparent
+    background: $blue-opaque1
+
     color: #bbb
     border-radius: 5px
     display: flex
@@ -233,7 +296,18 @@ $blue-light: #b2cfef
         padding: 2px
 
 
-//----------------------  CHILDREN (same wrapper as PARENTS, above):
+//----------------------  CHILDREN:
+
+.children-wrapper
+    width: fit-content
+    margin: 5px auto 
+    display: flex
+    flex-direction: row
+    padding: 0px
+    justify-content: center
+    justify-items: stretch
+    justify-content: space-evenly
+
 
 .btn-child
     width: 40px
@@ -247,7 +321,7 @@ $blue-light: #b2cfef
     padding-top: 4px
     text-align: center
     background: transparent
-    color: #00ccb8
+    color: #bbb
     display: flex
     flex-direction: column
 

@@ -2,15 +2,21 @@ $baseColor: #195247
 $clr_checkbox: #ebf5fc
 $clr_text: #195247
 
-
+//#fec5e577
 
 .div_cbx
+    //margin: 15px auto 0px auto
+    //padding-top: 15px
     margin: auto
-    padding: 5px
+    margin-bottom: 15px
+
     display: flex
     flex-direction: row
-    height: auto
+    height: fit-content
+    min-height: 60px
+    //height: 100%
     vertical-align: middle
+    //border: 1px solid yellow
     
 
 .cbx_mutation 
@@ -18,31 +24,45 @@ $clr_text: #195247
     position: relative 
     cursor: pointer
     width: 25px
-    height: 30px
+    height: 40px
+
 
 
 .cbx_input 
     position: absolute
     opacity: 0
 
+
 .cbx_text
     background-color: transparent
     width: 20px
     height: 100%    
     color: #5ee4dd
+    color: #00ff41
+    //color: #03A062 //
     display: flex
     justify-content: center
     align-items: center
     text-align: center
     font-size: 14px
     cursor: pointer
+    margin-top: 5px
+
 
 .cbx_text[value="?"]
     color: #3aee73
 
 
+    
+
 .cbx_input:checked ~.cbx_text 
-    background-color: #721414
+    //background-color: tomato
+    color: tomato
+
+    -webkit-box-shadow:  inset 2px -2px 2px 0px #111, -1px -1px 1px 1px #fec5e577
+    box-shadow: inset 2px -2px 2px 0px #111, -1px -1px 1px 1px #fec5e577  //  #4496487b #20b2aa
+// .cbx_input:checked ~.cbx_text 
+//     background-color: #721414
 
 
 .cbx_text_mutated

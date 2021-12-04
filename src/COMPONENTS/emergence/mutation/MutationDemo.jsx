@@ -98,71 +98,162 @@ export default class MutationDemo extends React.Component {
         let myPhenotype = this.computePhenotype()
 
 
-        let section_opacity = 0.5
-
-        if (this.props.demoState === "mutation") {
-            section_opacity = 1
-        }
+        // let section_opacity = 0.5
+        // if (this.props.demoState === "mutation") {
+        //     section_opacity = 1
+        // }
 
 
         return (
+
             <div
-                key={nanoid()}
-                className="div_cbx"
+                //className="div_cbx" 
                 style={{
-                    opacity: section_opacity,
-                    transition: "opacity 2s",
-                    //border: "1px solid cyan",
-                    width: "fit-content",
+                    //border: "1px solid blue",
+                    width: "100%",
+                    // margin: "0px 0px 0px 20px",
+
                     margin: "auto",
-                    //backgroundColor: "#000"
+                    //textAlign: "center",
+                    //padding: "0px",
+                    display: "flex",
+                    flexDirection: "row",
+
                 }}
+                key={nanoid()}
             >
 
-
-                {Checkboxes}
 
 
                 <div
                     style={{
                         //border: "1px solid red",
-                        width: "fit-content",
-                        margin: "0px 0px 0px 20px",
-                        textAlign: "center",
-                        padding: "0px",
+                        width: "60px",
+                        //padding: "5px",
+                        height: "60px",
+                        marginBottom: "10px",
+                        verticalAlign: "middle",
+
+                        borderRadius: "10px",
+
+                        //marginLeft: "15px",
+                        //textAlign: "center",
+                        //padding: "0px",
+                        display: "flex",
+                        flexDirection: "column",
+                        webkitBoxShadow: "inset 2px -2px 2px 0px #111, -1px -1px 1px 1px #fec5e577",
+                        cursor: "pointer",
+
                     }}
                     key={nanoid()}
+                    onClick={this.submitMutantPhenotype}
+                    title={"click to replace the original phenotype"}
                 >
 
 
-                    <label
-                        key={nanoid()}
-                        value={myPhenotype}
-                        className="cbx_text_mutated"
+
+                    {/* <label className="radio_bit1"
                         style={{
-                            //width: "60px", height: "30px", fontSize: "14px", 
-                            margin: "0px auto",
-                            //border: "1px solid tomato"
+                            //margin: "5px auto",
+                            borderRadius: "0px",
+                            width: "60px",
+                            textAlign: "left",
+                            height: "20px",
+
+                            //webkitBoxShadow: "inset 2px -2px 2px 0px #111, -1px -1px 1px 1px #4496487b",
+                            //boxShadow: "inset 2px -2px 2px 0px #111, -1px -1px 1px 1px #4496487b",
+
                         }}
                     >
-                        {myPhenotype}
+                        <div
+                            className="radio_text1"
+                            style={{
+                                color: "#5ee478",
+                                //color: "#0062cc",
+                                color: "#03A062",
+                                fontSize: "11px",
+                                width: "60px",
+                                textAlign: "left",
+                                height: "20px",
+                                //marginBottom: "0px",
+                            }}
+                        >
+                            {this.props.childPhenotype}
+                        </div>
+                    </label> */}
+
+
+
+                    <span
+                        style={{
+                            //color: "#5ee478",
+                            //color: "#0062cc",
+                            //color: "#03A062",
+                            fontSize: "12px",
+                            //width: "60px",
+                            //textAlign: "left",
+                            //height: "20px",
+                            // marginBottom: "0px",
+                            color: "#03A062",
+                            margin: "4px auto auto 6px",
+
+                        }}
+                    >
+                        {this.props.childPhenotype}
+
+                    </span>
+
+
+
+
+                    <label className="radio_bit1"
+                        style={{
+                            borderRadius: "0px",
+                            width: "60px",
+                            margin: "auto auto 15px auto",
+                        }}
+                    >
+                        <div
+                            className="radio_text1"
+                            style={{
+                                color: "#5ee478",
+                                height: "20px",
+                                fontSize: "14px",
+                                width: "60px",
+                                margin: "auto",
+                                paddingLeft: "15px",
+                                color: this.props.childPhenotype === myPhenotype ? "#5ee478" : "tomato"
+                            }}
+                        >
+                            {myPhenotype}
+                        </div>
                     </label>
 
 
-                    <Button
+                    {/* <Button
                         onClick={this.submitMutantPhenotype}
-                        variant="outline-info"
+                        variant="outline-success"
                         style={{
-                            width: "60px", height: "30px", fontSize: "10px", margin: "0px",
+                            width: "60px",
+                            height: "30px",
+                            fontSize: "10px",
+                            margin: "auto",
+                            position: "absolute",
+                            marginLeft: "80px",
+                            marginTop: "30px",
                         }}
                     >
                         replace
 
-                </Button>
+                    </Button> */}
 
                 </div>
 
 
+
+                <div className="div_cbx" key={nanoid()}>
+                    {Checkboxes}
+                </div>
 
             </div>
 

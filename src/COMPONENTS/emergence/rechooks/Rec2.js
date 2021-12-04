@@ -175,37 +175,147 @@ export default class Rec2 extends React.Component {
         return (
 
             <div
+                key={nanoid()}
                 style={{
                     display: "flex",
                     flexDirection: "row",
-                    width: "100%"
+                    width: "100%",
+                    margn: "auto",
                 }}
-            //className="div_genotypes"
-
             >
+
+                {/* <button
+                    disabled={false}
+                    //id={pairId}
+                    //value={pair}
+                    key={nanoid()}
+                    className="btn-pair"
+                //onClick={this.recombinePair}
+                >
+                    <span
+                        key={nanoid()}
+                        value={this.props.parent1}
+                    // style={{
+                    //     margin: "auto",
+                    //     width: "70px"
+                    // }}
+                    >
+                        {this.props.parent1 ? this.props.parent1 : this.props.low}
+                    </span>
+
+                    <span
+                        key={nanoid()}
+                        value={this.props.parent2}
+                    // style={{
+                    //     margin: "auto",
+                    //     width: "70px"
+                    // }}
+                    >
+                        {this.props.parent2 ? this.props.parent2 : this.props.high}
+                    </span>
+
+                </button>
+
+
+                <button
+                    value={ChildPhenotype}
+                    key={nanoid()}
+                    className="btn-child"
+                >
+                    {ChildPhenotype}
+
+                </button>
+
 
 
                 <div
+                    key={nanoid()}
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        //border: "1px solid blue",
+                        //width: "100%", 
+                        margin: "auto",
+                    }}>
+
+
+                    <div
+                        key={nanoid()}
+                        style={{
+                            textAlign: "left",
+                            display: "inline-flex",
+                            margin: "0px auto 10px auto",
+                            //width: "100%",
+                            //border: "1px solid orange"
+
+                        }}
+                    >
+                        {MyGenotypes}
+
+                    </div>
+
+
+
+                    <div
+                        key={nanoid()}
+                        style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            width: "100%",
+                            justifyContent: "space-beteen",
+                            margin: "10px auto auto auto",
+                            height: "fit-content",
+                            //border: "1px solid lime"
+
+                        }}
+                    >
+
+
+                        <Button
+                            onClick={this.submitChildPhenotype}
+                            variant="outline-success"
+                            key={nanoid()}
+                            style={{
+                                width: "70px",
+                                height: "30px",
+                                fontSize: "10px",
+                                margin: "auto",
+                                padding: "2px",
+                                marginLeft: "0px",
+                            }}
+                        >
+                            next pair
+
+                        </Button>
+
+
+
+                    </div>
+
+                </div> */}
+
+                <div
                     className="div_radio_bit1 div_labels1"
+                    key={nanoid()}
                     style={{
                         margin: "auto",
-                        margin: "1px 20px auto 5px",
                         width: "70px"
-
                     }}
                 >
 
                     <label
                         className="radio_bit1"
+                        key={nanoid()}
                         style={{
-                            border: "1px solid #0062cc",
                             borderBottom: "0px solid #0062cc",
+                            boxShadow: "0px 0px 5px 0px #222"
 
                         }}
                     >
                         <div
                             value={this.props.parent1}
                             className="radio_text1"
+                            key={nanoid()}
                             style={{
                                 color: "#ddd",
                                 fontSize: "14px",
@@ -219,15 +329,18 @@ export default class Rec2 extends React.Component {
 
                     <label
                         className="radio_bit1"
+                        key={nanoid()}
                         style={{
-                            border: "1px solid #0062cc",
-                            borderTop: "none",
+                            borderTop: "0px solid #0063cc85",
+                            boxShadow: "0px 0px 5px 0px #222"
+
 
                         }}
                     >
                         <div
                             value={this.props.parent2}
                             className="radio_text1"
+                            key={nanoid()}
                             style={{
                                 color: "#ddd",
                                 fontSize: "14px",
@@ -239,34 +352,26 @@ export default class Rec2 extends React.Component {
 
 
 
+
                     <label className="radio_bit1"
+                        key={nanoid()}
                         style={{
-                            marginTop: "5px",
-                            border: "1px solid #0062cc",
-                            borderRadius: "5px",
-                            // textAlign: "center",
-
-
-
+                            marginTop: "20px",
+                            borderRadius: "0px",
                         }}
                     >
                         <div
                             className="radio_text1"
+                            key={nanoid()}
                             style={{
                                 color: "#5ee478",
                                 height: "30px",
                                 fontSize: "14px",
                                 width: "100%",
-                                //border: "1px solid red"
-
                             }}
                         >
                             {ChildPhenotype}
-
                         </div>
-
-
-
                     </label>
 
 
@@ -275,59 +380,83 @@ export default class Rec2 extends React.Component {
 
 
 
-                <div
-                    //className="div_row"
-                    style={{
-                        textAlign: "left",
-                        display: "inline-flex",
-                        //margin: "auto",
-                        margin: "1px 5px auto 5px",
-                        border: "1px solid red"
-
-                    }}
-                >
-                    {MyGenotypes}
-
-                </div>
 
 
 
                 <div
+                    key={nanoid()}
                     style={{
                         display: "flex",
                         flexDirection: "column",
-                        //border: "1px solid #fff",
-                        height: "fit-content",
+                        //border: "1px solid blue",
+                        //width: "100%", 
                         margin: "auto",
-
-                    }}
-                >
+                    }}>
 
 
-                    <Button
-                        onClick={this.submitChildPhenotype}
-                        variant="outline-info"
+                    <div
+                        key={nanoid()}
                         style={{
-                            width: "60px", height: "30px", fontSize: "10px", margin: "auto", marginBottom: "5px", padding: "2px"
+                            textAlign: "left",
+                            display: "inline-flex",
+                            margin: "0px auto 10px auto",
+                            //width: "100%",
+                            //border: "1px solid orange"
+
                         }}
                     >
-                        automate
+                        {MyGenotypes}
 
-                    </Button>
+                    </div>
 
 
-                    <Button
-                        onClick={this.submitChildPhenotype}
-                        variant="outline-success"
+
+                    <div
+                        key={nanoid()}
                         style={{
-                            width: "60px", height: "30px", fontSize: "10px", margin: "auto", marginTop: "5px", padding: "2px"
+                            display: "flex",
+                            flexDirection: "row",
+                            width: "100%",
+                            justifyContent: "space-beteen",
+                            margin: "10px auto auto auto",
+                            height: "fit-content",
+                            //border: "1px solid lime"
+
                         }}
                     >
-                        next
 
-                </Button>
+
+                        <Button
+                            onClick={this.submitChildPhenotype}
+                            variant="outline-success"
+                            key={nanoid()}
+                            style={{
+                                width: "70px",
+                                height: "30px",
+                                fontSize: "10px",
+                                margin: "auto",
+                                padding: "2px",
+                                marginLeft: "0px",
+                            }}
+                        >
+                            next pair
+
+                        </Button>
+
+
+
+                    </div>
 
                 </div>
+
+
+
+
+
+
+
+
+
 
 
 

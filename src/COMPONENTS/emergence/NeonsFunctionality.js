@@ -18,10 +18,10 @@ export function NeonStart(props) {
         <div key={nanoid()}
             className="darwinian_cycle"
             style={{
-                //position: "absolute",
                 margin: "auto",
-                marginBottom: "10px",
+                marginBottom: "20px",
                 marginTop: "10px",
+
 
             }}
         >
@@ -31,7 +31,7 @@ export function NeonStart(props) {
                 key={nanoid()}
                 className={neonClass}
                 style={{
-                    fontSize: "20px",
+                    fontSize: "20px", textAlign: "center",
                 }}
                 onClick={props.randomPopulation}
             >
@@ -49,7 +49,6 @@ export function NeonStart(props) {
 export function NeonEmission(props) {
     var [neonClass, setNeonClass] = useState(() => {
         if (props.demoState === "emission") {
-            //return "light_on_orange"
             return "light_on_white"
         } else {
             return "light_off"
@@ -61,17 +60,15 @@ export function NeonEmission(props) {
         <div
             key={nanoid()}
             className="darwinian_cycle"
-            style={{
-                margin: "auto",
-                marginBottom: "0px",
-
-
-            }}
+            style={{ margin: "30px auto 0px auto" }}
         >
 
             <h2
                 key={nanoid()}
                 className={neonClass}
+                style={{
+                    fontSize: "16px", textAlign: "center",
+                }}
             >
 
                 <i>Emit</i> a response</h2>
@@ -139,12 +136,10 @@ export function NeonSelection(props) {
     var [neonClass, setNeonClass] = useState(() => {
         if (props.demoState === "selection" && props.reinforced === true) {
             return "light_on_yellow"
-
         }
         else if (props.demoState === "selection" && props.reinforced === false) {
             return "light_on_white"
         }
-
         else {
             return "light_off"
         }
@@ -155,24 +150,11 @@ export function NeonSelection(props) {
         <div
             key={nanoid()}
             className="darwinian_cycle"
-            style={{
-                width: "90%",
-                margin: "0px auto 0px auto",
-                padding: "0px",
-            }}
         >
             <h2
                 key={nanoid()}
                 className={neonClass}
-                style={{
-                    width: "100%",
-                    margin: "0px",
-                    textAlign: "left",
-
-
-                }}
             >
-
                 Select parents
             </h2>
         </div>
@@ -197,24 +179,12 @@ export function NeonRecombination(props) {
         <div
             key={nanoid()}
             className="darwinian_cycle"
-            style={{
-                width: "90%",
-                margin: "20px auto 0px auto",
-                padding: "0px",
-            }}
         >
             <h2
                 key={nanoid()}
                 className={neonClass}
-                style={{
-                    width: "100%",
-                    margin: "0px",
-                    textAlign: "left",
-
-
-                }}
             >
-                Recombine their genotypes
+                Recombination
 
 
             </h2>
@@ -227,8 +197,6 @@ export function NeonMutation(props) {
     var [neonClass, setNeonClass] = useState(() => {
         if (props.demoState === "mutation") {
             return "light_on_pink"
-            //return "light_on_white"
-
         } else {
             return "light_off"
         }
@@ -239,24 +207,12 @@ export function NeonMutation(props) {
         <div
             key={nanoid()}
             className="darwinian_cycle"
-            style={{
-                width: "90%",
-                margin: "20px auto 0px auto",
-                padding: "0px",
-            }}
         >
             <h2
                 key={nanoid()}
                 className={neonClass}
-                style={{
-                    width: "100%",
-                    margin: "0px",
-                    textAlign: "left",
-
-
-                }}
-
-            >Mutation
+            >
+                Mutation
             </h2>
 
         </div>

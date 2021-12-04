@@ -1,6 +1,6 @@
-import React from "react";
-import { nanoid } from "nanoid";
-
+import React from "react"
+import { nanoid } from "nanoid"
+import * as d3 from "d3"
 
 
 export default class AgentHistory extends React.Component {
@@ -14,6 +14,17 @@ export default class AgentHistory extends React.Component {
     render() {
 
         let xxx = this.props.data.slice(0, this.props.data.length - 1)
+
+
+        // fitness gradient goes black to orange:
+        let color1 = '#000'
+        let color2 = '#ff6200'
+
+        var fitness_gradient = d3.scaleLinear()
+            .domain([1, 99])
+            .range([color1, color2])
+
+
 
         return (
 
@@ -44,6 +55,10 @@ export default class AgentHistory extends React.Component {
                                                 value={item.phenotype}
                                                 id={cellId}
                                                 className="btn_history"
+                                            // style={{
+                                            //     background: fitness_gradient(i * 10),
+                                            //     border: `1px solid ${fitness_gradient(i * 10)}`
+                                            // }}
                                             >
                                                 {item.phenotype}
                                             </button>

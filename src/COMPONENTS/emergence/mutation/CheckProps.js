@@ -1,6 +1,6 @@
 import React from "react"
 import { nanoid } from "nanoid"
-
+import parse from "html-react-parser"
 
 export default class CheckProps extends React.Component {
 
@@ -16,12 +16,19 @@ export default class CheckProps extends React.Component {
                     style={{
                         textAlign: "center",
                         fontSize: "13px",
+                        fontWeight: 300,
                         //height: "40px",
                         //border: "1px solid red"
 
                     }}
                     title={2 ** this.props.bitName[this.props.bitName.length - 1]}
-                > 2<sup>{this.props.bitName[this.props.bitName.length - 1]}</sup>
+
+                    data-power2={this.props.power2}
+
+                >
+
+                    2<sup>{this.props.bitName[this.props.bitName.length - 1]}</sup>
+
 
                     <input
                         key={nanoid()}
