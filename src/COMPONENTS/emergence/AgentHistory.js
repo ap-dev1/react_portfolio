@@ -35,6 +35,7 @@ export default class AgentHistory extends React.Component {
                     width: "100%",
                     margin: "auto",
                     border: "0px",
+                    backgroundColor: "#282c34"
                 }}
                 key={nanoid()}
             >

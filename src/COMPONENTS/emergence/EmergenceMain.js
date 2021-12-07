@@ -13,7 +13,7 @@ import * as d3 from "d3";
 
 import { Fade } from "react-reveal"
 
-import { NeonStart, NeonEmission, NeonCreateNewPopulation, NeonSelection, NeonRecombination, NeonMutation } from "./NeonsFunctionality";
+import { NeonStart, NeonEmission, NeonEmissionV2, NeonCreateNewPopulation, NeonSelection, NeonRecombination, NeonMutation } from "./NeonsFunctionality";
 
 
 // import ToggleReinforcement from "./selection/ToggleReinforcement"
@@ -34,7 +34,7 @@ import { Button } from "react-bootstrap"
 
 import Rec2 from "./rechooks/Rec2"
 
-import SvgRecord from "./SvgRecord"
+import { MyD3Component } from "./SvgRecord"
 
 
 let defaultGeneration = []
@@ -87,7 +87,10 @@ export default class EmergenceMain extends React.Component {
             allParents: [],
             allChildren: [],
 
-            fitness_colors: ["#000", "#ff6200"]
+            fitness_colors: ["#000", "#ff6200"],
+            responses: 0,
+
+            miu1: 10
         }
 
         this.initializeAgent = this.initializeAgent.bind(this)
@@ -107,6 +110,9 @@ export default class EmergenceMain extends React.Component {
     }
 
 
+    componentDidMount() {
+        this.initializeAgent()
+    }
 
     initializeAgent = () => {
 
@@ -127,7 +133,6 @@ export default class EmergenceMain extends React.Component {
 
         this.setState({ parentPopulation: population })
         this.setState({ population: population })
-
 
         // AGENT HISTORY:
         let history = this.state.agentHistory
@@ -185,6 +190,28 @@ export default class EmergenceMain extends React.Component {
                 let rf = Math.abs(item.phenotype - ems.phenotype)
                 item.fitness = rf
             })
+
+            let chosenFitness = d3.randomExponential(1 / this.state.miu1)(this.state.low, this.state.high)
+
+
+            console.log("chosenFitness: ", parseInt(chosenFitness))
+            // let myVals = []
+            // for (let i = 0; i < 1000000; i++) {
+            //     // let chosenFitness = d3.randomExponential(1, 5)(this.state.miu1)
+            //     let chosenFitness = d3.randomExponential(1 / this.state.miu1)(this.state.low, this.state.high)
+
+            //     let cf = parseInt(chosenFitness)
+            //     myVals.push(1 / chosenFitness)
+            // }
+
+            // console.log("miu = 5, (1, 5): ", d3.mean(myVals), d3.median(myVals))
+
+
+            // let chosenFitness = d3.randomExponential(1, 5)(this.state.miu1) * 1000
+            // let cf = parseInt(chosenFitness)
+
+
+
 
         } else {
             let ems = gn.population.filter(item => item.status === "reinforced")[0]
@@ -625,28 +652,37 @@ export default class EmergenceMain extends React.Component {
 
                 <div key={nanoid()} className='columnA' >
 
-                    <NeonStart
+                    {/* <NeonStart
                         demoState={this.state.demoState}
                         randomPopulation={this.initializeAgent}
-                    />
+                    /> */}
 
 
-                    <div className="div_col" key={nanoid()}>
-                        <AgentHistory
-                            data={this.state.agentHistory.slice(1)}
-                        />
-                    </div>
 
                     {/* <div className="div_col" key={nanoid()}>
-                        <SvgRecord
-                        //data={this.state.agentHistory.slice(1)}
+                        <MyD3Component
+                            // data={[10, 4, 12]}
+                            data={this.state.agentHistory}
                         />
                     </div> */}
 
+
+                    {/* <div className="div_col" key={nanoid()}>
+                        <AgentHistory
+                            data={this.state.agentHistory.slice(1)}
+                        />
+                    </div> */}
+
+
                     <div className="div_col" key={nanoid()}>
 
-                        <div className="div_row">
+                        {/* <div className="div_row">
                             <NeonEmission demoState={this.state.demoState} />
+                        </div> */}
+
+
+                        <div className="div_row">
+                            <NeonEmissionV2 demoState={this.state.demoState} />
                         </div>
 
 
@@ -657,6 +693,7 @@ export default class EmergenceMain extends React.Component {
                                 margin: "10px auto",
                                 padding: "0",
                                 justifyContent: "space-between",
+                                boxShadow: this.state.demoState === "emission" ? '0 0 10px #fff' : "0 0 0px"
 
                             }}
                             className="div_row"

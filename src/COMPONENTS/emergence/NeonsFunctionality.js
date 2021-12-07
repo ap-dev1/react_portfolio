@@ -31,7 +31,7 @@ export function NeonStart(props) {
                 key={nanoid()}
                 className={neonClass}
                 style={{
-                    fontSize: "20px", textAlign: "center",
+                    fontSize: "20px", textAlign: "center", fontFamily: "monospace"
                 }}
                 onClick={props.randomPopulation}
             >
@@ -60,14 +60,16 @@ export function NeonEmission(props) {
         <div
             key={nanoid()}
             className="darwinian_cycle"
-            style={{ margin: "30px auto 0px auto" }}
+            // style={{ margin: "30px auto 0px auto", }}
+            style={{ margin: "auto", }}
+
         >
 
             <h2
                 key={nanoid()}
                 className={neonClass}
                 style={{
-                    fontSize: "16px", textAlign: "center",
+                    fontSize: "16px", textAlign: "center", fontFamily: "monospace"
                 }}
             >
 
@@ -78,6 +80,41 @@ export function NeonEmission(props) {
 };
 
 
+
+
+export function NeonEmissionV2(props) {
+    var [neonClass, setNeonClass] = useState(() => {
+        if (props.demoState === "emission") {
+            // return "light_on_white_v2"
+            return "light_on_blue"
+        } else {
+            return "light_off"
+        }
+    })
+
+
+    return (
+        <div
+            key={nanoid()}
+            className="darwinian_cycle"
+            style={{
+                margin: "auto",
+            }}
+        >
+
+            <h2
+                key={nanoid()}
+                className={neonClass}
+                style={{
+                    fontSize: "16px", textAlign: "center", fontFamily: "monospace"
+                }}
+            >
+
+                <i>Emit</i> a response</h2>
+
+        </div>
+    )
+};
 // export function NeonReinforcement(props) {
 //     var [neonClass, setNeonClass] = useState(() => {
 //         if (props.demoState === "emission") {

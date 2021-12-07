@@ -190,6 +190,7 @@ export default class RecombinationDemo extends React.Component {
                                 border: "1px solid #0062cc",
                                 borderTop: "none",
 
+
                             }}
                         >
                             <div
@@ -198,6 +199,8 @@ export default class RecombinationDemo extends React.Component {
                                 style={{
                                     color: "#ddd",
                                     fontSize: "14px",
+
+
                                 }}
                             >
                                 {this.props.parent2}

@@ -27,7 +27,6 @@ export default function ToggleReinforcement(props) {
 
             style={{
                 width: "50px",
-                //height: "0px",
             }}
             key={nanoid()}
         >

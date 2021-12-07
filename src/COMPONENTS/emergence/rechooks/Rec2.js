@@ -299,7 +299,9 @@ export default class Rec2 extends React.Component {
                     key={nanoid()}
                     style={{
                         margin: "auto",
-                        width: "70px"
+                        width: "60px",
+                        color: "#ddd",
+
                     }}
                 >
 
@@ -307,9 +309,8 @@ export default class Rec2 extends React.Component {
                         className="radio_bit1"
                         key={nanoid()}
                         style={{
-                            borderBottom: "0px solid #0062cc",
-                            boxShadow: "0px 0px 5px 0px #222"
-
+                            backgroundColor: '#0063cc2f',
+                            marginBottom: "0px",
                         }}
                     >
                         <div
@@ -331,10 +332,9 @@ export default class Rec2 extends React.Component {
                         className="radio_bit1"
                         key={nanoid()}
                         style={{
-                            borderTop: "0px solid #0063cc85",
-                            boxShadow: "0px 0px 5px 0px #222"
-
-
+                            borderTop: "0px solid #0063cc2f",
+                            backgroundColor: '#0063cc2f',
+                            marginTop: "0px",
                         }}
                     >
                         <div
@@ -353,21 +353,26 @@ export default class Rec2 extends React.Component {
 
 
 
-                    <label className="radio_bit1"
+                    <label
+                        //className="radio_bit1"
                         key={nanoid()}
                         style={{
                             marginTop: "20px",
+                            width: "60px",
                             borderRadius: "0px",
                         }}
                     >
                         <div
-                            className="radio_text1"
+                            //className="radio_text1"
                             key={nanoid()}
                             style={{
-                                color: "#5ee478",
-                                height: "30px",
+                                border: "1px solid #0063cc90",
+                                //color: "#ddd",
+                                textAlign: "center",
+                                height: "100%",
                                 fontSize: "14px",
                                 width: "100%",
+                                padding: "2px"
                             }}
                         >
                             {ChildPhenotype}
