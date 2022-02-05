@@ -21,7 +21,7 @@ export default class AgentHistory extends React.Component {
         let color2 = '#ff6200'
 
         var fitness_gradient = d3.scaleLinear()
-            .domain([1, 99])
+            .domain([0, 0.1])
             .range([color1, color2])
 
 
@@ -56,10 +56,10 @@ export default class AgentHistory extends React.Component {
                                                 value={item.phenotype}
                                                 id={cellId}
                                                 className="btn_history"
-                                            // style={{
-                                            //     background: fitness_gradient(i * 10),
-                                            //     border: `1px solid ${fitness_gradient(i * 10)}`
-                                            // }}
+                                                style={{
+                                                    background: fitness_gradient(parseFloat(item.fitness)),
+                                                    border: `1px solid ${fitness_gradient(parseFloat(item.fitness))}`
+                                                }}
                                             >
                                                 {item.phenotype}
                                             </button>

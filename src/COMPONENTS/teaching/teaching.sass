@@ -1,148 +1,253 @@
 
-//     background-color: #76323f  //OXEBLOOD
-//     background-color: #1A2930  //Denim
-//     background-color: #1d2731 // ivory black
-//     background-color: #11775e
-//     background-color: #777511
 
+@import "./_text_shadow.sass"
+
+$clr_purple: #fcb3ff
+$clr_blue1: #b8b3ff
+$clr_yellow1: #f9ffb3
+$clr_blue2: #71b6ff
+$clr_yellow1: #dff118ea
+$python_blue: #95cfff
+$python_blue: #616161
+
+
+// ---------------------------------------------------
+    
+.div-inset-txt-before
+    background-color: #transparent
+    width: 300px
+    border: 1px solid red
+    font-family: Montserrat
+    display: flex
+    flex-direction: row
+    width: 800px
+    margin: auto
+    text-align: center
+
+    h3
+        font-weight: 900
+        font-size: 16px
+        margin: auto
+        width: fit-content
+        border: 1px solid lime
+        background-color: #083030
+        color: transparent
+        text-shadow: 2px 2px 3px a1c9c982
+        -webkit-background-clip: text
+        -moz-background-clip: text
+        background-clip: text
+
+// ---------------------------------------------------
+
+.divDetails
+    margin-bottom: 0px
+    position: sticky
+    font-size: 12px
+    display: flex
+    flex-direction: column
+    text-align: left
+    width: 100%
+    padding: 2px 5px    
+    color: #19f8e2
+
+
+// ---------------------------------------------------
+
+#btnTeachingDetails
+    margin-top: 10px
+    font-size: 14px
+    text-align: center
+    color: #19f8e2
+    background-color: transparent
+    border: 1px solid #19f8e2
+    border-radius: 5px
+    cursor: pointer
+    transition: .3s
+
+    &:hover
+        transition: .3s
+
+        color: #fff
+        background-color: #ff4f3be8
+        background-color: #013a3ae8
+        border: 1px solid #167a7ae8
+
+//--------------------------------------------------                       
 
 #teachingSection
     width: 100%
     min-height: 100vh
-    //align-items: center
-    display: flex
-    flex-direction: row
-    justify-content: center
-    background-color: #11775e
-    padding-top: 5rem
-
-
-.col1
-    width: 20%
-    min-height: 100%
-    margin-right: .5rem 
+    margin: 0px
+    vertical-align: middle
     display: flex
     flex-direction: column
-    justify-content: flex-start
-    //border: 2px solid red
+    //justify-content: center
+    //background-color: #167a7ae8
+    background-color: #274235
 
-
-    .divIntro
-        display: flex
-        flex-direction: column
-        width: 90%
-        margin: 0rem auto 1rem auto
-        padding: 2rem 0
-        color: #ddd
-        background-color: #073529
-        // border: 1px solid #ffffff8e
-        //box-shadow: -2px -2px 14px #ffffff8e
-        box-shadow: 10px 14px 9px #6a8f6cb6
-        border-radius: 10px
-        
-        .title
-            margin: 1rem 0 .5rem 0
-            font-size: 2rem
-            text-align: center
-
-        .subtitle
-            margin: .5rem 0
-            font-size: .8rem
-            text-align: center
-
-
-    .divSchools
-        display: flex
-        flex-direction: column
-        width: 100%
-        margin: 1rem 0
-        //padding: 1rem
-        //color: #ddd
-        // background-color: #0c5240
-        //border: 1px solid #ffffff8e
-        //box-shadow: -2px -2px 14px #ffffff8e
-        //box-shadow: 0px 4px 9px #000000ef
-        //border-radius: 10px
-        //flex-wrap: wrap
-        //justify-content: r
-        justify-items: right
-        padding-left: 30%        
-        
-        button
-            margin: .5rem 0
-            font-size: .8rem
-            padding: 1rem
-            text-align: left
-            width: 90%
-            word-wrap: break-word
-            background-color: #073529
-            border: none
-            color: #ffffffcb
-            //box-shadow: 2px 4px 2px #6a8f6cb6
-            //border-radius: 10px
-            margin-right: .5rem
-
-            &:hover
-                cursor: pointer
-                color: #fff
-                background-color: #011812
-
-            
-
-
-.col2
-    width: 45%
-    margin-right: 0rem 
-    margin-left: .5rem 
-    display: flex
-    flex-direction: column
-
-
-
-    .teachingCards
-        width: 100%
+.teachingCards
+        width: 1000px
+        margin: auto
         display: flex
         flex-direction: row
         flex-wrap: wrap
-        justify-content: center
-        //padding-bottom: 1rem
-        //border: 1px solid #ffffff8e
-        background-color: #0c5240
-        // box-shadow: -2px -2px 14px #ffffff8e
-        box-shadow: 4px 4px 6px #000000ef
-        border-radius: 15px
-        padding: 1rem .5rem
+        border-radius: 0px
+        background-color: transparent
+        //margin-top: 200px
 
         .card
-            // width: 8.5rem
-            // height: 11rem
-            // font-family: Roboto
-            // color: #777
-            // padding-top: .5rem
-            // margin: .5rem
-
-            width: 11rem
-            height: 10rem
+            width: 200px
+            min-height: 120px
+            padding: 0 4px 4px 4px
+            //cursor: pointer
             font-family: Roboto
-            color: #777
-            //padding: 2rem
-            margin: 1rem
-            //border-radius: 50%
-            opacity: .6
+            color: #bbb
+            margin: 12px
+            border-radius: 10px
+            opacity: .7
+            background-color: #042e23
+            //box-shadow: -2px -2px 6px #31D1B3
+            //box-shadow: inset 2px 2px 6px #0a0a0a83
+
+            background-color: transparent
+            background-color: #37353583
+
 
             &:hover
                 opacity: 1
 
-
             .title
-                padding: 1rem
-                margin-top: 1.2rem
+                padding: 5px
+                margin: 20px auto 20px auto
+                //margin-top: 10px
+                //margin-bottom: 30px
+                font-weight: 800
+
                 font-family: Roboto
-                font-size: .9rem
-                line-height: 1.5rem
+                font-size: 15px
+                line-height: 20px
                 color: #fff
                 text-align: center
+
+
+
+        #teachingDetails
+
+            cursor: pointer
+            font-size: 14px
+            width: 100px
+            height: 100px
+            margin: auto
+            font-family: Arial
+            color: #31D1B3
+            font-weight: 800
+            background-color: #37353583
+            opacity: .7
+            box-shadow: -2px -2px 6px #31D1B3
+            border: 0px
+            
+            &:hover
+                opacity: 1
+                background-color: #37353583
+
+
+// .row1
+//     width: 1000px   
+//     margin: 100px auto 0px auto
+//     display: flex
+//     flex-direction: row
+//     background-color: transparent
+
+//     .divSchools
+//         display: flex
+//         flex-direction: row
+//         width: 100%
+//         margin: 10px auto 0px auto
+//         justify-content: right
+//         background-color: transparent
+
+
+            
+
+
+// .row2
+//     width: 1200px
+//     display: flex
+//     flex-direction: row
+//     margin: auto
+    //margin-top: 100px
+    //background-color: #0a0a0a83
+
+    // .teachingCards
+    //     width: 100%
         
+    //     display: flex
+    //     flex-direction: row
+    //     flex-wrap: wrap
+    //     border-radius: 0px
+    //     background-color: transparent
+    //     //margin-top: 200px
+
+    //     .card
+    //         width: 200px
+    //         min-height: 120px
+    //         padding: 0 4px 4px 4px
+    //         //cursor: pointer
+    //         font-family: Roboto
+    //         color: #bbb
+    //         margin: 12px
+    //         border-radius: 10px
+    //         opacity: .7
+    //         background-color: #042e23
+    //         box-shadow: -2px -2px 6px #31D1B3
+    //         //box-shadow: inset 2px 2px 6px #0a0a0a83
+
+    //         background-color: transparent
+    //         background-color: #37353583
+
+
+    //         &:hover
+    //             opacity: 1
+
+    //         .title
+    //             padding: 5px
+    //             margin: auto
+    //             //margin-top: 10px
+    //             //margin-bottom: 30px
+    //             font-weight: 800
+
+    //             font-family: Roboto
+    //             font-size: 15px
+    //             line-height: 20px
+    //             color: #fff
+    //             text-align: center
+
+
+
+    //     #teachingDetails
+
+    //         cursor: pointer
+    //         font-size: 14px
+    //         width: 100px
+    //         height: 100px
+    //         margin: auto
+    //         font-family: Arial
+    //         color: #31D1B3
+    //         font-weight: 800
+    //         background-color: #37353583
+    //         opacity: .7
+    //         box-shadow: -2px -2px 6px #31D1B3
+    //         border: 0px
+            
+    //         &:hover
+    //             opacity: 1
+    //             background-color: #37353583
+
+            
+                
+                        
+
+
 
 // -------------------------------------------
 

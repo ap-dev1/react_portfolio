@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import data from '../../DATA/myData'
-//import parse from 'html-react-parser'
+import parse from 'html-react-parser'
 
 import infoSkills from "../../DATA/infoSkills"
 
-import "./about.sass";
+import "./about.sass"
 
 
 class About extends Component {
@@ -15,7 +15,10 @@ class About extends Component {
         var Skills = infoSkills.skills.map((item) => {
             return (
                 <label
-                    style={{ background: item.color, opacity: item.opacity }}
+                    style={{
+                        opacity: item.opacity,
+                        color: item.color,
+                    }}
                     key={item.name + Math.random()}
                 >
                     { item.name}
@@ -26,7 +29,9 @@ class About extends Component {
 
         return (
 
-            <div id='About' className='fullscreen darker'
+            <div
+                id='About'
+                className='fullscreen darker'
                 style={{
                     marginBottom: "0rem",
                     // backgroundColor: "#233D46",
@@ -35,29 +40,57 @@ class About extends Component {
                 }}
             >
 
-                <h1 >Profile</h1>
+                <h1 >About me</h1>
 
-                <div className='AboutRow'>
+                <div className="AboutRow">
 
-                    <div id="divProfilePic" className='AboutColumn'>
-                        {data.ShowAboutImage ? <img src={data.aboutImage} alt='Dr. Andrei Popa'
-                            height='400px' style={{ borderRadius: ".5rem" }}
-                        ></img> : null}
+                    <div
+                        id='divProfilePic'
+                    //className="AboutColumn"
+                    >
+
+                        {
+                            data.ShowAboutImage ?
+                                <img
+                                    src={data.aboutImage}
+                                    alt='Dr. Andrei Popa'
+                                    //height='450px'
+                                    style={{
+                                        borderRadius: "5px"
+                                    }}
+                                >
+
+                                </img> : null
+                        }
+
                     </div>
 
 
 
-                    <div className='AboutColumn'>
+                    <div className="AboutColumn">
+                        {
+                            data.aboutText.map((item) => {
+                                return (
+                                    <p className="narrative" >
+                                        {item}
+                                    </p>
+                                )
+                            })
+                        }
 
-                        <p className='narrative' >{data.aboutText}</p>
 
-                        <div className='divSkills' >
+                        <div className="divSkills" >
                             {Skills}
                         </div>
 
                         <div className="wrapperEducation">
 
-                            <table id="tableEducation" >
+                            {/* <table
+                                id="tableEducation"
+                                style={{
+                                    fontSize: "12px"
+                                }}
+                            >
                                 <tbody>
                                     <tr>
                                         <td>2003</td>
@@ -77,7 +110,7 @@ class About extends Component {
                                         <td>Emory University, Atlanta, GA, USA</td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table> */}
 
                         </div>
                     </div>

@@ -12,7 +12,9 @@ export default class ShapeOfWill extends Component {
         return (
 
             <div id="MyTimeline" style={{
-                marginBottom: "1rem", marginTop: ".1rem",
+                marginBottom: "1rem",
+                marginTop: ".1rem",
+                backgroundColor: "#1d2731"
             }}>
 
                 <div className="vertical" style={{

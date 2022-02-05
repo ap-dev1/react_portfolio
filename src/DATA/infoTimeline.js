@@ -49,8 +49,10 @@ import Trn04_4_ext from "../assets/triangles/Trn04_4_ext.png";
 
 import projectCardSorting from "../assets/prj_img_personal_values.png";
 
-import phd_etbd_humans_1 from "../assets/phd_etbd_humans_1.png";
-import phd_etbd_humans_2 from "../assets/phd_etbd_humans_2.png";
+// import phd_etbd_humans_1 from "../assets/phd_etbd_humans_1.png";
+// import phd_etbd_humans_2 from "../assets/phd_etbd_humans_2.png";
+import phd_etbd_humans_sensitivity from "../assets/phd_etbd_humans_sensitivity.png";
+import phd_etbd_humans_bout_length from "../assets/phd_etbd_humans_bout_length.png";
 
 import abai_2014_slide1 from "../assets/abai_2014_slide1.png";
 import abai_2014_slide2 from "../assets/abai_2014_slide2.png";
@@ -66,7 +68,8 @@ import change_in_state_2 from "../assets/change_in_state_2.png";
 var infoTimeline = [
 
     {
-        title: 'Mathematical models & computational theories',
+        // title: 'Mathematical models & computational theories',
+        title: 'The matching equations',
         nickname: "Emory 2009",
         fontFam: "Roboto",
 
@@ -76,7 +79,8 @@ var infoTimeline = [
         authors: ["Popa & McDowell (2009)"],
         tags: [],
         keywords: ["ETBD", "conference", "Emory University"],
-        description: "<b>Mathematical</b> models <b>describe</b> the behavior of biological agents in specific environments. <b>Computational</b> theories are essentially computer programs that implement algorithms that <b>generate</b> behavior. The algorithms implement theoretical assumptions about how learning works in biological agents. Mathematical models can be used to verify these assumptions.",
+        // description: "<b>Mathematical</b> models <b>describe</b> the behavior of biological agents in specific environments. <b>Computational</b> theories are essentially computer programs that implement algorithms that <b>generate</b> behavior. The algorithms implement theoretical assumptions about how learning works in biological agents. Mathematical models can be used to verify these assumptions.",
+        description: "are good benchmarks for verifying and calibrating computational theories, especially in early stages of development.",
         img: [paper_modern_matching_2010, paper_bivariate_matching_2012],
         captions: ["paper_modern_matching_2010", "paper_bivariate_matching_2012"],
         urls: [
@@ -85,7 +89,7 @@ var infoTimeline = [
         // citation: "Popa, A., & McDowell, J J. (2009). A Computational Model of Adaptive Behavior Dynamics. Emory University, Department of Psychology, Annual Research Festival. Atlanta, GA",
 
         references: [
-            "Popa, A., & McDowell, J J. (2009). A Computational Model of Adaptive Behavior Dynamics. Emory University, Department of Psychology, Annual Research Festival. Atlanta, GA",
+            // "Popa, A., & McDowell, J J. (2009). A Computational Model of Adaptive Behavior Dynamics. Emory University, Department of Psychology, Annual Research Festival. Atlanta, GA",
             "McDowell, J. J, & Popa, A. (2010). Toward a mechanics of adaptive behavior: Evolutionary dynamics and matching theory statics. Journal of the Experimental Analysis of Behavior, 94, 241-260.",
             "McDowell, J, J., Popa, A., & Calvin, N. (2012). Selection Dynamics in Joint Matching to Rate and Magnitude of Reinforcement. <i>Journal of the Experimental Analysis of Behavior</i>, <i>98</i>, 199-212.",
         ],
@@ -94,7 +98,7 @@ var infoTimeline = [
 
 
     {
-        title: "Emergence",
+        title: 'Emergence',
         custom_item: "emergence_demo",
 
 
@@ -116,7 +120,7 @@ var infoTimeline = [
         keywords: ["Wolfram", "complex systems", "emergence", "Elementary Cellular Automata", "cellular automaton"],
 
 
-        description: "These results are a big deal because they emerge, unguided, from simple rules. There is no conceptual or computational connection between what happens at generation level and what happens at macro level. The outcome cannot be deduced analytically from the initial conditions. That is precisely what makes ETBD special: the disconnection between mechanisms and outcomes.",
+        description: "Agreement with live data is a big deal because the rules are indifferent to past and future. They work the same way, every time, with no memory and no goals. This makes molar properties like sensitivity or bias are, therefore, natural consequences of a perpetual present, governed by Darwinian rules.",
 
         img: [paper_wolfram_2009],
         captions: [
@@ -142,7 +146,7 @@ var infoTimeline = [
 
 
     {
-        title: "Hamming Distances and CODs",
+        title: 'Hamming Distances and CODs',
         custom_item: "hamming_demo",
 
         nickname: "M.A.",
@@ -166,7 +170,7 @@ var infoTimeline = [
         committee: "Dr. Jack McDowell (chair), Dr. Eugene Emory, Dr. Philip Wolff",
         keywords: ["Masters Thesis", "ETBD", "Hamming Distances", "Changeover Delay", "matching", "sensitivity",],
         description:
-            "Remeber the changeover delay you experienced above? McDowell et al (2008) suggested that it might have a functional corespondent in ETBD - namely in the Hamming Distance that separates the target classes. Exploring this idea was my first significant investigation into ETBD and its innerworkings. My work revealed that the ETBD equivalent of a COD was the overall degree of similarity between the target classes, measured in Hamming Distances (Popa, 2013; pp.19-21; figure 4, page 111).<br/><br/><b>Masters committee</b>: Dr. Jack McDowell (chair), Dr. Eugene Emory, Dr. Philip Wolff",
+            "Remeber the changeover delay you experienced above? McDowell et al (2008) suggested that it might have a computational corespondent - namely in the Hamming Distance that separates the target classes. Exploring the Hamming - COD parallel was was my first significant investigation into ETBD and its innerworkings. My work revealed that the ETBD equivalent of a COD was the overall degree of similarity between the target classes, measured in Hamming Distances (Popa, 2013; pp.19-21; figure 4, page 111).<br/><br/><b>Masters committee</b>: Dr. Jack McDowell (chair), Dr. Eugene Emory, Dr. Philip Wolff",
 
         img: [hamming_paper_page1],
         captions: ["hamming_paper_page1"],
@@ -203,6 +207,8 @@ var infoTimeline = [
     },
 
 
+
+    /* 
     {
         title: "Selection events as positive reinforcers",
 
@@ -242,19 +248,20 @@ var infoTimeline = [
         urls: [
             { name: "SQAB 2010", link: "https://www.sqab.org/programs/2010.pdf" },
         ],
-        // citation:
-        //     "McDowell, J. J, & Popa, A. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Journal of the Experimental Analysis of Behavior, 94, 241-260.",
 
         references: [
-            "McDowell, J. J, & Popa, A. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Journal of the Experimental Analysis of Behavior, 94, 241-260.",
+            "McDowell, J. J, & Popa, A. (2010). Effects of overall absolute reinforcement rate in a computational model of selection by consequences. Poster presented at SQAB 2010.",
         ],
     },
 
-
+ */
 
     {
-        title: "<i>Mutation</i>, behavior variability, and ADHD",
+        // title: "<i>Mutation</i>, behavior variability, and ADHD",
+        title: 'Qual and dissertation proposal',
+
         nickname: "Qual",
+        navMarker: "QualPhdDesign",
         // fontFam: "Diploma",
         // fontFam: "'Press Start 2P', cursive",
         // fontFam: "'Special Elite', cursive",
@@ -268,9 +275,9 @@ var infoTimeline = [
         keywords: ["candidacy"],
         tags: [],
         description:
-            "The 'Qual' was the last requirement on the way to candidacy; I passed mine in April 2011, in front of a committee composed of Dr. Robert Hampton (chair), Dr. Irwin Waldman, and Dr. Philip Wolff. <br/><br/>My dissertation proposal was accepted a few month later. For my project I explored the connection between <i>mutation</i> and ADHD and ETBD's potential to predict human behavior.",
+            "The Qualifying Examination was the last requirement on the way to candidacy; I passed mine in April 2011, in front of a committee composed of Dr. Robert Hampton (chair), Dr. Irwin Waldman, and Dr. Philip Wolff. <br/><br/>My dissertation proposal was accepted a few month later. For my project I explored the connection between <i>mutation</i> and ADHD and ETBD's potential to predict human behavior.",
 
-        img: [],
+        img: [etbd_adhd_slide_1],
         captions: ["zfsdzgfgvzd", "dfgsdfgbfnsf"],
 
         urls: [
@@ -349,11 +356,13 @@ var infoTimeline = [
 
         // description: "To accomplish two and three I designed and implemented a concurrent-schedule procedure that allowed me to compare human and computational data side by side.<br/><br/>To verify ETBD predictions, I investigated human behavior under different COD requirements, as shown in the demo. The results went in the direction predicted by ETBD for all eight dependent variables (pp. phd). Parts of this work were presented at ABAI (2012).<br/><br/>< p className = 'p-left' style = {{ color: 'rgb(255, 128, 49)', }}> Then, I explored human behavior under different COD requirements and I compared it with the ETBD. < br /> <br /></p ><br/><br/><p className='p-left' style={{ color: 'rgb(255, 128, 49)', }}>Finally, I used traditional instruments to measure ADHD symptoms in the same participants and I compared the scores with measures of choice behavior.</p>",
 
-
         description: "To accomplish two and three I designed and implemented a concurrent-schedule procedure that allowed me to compare human and computational data side by side.<br/><br/>To verify ETBD predictions, I investigated human behavior under different COD requirements, as shown in the demo. The results went in the direction predicted by ETBD for all eight dependent variables (pp. phd). < br /> <br />Finally, I used traditional instruments to measure ADHD symptoms in the same participants and I compared the scores with measures of choice behavior.",
 
+        notes: "This was the first time I designed and managed a research study from beginning to end. Technology-wise, I used VB.Net for the experimental interface and Excel and VBA for data analysis.",
+
         // img: [ABAI_2012_event, phd_etbd_humans_1, phd_etbd_humans_2,],
-        img: [phd_etbd_humans_1, phd_etbd_humans_2,],
+        //img: [phd_etbd_humans_1, phd_etbd_humans_2,],
+        img: [phd_etbd_humans_sensitivity, phd_etbd_humans_bout_length],
         captions: ["phd_etbd_humans_1", "phd_etbd_humans_2"],
 
         urls: [
@@ -387,7 +396,7 @@ var infoTimeline = [
         type: "doctoral dissertation",
         role: "Doctor of Philosophy",
         authors: ["Popa (2013)", "Hackett (2019)"],
-        keywords: ["Doctor of Philosophy", "dissertation", "education", "deggree", "PhD"],
+        keywords: ["Doctor of Philosophy", "dissertation", "education", "doctoral deggree", "PhD"],
         tags: ["synthetic data", "human data"],
 
         description:
@@ -430,7 +439,7 @@ var infoTimeline = [
         authors: ["Popa, Calvin, & McDowell (2014)"],
         keywords: ["ABAI 2014", "causation", "complexity", "mechanisms",],
         tags: [],
-        description: "ADHD-like symptoms were observed in contexts where the probability to respond <i>again</i> in the same target class was low.<br/><br/>Schedule 6 ...   Mechanisms  ...   <br/><br/><br/><br/>",
+        description: "In ETBD, ADHD-like symptoms emerged from many combinations of variables, impossible to deduce by examining the overall descriptors, or symptoms. <br/><br/> Examining how these variable work at generation level I noticed that they were acting in ways that reduced the probability <i>to respond again in the same class</i>. In other words, they led to ADHD-like symptoms by preventing the formation of bouts.",
         img: [
             abai_2014_radars_originals,
             abai_2014_slide1,
@@ -709,7 +718,7 @@ var infoTimeline = [
 
         tags: ["Python", "SciPy", "SQLite", "Postgres"],
         description:
-            "This evolutionary theory is similar to the one described in McDowell (2004). ... <br/><br/><br/><br/><br/><br/><br/><br/><br/>",
+            "In ETBD, reinforcers trigger selection events: phenotypes closer to the reinforced one are assigned a higher probability to become parents. <br/><br/>[...] <i>a random value is obtained from an exponential distribution, say 5. The program checks the population for a phenotype that is 5 integers away from the reinforced one. If the reinforced one was 100, it looks for 95 or 105. When it doesn't find a match, it goes back to the distribution, gets a new random value, and so on until it finds a match.<br/><br/>Here I explored a next-best-thing approach: obtain a random value from the distribution and search for a match; if one is not found, the phenotype closest to the required value becomes parent.",
         img: [placeholder_blank],
         captions: ["placeholder_blank"],
 

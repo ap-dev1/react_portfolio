@@ -19,7 +19,7 @@ export default class Qual extends Component {
                 className="item"
                 content1={this.props.qualDate}
                 key={this.props.date + this.props.title}
-                id={this.props.date}
+                id={"QualPhdDesign"}
 
                 style={{
                     fontFamily: this.props.fontFam,
@@ -62,19 +62,44 @@ export default class Qual extends Component {
                         style={{ marginTop: "20px" }}
                     >
 
-                        <h1
+                        {/* <h1
                             className="chapter-sub-title"
                             style={{
                                 fontSize: "18px",
                                 textAlign: "center",
                             }}
 
-                        >Dissertation project</h1>
+                        >Dissertation project</h1> */}
+
+                        <h2
+                            className="chapter-sub-title"
+                            style={{
+                                fontSize: "14px",
+                                textAlign: "left",
+                                fontWeight: 600,
+                                fontVariant: "normal",
+                                color: "cyan",
+                                opacity: .8
+                            }}
+
+                        >
+                            Dissertation, Part One: Computational ADHD
+                        </h2>
 
                         <p
                             className="p-left"
-                            style={{ color: "#02aab0", }}
-                        >In part 1, I explored the interaction between mutation rate, reinforcement rate and magnitude, and COD in ETBD.<br /></p>
+                            style={{ color: "#02aab0", color: "#ccc" }}
+                        >
+                            I explored the effects of mutation rates from 5% to 100% on nine behavioral measures, <br /> <br />
+
+                            <ul type='square'>
+                                <li>at different reinforcement rates; </li>
+                                <li>at different reinforcement magnitudes; </li>
+                                <li>and under different discriminability conditions. </li>
+                            </ul >
+                        </p>
+
+
 
 
 

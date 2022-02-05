@@ -20,6 +20,7 @@ function ImagesContainer({ props }) {
 
             <div className="imgWrapper" key={divKey}>
                 <Image
+                    maxWidth="200px"
                     src={item}
                     alt={item.title}
                     title={item.imgTitle}

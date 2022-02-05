@@ -90,7 +90,7 @@ export default class EmergenceMain extends React.Component {
             fitness_colors: ["#000", "#ff6200"],
             responses: 0,
 
-            miu1: 10
+            miu1: 15
         }
 
         this.initializeAgent = this.initializeAgent.bind(this)
@@ -187,8 +187,22 @@ export default class EmergenceMain extends React.Component {
             this.setState({ fitnessZero: ems.phenotype })
 
             gn.population.forEach((item) => {
-                let rf = Math.abs(item.phenotype - ems.phenotype)
-                item.fitness = rf
+                // let rf = Math.abs(item.phenotype - ems.phenotype)
+                // item.fitness = rf
+
+                let rd = Math.abs(item.phenotype - ems.phenotype)
+                let a = 1 / this.state.miu1
+                let rf = a * Math.E ** (-a * item.phenotype)
+                let rf1 = 1 - Math.E ** (-a * item.phenotype)
+
+
+                item.fitness = rf.toFixed(3)
+
+                // console.log('-------------')                
+                // console.log("rd: ", rd)
+                // console.log("miu1: ", this.state.miu1)
+                // console.log("a: ", a)
+                // console.log("rf: ", rf)
             })
 
             let chosenFitness = d3.randomExponential(1 / this.state.miu1)(this.state.low, this.state.high)
@@ -205,7 +219,6 @@ export default class EmergenceMain extends React.Component {
             // }
 
             // console.log("miu = 5, (1, 5): ", d3.mean(myVals), d3.median(myVals))
-
 
             // let chosenFitness = d3.randomExponential(1, 5)(this.state.miu1) * 1000
             // let cf = parseInt(chosenFitness)
@@ -282,16 +295,60 @@ export default class EmergenceMain extends React.Component {
     };
 
 
+
+    twoFitParents = () => {
+        let parents = []
+
+        let miu = 15
+        let fitnessZero = this.state.ems
+        let range = [this.state.low, this.state.high]
+
+        let parentPopulation = this.state.agentHistory[this.state.agentHistory.length - 1].population
+        let population = []
+
+        parentPopulation.forEach((item) => {
+            population.push(item.phenotype)
+        })
+
+        while (parents.length < 2) {
+            let randomFitness = parseInt(d3.randomExponential(1 / miu)(range[0], range[1]))
+            let phen1 = fitnessZero - randomFitness
+            let phen2 = fitnessZero + randomFitness
+
+            if (population.includes(phen1) && !parents.includes(phen1) && parents.length < 2) {
+                parents.push(phen1)
+            }
+
+            if (population.includes(phen2) && !parents.includes(phen2) && parents.length < 2) {
+                parents.push(phen2)
+            }
+        }
+
+        return parents
+    }
+
+
+
+
     automateSelection = () => {
         let parentPopulation = this.state.agentHistory[this.state.agentHistory.length - 1].population
         let bits = this.state.nrBits
         let allP = this.state.allParents
         let i = 0
 
+
         for (i; i < this.state.popSize; i++) {
-            let p1 = parentPopulation[Math.floor(Math.random() * parentPopulation.length)]
-            let p2 = parentPopulation[Math.floor(Math.random() * parentPopulation.length)]
-            let pair = [p1.phenotype, p2.phenotype]
+
+            let pair = []
+
+            if (this.state.reinforced === true) {
+                pair = this.twoFitParents()
+            } else {
+                let p1 = parentPopulation[Math.floor(Math.random() * parentPopulation.length)]
+                let p2 = parentPopulation[Math.floor(Math.random() * parentPopulation.length)]
+                pair = [p1.phenotype, p2.phenotype]
+            }
+
             pair.sort((a, b) => a > b)
             allP.unshift(pair)
         }
@@ -301,6 +358,13 @@ export default class EmergenceMain extends React.Component {
             demoState: "recombination"
         })
     };
+
+
+
+
+
+
+
 
 
     recombinePair = (event) => {
@@ -794,6 +858,7 @@ export default class EmergenceMain extends React.Component {
                             demoState={this.state.demoState}
                             population={this.state.agentHistory[this.state.agentHistory.length - 1].population}
                             doSomethingSelect={this.doSomethingSelect}
+                            reinforced={this.state.reinforced}
                         />
 
                         <div className="parents-wrapper" key={nanoid()}>

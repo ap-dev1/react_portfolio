@@ -1,19 +1,20 @@
 import React, { Component } from "react";
-
+import { nanoid } from "nanoid"
 import infoTimeline from "./DATA/infoTimeline";
 
 import HeaderSection from "./COMPONENTS/header_files/HeaderSection";
 import About from "./COMPONENTS/about_files/AboutSection";
 import MyTimeline from "./COMPONENTS/timeline_files/MyTimeline";
 import Chapter01 from "./COMPONENTS/background/Chapter01";
-// import Chapter02 from "./COMPONENTS/background/Chapter02";
-// import Chapter03 from "./COMPONENTS/background/Chapter03";
+
 import Chapter04 from "./COMPONENTS/background/Chapter04";
 import RecentProjects from "./COMPONENTS/recent/RecentProjects";
 import TeachingExperience from "./COMPONENTS/teaching/TeachingSection";
 import Contact from "./COMPONENTS/contact/ContactSection";
 //import References from "./COMPONENTS/references/ReferencesSection";
 import MyVitae from "./COMPONENTS/vitae/MyVitae";
+import ResearchTrajectory from "./COMPONENTS/background/ResearchTrajectory";
+import ResearchBegins from "./COMPONENTS/background/ResearchBegins";
 
 
 class App extends Component {
@@ -47,14 +48,15 @@ class App extends Component {
             //{ markerID: "columnHeader", navButtonID: "btnmyHeader", },
             { markerID: "divProfilePic", navButtonID: "btnAbout", },
             { markerID: "recentIntro", navButtonID: "btnRecent", },
-            { markerID: "researchTrajectory", navButtonID: "btnresearchTrajectory", },
-            { markerID: "ch01_p1", navButtonID: "btnch01", },
+            { markerID: "researchBegins", navButtonID: "btnresearchBegins", },
+            { markerID: "ChoiceDemo", navButtonID: "btnChoiceDemo", },
             // { markerID: "ch2_p1", navButtonID: "btnch2", },
-            // { markerID: "08/17/2011", navButtonID: "btn08/17/2011", },
+            { markerID: "QualPhdDesign", navButtonID: "btnQualPhdDesign", },
             { markerID: "12/24/2013", navButtonID: "btn12/24/2013", },
             { markerID: "ch4_p1", navButtonID: "btnch4", },
-            { markerID: "teachingSection", navButtonID: "btnteachingSection", },
+            { markerID: "div_1400", navButtonID: "btndiv_1400", },
             { markerID: "sectionVitae", navButtonID: "btnsectionVitae", },
+
             { markerID: "btnEmail", navButtonID: "btnContact", },
         ]
 
@@ -101,35 +103,48 @@ class App extends Component {
 
                 <About />
 
-                {/* <div style={{
-                    width: "100%",
-                    height: "50px",
-                    backgroundImage: "linear-gradient(to bottom, #1d2731 , orange, #1A2930)"
-                }}></div> */}
 
-                <TeachingExperience />
+                <div id="div_1400" >
+
+                    <div id="div_1401" >
+
+                        <span id="span1" >  TEACHING  </span>
+                        <span id="span2" >  2007 - 2018 </span>
+
+                        <div className='div_schools'>
+
+                            <span id="span3" >
+                                Emory <br />University
+                            </span>
+                            <span id="span4" >
+                                Georgia State<br /> University
+                            </span>
+                            <span id="span5" >
+                                Agnes Scott<br /> College
+                            </span>
+                            <span id='span6'>
+                                Emory University, <br />Oxford College
+                            </span>
+
+                        </div>
+
+                    </div>
 
 
-                <div id="researchTrajectory"
-                    className="fullscreen research"
-                    style={{
-                        backgroundColor: "#ff0000d0",
-                        color: '#fff',
-                        marginTop: "0rem",
-                        marginBottom: "0rem",
-                    }}
-                >
-                    <h1>Research Trajectory</h1>
-                    <h1>2007 - 2019</h1>
                 </div>
 
 
+
+                <TeachingExperience />
+
+                <ResearchBegins />
+
+                <ResearchTrajectory />
+
                 <Chapter01 />
 
-
-
                 <MyTimeline
-                    events={infoTimeline.slice(0, 14)}
+                    events={infoTimeline.slice(0, 13)}
                     orientation="vertical"
                     startFrom="first"
                 />
@@ -137,12 +152,32 @@ class App extends Component {
                 <Chapter04 />
 
                 <MyTimeline
-                    events={infoTimeline.slice(14)}
+                    events={infoTimeline.slice(13)}
                     orientation="vertical"
                     startFrom="first"
                 />
 
                 <RecentProjects />
+
+                <div
+                    style={{
+                        width: "100%",
+                        minHeight: "100vh",
+                        //backgroundColor: "#a7bdc3",
+                        // backgroundColor: "#555",
+                        // webkitBackgroundClip: "text",
+                        // mozBackgroundClip: "text",
+                        // backgroundClip: "text",
+                        // color: "transparent",
+                        // textShadow: "rgba(255,255,255,0.5) 0px 3px 3px",
+                        // textAlign: "center",
+                        // verticalAlign: "middle",
+                        // fontSize: "100px",
+                        // padding: "25% 5%"
+                    }}
+                >
+
+                </div>
 
                 <MyVitae />
 

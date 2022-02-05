@@ -24,9 +24,9 @@ class HeaderSection extends Component {
             <div id="myHeader" className="fullscreen light">
                 <div id="columnHeader">
                     <p>
-                        Hi, I'm <span style={{ color: "#45a085" }}>Andrei Popa</span>
+                        Hi, I'm <span style={{ color: "#45a085" }}>Dr. Andrei Popa.</span>
                     </p>
-                    <p>I do research and development</p>
+                    <p>I do research and development.</p>
                     <p>
 
                         <button onClick={this.scrollToProfile}>Continue</button>

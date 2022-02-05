@@ -788,10 +788,10 @@ export default class ETBD extends Component {
         return (
 
             <>
-                <div className="divShowHideETBD">
+                {/* <div className="divShowHideETBD">
                     <button id="btnShowETBD" onClick={this.showETBD}>Show ETBD</button>
                     <button id="btnClearETBD" onClick={this.hideETBD}>Hide</button>
-                </div>
+                </div> */}
 
                 <div className="divStartResetETBD">
                     <button id="btnStartETBD" onClick={this.beginSimulation}>run ETBD</button>

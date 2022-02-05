@@ -39,7 +39,10 @@ class Chapter04 extends Component {
             <div
                 id="ch4"
                 className="chapter"
-                style={{ backgroundColor: "#1D2731", }}
+                style={{
+                    backgroundColor: "#1D2731",
+                    minHeight: "100vh"
+                }}
             >
                 <div className="chapterRow">
                     <div className="chapterCol">

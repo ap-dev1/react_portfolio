@@ -1,20 +1,5 @@
-//@import "../sassy/_colors"
 
 @import '../../styles/_colors'
-// text-transform: uppercase
-// font-variant: small-caps
-
-    
-// @import '../styles/_divSkills'
-// @import '../styles/_fullscreen'
-
-// $daisy: #fffe7a
-// $background-color1: #1B4D3E
-// $background-color2: #02aab0
-
-// $lightCyan: #59ebf0
-// $specialColor: #02aab0
-// $specialColor1: #03767a
 
 //  NEW  NAMES
 $light-color: #e5e5e5
@@ -23,43 +8,14 @@ $dark-color1: #075E61
     
 $dark-color2: #023638
 $dark-color3: #001e1f
-
+// #17171b
+    
 $rowBorder: 1px solid #ff6005
-//$rowBorder: 1px solid #78f8a2
-
-// $font-h1: 2.5rem Arial, sans-serif
-// $font-h2: 2.0rem Arial, sans-serif
-// $font-h3: 1.5rem Arial, sans-serif
-// $font-text: 0.8rem Arial, sans-serif
 
 .star
     font-size: 1rem
     color: #92fa00
-    //color: #f4f900
 
-
-#frame-wrapper
-    width: 600px
-    height: 250px
-    border: 1px solid #fff
-    overflow: hidden
-
-    &:hover
-        cursor: pointer
-
-#scaled-frame
-    border: 0px
-    width: 1000px
-    height: 600px
-
-#scaled-frame
-    transform: scale(.6)
-    -moz-transform: scale(0.6)
-    -moz-transform-origin: 0 0
-    -o-transform: scale(0.6)
-    -o-transform-origin: 0 0
-    -webkit-transform: scale(0.6)
-    -webkit-transform-origin: 0 0
 
 .etbd-and-me
     background-image: linear-gradient(to right, $dark-color2, $dark-color2, $dark-color1, $dark-color2, $dark-color2)
@@ -320,3 +276,179 @@ $rowBorder: 1px solid #ff6005
     padding: .2rem
     width: 100%
     max-width: 500px
+
+
+
+//    -----   research-trajectory.sass
+
+
+
+.carved-text
+    webkit-background-clip: text
+    moz-background-clip: text
+    background-clip: text
+    background-color: #a7bdc3
+    color: transparent
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px
+    margin: auto
+    //margin-top: 20vh
+    display: flex
+    flex-direction: column
+    //border: 1px solid green 
+
+    .span-title
+        font-size: 150px
+        line-height: 150px
+        text-align: center
+        letter-spacing: 30px
+        margin: 50px auto 0px auto
+
+
+    .span-year
+        font-size: 22px
+        text-align: center
+        margin: 20px auto 100px auto
+        letter-spacing: 2px
+        font-weight: 300
+
+
+    
+    .span-intro
+        font-size: 22px
+        //width: 400px
+        text-align: center
+        margin: auto
+        font-family: Roboto
+        margin-bottom: 30px
+
+//---------------------------------------
+
+.txt-phenomena
+    // text-shadow: rgba(255,255,255,0.5) 0px 3px 3px
+    //stroke: #b48f8f6c
+    font-size: 16px
+    font-weight: 300
+    
+
+
+//----------------------------------------
+
+.span_shaddow
+    // text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0,0,0,0.15), 0px 24px 2px rgba(0,0,0,0.1), 0px 34px 30px rgba(0,0,0,0.1)
+    //text-shadow: 0px 3px 0px #c4c2be
+    font-size: 18px
+
+
+.span_shaddow1
+    text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0,0,0,0.15), 0px 24px 2px rgba(0,0,0,0.1), 0px 34px 30px rgba(0,0,0,0.1)
+    font-size: 18px
+
+.txt-inset-dark
+    
+    background:#ccc
+    padding: 10px
+    margin: auto
+    display: flex
+    flex-direction: column
+    font-family: Montserrat
+
+    p
+        //font-size: 22px
+        // font: bold 200px arial, sans-serif
+        background-color: #565656
+        color: transparent
+        text-shadow: 2px 2px 3px rgba(255,255,255,0.5)
+        -webkit-background-clip: text
+        -moz-background-clip: text
+        background-clip: text
+
+        span
+            // font: bold 200px arial, sans-serif
+            font: bold
+            color: lime
+
+
+.gee
+    background-color: #ff0000
+    border: 1px solid red
+    // #dddddd52
+    
+
+#researchTrajectory, #researchBegins
+    width: 100%
+    min-hight: 100vh
+    vertical-align: middle
+    display: flex
+    flex-direction: column
+    padding: 100px 0px
+    background-color: transparent
+
+    .div-row
+        margin: 50px auto 10px auto
+        padding: 10px
+        background-color: transparent
+
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        //border: 1px solid tomato
+
+        .col1
+            display: flex
+            flex-direction: column
+            //border: 1px solid #0ca004
+            margin-right: 15px 
+
+        .col2
+            display: flex
+            flex-direction: column
+            //border: 1px solid #df8908
+
+        .paragraph-story
+            width: 420px
+            font-family: Montserrat
+            font-size: 14px
+            //color: #777
+            margin: 10px auto
+
+            span
+                color: #ff0000
+                color: #ff000080
+                color: tomato  // "tomato"
+                color: tomato  // "tomato .5"
+
+            // &:nth-child(2)
+            //     margin: 20px auto
+
+            // box-shaddow: 2px 2px 2px #ddd
+
+
+
+#divTriangle
+    margin: 10px auto 5px auto
+    //width: 100px
+    //height: 100px
+    //border: 2px solid grey
+
+    //background-color: #ff00002c
+    //boxShadow: "inset 2px 2px 2px #fff"
+    //clip-path: polygon( 50% 0,  100% 100%, 100% 100% )
+    // -webkit-clip-path: polygon(50% 20%, 100% 100%, 100% 100%)
+    // -moz-clip-path: polygon(50% 20%, 100% 100%, 100% 100%)
+
+    // border-left: 50px solid transparent
+    // border-right: 50px solid transparent
+    // border-top: 80px solid #ff000069
+
+
+    // border-top: 50px solid transparent
+    // border-bottom: 50px solid transparent
+    // border-left: 80px solid #ff000069
+
+    border-left: 30px solid transparent
+    border-right: 30px solid transparent
+    //border-top: 70px solid #5a4d4d28
+    border-top: 50px solid #5a4d4d18
+
+
+

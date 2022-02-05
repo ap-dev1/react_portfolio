@@ -1,22 +1,115 @@
-//import profile_444 from './assets/profile_444.jpg'
 import profile_22 from '../assets/profile_22.png'
 
-
 const data = {
-    headerTagline: ["Hi, I'm Andrei Popa", "I do research and development."],
-
+    aboutImage: profile_22,
+    ShowAboutImage: true,
     contactEmail: 'andrei.popa.dev@gmail.com',
 
-    aboutText: "Behavioral scientist and web developer, with strong computational skills, extensive research experience, and a passion for making things. I'm especially excited about products and services that enhance human experience and performance in sustainable ways.",
+    headerTagline: [
+        'Hi, I\'m Dr. Andrei Popa.',
+        'I do research and development.',
+        //'I love puzzles, making things, stuff like that.',
+    ],
 
-    aboutDescription: "Behavioral scientist and web developer, passionate about creating useful products and learning new technologies.",
+    aboutText: [
+        "Behavioral scientist and self taught web developer, I received my BA in psychology from Al. I. Cuza University (Iasi, Romania) and my MA and PHD from Emory University (Atlanta, GA).",
+
+
+        "In grad school I focused on computational representations of learning, a line of research I continue to explore and expand.",
+
+        "I am interested in many interconnected topics and their applications, like interfaces and interactions, computational representations of information and action, of learning and remembering, the dynamics of complex systems, the list is long."
+
+    ],
+
+    researchText: [
+        "Experimental chambers experimentally using skinner-boxes - experimental chambers that allow a very high degree of experimental control",
+
+    ],
+
+
+
+    //     // "For historical reasons these forks in the road are referred to as choices.",
+
+    //     // "I began researching this topic computational theories of learning in 2007, when I joined Dr.McDowell's lab of computational behavior analysis.",
+
+    //     // "For the first three years I worked on the validation of a computational theory of learning against known findings from the animal literature.",
+
+    //     // "In 2011 I expanded this research to human behavior: I used computational data to formulate predictions and I built an experimental procedure that allowed me to verify them.",
+
+
+    // ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ideas: [
+        "I'm especially excited about products and services that enhance human experience and performance in sustainable ways."
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     aboutTech: "HTML, CSS, JavaScript (React, Node, ... )<br>MongoDB/Atlas, AWS DynamoDB, AWS RDS/PosgreSQL, SQLite <br>Python (pandas, scipy, nltk, spacy, tkinter, ...); <br>D3, Tableau, Matplotlib <br>VB.Net, MS Office, SigmaPlot, SPSS<br>Git, familiar with Agile and workflow boards;",
 
-    // aboutImage: profile_444,
-    aboutImage: profile_22,
 
-    ShowAboutImage: true,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

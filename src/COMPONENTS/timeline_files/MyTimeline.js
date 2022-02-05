@@ -1,3 +1,6 @@
+
+import "./timeline.sass";
+
 import React from "react";
 import parse from "html-react-parser";
 import PropTypes from "prop-types";
@@ -5,20 +8,14 @@ import PropTypes from "prop-types";
 import infoTimeline from "../../DATA/infoTimeline";
 import ReadMore from "./ReadMore";
 import ImagesCarousel from "./ImagesCarousel";
-
-import "./timeline.sass";
-
 import ResearchStudy from "./ResearchStudy";
-
 import Qual from "./Qual";
-
 import CollapseHook from "./CollapseHook"
-
-import MathematicalModels from "./MathematicalModels"
-
+// import MathematicalModels from "./MathematicalModels"
 import EtbdEmergence from "./EtbdEmergence"
-
 import HammingDistances from "./HammingDistances"
+import LovelyOgive from "./LovelyOgive"
+
 
 const MyTimeline = (props) => {
 
@@ -183,21 +180,21 @@ const MyTimeline = (props) => {
 
 
         // SENSITIVITY demo:
-        if (e.title === 'Mathematical models & computational theories') {
-            return (
-                <MathematicalModels
-                    qualDate={DisplayedDateTemp}
-                    key={"sensitivity_demo_sdgffgabalaxfxfsdg"}
-                    style={{ fontFamily: fontFam }}
+        // if (e.title === 'Mathematical models & computational theories') {
+        //     return (
+        //         <MathematicalModels
+        //             qualDate={DisplayedDateTemp}
+        //             key={"sensitivity_demo_sdgffgabalaxfxfsdg"}
+        //             style={{ fontFamily: fontFam }}
 
-                    //tech={Technologies}
-                    title={parse(e.title)}
-                    description={Description}
-                    links={Links}
-                    references={References}
-                />
-            )
-        };
+        //             //tech={Technologies}
+        //             title={parse(e.title)}
+        //             description={Description}
+        //             links={Links}
+        //             references={References}
+        //         />
+        //     )
+        // };
 
 
 
@@ -219,7 +216,7 @@ const MyTimeline = (props) => {
 
 
 
-        // HAMMING: 
+        HAMMING:
         if (e.custom_item === 'hamming_demo') {
             return (
                 <HammingDistances
@@ -237,22 +234,23 @@ const MyTimeline = (props) => {
 
 
         // QUAL:
-        if (e.nickname === 'Qual') {
-            return (
-                <Qual
-                    qualDate={DisplayedDateTemp}
-                    key={"qual_item_balabalaxfxfsdg"}
-                    style={{ fontFamily: fontFam }}
-                    //tech={Technologies}
-                    title={parse(e.title)}
-                    description={Description}
-                    links={Links}
-                    references={References}
-                />
-            )
-        };
+        // if (e.nickname === 'Qual') {
+        //     return (
+        //         <Qual
+        //             qualDate={DisplayedDateTemp}
+        //             key={"qual_item_balabalaxfxfsdg"}
+        //             style={{ fontFamily: fontFam }}
+        //             //tech={Technologies}
+        //             title={parse(e.title)}
+        //             description={Description}
+        //             links={Links}
+        //             references={References}
+        //         />
+        //     )
+        // };
 
 
+        let navMarker = e.navMarker ? e.navMarker : e.date
 
 
         // DEFAULT:
@@ -261,7 +259,8 @@ const MyTimeline = (props) => {
                 className="item"
                 content1={parse(DisplayedDateTemp)}
                 key={e.date + e.title}
-                id={e.date}
+                id={navMarker}
+
                 style={{ fontFamily: fontFam }}
             >
                 <div className="itemContent">

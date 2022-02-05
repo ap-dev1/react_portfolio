@@ -11,6 +11,7 @@ import { setMatchingState } from "./matchingState";
 import { createSVG_Matching } from "./svgMatching";
 
 import ETBD from "../etbd/ETBD"
+import { nanoid } from "nanoid";
 
 
 
@@ -540,40 +541,54 @@ export default class MatchingDemo extends Component {
 
     componentDidMount() {
 
+        let recMargin = { top: 40, right: 40, bottom: 40, left: 40 }
+        let svgWidth = document.getElementById('svgRecord').clientWidth
+        let svgHeight = document.getElementById('svgRecord').clientHeight
 
-        // CUMULATIVE RECORD:
-        let svgRecord = d3.select("#svgRecord");
+
+        var recWidth = svgWidth - recMargin.left - recMargin.right
+        var recHeight = svgHeight - recMargin.top - recMargin.bottom
+
+
+        let svgRecord = d3.select('#svgRecord');
+
+        let gRec = svgRecord.append('g')
+            .attr("transform", `translate(${recMargin.left}, ${recMargin.top})`)
+            .style("font", "12px sans-serif")
+
 
         let scaleTime = d3
             .scaleLinear()
             .domain([0, this.state.timeLimit])
-            .range([0, 350]);
-
-        let axisTime = d3.axisBottom(scaleTime);
-
-        axisTime.ticks(3)
-        axisTime.tickValues([5, 10, 15])
-
-        let gTime = svgRecord
-            .append("g")
-            .style("font", "12px sans-serif")
-            .attr("transform", `translate(35, ${260})`);
-
-        gTime.call(axisTime);
-
+            .range([0, recWidth]);
 
         let scaleResponses = d3
             .scaleLinear()
             .domain([this.state.recordHeight, 0])
-            .range([0, 250]);
+            .range([recHeight, 0]);
 
-        let axisResponses = d3.axisLeft(scaleResponses);
 
-        let gResponses = svgRecord
-            .append("g")
-            .attr("transform", `translate(35, 10)`);
+        let axisTime = d3.axisBottom(scaleTime)
+        axisTime.ticks(3)
+        axisTime.tickValues([5, 10, 15])
 
-        gResponses.call(axisResponses);
+        let axisResponses = d3.axisLeft(scaleResponses)
+
+        gRec.call(axisTime)
+        gRec.call(axisResponses)
+
+        // let gTime = svgRecord
+        //     .append("g")
+        //     .style("font", "12px sans-serif")
+        // .attr("transform", `translate(${recMargin.left}, ${recMargin.top})`)
+
+
+
+        // let gResponses = svgRecord
+        //     .append("g")
+        //     .attr("transform", `translate(35, 10)`);
+
+        //================================
 
         svgRecord.append("text").text("responses")
             .attr("x", 50).attr("y", 20).attr("font-size", "1rem").attr("fill", 'rgb(200, 200, 200').attr("font-weight", 300)
@@ -582,24 +597,60 @@ export default class MatchingDemo extends Component {
             .attr("x", 350).attr("y", 250).attr("font-size", "1rem").attr("fill", 'rgb(200, 200, 200').attr("font-weight", 300)
 
 
+        // svgRecord.append("text").text("responses")
+        //     .attr("x", 50).attr("y", 20).attr("font-size", "1rem").attr("fill", 'rgb(200, 200, 200').attr("font-weight", 300)
+
+        // svgRecord.append("text").text("time (s)")
+        //     .attr("x", 350).attr("y", 250).attr("font-size", "1rem").attr("fill", 'rgb(200, 200, 200').attr("font-weight", 300)
+
+
 
         let svgMatching = createSVG_Matching()
 
-        svgMatching
-            .append("rect").attr("class", "lever").attr("id", "lever1")
-            .attr("x", this.state.lever1[0])
-            .attr("y", this.state.lever1[1])
-            .attr("width", this.state.lever1[2])
-            .attr("height", this.state.lever1[3])
-            .attr("fill", "rgb(121, 47, 0)");
+        // svgMatching
+        //     .append("rect").attr("class", "lever").attr("id", 'lever1')
+        //     .attr("x", this.state.lever1[0])
+        //     .attr("y", this.state.lever1[1])
+        //     .attr("width", this.state.lever1[2])
+        //     .attr("height", this.state.lever1[3])
+        //     .attr("fill", "rgb(121, 47, 0)")
+
+        // svgMatching
+        //     .append("rect").attr("class", "lever").attr("id", 'lever2')
+        //     .attr("x", this.state.lever2[0])
+        //     .attr("y", this.state.lever2[1])
+        //     .attr("width", this.state.lever2[2])
+        //     .attr("height", this.state.lever2[3])
+        //     .attr("fill", "rgb(6, 45, 6)")
+
+
+        // var circle = svg.append('polygon')
+        //     .attr('points', "50,50 200,50 250,100 250,150 20,50")
+        //     .attr('stroke', '#f00')
+        //     .attr('fill', 'none');
+
 
         svgMatching
-            .append("rect").attr("class", "lever").attr("id", "lever2")
-            .attr("x", this.state.lever2[0])
-            .attr("y", this.state.lever2[1])
-            .attr("width", this.state.lever2[2])
-            .attr("height", this.state.lever2[3])
-            .attr("fill", "rgb(6, 45, 6)");
+            .append('polygon')
+            .attr("class", "lever")
+            .attr("id", 'lever1')
+            .attr('points', this.state.polygon1)
+            .attr("stroke", "rgb(121, 47, 0)")
+            .attr("fill", "rgb(121, 47, 0)")
+            .attr("fill", "none")
+            .attr("stroke-width", 5)
+
+
+        svgMatching
+            .append('polygon')
+            .attr("class", "lever")
+            .attr("id", 'lever2')
+            .attr('points', this.state.polygon2)
+            .attr("stroke", "rgb(6, 45, 6)")
+            .attr("fill", "rgb(6, 45, 6)")
+            .attr("fill", "none")
+            .attr("stroke-width", 5)
+
 
     }
 
@@ -645,9 +696,10 @@ export default class MatchingDemo extends Component {
 
                     <div className="top">
 
+
                         <div className="matching-results" id="charts">
                             <svg
-                                id="svgRecord"
+                                id='svgRecord'
                                 style={{
                                     width: "100%",
                                     height: "100%",
@@ -656,22 +708,62 @@ export default class MatchingDemo extends Component {
                                     fontSize: "22px",
                                 }}
                             >
-
                             </svg>
+
                         </div>
 
 
-                        <div className="top-parameters">
 
-                            <button
+
+                    </div>
+
+
+
+
+                    <div className="bottom">
+                        <div id='demo'></div>
+                    </div>
+
+
+                    <div
+                        className="top-parameters"
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            width: "100%",
+                            margin: "auto",
+                            border: "0px solid #ff0000",
+                            backgroundColor: 'transparent',
+                            justifyContent: 'space-between',
+                            justifyItems: 'space-between',
+
+
+                        }}
+                    >
+
+
+
+
+                        {/* <button
                                 id="btnCOD"
-                                style={{ backgroundColor: this.state.codColor }}
-                            >COD</button>
+                                style={{
+                                    backgroundColor: this.state.codColor
+                                }}
+                            >
+                                COD
+                            </button>
+
 
                             <div className="divSlider">
 
-                                <p className="inEffect" id="p0sec" title="No changeover delay">0s
+                                <p
+                                    className="inEffect"
+                                    id="p0sec"
+                                    title="No changeover delay"
+                                >
+                                    0s
                                 </p>
+
 
                                 <input
                                     type="range"
@@ -683,31 +775,40 @@ export default class MatchingDemo extends Component {
                                     value={this.state.cod1_duration}
                                     list="codSliderList"
                                     onInput={this.sliderChange}
-                                >{this.value}</input>
+                                >
+                                    {this.value}
+                                </input>
 
-                                <p className="notInEffect" id="p2sec">2s</p>
+                                <p
+                                    className="notInEffect"
+                                    id="p2sec"
+                                >
+                                    2s
+                                </p>
 
-                            </div>
-
-                            <div className="divStartReset">
-                                <button id="btnStartMatching" onClick={this.beginSession}>START</button>
-                                <button id="btnResetMatching" onClick={this.resetDemo}>CLR</button>
-                            </div>
+                            </div> */}
 
 
-                            <ETBD />
 
+                        <div className='divStartReset'>
+                            <button
+                                id='btnStartMatching'
+                                onClick={this.beginSession}
+                                key={nanoid()}
+                            >
+                                START
+                                </button>
+                            <button
+                                id='btnResetMatching'
+                                onClick={this.resetDemo}
+                                key={nanoid()}
+                            >
+                                CLR
+                                </button>
                         </div>
 
-                    </div>
 
-
-
-
-                    <div className="bottom">
-
-                        <div id="demo"></div>
-
+                        <ETBD />
 
                     </div>
                 </div>

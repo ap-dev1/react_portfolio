@@ -4,6 +4,7 @@ import React from "react"
 import { nanoid } from "nanoid"
 import { Fade } from "react-reveal"
 import { Button } from "react-bootstrap"
+import * as d3 from "d3"
 
 export default class Selection extends React.Component {
 
@@ -22,6 +23,19 @@ export default class Selection extends React.Component {
 
 
     render() {
+
+        // fitness gradient goes black to orange:
+        // let color1 = '#000'
+        // let color2 = '#ff6200'
+
+        let color1 = 'yellow'
+        let color2 = '#274235'
+
+
+        var fitness_gradient = d3.scaleLinear()
+            .domain([0, 0.1])
+            .range([color2, color1])
+
 
         let ParentPopulation
 
@@ -46,6 +60,12 @@ export default class Selection extends React.Component {
                         id={cellId}
                         onClick={this.props.doSomethingSelect}
                         className="btn-selection"
+
+                        style={{
+                            background: this.props.reinforced === true ? fitness_gradient(parseFloat(item.fitness)) : "transparent",
+                            border: this.props.reinforced === true ? `1px solid ${fitness_gradient(parseFloat(item.fitness))}` : `0px solid ${fitness_gradient(parseFloat(item.fitness))}`
+                        }}
+
                     >
                         {parent.phenotype}
 

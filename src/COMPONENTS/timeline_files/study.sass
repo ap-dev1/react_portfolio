@@ -12,7 +12,14 @@
     margin: auto
 
 .rowImages .imgWrapper .img
-    width: 100%
+    -webkit-background-size: contain
+    -moz-background-size: contain
+    -o-background-size: contain
+    background-size: contain
+
+    //width: 100%
+    
+    width: 150px
     transition: all .3s ease-in
     -webkit-transition: all .3s ease-in
     -moz-transition: all .3s ease-in
@@ -31,15 +38,27 @@
 
 
 .item_study
-    max-width: 90%
+    // max-width: 90%
     margin: 1rem auto
+    max-width: 800px
+    
+    
 
 .outer_column
     display: flex
     flex-direction: column
+    padding: 10px 15px
     width: 100%
-    background-color: #032225bd
-    box-shadow: -20px 10px 2px #111
+
+
+    background: -webkit-linear-gradient(360deg, #1C1C1C 10%, #494949 360%)
+    background: -moz-linear-gradient(360deg, #1C1C1C 10%, #494949 360%)
+    background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%)
+
+
+    border-radius: 10px
+    box-shadow: 3px 3px 5px #14221b,  -2px -2px 4px #274235, 
+
 
 .outer_column .row
     display: flex
@@ -50,17 +69,20 @@
 .study_info
     display: flex
     flex-direction: column
-    width: 48%
-    margin: 1%
-    border: 1px solid  #dbe4a936
+    //width: 48%
+    width: 350px
+    margin: 5px auto 5px auto
 
 .study_info .titles
-    background-color: #cc6200
+    //background-color: #cc6200
+    //color: #45a085
 
 .study_info .titles .title
     max-width: 100%
     padding: 10px 0
-    color: #fff
+    //color: #45a085
+    color: #aaa
+    //color: #18dade
     font-size: 22px
     text-align: center
     margin: 0
@@ -68,32 +90,54 @@
 .study_info .titles .subtitle
     max-width: 100%
     padding: 0px 0 5px 0
-    color: #fff
+    // color: #45a085
+    color: #18dade
+
     font-size: 16px
     text-align: center
     margin: 0
-    font-weight: 300
+    //font-weight: 300
 
 .study_info .summary
+    width: 450px
+    //border: 1px solid  #dbe4a936
+
     max-width: 100%
-    margin: 1rem
-    color: #fff
-    font-size: .9rem
-    
+    //margin: 1rem
+    color: #aaa
+    font-size: 12px
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    line-height: 20px
+
+
 .study_info .tech
-    margin: 1rem 
+    margin: 2px auto 
 
 .study_info .tech label
-    background-color: #cc6200
-    color: #fff
-    border-radius: 0 
-    padding: .4rem .8rem
-    margin: .3rem
+    // background-color: #cc6200
+    // background-color: #FC766AFF
+    //background-color: #fc766ace
+    //background-color: #a7bdc3
+    color: #eee
+    //padding: 2px
+    margin: 2px auto
+    width: 80px
+    height: 24px
+    font-size: 12px
+    color: #fc766a
+    color: #ff842a
+    color: #ffb651
+
+    background-color: transparent
+    //background-color: #1c1719
+    //background-color: #fcbf6a
 
 .study_info .irb
     display: flex
     flex-direction: row
     max-width: 100%
+    //border-radius: 10px
 
 .links_col
     display: flex
@@ -105,23 +149,35 @@
     padding: .2rem .8rem
 
     > button
-        color: #fff
+        //background: transparent url("./icon_link_grey_30.png") no-repeat left
+
+        color: #ccc
         padding: .1rem .2rem
         margin: 0.1rem .5rem 0.1rem 0rem
         font-family: Verdana, Geneva, Tahoma, sans-serif
-        font-size: .8rem
+        font-size: 12px
         cursor: pointer
-        background-color: #a9e4d563
+        background-color: #a9e4d517
 
-        border: 1px solid #0d3a52a2
-        border: 1px solid #eee
+        //border: 1px solid #0d3a52a2
+        border: 0px solid #eee
         padding-left: .5rem
         padding-right: .5rem
+        width: 100px
+        height: 26px
+        border-radius: 2px
 
+        font-family: Roboto
+        //background-color: transparent
+        color: #4ea986ba
+        border: 0px solid #4ea9865d
+        
         &:hover
             cursor: pointer
             background-color: #0c3048
-
+            background-color: #07180b
+            color: #4ea986
+            border: 1px solid #4ea986b7
             transition: all 0.2s ease-in-out
             -webkit-transition: all 0.2s ease-out
             -moz-transition: all 0.2s ease-out
@@ -130,38 +186,64 @@
 
 
 .study_info .irb .links_col label
-    font-size: .9rem
-    margin-bottom: .5rem 
-    margin-left: 1rem
+    font-size: 12px
+    margin: 2px auto 
     border: 1px solid #fc8c30f3
 
 
 .study_info .irb table
-    border-radius: 20px
-    max-height: 90%
-    width: 90%
-    margin: 2.5%
+    //background-color: #263B45
+    //background-image: linear-gradient(to right, #131313, #1C1C1C, #494949  )
+    //background-image: linear-gradient(to right, #131313, #1C1C1C, #2a2a2a  )
 
-.study_info .irb table tr
+    border-radius: 10px
+    //max-height: 90%
     width: 100%
-    margin: .2rem auto
-    padding: .2rem
+    //border: 1px solid  #dbe4a936
+    // box-shadow: inset 3px 3px 3px #14221b, inset -3px -3px 3px #43725c
+    //box-shadow:  3px 3px 3px #14221b,  -1px -1px 3px #43725c
 
-.study_info .irb table tr td
-    margin: auto
-    padding: .2rem
-    font-size: .9rem
-    color: #ffffffcb
-    border: 1px solid #30fcf944
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+
+.study_info .irb table tbody
+    width: 100%
+
+.study_info .irb table tbody tr
+    width: 100%
+    // line-height: 16px
+    // margin: .2rem auto
+    // padding: .2rem
+
+
+.study_info .irb table tbody tr th
+    padding: 2px 10px 2px 0px
+    text-align: right
+    //font-size: .9rem
+    font-size: 11px
+    color: #aaa
+    //border: 1px solid #30fcf944
+    width: 20%
+    font-weight: 600
+    //background-color: #131313
+
+
+.study_info .irb table tbody tr td
+    //margin: auto
+    padding: 2px 0px 2px 10px
+    //font-size: .9rem
+    font-size: 11px
+    color: #aaa
+    //border: 1px solid #30fcf944
+    width: 75%
 
     
-.study_info .irb table tr td:nth-child(1)
-    width: fit-content
-    max-width: 25%
+// .study_info .irb table tr td:nth-child(1)
+//     width: fit-content
+//     max-width: 25%
+//     font-size: .8rem
 
-    font-size: .8rem
-    text
 
-.study_info .irb table tr td:nth-child(2)
-    width: fit-content
-    max-width: 65%
+// .study_info .irb table tr td:nth-child(2)
+//     width: fit-content
+//     max-width: 65%

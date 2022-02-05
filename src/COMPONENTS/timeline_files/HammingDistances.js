@@ -6,6 +6,7 @@ import CollapseHook from "./CollapseHook"
 
 import HammingDemo from "../etbd_hamming/HammingDemo"
 import { nanoid } from "nanoid"
+import LovelyOgive from "./LovelyOgive"
 
 
 export default class HammingDistances extends Component {
@@ -82,8 +83,9 @@ export default class HammingDistances extends Component {
  */}
 
 
-                        <HammingDemo />
+                        {/* <HammingDemo /> */}
 
+                        <LovelyOgive />
 
 
                         {/* <p className="p-left" style={{ color: 'rgb(255, 128, 49)', }}>Then, I explored human behavior under different COD requirements and I compared it with the ETBD. <br /><br /></p>

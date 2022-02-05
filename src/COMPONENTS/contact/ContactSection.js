@@ -2,6 +2,8 @@ import React, { Component } from "react";
 //import { Button } from "react-bootstrap";
 import parse from "html-react-parser";
 import infoContact from "../../DATA/infoContact";
+import data from '../../DATA/myData'
+
 import "./contact.sass";
 
 
@@ -14,11 +16,47 @@ class Contact extends Component {
 
     render() {
         return (
-            <div id="Contact" className="fullscreen darker"
-                style={{ backgroundColor: "#1D2731", marginBottom: "0rem" }}>
+            <div
+                id="Contact"
+                className="fullscreen darker"
+                style={{
+                    backgroundColor: "#1D2731",
+                    marginBottom: "0rem"
+                }}
+            >
 
 
-                <h1 className="section_title" style={{ marginBottom: "2rem" }}>Contact</h1>
+                <h1
+                    className="section_title"
+                    style={{
+                        marginBottom: "2rem"
+                    }}
+                >
+                    Contact
+                </h1>
+
+
+
+                {/* <div
+                    id='divProfilePic'
+                    className="AboutColumn"
+                >
+
+                    {
+                        data.ShowAboutImage ?
+                            <img
+                                src={data.aboutImage}
+                                alt='Dr. Andrei Popa'
+                                height='400px'
+                                style={{
+                                    borderRadius: ".5rem"
+                                }}
+                            >
+
+                            </img> : null
+                    }
+
+                </div> */}
 
 
 
@@ -41,7 +79,12 @@ class Contact extends Component {
                     >
                         andrei.popa.dev@gmail.com
                     </button>
+
+
                 </div>
+
+
+
 
                 <table style={{ width: "800px", margin: "1rem auto 1rem auto" }}>
                     <tbody>

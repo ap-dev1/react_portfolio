@@ -15,8 +15,8 @@ var infoNav = [
 
 
     {
-        sectionID: "teachingSection",
-        btnText: "Teaching experience",
+        sectionID: "div_1400",
+        btnText: "Teaching",
         info: "teaching and mentoring",
         btnClass: "navRegular btnNavigation teaching"
     },
@@ -24,14 +24,15 @@ var infoNav = [
     //  ==========    BACKGROUND     ==========
 
     {
-        sectionID: "researchTrajectory",
-        btnText: "Research trajectory",
+        //sectionID: "researchTrajectory",
+        sectionID: "researchBegins",
+        btnText: "Research",
         info: "best experienced on 12-inch screens and larger, landscape mode",
         btnClass: "navRegular btnNavigation"
     },
 
     {
-        sectionID: "ch01",
+        sectionID: "ChoiceDemo",
         btnText: "Modeling behavior",
         info: "Pre-candidacy work, 2007-2010: computational modelling, ETBD, Hamming Distances, Changeover Delay, Masters Thesis",
         btnClass: "navRegular btnNavigation background navDemo"
@@ -51,7 +52,7 @@ var infoNav = [
     // },
 
     {
-        sectionID: "08/17/2011",
+        sectionID: "QualPhdDesign",
         btnText: "From bits to ADHD",
         info: "dissertation project (2010-2013): mutation rate, Default Mode Network, DMN, ADHD, Fast Matching, thesis",
         btnClass: "navRegular btnNavigation background"
@@ -92,7 +93,7 @@ var infoNav = [
     {
         sectionID: "Contact",
         btnText: "Contact",
-        info: "yes!",
+        info: "links to resources, contact info",
         btnClass: "navRegular btnNavigation"
     },
 

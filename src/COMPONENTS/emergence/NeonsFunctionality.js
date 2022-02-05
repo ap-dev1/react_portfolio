@@ -233,7 +233,9 @@ export function NeonRecombination(props) {
 export function NeonMutation(props) {
     var [neonClass, setNeonClass] = useState(() => {
         if (props.demoState === "mutation") {
-            return "light_on_pink"
+            //return "light_on_pink"
+            return "light_on_white"
+
         } else {
             return "light_off"
         }
