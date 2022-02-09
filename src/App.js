@@ -53,7 +53,7 @@ class App extends Component {
             // { markerID: "ch2_p1", navButtonID: "btnch2", },
             { markerID: "QualPhdDesign", navButtonID: "btnQualPhdDesign", },
             { markerID: "12/24/2013", navButtonID: "btn12/24/2013", },
-            { markerID: "ch4_p1", navButtonID: "btnch4", },
+            // { markerID: "ch4_p1", navButtonID: "btnch4", },
             { markerID: "div_1400", navButtonID: "btndiv_1400", },
             { markerID: "sectionVitae", navButtonID: "btnsectionVitae", },
 
@@ -144,18 +144,19 @@ class App extends Component {
                 <Chapter01 />
 
                 <MyTimeline
-                    events={infoTimeline.slice(0, 13)}
+                    //events={infoTimeline.slice(0, 13)}
+                    events={infoTimeline}
                     orientation="vertical"
                     startFrom="first"
                 />
 
-                <Chapter04 />
+                {/* <Chapter04 /> */}
 
-                <MyTimeline
+                {/* <MyTimeline
                     events={infoTimeline.slice(13)}
                     orientation="vertical"
                     startFrom="first"
-                />
+                /> */}
 
                 <RecentProjects />
 
