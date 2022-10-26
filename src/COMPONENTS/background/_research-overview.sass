@@ -1,0 +1,80 @@
+@import "../../styles/_colors.sass"
+
+@mixin raised()
+    box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+
+@mixin sunk()
+    box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5), inset 1px 1px 3px 1px rgba(40, 0, 0, .5), inset -1px -1px 2px 1px rgba(40, 150, 150, .10), inset -1px -1px 3px 1px rgba(40, 150, 150, .10)
+
+@mixin flex-300()
+    width: 350px
+    margin: .5rem auto
+    padding: .5rem
+
+@mixin p-generic()
+    margin: auto
+    padding: .5rem
+    font-size: .9rem
+
+@mixin h1-title()
+    margin: auto
+    padding-left: .5rem
+    font-size: 1rem
+    width: 100%
+
+#research-overview
+    min-height: 100vh
+    width: 100%
+    display: flex
+    color: #bbb
+    background-color: $blue-whale
+
+    // border-bottom: 10px solid #02577a
+    // box-sizing: content-box
+    // box-sizing: border-box
+
+    .content
+        margin: auto
+        display: flex
+        flex-direction: column
+
+        > .intro
+            @include flex-300
+
+            > p
+                @include p-generic
+
+        > .question
+            @include flex-300
+
+            > p
+                @include p-generic
+
+        > .intro1
+            // @include raised
+            @include flex-300
+
+            > p
+                @include p-generic
+
+        > .modeling
+            @include flex-300
+            flex-direction: column
+            box-shadow: 0px 0px 10px $h2color40
+
+            > h1
+                @include h1-title
+
+            > p
+                @include p-generic
+
+        > .human
+            @include flex-300
+            flex-direction: column
+            box-shadow: 0px 0px 10px $h2color40-orange
+
+            > h1
+                @include h1-title
+
+            > p
+                @include p-generic

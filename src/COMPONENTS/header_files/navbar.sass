@@ -1,33 +1,30 @@
 
 @import  "./_table_acronyms"
-$specialColor: #02aab0
-$lightCyan: #59ebf0
-
+@import "../../styles/_colors.sass"
+@import "../../styles/_fonts.sass"
 
 #navInfo
     width: 120px
     margin-top: -6rem
     position: absolute
     padding: 1.1rem .5rem
+    // border: 2px solid tomato
 
     &:hover
         cursor: pointer
 
-    
 #nav1
     position: fixed
     top: 7rem
-    right: 1rem
-    min-bottom: 9rem
-    //background-color: grey
+    right: 8px
+    // min-bottom: 9rem
 
     display: flex
     flex-direction: column
     max-width: 175px
-    max-height: 100%
-    height: fit-content
     align-items: top
     padding-top: 0
+    // background-color: tomato
 
     z-index: 2
 
@@ -37,30 +34,92 @@ $lightCyan: #59ebf0
     -ms-transition: all 1s ease-in
     -o-transition: all 1s ease-in
 
-    @media (max-width: 1100px)
-        min-width: 100px
-        width: 120px
-        font-size: 12px
-
-        right: 120px
-        
-
-
     &:last-child
         margin-bottom: 0
-
-    
 
     > button
         border: 1px solid #070C0A
         margin-bottom: .1rem
         min-width: 150px
         width: 175px
-        //font-size: .8rem
+        margin-left: auto
+        margin-right: auto
+
         height: auto
         cursor: pointer
-        // font-family: 'Roboto'
-        // padding: 1.1rem .5rem
+        word-wrap: break-word
+        background-color: #396f5a82
+
+        background-color: #fffffffe
+        // color: #292929
+
+        transition: all .2s ease-in
+        -webkit-transition: all .2s ease-in
+        -moz-transition: all .2s ease-in
+        -ms-transition: all .2s ease-in
+        -o-transition: all .2s ease-in
+
+        // &:nth-child(6)
+        //     margin-top: 15px
+
+        // &:nth-child(9)
+        //     margin-top: 15px
+
+        &:hover
+            opacity: 1
+            color: #f7fa33
+            color: #fac533
+            color: #a7ffb1
+
+            background-color: #396f5a
+
+            transition: all .2s ease-in
+            -webkit-transition: all .2s ease-in
+            -moz-transition: all .2s ease-in
+            -ms-transition: all .2s ease-in
+            -o-transition: all .2s ease-in
+
+.nav-buttons
+
+    // > button
+    //     border: 1px solid #070C0A
+    //     margin-bottom: .1rem
+    //     min-width: 150px
+    //     width: 175px
+    //     margin-left: auto
+    //     margin-right: auto
+
+    //     height: auto
+    //     cursor: pointer
+    //     word-wrap: break-word
+
+    //     transition: all .2s ease-in
+    //     -webkit-transition: all .2s ease-in
+    //     -moz-transition: all .2s ease-in
+    //     -ms-transition: all .2s ease-in
+    //     -o-transition: all .2s ease-in
+
+        // &:nth-child(2)
+        //     margin-top: 1rem
+
+        // &:nth-child(3)
+        //     margin-top: 1rem
+
+        // &:nth-child(6)
+        //     margin-top: 1rem
+
+        // &:nth-child(9)
+        //     margin-top: 15px
+    > button
+        border: 1px solid #070C0A
+        // margin-bottom: .1rem
+        min-width: 150px
+        width: 175px
+        margin-left: auto
+        margin-right: auto
+
+        height: auto
+        cursor: pointer
         word-wrap: break-word
 
         transition: all .2s ease-in
@@ -69,27 +128,10 @@ $lightCyan: #59ebf0
         -ms-transition: all .2s ease-in
         -o-transition: all .2s ease-in
 
-        @media (max-width: 1100px)
-            min-width: 100px
-            width: 120px
-            font-size: 12px
-            margin: auto
-
-        // &:nth-child(2)
-        //     margin-top: 15px
-
-        &:nth-child(4)
-            margin-top: 15px
-            //margin-bottom: 15px
-
-        &:nth-child(9)
-            margin-top: 15px
-            //margin-bottom: 15px
-
         &:hover
             opacity: 1
-            transform: scale(1.1)
             color: #f7fa33
+            color: #fac533
 
             transition: all .2s ease-in
             -webkit-transition: all .2s ease-in
@@ -97,104 +139,59 @@ $lightCyan: #59ebf0
             -ms-transition: all .2s ease-in
             -o-transition: all .2s ease-in
 
-        // &:nth-child(3)
-        //         margin-bottom: 1rem
-
-        // &:nth-child(4)
-        //         margin-bottom: 1rem
-
 .navRegular
     opacity: .7
-    //color: #fff
+    font-size: .8rem
     color: #ededed
+    background-color: rgb(7, 12, 10)
+    background-color: #070c0a
 
-    background-color: #070C0A
-    font-size: .9rem
-    padding: 1.1rem .5rem
+    padding: .5rem
 
-    
-// .navAbout
-//     background-color: #1D2731
+    .green-font
+        color: rgb(129, 205, 161)
+
+.teaching
+    font-family: $Atma
+
+.navTimelineItem
+    opacity: .7
+    font-size: .7rem
+    color: rgb(129, 205, 161)
+    background-color: rgba(7, 12, 10, .75)
+    padding: .2rem .1rem
+    text-align: left
+    padding-left: 1rem
+    // font-style: italic
+    margin-top: 0
+    margin-bottom: 0
 
 .navDemo
     opacity: .7
     background: transparent url("./demo_white_mouse_wider_icon.png") no-repeat right
-    //background-color: #4a856d
     background-color: #070C0A
-
-    //font-weight: 500
-    //text-align: left
     color: #ededed
-    //font-family: 'Iceland', cursive
-    //font-size: 1.1rem
     padding: 1.1rem 2rem 1.1rem .5rem
-
-    // &:span
-    //     text-align: left
-
-    //     &:last-child
-    //         text-align: center
-
-
-// .background
-//     background-color: #233D46
-//     background-color: #fcce99
-//     background-color: #1D2731
-
-    //font-family: 'Iceland', cursive
-    //font-size: 1.1rem
-
-// .teaching
-//     background-color: #463023
-    //font-family: 'Iceland', cursive
-    //font-size: 1.1rem
 
 .currentView
     opacity: 1
-    //transform: scale(1.1)
     color: $lightCyan
     color: #f7fa33
-
-    //font-size: 1rem
     border: 1px solid #f7fa33
     z-index: 0
-    //border: none
-
-
-
 
 .inactive
     opacity: .7
-    //transform: scale(1)
     color: #ededed
     border: 1px solid #070C0A
     z-index: 1
-    //border: transparent
 
+    &:hover
+        opacity: 1
+        color: #fac533
 
-
-// // YELLOW INDICATOR
-
-// .indicator
-//     position: absolute
-//     z-index: 1
-//     width: 100%
-//     height: 10px
-//     border: none
-//     background-color: #fff700
-    //opacity: 1
-
-
-// .indicator
-//     position: absolute
-//     z-index: 10
-//     width: 0
-//     height: 0
-//     margin-left: 4px
-//     border-top: 10px solid transparent
-//     border-bottom: 10px solid transparent
-//     border-left: 15px solid #fff700
-//     border-left: 15px solid #070c0a
-//     border-left: 15px solid #82e2ff
-
-
+        transition: all .2s ease-in
+        -webkit-transition: all .2s ease-in
+        -moz-transition: all .2s ease-in
+        -ms-transition: all .2s ease-in
+        -o-transition: all .2s ease-in

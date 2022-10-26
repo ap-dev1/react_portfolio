@@ -1,0 +1,60 @@
+
+@import "../../styles/_colors.sass"
+@import "../../styles/_fonts.sass"
+
+.div-live-matching
+    margin: .5rem auto
+    display: flex
+    flex-direction: column
+
+    // border-style: outset
+    // border-color: $live-matching-bg
+    // border-style: solid
+    // border-width: 3px 6px 12px 6px
+
+    padding: .5rem
+    background-color: $live-matching-bg-40
+    text-align: center
+
+    border-radius: 10px
+    // border: 2px solid $live-matching-bg
+
+    // box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .5), 1px 1px 3px 1px rgba(40, 0, 0, .5), -1px -1px 2px 1px rgba(40, 150, 150, .10), -1px -1px 3px 1px rgba(40, 150, 150, .10)
+    box-shadow: 0 0 10px $h2color40-orange
+
+    > .classes
+        margin: auto
+
+        > .btn-class1, .btn-class2
+            margin: .5rem 1rem 1rem 1rem
+            padding: 1rem 2rem
+            border: 0px solid #aaaaaa20
+            color: #aaa
+            font-size: .8rem
+            background-color: #0f172540
+            cursor: pointer
+
+            &:hover
+                border-color: #aaaaaa40
+
+            &:active
+                transform: scale(0.98)
+                transform: translate(2px, 2px)
+
+            &:focus
+                outline: none
+
+            // &:disabled
+            //     opacity: .5
+
+.p-directions
+    font-size: .75rem
+    margin: 0 auto .5rem auto
+    font-weight: 100
+    width: 200px
+    color: #f3a436
+    text-align: center
+
+.lever-gradient
+    background-image: radial-gradient(#0f1725 0%, #0f1725 25%, #0f172540 50%)
+    background-image: linear-gradient(to right, #0f172520 0%,#0f1725 25%,#0f1725 50%, #0f1725 75%, #0f172520 100%)

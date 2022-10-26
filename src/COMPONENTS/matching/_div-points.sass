@@ -1,0 +1,28 @@
+.div-points
+    margin: auto
+    // border: 1px solid teal
+    font-size: .6rem
+    font-weight: 600
+    padding: .5rem
+    color: #555
+
+    > .points
+        // border: 1px solid teal
+        width: 60px
+        height: 30px
+        padding: .5rem
+        font-family: monospace
+        letter-spacing: 1px
+
+    > .added
+        animation-name: points-added
+        animation-duration: .5s
+
+@keyframes points-added
+    0%
+        background-color: #ffff00
+        // margin-top: 20px
+    100%
+        background-color: transparent
+
+        // margin-top: 10px

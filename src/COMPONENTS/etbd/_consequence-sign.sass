@@ -1,0 +1,169 @@
+@import "../../styles/_colors.sass"
+
+.sign-rnf
+    width: 200px
+    height: 30px
+    margin: auto
+    font-size: .75em
+    border-width: 0
+    color: rgba(40, 150, 150, .1)
+    background-color: transparent
+
+    background-color: rgba(30, 30, 30, 1)
+    transition: all .5s ease
+
+    // &::before
+    //     content: 'Consequence'
+    //     position: absolute
+    //     font-size: .75em
+    //     margin-left: -140px
+    //     margin-top: 10px
+    //     // text-align: center
+    //     color: rgba(40, 150, 150, 1)
+    //     font-family: arial
+
+    &:hover
+        color: rgba(40, 150, 150, 1)
+        // color: rgba(255, 255, 0, 0.75)
+        // background-color: rgba(30, 30, 30, 1)
+
+            // text-shadow: 0 0 2px #0f1725
+        text-shadow: 0 0 2px rgb(40, 100, 150)
+        background-color: #0f1725
+
+.zzz-time
+    color: rgba(40, 150, 150, .5)
+    font-size: .75em
+    transition: all .5s ease
+
+.rnf-time
+    color: rgba(40, 150, 150, 1)
+    color: rgba(0, 0, 0, 1)
+
+    // background-color: #0f1725
+    // text-shadow: 1px 1px 2px rgb(0, 0, 0)
+
+.rnf-time[data-rnf="true"]
+    text-shadow: 1px 1px 2px #ffff00
+    // color: rgba(40, 150, 150, 1)
+
+.darwin-time
+    color: $blue-charcoal
+
+// -------------------------------------   two buttons
+.contingencies
+    width: 200px
+    margin: auto
+    margin-bottom: .5rem
+    height: 35px
+    // background-color: transparent
+
+    // box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+    display: flex
+    // box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5), inset 1px 1px 3px 1px rgba(40, 0, 0, .5), inset -1px -1px 2px 1px rgba(40, 150, 150, .10), inset -1px -1px 3px 1px rgba(40, 150, 150, .10)
+    transition: all .5s ease
+
+    &:hover
+        // background-color: #0f1725
+        color: rgba(40, 150, 150, 1)
+
+    &::before
+        content: 'Consequence'
+        position: absolute
+        font-size: .75em
+        margin-left: -140px
+        margin-top: 10px
+        // text-align: center
+        color: rgba(40, 150, 150, 1)
+        font-family: arial
+
+    > .reinforcer[data-rnf="true"]
+        background-color: #0f1725
+
+        color: rgba(40, 150, 150, 1)
+        // color: #fff700
+        text-shadow: 0 0 2px #ffff00
+
+    > .reinforcer
+        width: 100px
+        height: 35px
+        margin: auto
+        font-size: .75em
+        border-width: 0
+        color: rgba(40, 150, 150, .4)
+        background-color: transparent
+        transition: all .5s ease
+
+        &:active
+            color: rgba(40, 150, 150, 1)
+
+        &:hover
+            color: rgba(40, 150, 150, 1)
+            // color: rgba(250, 250, 250, 1)
+
+            text-shadow: 0 0 2px #002fff
+            // background-color: #0f172599
+            text-shadow: 0 0 2px #ffff00
+
+    > .nothing
+        width: 100px
+        height: 35px
+        margin: auto
+        font-size: .75em
+        border-width: 0
+        color: rgba(40, 150, 150, .4)
+        background-color: transparent
+        transition: all .5s ease
+
+    > .nothing[data-rnf="false"]
+        background-color: #0f1725
+        color: rgba(40, 150, 150, 1)
+        text-shadow: 1px 1px 2px rgb(0, 0, 0)
+
+        &:hover
+            color: rgba(40, 150, 150, 1)
+            // text-shadow: 0 0 2px #0f1725
+            // text-shadow: 0 0 2px rgb(40, 100, 150)
+            // background-color: #0f1725
+            // text-shadow: 0 0 2px #ffff00
+            // text-shadow: 0 0 2px rgb(40, 100, 150)
+            // text-shadow: 0 0 2px rgb(40, 150, 150)
+            text-shadow: 1px 1px 2px rgb(0, 0, 0)
+
+// .btn-sign-no-rnf[data-rnf="false"]
+//     color: rgba(40, 150, 150, .999)
+//     color: #fff700
+
+    // > .punisher
+    //     width: 100px
+    //     height: 35px
+    //     margin: auto
+    //     margin-right: 0
+    //     font-size: .75em
+    //     border-width: 0
+    //     color: rgba(40, 150, 150, .5)
+    //     background-color: transparent
+    //     transition: all .5s ease
+
+    //     &:hover
+    //         color: rgba(40, 150, 150, 1)
+
+// .btn-sign-rnf[data-rnf="true"]
+//     color: rgba(40, 150, 150, .999)
+//     color: #fff700
+
+// .btn-sign-no-rnf[data-rnf="false"]
+//     color: rgba(40, 150, 150, .999)
+    // color: #fff700
+
+// .btn-sign-consequence[data-rnf="false"]
+//     color: #8d9d9d
+
+// button[data-type="download"] { }
+//     .card[data-pad="extra"] { }
+
+// .darwin
+//     box-shadow: inset 1px 1px 10px 1px rgb(40, 150, 150)
+
+// .sunk
+//     box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5), inset 1px 1px 3px 1px rgba(40, 0, 0, .5), inset -1px -1px 2px 1px rgba(40, 150, 150, .10), inset -1px -1px 3px 1px rgba(40, 150, 150, .10)

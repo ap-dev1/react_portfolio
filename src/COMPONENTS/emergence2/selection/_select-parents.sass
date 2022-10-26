@@ -1,0 +1,34 @@
+@import "../../../styles/_colors.sass"
+
+#select-parents
+    width: fit-content
+    margin: 5px auto
+    display: flex
+    flex-direction: row
+    padding: 0px
+    justify-content: center
+    justify-items: stretch
+    justify-content: space-evenly
+
+.btn-maybe-parent
+    width: 40px
+    height: 30px
+    margin: auto 0px
+
+    color: $blue-light
+    color: #bbb
+    border: 1px solid $blue-opaque
+
+    cursor: pointer
+    font-size: 14px
+    padding-top: 4px
+    text-align: center
+    background: transparent
+    transition: .2s
+
+    &:hover
+        background-color: #0f1b37
+        transition: .2s
+
+.btn-maybe-parent[title="reinforced"]
+    background-color: #dae950

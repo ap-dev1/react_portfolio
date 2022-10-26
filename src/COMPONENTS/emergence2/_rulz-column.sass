@@ -1,0 +1,42 @@
+@import "../../styles/_colors.sass"
+@import "./_buttons.sass"
+
+@mixin rule-panel
+    width: 300px
+    display: flex
+    flex-direction: column
+    margin: auto
+    padding: .5rem
+    box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+
+.rulz-column
+    margin: auto auto auto 1rem
+    display: flex
+    flex-direction: column
+    // border: 1px solid #e6c470
+    padding: 1rem
+    // width: clamp(24rem, 30rem, 34rem)
+
+    > .selection, .mutation
+        @include rule-panel
+
+        > .row
+            width: 100%
+            padding: .5rem
+            margin: auto
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            // border: 1px solid #224957
+
+    > .selection
+        margin-bottom: 1rem
+        // border-top: 2px solid #00c8c899
+        // box-shadow: -10px -10px 10px #00c8c899
+        // box-shadow: -2px -2px 10px 1px #222
+        box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+
+    > .recombination
+    > .mutation
+        // box-shadow: -2px -2px 5px 1px #ff634799
+        // box-shadow: -2px -2px 10px 1px #222

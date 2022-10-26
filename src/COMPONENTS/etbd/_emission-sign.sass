@@ -1,0 +1,91 @@
+@import "../../styles/_colors.sass"
+
+.sign-emission
+    width: 200px
+    height: 30px
+    margin: auto
+    font-size: .75em
+    border-width: 0
+    color: rgba(40, 150, 150, .2)
+    background-color: transparent
+
+    // raised:
+    // box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+
+    // sunk:
+    // box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5), inset 1px 1px 3px 1px rgba(40, 0, 0, .5), inset -1px -1px 2px 1px rgba(40, 150, 150, .10), inset -1px -1px 3px 1px rgba(40, 150, 150, .10)
+    transition: all .5s ease
+
+    // &::before
+    //     content: 'Contingency ..?'
+    //     position: absolute
+    //     font-size: .75em
+    //     margin-left: -140px
+    //     margin-top: 10px
+    //     // text-align: center
+    //     color: rgba(40, 150, 150, .99)
+    //     font-family: arial
+
+    &:hover
+        color: rgba(40, 150, 150, 1)
+        // color: rgba(255, 255, 0, 0.75)
+        // background-color: rgba(30, 30, 30, 1)
+
+            // text-shadow: 0 0 2px #0f1725
+        text-shadow: 0 0 2px rgb(40, 100, 150)
+        background-color: #0f1725
+
+// .flicker-green
+//     animation-name: flicker-green1
+//     animation-duration: 2.5s
+//     animation-timing-function: ease
+
+.zzz-time
+    color: rgba(40, 150, 150, .5)
+    font-size: .75em
+    transition: all .5s ease
+
+.emision-time
+    color: rgba(40, 150, 150, 1)
+    // background-color: #0f1725
+    // text-shadow: 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa
+
+.darwin-time
+    color: $blue-charcoal
+
+// @keyframes flicker-green1
+//     0%
+//         text-shadow: 0 0 7px #00ccff55, 0 0 10px #00ccff55, 0 0 21px #00ccff55
+
+//     20%
+
+//         text-shadow: 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa
+
+//     50%
+
+//         text-shadow: 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa
+
+//     80%
+
+//         text-shadow: 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa
+
+//     100%
+//         text-shadow: 0 0 7px #00ccff55, 0 0 10px #00ccff55, 0 0 21px #00ccff55
+
+// .sunk
+//     box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5), inset 1px 1px 3px 1px rgba(40, 0, 0, .5), inset -1px -1px 2px 1px rgba(40, 150, 150, .10), inset -1px -1px 3px 1px rgba(40, 150, 150, .10)
+
+// .sign-emission[data-paused="true"]
+//     box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5), inset 1px 1px 3px 1px rgba(40, 0, 0, .5), inset -1px -1px 2px 1px rgba(40, 150, 150, .10), inset -1px -1px 3px 1px rgba(40, 150, 150, .10)
+    // transition: all .5s
+
+// .sign-emission[data-paused="false"]
+//     box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+    // transition: all .5s
+
+// .sign-emission[data-ss="false"]
+//     box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+
+//  EXAMPLE: 
+// button[data-type="download"] { }
+//     .card[data-pad="extra"] { }

@@ -66,7 +66,8 @@ export default class ShapeOfWill extends Component {
 
 
 
-                            <div className="projectColumnImagesMatching"
+                            <div
+                                // className="projectColumnImagesMatching"
                                 style={{
                                     //backgroundColor: "#1D2731",
                                     //backgroundColor: "#aaa",
@@ -81,11 +82,11 @@ export default class ShapeOfWill extends Component {
                                 <h1 className="chapter-title" style={{ color: "#FF652F", color: "#FFE400", fontSize: "1.5rem", margin: "2rem 0rem 2rem 0rem" }}>Development happens now</h1>
 
                                 <p className="p-left" style={{ maxWidth: "500px", }} >Real-time biochemical changes shape and reshape the connectomme, creating "beaten neuronal paths" that come accross as tendencies to feel, act, think in certain ways.
-                        </p>
+                                </p>
 
 
                                 <p className="p-left" style={{ maxWidth: "500px", }} >All phenomena discussed in psychology are collections of cognitive, emotional, and behavioral tendencies.
-                        </p>
+                                </p>
 
 
                                 <h1 className="chapter-title" style={{ color: "#FF652F", color: "#FFE400", fontSize: "1.5rem", margin: "2rem 0rem 1rem 0rem" }}>Counsciousness and Free Will</h1>
@@ -94,7 +95,7 @@ export default class ShapeOfWill extends Component {
                         </p> */}
 
                                 <p className="p-left" style={{ maxWidth: "500px", }} >Phenomena related to agency, intentionality, will, etc. - must corespond to patterns in neuronal activity. Identifying their signatures is a matter of experiment.
-                        </p>
+                                </p>
 
 
                                 <p className="p-left" style={{ maxWidth: "500px", }} >
@@ -104,10 +105,10 @@ export default class ShapeOfWill extends Component {
                                 </p>
 
                                 <h1 className="chapter-title" style={{ color: "#FFE400", fontSize: "1.5rem", margin: "2rem 0rem 1rem 0rem" }}>Computational neurosociology
-                        </h1>
+                                </h1>
 
                                 <p className="p-left">One agent's expression is another agent's experience. Societies are agents that experience each other's expression. Asimov's psychohistory is impossible without a complete theory of learning.
-                        </p>
+                                </p>
 
 
 

@@ -1,0 +1,93 @@
+@import "../../styles/_colors.sass"
+
+.live-wrapper
+    border: 1px solid orange
+    margin-bottom: 1rem
+    padding: 0
+    // background-color: $black-pearl
+
+.pop-over-v2
+    padding: .5rem
+    border: 1px solid #888
+    // margin: auto
+    color: #aaa
+    width: 370px
+    height: 200px
+    margin: auto
+    // opacity: .85
+
+    &:hover
+        opacity: 1
+        border: 1px solid #ffbe0a
+        color: #aaa
+
+    > .title
+        padding: .2rem
+        font-size: 1rem
+        font-weight: 600
+        color: #df7e23
+
+    > .description
+        margin: .5rem auto
+        padding: .5rem
+        font-size: .8rem
+        overflow-wrap: anywhere
+
+    > .link
+        padding: .5rem
+        font-size: .8rem
+        margin: 1rem auto
+
+.pop-over-btn
+    // align-self: right
+    opacity: .5
+    width: 30px
+    font-size: 1rem
+    font-weight: 600
+    // padding: 2px 12px
+    border: 0px solid #555
+    font-family: 'Times New Roman', Times, serif
+    background: #dff6ff
+    color: #02d1ff
+    color: #012a33
+
+    // margin-bottom: 1rem
+    border: 1px solid #888
+    border-radius: 8px
+    // margin-bottom: 1rem
+
+    &:focus
+        outline: none
+        opacity: .8
+
+    &:hover
+        opacity: 1
+        outline: 1px solid #555
+
+.fade.pop-over-v2.show.popover
+    background-color: $black-pearl
+    margin-top: 1rem
+
+.fade.pop-over-v2.show.popover.bs-popover-bottom
+    background-color: $black-pearl
+    margin-top: 1rem
+
+.fade.pop-over-v2.show.popover.bs-popover-bottom div.arrow
+    border: 0px solid #ff860e
+    margin-top: 1rem
+    // width: 30px
+
+    &::before
+        content: ""
+        background-color: transparent
+        height: 30px
+        width: 30px
+        border: 0px solid #3dff2f
+        margin-top: 1rem
+
+    &::after
+        content: ""
+        background-color: transparent
+        height: 30px
+        width: 30px
+        border: 0px solid #3dff2f

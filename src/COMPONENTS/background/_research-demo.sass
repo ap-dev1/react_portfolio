@@ -1,0 +1,69 @@
+
+@import "../../styles/_colors.sass"
+@import "../../styles/_fonts.sass"
+
+#research-demo
+    min-height: 100vh
+    width: 100%
+    background-color: $blue-whale
+
+    display: flex
+    // box-shadow: inset 0px 1px 10px #9ccba5
+    // box-sizing: content-box
+
+.demo-container
+    margin: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    // box-sizing: content-box
+
+    .row
+        display: flex
+        flex-direction: row
+
+        .left, .right
+            display: flex
+            flex-direction: column
+            margin: .2rem
+            padding: .5rem
+
+            .sub-section
+
+                h2
+                    margin: 0
+                    font-weight: 500
+                    text-align: left
+                    color: $h2color
+
+                p
+                    color: #fafafa90
+                    font-weight: 100
+                    max-width: 24rem
+                    font-size: .8rem
+
+                    > mark
+                        background-color: #ffff0050
+
+        .right
+            display: flex
+            flex-direction: column
+            margin: auto auto auto 3rem
+            padding: .5rem
+
+            .sub-section
+                margin: 1rem auto
+
+                h2
+                    font-size: 1.2rem
+                    margin: 0
+                    font-weight: 500
+                    text-align: left
+                    color: $h2color
+
+                > p
+                    color: #aaa
+                    font-weight: 100
+                    max-width: 23rem
+                    font-size: .8rem
+                    margin-top: 1rem

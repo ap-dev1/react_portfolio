@@ -1,51 +1,71 @@
 import { range } from "d3";
 
 
-// let repertoire = range(0, 1000)
-// let c1 = range(250, 500)
-// let c2 = range(501, 750)
 
-// let repertoire = range(400, 600)
-// let c1 = range(470, 512)
-// let c2 = range(512, 553)
+let repertoire = range(0, 32)
+let popSize = 5
+let c1 = range(11, 16)
+let c2 = range(16, 21)
+let ce = []
 
-let repertoire = range(0, 1000)
-let c1 = range(300, 401)
-let c2 = range(401, 501)
+repertoire.forEach((item) => {
+    if (!c1.includes(item) && !c2.includes(item)) {
+        ce.push(item)
+    }
+})
 
-var initialState = {
+
+// let repertoire = range(0, 100)
+// let popSize = 100
+// let c1 = range(30, 51)
+// let c2 = range(51, 71)
+
+var etbdState = {
+
+
     repertoire: repertoire,
+    popSize: popSize,
+
+    // defaultPopulation: [5, 6, 8, 10, 11, 19, 20, 22, 23, 25],
+    // defaultPopulation: [5, 8, 11, 12, 25],
+    defaultPopulation: [5, 8, 11, 12, 25],
+
+    defaultEms: 11,
+
     class1: c1,
     class2: c2,
+    classE: ce,
+
+
+    mutation_rate: .5,
+
+    // RI1: 1,
+    // RI2: .1,
+    RI1: .1,
+    RI2: 1,
+
+    Miu1: 0.01,
+    Miu2: 0.99,
+
 
     population: [],
-    allPopulations: [],
-
     emission: 0,
-
-    irt: 200,
-    N: 100,
-
-    mutation_rate: .3,
     gen: 0,
-
-    timeLimit: 15,
-    recordHeight: 30,
-
-    RI1: 1,
-    RI2: 2,
-
-    Miu1: 0.1,
-    Miu2: 0.1,
-
-
     progress: 0,
 
+
+    timeLimit: 60,
+    recordHeight: 37,
     color1: 'rgb(255, 128, 49)',
     color2: 'rgb(28, 255, 28)',
-    colorE: 'rgb(179, 179, 179)',
-    colorCO: "#fff",
-    responseColor: 'rgb(179, 179, 179)',
+    color11: 'rgba(255, 128, 49, .75)',
+    color22: 'rgba(28, 255, 28, .75)',
+    color111: 'rgba(255, 128, 49, .25)',
+    color222: 'rgba(28, 255, 28, .25)',
+
+    // colorE: 'rgb(179, 179, 179)',
+    // colorCO: "#fff",
+    // responseColor: 'rgb(179, 179, 179)',
 
     r1ready: 0,
     r2ready: 0,
@@ -75,4 +95,4 @@ var initialState = {
 
 
 
-export default initialState;
+export default etbdState;

@@ -1,0 +1,86 @@
+#selection-pressure
+    background-color: rgba(0, 50, 50, 1)
+    text-align: center
+    color: #cccccc
+    width: fit-content
+    margin: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: .5rem
+    border-radius: 5px
+
+    width: 250px
+
+    > h2
+        font-weight: 300
+        margin: auto
+        font-size: .9rem
+        margin-bottom: .5rem
+        color: transparent
+
+.div-plus-minus
+    display: flex
+    flex-direction: row
+    margin: auto
+    font-size: .8rem
+    justify-content: space-between
+
+    > .btn-minus, .btn-plus
+        background-color: rgba(0, 35, 35, 1)
+        color: rgba(0, 150, 150, 1)
+
+        padding: .2rem
+        border: 0px solid #00808099
+        border-radius: 5px
+        width: 3rem
+        font-weight: 100
+        font-size: 1.5rem
+        font-family: monospace
+        margin: auto .5rem
+
+        &:hover
+            cursor: pointer
+            background-color: rgba(0, 25, 25, 1)
+            color: rgba(0, 250, 200, 1)
+
+        &:disabled
+            cursor: not-allowed
+            background-color: rgba(0, 35, 35, .2)
+            color: rgba(175, 175, 175, .5)
+
+    > .div-display
+        width: 8rem
+        font-weight: 600
+        font-size: 1rem
+        text-align: center
+        display: flex
+        flex-direction: column
+        margin: auto
+
+        > span
+            color: rgba(0, 200, 200, 1)
+            font-weight: 100
+            margin: auto
+            width: 4rem
+            font-family: monospace
+            font-size: 1.75rem
+            text-align: center
+
+            &::before
+                text-align: left
+                position: absolute
+                content: '1/'
+                color: rgba(175, 175, 175, .5)
+                font-size: .8rem
+                margin-left: -1rem
+                margin-top: 0
+
+            &::after
+                text-align: left
+                position: absolute
+                content: attr(lambda)
+                color: rgba(0, 175, 175, .5)
+                font-size: .8rem
+                margin-left: -2rem
+                margin-top: 2rem

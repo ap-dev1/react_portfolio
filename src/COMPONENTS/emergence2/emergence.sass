@@ -1,0 +1,47 @@
+
+// @import "../../styles/_colors.sass"
+@import "./_buttons.sass"
+@import "./_rulz-column.sass"
+
+#EmergenceSection
+    background-color: $blue-whale
+    width: 100%
+    min-height: 100vh
+    margin: auto
+    display: flex
+
+    .emergence-main
+        padding: .2rem
+        display: flex
+        flex-direction: row
+        margin: auto
+        border: 5px solid #3f545f
+
+        > .left
+            // width: clamp(24rem, 30rem, 34rem)
+            display: flex
+            flex-direction: column
+            padding: .2rem
+            border: 1px solid #7db3b9
+
+            > .row
+                width: max-content
+                width: 100%
+
+                display: flex
+                flex-direction: row
+                border: 1px solid #c29753
+                padding: .2rem
+                margin: .5rem auto
+
+                justify-content: space-between
+
+                &:first-child
+                    margin-top: 0
+
+                &:nth-child(2)
+
+                    border-color: transparent
+
+                &:last-child
+                    margin-bottom: 0

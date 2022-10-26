@@ -1,1 +1,0 @@
-import "./sensitivity_style.sass"

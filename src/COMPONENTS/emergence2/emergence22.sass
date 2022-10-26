@@ -1,0 +1,235 @@
+
+@import "./_neon_signs.sass"
+// @import "./_neon_click_to_play.sass"
+
+@import "../../styles/_colors.sass"
+@import "../../styles/_fonts.sass"
+
+// animation: pulsate 0.11s ease-in-out infinite alternate
+
+//        --------------
+
+// .parents-wrapper
+//     width: fit-content
+//     margin: 5px auto
+//     display: flex
+//     flex-direction: row
+//     padding: 0px
+//     justify-content: center
+//     justify-items: stretch
+//     justify-content: space-evenly
+
+.btn-pair
+    width: 40px
+    height: 50px
+    margin: 0px 5px
+    border: 0px solid $blue-opaque
+    cursor: pointer
+    font-size: 12px
+    padding: 0px
+    text-align: center
+    background: transparent
+    background: $blue-opaque1
+
+    color: #bbb
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+
+    > span
+        width: 100%
+        height: 50%
+        margin: 0px
+        padding: 2px
+
+//----------------------  CHILDREN:
+
+.children-wrapper
+    width: fit-content
+    margin: 5px auto
+    display: flex
+    flex-direction: row
+    padding: 0px
+    justify-content: center
+    justify-items: stretch
+    justify-content: space-evenly
+
+.btn-child
+    width: 40px
+    height: 30px
+    margin: auto 0px
+    border: 1px solid $blue-opaque
+
+    cursor: pointer
+    font-size: 14px
+    padding-top: 4px
+    text-align: center
+    background: transparent
+    color: #bbb
+    display: flex
+    flex-direction: column
+
+.btn-child[title="mutant"]
+    color: #c55858
+
+//----------------------  SETTINGS:
+
+.div-setting
+    display: flex
+    flex-direction: column
+    width: 100%
+    padding: 10px 20x
+    margin: 10px auto
+    border: 0px solid #aaa
+    background: transparent
+    box-shadow: -3px -3px 10px #566596 inset, 3px 3px 10px #566596
+    font-size: 11px
+    color: #888
+
+//---------------------------------
+
+// .svg_record
+//     width: 250px
+//     height: 150px
+//     margin: 5px auto
+//     border: 1px solid #555
+
+//     .x_axis line, path
+//         stroke: #fff
+//         stroke: #446b58
+//         stroke-width: .25
+
+//     .x_axis text
+//         color: #0000008c
+//         background-color:  #fbff00
+//         border: 1px solid #222
+//         font-size: 10px
+//         font-family: Arial, Helvetica, sans-serif
+
+//         &:hover
+//             cursor: pointer
+//             fill: #000000
+
+//     .y_axis line, path
+//         stroke: #fff
+//         stroke-width: .25
+//         stroke-dasharray: 0
+//         stroke: #446b58
+
+//     .y_axis text
+//         color: #444
+
+// -------------------------------------
+
+#divAgentHistory
+    border: 1px solid #555
+    margin: 5px auto
+    font-size: 12px
+    text-align: center
+
+    table
+        margin: auto
+        width: 100%
+        text-align: center
+
+        tr th
+            color: #76e8ce
+            font-size: 12px
+            width: 40px
+            height: 30px
+            background-color: #555
+            cursor: pointer
+
+            &:hover
+                background-color: #222
+                color: #eee
+
+        tr td
+            color: #e5dcdc
+            font-size: 12px
+            width: 30px
+            height: 30px
+            cursor: pointer
+
+            &:hover
+                background-color: #222
+                color: #eee
+
+//---------------------------------
+
+// .light_on
+//     color: #2de7ff
+//     text-shadow: 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa
+
+//---------------------------------
+
+#Select2Parents
+    margin: 5px 0
+    width: 100%
+    padding: 5px
+    display: flex
+    flex-direction: row
+    justify-items: center
+
+//-------------------------------------
+
+// #04f681
+// #09de77b6
+// #09de771c
+
+.toggle_parent
+    height: 30px
+    width: 30px
+    padding: 5px
+    font-size: 13px
+    background: transparent
+
+    input[value="?"]
+    color: #fd4b4b
+
+// .toggle_parent[value="?"]
+//     background-color: #fd4b4b
+
+// [title~="whatever"]
+//     color: #ff0000
+//     font-size: 18px
+
+.transition_2s
+    color: #985555
+    border: 1px solid #555
+    transition: all 2s
+    -webkit-transition: all 2s
+    -moz-transition: all 2s
+    -o-transition: all 2s
+    -ms-transition: all 2s
+
+//-------------------------------------
+
+// .btn_population:not([value="?"])
+//     color: #222
+
+// .btn_population[value="?"]
+//     color: #ff0000
+
+//---------------------------------------
+
+.div_test
+    font-size: 16px
+    width: 50px
+    height: 50px
+    margin: auto
+    border: 1px solid orange
+    text-align: center
+    padding: 10px
+
+.div_test[title="div_title"]
+    color: #eb4e4e
+
+.div_test[value="aaa"]
+    color: #5beb4e
+
+// .div_test222[title="div_title"]
+//     color: #eb4e4e
+
+// .div_test:not([value="?"])
+//     background-color: "#eb4e4e"

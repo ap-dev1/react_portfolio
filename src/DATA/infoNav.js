@@ -5,124 +5,164 @@
 
 var infoNav = [
 
-
     {
-        sectionID: "About",
+        sectionID: 'About',
         btnText: "Profile",
         info: "Education, skills, ..",
-        btnClass: "navRegular btnNavigation navAbout"
+        btnClass: "navRegular navAbout"
     },
-
-
     {
-        sectionID: "div_1400",
+        sectionID: 'teaching-intro',
         btnText: "Teaching",
-        info: "teaching and mentoring",
-        btnClass: "navRegular btnNavigation teaching"
+        info: "teaching experience",
+        btnClass: "navRegular teaching"
     },
-
-    //  ==========    BACKGROUND     ==========
-
     {
-        //sectionID: "researchTrajectory",
-        sectionID: "researchBegins",
+        sectionID: 'research-intro',
         btnText: "Research",
-        info: "best experienced on 12-inch screens and larger, landscape mode",
-        btnClass: "navRegular btnNavigation"
+        info: "there's an elephant in the room",
+        btnClass: "navRegular"
     },
-
     {
-        sectionID: "ChoiceDemo",
-        btnText: "Modeling behavior",
+        sectionID: 'research-overview',
+        btnText: "Overview",
+        info: "behavior dynamics, or learning",
+        btnClass: "navRegular"
+    },
+    {
+        sectionID: 'research-demo',
+        btnText: "Demo",
         info: "Pre-candidacy work, 2007-2010: computational modelling, ETBD, Hamming Distances, Changeover Delay, Masters Thesis",
-        btnClass: "navRegular btnNavigation background navDemo"
+        btnClass: "navRegular"
     },
+    {
+        sectionID: 'EmergenceSection',
+        btnText: "Inside ETBD",
+        info: "The Darwinian cycle, step by step",
+        btnClass: "navRegular"
+    },
+
+
+    /////////////////////////////////////////////////////////////
+
+    {
+        sectionID: 'Parkour',
+        btnText: "Highlights",
+        info: "scientific contributions",
+        btnClass: "navRegular "
+    },
+
+    /////////////////////////////////////////////////////////////
+
     // {
-    //     sectionID: "ch2",
-    //     btnText: "From bits to ADHD",
-    //     info: "Dissertation (2010-2013): Mutation rate, Default Mode Network, ADHD, Fast Matching, Dissertation",
-    //     btnClass: "navRegular btnNavigation background"
+    //     sectionID: 'AgreementMatching',
+    //     btnText: "Emergent equilibria",
+    //     info: "Agreement with mathematical descriptors of choice and preference",
+    //     btnClass: "navTimelineItem",
+    // },
+    // {
+    //     sectionID: 'HammingCOD',
+    //     btnText: "Confused agents",
+    //     info: "Hamming distances: function, mechanism, and real-world correspondent.",
+    //     btnClass: "navTimelineItem",
+    // },
+    // {
+    //     sectionID: 'MutationADHD',
+    //     btnText: "Impulsivity, confusion, and reinforcement",
+    //     info: "info",
+    //     btnClass: "navTimelineItem",
+    // },
+    // {
+    //     sectionID: 'FastMatching',
+    //     btnText: "ETBD predictions confirmed in human experiments",
+    //     info: "My first human research study as PI, my first virtual skinner box (in VB.Net), and half of my doctoral dissertation (Popa, 2013).",
+    //     btnClass: "navTimelineItem",
+    // },
+    // {
+    //     sectionID: 'Dissertation',
+    //     btnText: "ETBD and mental health",
+    //     info: "Doctoral dissertation",
+    //     btnClass: "navTimelineItem"
+    // },
+    // {
+    //     sectionID: 'Jeab2016',
+    //     btnText: "Mutation, ADHD, and DMN",
+    //     info: "Mutation, ADHD, and the Default Mode Network",
+    //     btnClass: "navTimelineItem"
+    // },
+    // {
+    //     sectionID: 'Sparc',
+    //     btnText: "SpARC",
+    //     info: "Studies on escape behavior, punishment, stimulus control, and extinction.",
+    //     btnClass: "navTimelineItem"
+    // },
+    // {
+    //     sectionID: 'Triangles',
+    //     btnText: "Recreate this, jack",
+    //     info: "Negative and positive reinforcement in symmetrical environments; extinction effects;",
+    //     btnClass: "navTimelineItem"
+    // },
+    // {
+    //     sectionID: 'nbtSelection',
+    //     btnText: "Rethinking selection",
+    //     info: "gggggggg",
+    //     btnClass: "navTimelineItem"
+    // },
+    // {
+    //     sectionID: 'Popa2019a',
+    //     btnText: "Human development happens <i>right now</i>, again and again and again.",
+    //     info: "The dynamics of human development, from society to genes and back. You're welcome!",
+    //     btnClass: "navTimelineItem",
+    // },
+    // {
+    //     sectionID: 'Popa2019b',
+    //     btnText: "Imperfect Automata",
+    //     info: "Novelty requires error.",
+    //     btnClass: "navTimelineItem"
     // },
 
+    /////////////////////////////////////////////////////////////
+
+
     // {
-    //     sectionID: "ch3",
-    //     btnText: "Rules, Context, & Time",
-    //     info: "(2014 - 2018) Beyond positive reinforcement: aversive conditioning, stimulus control",
-    //     btnClass: "navRegular btnNavigation background"
+    //     sectionID: 'Portfolio',
+    //     btnText: "This",
+    //     info: "React, D3, ",
+    //     btnClass: "navRegular"
     // },
 
-    {
-        sectionID: "QualPhdDesign",
-        btnText: "From bits to ADHD",
-        info: "dissertation project (2010-2013): mutation rate, Default Mode Network, DMN, ADHD, Fast Matching, thesis",
-        btnClass: "navRegular btnNavigation background"
-    },
 
-    {
-        sectionID: "12/24/2013",
-        btnText: "Rules, Context, & Time",
-        info: "(2014 - 2018) Beyond positive reinforcement: aversive conditioning, stimulus control",
-        btnClass: "navRegular btnNavigation background"
-    },
+    // {
+    //     sectionID: "Recent",
+    //     btnText: "Recent projects",
+    //     info: "React, Node, Python, web sockets, etc..",
+    //     btnClass: "navRegular "
+    // },
+
 
 
     {
-        sectionID: "ch4",
-        btnText: "How everything works",
-        info: "The dynamics of human development, from society to genes and back. You're welcome! :) ",
-        btnClass: "navRegular btnNavigation background"
-    },
-
-    {
-        sectionID: "Recent",
-        btnText: "Recent projects",
-        info: "React, Node, Python, web sockets, etc..",
-        btnClass: "navRegular btnNavigation"
-    },
-
-
-    //  ======  TEACHING    REFERENCES    CONTACT   =======
-
-
-    {
-        sectionID: "sectionVitae",
+        sectionID: 'sectionVitae',
         btnText: "Vitae",
-        info: "Always incomplete",
-        btnClass: "navRegular btnNavigation"
+        info: "Education, experience, skills, publicatons, ",
+        btnClass: "navRegular "
     },
     {
-        sectionID: "Contact",
+        sectionID: 'Contact',
         btnText: "Contact",
         info: "links to resources, contact info",
-        btnClass: "navRegular btnNavigation"
+        btnClass: "navRegular "
     },
 
 
-    //==========================================
-    //==========================================
-    //==========================================
-    //==========================================
-
-
     // {
-    //     id: "",
-    //     name: "COURSES",
-    //     info: "teaching experience",
-    //     class: "navRegular btnNavigation"
-    // },
-    // {
-    //     id: "",
-    //     name: "REFERENCES",
-    //     class: "navRegular btnNavigation",
+    //     sectionID: "references",
+    //     btnText: "References",
+    //     info: "links to resources, contact info",
+    //     btnClass: "navRegular",
     // },
 
 
-    // {
-    //     id: "Contact",
-    //     name: "CONTACT",
-    //     info: "yes!",
-    //     class: "navRegular btnNavigation",
-    // },
 
 ];
 

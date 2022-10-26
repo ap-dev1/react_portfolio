@@ -1,0 +1,102 @@
+
+$new-white: rgb(248, 246, 234)
+
+.card-wrapper
+    margin: .1rem
+    position: relative
+    // display: flex
+    // flex-direction: row
+    // width: 100%
+    // height: 100%
+    // width: 35px
+    // height: 45px
+    display: block
+    perspective: 1000px
+
+    .card-container
+        width: 35px
+        height: 35px
+        margin: 0
+        padding: 0
+        width: 35px
+        position: relative
+        transform-style: preserve-3d
+        box-sizing: border-box
+
+        &.flipped
+            .front
+                transform: rotateY(180deg)
+
+            .back
+                transform: rotateY(0deg)
+
+        &:hover
+            .front
+                transform: rotateY(180deg)
+
+            .back
+                transform: rotateY(0deg)
+
+        .front, .back
+            box-sizing: border-box
+            height: 100%
+            width: 100%
+            display: block
+                    // background: $new-white
+                    // box-shadow: 10px 10px 5px rgb(95, 77, 99)
+                    // padding: 10px
+            position: absolute
+                    // border-radius: 10px
+            backface-visibility: hidden
+            transform-style: preserve-3d
+            transition: -webkit-transform ease 500ms
+            transition: transform ease 500ms
+
+        .front
+            z-index: 2
+            transform: rotateY(0deg)
+            background-color: #0a404d
+                /* front tile styles go here! */
+
+        .back
+            background-color: #408596
+            background-color: #daeff4
+
+            transform: rotateY(-180deg)
+            // margin: 0
+            display: flex
+
+            .span-item
+                font-family: monospace
+                font-size: 1rem
+                font-weight: 600
+                margin: auto
+                color: #222
+
+            /* back tile styles go here! */
+
+        .image-container
+            position: relative
+
+            .card-image
+                width: 100%
+                // border-radius: 10px
+
+    // .card-container-flipped
+
+    //     height: 45px
+    //     margin: 0
+    //     padding: 0
+    //     // top: 20px
+    //     width: 35px
+    //     // margin-left: 35%
+    //     // margin-right: 35%
+    //     position: relative
+    //     transform-style: preserve-3d
+    //     box-sizing: border-box
+
+    //     .front
+    //         transform: rotateY(180deg)
+
+    //     .back
+    //         transform: rotateY(0deg)

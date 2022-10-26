@@ -1,10 +1,58 @@
-//$specialColor: #02aab0
-//$lightCyan: #59ebf0
+// background: 'rgb(152,173,191)',
+// background: 'linear-gradient(90deg, rgba(152,173,191,0.5) 0%, rgba(248,253,45,0.5) 100%)'
 
-//---------------------------------------------  HEADER
+#Header
+    width: 100%
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
 
-#myHeader
-    margin-top: 0
+    .div-inset
+        -webkit-background-clip: text
+        -moz-background-clip: text
+        background-clip: text
+        background-color: #a7bdc3
+        color: transparent
+        text-shadow: rgba(255,255,255,0.5) 0px 3px 3px
+        margin: auto
+        display: flex
+        flex-direction: column
+        max-width: 50rem
+
+        .inset-title
+            font-size: 60px
+            font-size: clamp(20px, 4vw, 55px)
+            text-align: left
+            margin: auto auto auto 0px
+            font-weight: 700
+            word-spacing: 5px
+
+        .inset-subtitle
+            font-size: 40px
+            font-size: clamp(16px, 2.2vw, 40px)
+            text-align: left
+            margin: auto auto auto 0px
+            margin: auto
+            font-weight: 700
+
+        .btn-cnt
+            border: 2px solid #a7bdc358
+            cursor: pointer
+            font-size: 25px
+            font-size: clamp(14px, 1.5vw, 25px)
+            text-align: center
+            margin: 4vw auto
+            font-weight: 700
+            letter-spacing: 1px
+            font-variant: all-petite-caps
+            padding: 10px 15px
+            transition: .5s
+            color: #c1c1c1
+
+            &:hover
+                transition: .5s
+                color: #7b7b7b
 
 #columnHeader
     display: flex
@@ -19,9 +67,9 @@
         font-family: 'Montserrat', sans-serif
         font-size: 2.5rem
         text-align: left
-        margin: 0rem
+        margin: 0
         align-self: left
-        padding: 0rem
+        padding: 0
         font-weight: 500
 
         > button
@@ -29,7 +77,7 @@
             background: black
             color: white
             border: 0px
-            padding: 1em 3em
+            padding: 1rem 3rem
             font-size: 1rem
 
             &:hover
@@ -40,5 +88,3 @@
                 -moz-transition: all 0.2s ease-out
                 -ms-transition: all 0.2s ease-out
                 -o-transition: all 0.2s ease-out
-
-

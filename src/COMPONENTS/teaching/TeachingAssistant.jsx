@@ -13,110 +13,119 @@ export default class TeachingAssistant extends React.Component {
 
         const TARoles = infoTA.map((item) => {
             return (
-                <tr>
-                    <th
-                        style={{
-                            padding: "5px",
-                            width: "220px",
 
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        textAlign: "left",
+                        marginBottom: "15px",
+                        fontSize: "13px",
+
+                    }}
+                >
+                    <span
+                        style={{
+                            margin: "0px",
+                            marginBottom: '4px',
+                            textAlign: "left",
+                            color: "#31D1B3",
+                            color: '#ff9900',
+                            fontSize: "13px",
+                            fontWeight: 500,
                         }}
                     >
                         {item.name}
-                    </th>
+                    </span>
 
-                    <td
+
+                    <div
                         style={{
-                            padding: "5px",
-                            width: "150px",
+                            display: "flex",
+                            flexDirection: "row",
+                            width: "100%",
+                            margin: "0px",
+                            // border: "1px dashed lime",
+                            justifyContent: 'space-between',
+                            textAlign: 'left',
                         }}
                     >
-                        {item.semester}
-                    </td>
 
-                    <td
-                        style={{
-                            padding: "5px",
-                            width: "150px",
-                        }}
-                    >
-                        for {item.instructor}
-                    </td>
-                </tr>
+
+
+                        <span
+                            style={{
+                                // margin: 'auto',
+                                fontFamily: "Roboto",
+                                color: "#aaa",
+                                fontSize: "11px",
+                                // paddingLeft: "20px",
+                                // border: "1px dotted red",
+
+                            }}
+                        >
+                            {`Instructor: ${item.instructor}`}
+                        </span>
+
+                        <span
+                            style={{
+                                fontFamily: "Roboto",
+                                color: "#aaa",
+                                fontSize: "11px",
+                                // margin: 'auto',
+
+                            }}
+                        >
+                            {item.years ? item.years : item.semester.slice(-4)}
+                        </span>
+
+
+                    </div>
+
+                </div>
+
             )
         })
 
         return (
             <div
-
                 style={{
-                    width: "100%",
-                    margin: "auto",
-                    display: "flex",
-                    flexDirection: "column",
-                    //padding: "0px",
                     //color: "#19f8e2", 
+                    color: "#aaa",
+                    width: '100%',
+                    //height: "fit-content",
+                    //marginRight: "75px",
+                    //border: "1px dashed lime",
                 }}
             >
 
-                <div className='divDetails'>
 
-                    <table>
-                        {TARoles}
-
-                    </table>
-
-
-
-                </div >
-
-
-
-
-
-                {/* 
-                <Card
-                    className="card"
-                    key={nanoid()}
+                <div className='sub-section-header'
                     style={{
-                        width: "180px",
-                        backgroundColor: "transparent",
-                        opacity: 1,
-                        boxShadow: "1px 1px 4px #042e23",
-                        border: "0px solid #31D1B3",
+                        marginBottom: '20px',
                     }}
                 >
 
-                    <Card.Title
-                        style={{
-                            fontSize: "12px",
-                            textAlign: "center",
-                            //color: "#31D1B3",
-                            color: "#bbb",
-                            marginTop: "10px"
-                        }}
-                    >
-                        Teaching Assistant
+                    <h1 className="title" >
+                        TEACHING ASSISTANT
+                    </h1>
 
-                    </Card.Title>
+                    <h2 className="years"  >
+                        Emory University, 2007 - 2011
+                    </h2>
 
-                    <Card.Subtitle
-                        style={{
-                            fontSize: "12px",
-                            textAlign: "center",
-                            marginBottom: "15px",
-                            color: "#bbb"
-                        }}
-                    >
-                        Emory University <br />2007 - 2013
+                </div>
 
-                    </Card.Subtitle>
-
-
+                <div className='sub-section-body'
+                    style={{
+                        marginTop: '0px',
+                        paddingTop: '0px',
+                    }}
+                >
                     {TARoles}
+                </div>
 
-                </Card>
 
- */}
             </div >
         )
     }

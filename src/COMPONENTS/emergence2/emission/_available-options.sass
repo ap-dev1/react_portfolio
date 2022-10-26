@@ -1,0 +1,47 @@
+@import "../../../styles/_colors.sass"
+
+#available-options
+    margin: auto
+    display: flex
+    // box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+
+    // width: 200px
+    justify-content: space-between
+    margin: auto
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+    .option
+        text-center: center
+        padding: .2rem .8rem
+        font-size: .9rem
+        min-width: 40px
+        height: 30px
+        font-size: .9rem
+        margin: auto
+        display: flex
+        background-color: transparent
+        // border: 1px solid rgba(0, 0, 0, 0.75)
+        border-width: 0
+        color: rgba(40, 150, 150, .75)
+        color: rgba(98, 155, 155, 0.749)
+        color: rgba(98, 155, 155, 1)
+        color: #aaa
+        cursor: pointer
+        // box-shadow: inset -1px -1px 2px 1px rgba(0, 0, 0, .75), inset -1px -1px 3px 1px rgba(0, 0, 0, 0.75), inset 1px 1px 1px 1px rgba(40, 150, 150, .20), inset 1px 1px 2px 1px rgba(40, 150, 150, .20)
+
+        transition: all .5s ease
+
+        &:hover
+            background-color: $blue-charcoal
+            transition: all .5s ease
+
+        &[data-selected=true]
+
+            color: #fff
+            // font-weight: 500
+            // color: #c2f7e4
+        //     color: rgba(98, 155, 155, 1)
+            // color: rgba(40, 150, 150, 1)
+            transition: all .5s ease

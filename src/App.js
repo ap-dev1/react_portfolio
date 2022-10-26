@@ -1,63 +1,70 @@
 import React, { Component } from "react";
-import { nanoid } from "nanoid"
-import infoTimeline from "./DATA/infoTimeline";
+import { nanoid } from "nanoid";
+// import infoTimeline from "./DATA/infoTimeline";
+import infoHighlights from "./DATA/infoHighlights";
 
 import HeaderSection from "./COMPONENTS/header_files/HeaderSection";
 import About from "./COMPONENTS/about_files/AboutSection";
 import MyTimeline from "./COMPONENTS/timeline_files/MyTimeline";
-import Chapter01 from "./COMPONENTS/background/Chapter01";
 
-import Chapter04 from "./COMPONENTS/background/Chapter04";
-import RecentProjects from "./COMPONENTS/recent/RecentProjects";
+// import Chapter04 from "./COMPONENTS/background/Chapter04";
+// import RecentProjects from "./COMPONENTS/recent/RecentProjects";
+
+import TeachingIntro from "./COMPONENTS/teaching/TeachingIntro";
 import TeachingExperience from "./COMPONENTS/teaching/TeachingSection";
 import Contact from "./COMPONENTS/contact/ContactSection";
 //import References from "./COMPONENTS/references/ReferencesSection";
+
 import MyVitae from "./COMPONENTS/vitae/MyVitae";
-import ResearchTrajectory from "./COMPONENTS/background/ResearchTrajectory";
-import ResearchBegins from "./COMPONENTS/background/ResearchBegins";
+
+import ResearchIntro from "./COMPONENTS/background/ResearchIntro";
+
+import ResearchOverview from "./COMPONENTS/background/ResearchOverview";
+
+import ResearchDemo from "./COMPONENTS/background/ResearchDemo";
+// import MatchingDemo from "./COMPONENTS/matching/MatchingDemo";
+
+// import EmergenceMain from "./COMPONENTS/emergence/EmergenceMain";
+import EmergenceMain2 from "./COMPONENTS/emergence2/EmergenceMain2.jsx";
+import TeaserPopa2019 from "./COMPONENTS/background/TeaserPopa2019";
+
+
+import BgDivider from "./COMPONENTS/background/BgDivider";
+
 
 
 class App extends Component {
 
-    assignClasses = () => {
-        // let x = document.getElementById("12/20/2009")
-        // let y = x.childNodes[0]
-        // let z = y.childNodes[0]
-
-        // let title = z.childNodes[0]
-        // let par = z.childNodes[1]
-
-        // x.style.backgroundColor = "#1D2731"
-        // x.style.width = "70%"
-        // //x.parentElement.style.backgroundColor = "#1D2731"
-        // x.parentNode.style.backgroundColor = "red"
-        // y.style.backgroundColor = "#1D2731"
-        // y.style.padding = "0rem 1rem"
-
-        // z.style.backgroundColor = "#1D2731"
-
-        // title.style.color = "yellow"
-        // par.style.color = "#ccc"
-
-        // console.log(z.childNodes)
-    }
-
 
     componentDidMount() {
         var navigationMarkers = [
-            //{ markerID: "columnHeader", navButtonID: "btnmyHeader", },
-            { markerID: "divProfilePic", navButtonID: "btnAbout", },
-            { markerID: "recentIntro", navButtonID: "btnRecent", },
-            { markerID: "researchBegins", navButtonID: "btnresearchBegins", },
-            { markerID: "ChoiceDemo", navButtonID: "btnChoiceDemo", },
-            // { markerID: "ch2_p1", navButtonID: "btnch2", },
-            { markerID: "QualPhdDesign", navButtonID: "btnQualPhdDesign", },
-            { markerID: "12/24/2013", navButtonID: "btn12/24/2013", },
-            // { markerID: "ch4_p1", navButtonID: "btnch4", },
-            { markerID: "div_1400", navButtonID: "btndiv_1400", },
-            { markerID: "sectionVitae", navButtonID: "btnsectionVitae", },
+            { markerID: 'About', navButtonID: "btnAbout" },
+            { markerID: 'teaching-intro', navButtonID: "btnteaching-intro" },
+            { markerID: 'research-intro', navButtonID: "btnresearch-intro" },
+            { markerID: 'research-overview', navButtonID: "btnresearch-overview" },
 
-            { markerID: "btnEmail", navButtonID: "btnContact", },
+            { markerID: 'research-demo', navButtonID: "btnresearch-demo" },
+            { markerID: 'EmergenceSection', navButtonID: "btnEmergenceSection" },
+
+
+            { markerID: 'Parkour', navButtonID: "btnParkour" },
+            // { markerID: 'Portfolio', navButtonID: "btnPortfolio" },
+
+            // { markerID: 'AgreementMatching', navButtonID: "btnAgreementMatching" },
+            // { markerID: 'HammingCOD', navButtonID: "btnHammingCOD" },
+            // { markerID: 'MutationADHD', navButtonID: "btnMutationADHD" },
+            // // { markerID: 'FastMatching', navButtonID: "btnFastMatching" },
+            // { markerID: 'Dissertation', navButtonID: "btnDissertation" },
+            // { markerID: 'Jeab2016', navButtonID: "btnJeab2016" },
+            // { markerID: 'Sparc', navButtonID: "btnSparc" },
+            // { markerID: 'Triangles', navButtonID: "btnTriangles" },
+            // { markerID: 'nbtSelection', navButtonID: "btnnbtSelection" },
+            // { markerID: 'Popa2019a', navButtonID: "btnPopa2019a" },
+            // { markerID: 'Popa2019b', navButtonID: "btnPopa2019b" },
+
+
+            { markerID: 'sectionVitae', navButtonID: "btnsectionVitae" },
+            { markerID: 'Contact', navButtonID: "btnContact" }
         ]
 
         let observerOptions = { root: null, threshold: 0, }
@@ -72,6 +79,7 @@ class App extends Component {
 
                 let navButtonID = navigationMarkers.filter(aa => aa.markerID.includes(entry.target.id))[0].navButtonID
                 let navButton = document.getElementById(navButtonID)
+
 
                 if (document.getElementsByClassName("currentView").length > 0) {
                     //console.log("at least one element with class CURRENT VIEW, removed.")
@@ -89,7 +97,6 @@ class App extends Component {
             observer.observe(document.getElementById(marker.markerID))
         })
 
-        //this.assignClasses()
     }
 
 
@@ -99,86 +106,84 @@ class App extends Component {
 
         return (
             <div>
+
+
                 <HeaderSection />
 
                 <About />
 
-
-                <div id="div_1400" >
-
-                    <div id="div_1401" >
-
-                        <span id="span1" >  TEACHING  </span>
-                        <span id="span2" >  2007 - 2018 </span>
-
-                        <div className='div_schools'>
-
-                            <span id="span3" >
-                                Emory <br />University
-                            </span>
-                            <span id="span4" >
-                                Georgia State<br /> University
-                            </span>
-                            <span id="span5" >
-                                Agnes Scott<br /> College
-                            </span>
-                            <span id='span6'>
-                                Emory University, <br />Oxford College
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
+                <TeachingIntro />
 
                 <TeachingExperience />
 
-                <ResearchBegins />
+                {/* <TeaserPopa2019 /> */}
 
-                <ResearchTrajectory />
+                <ResearchIntro />
 
-                <Chapter01 />
+                <ResearchOverview />
+
+                <BgDivider title="DEMO" />
+
+                <ResearchDemo />
+
+                <BgDivider title="HOW IT WORKS" />
+
+                <EmergenceMain2 />
+
+
+
+                {/* <div
+                    id='div-highlights'
+                    key={nanoid()}
+                    style={{
+                        backgroundColor: '#274235',
+                        color: 'lightgreen',
+                        maxWidth: '100%',
+                        margin: 'auto',
+                        padding: '2rem',
+                        textAlign: 'center',
+                        color: 'rgba(25, 200, 150, 1)',
+                    }}
+                >
+                    <div
+
+                        key={nanoid()}
+                        style={{
+                            color: 'lightgreen',
+                            margin: 'auto',
+                            padding: '1rem',
+                            textAlign: 'center',
+                            color: 'rgba(25, 200, 150, 1)',
+                            boxShadow: "0px 0px 30px rgba(0, 255, 50, .25)",
+                            maxWidth: "70%"
+                        }}
+                    >
+                        <h1> Highlights </h1>
+
+                        <p>Lorem ipsum </p>
+                    </div>
+                </div> */}
+
+
 
                 <MyTimeline
-                    //events={infoTimeline.slice(0, 13)}
-                    events={infoTimeline}
+                    // events={infoHighlights.slice(0, 11)}
+                    events={infoHighlights}
                     orientation="vertical"
                     startFrom="first"
                 />
 
-                {/* <Chapter04 /> */}
-
                 {/* <MyTimeline
-                    events={infoTimeline.slice(13)}
+                    events={infoHighlights.slice(11)}
                     orientation="vertical"
                     startFrom="first"
+                    bg={'#274242'}
+                    contentBg={'#273542'}
+                    titleColor={'#a8dce3'}
+                    titleColor={'#ffba00'}
                 /> */}
 
-                <RecentProjects />
-
-                <div
-                    style={{
-                        width: "100%",
-                        minHeight: "100vh",
-                        //backgroundColor: "#a7bdc3",
-                        // backgroundColor: "#555",
-                        // webkitBackgroundClip: "text",
-                        // mozBackgroundClip: "text",
-                        // backgroundClip: "text",
-                        // color: "transparent",
-                        // textShadow: "rgba(255,255,255,0.5) 0px 3px 3px",
-                        // textAlign: "center",
-                        // verticalAlign: "middle",
-                        // fontSize: "100px",
-                        // padding: "25% 5%"
-                    }}
-                >
-
-                </div>
+                {/* <Chapter04 /> */}
 
                 <MyVitae />
 
@@ -186,7 +191,7 @@ class App extends Component {
 
 
 
-            </div>
+            </div >
         );
     }
 }

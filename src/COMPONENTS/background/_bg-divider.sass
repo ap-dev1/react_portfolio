@@ -1,0 +1,55 @@
+
+@import "../../styles/_colors.sass"
+@import "../../styles/_fonts.sass"
+
+$gradient1: $blue-whale
+$gradient2: $blue-whale
+
+.bg-divider
+    width: 100vw
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-image: radial-gradient($gradient1, $gradient2)
+    background-size: cover
+    background-position: center
+    font-family: "Share Tech Mono", monospace
+    font-size: 2rem
+    background-blend-mode: multiply,screen, overlay
+
+    > .divider
+        font-family: "Share Tech Mono", monospace
+        color: $divider-font
+        // font-size: 6vh
+        font-size: 3vh
+
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .45)
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &::before,
+        &::after
+            content: ''
+            display: block
+            height: 0.09em
+            min-width: 30vw
+
+        &::before
+            background: linear-gradient(to right, rgba(240,240,240,0), $divider-font)
+            margin-right: 4vh
+
+        &::after
+            background: linear-gradient(to left, rgba(240,240,240,0), $divider-font)
+            margin-left: 4vh
+
+// -----------------
+
+// *
+//     margin: 0
+//     padding: 0
+//     box-sizing: border-box
+
+div

@@ -1,98 +1,75 @@
-@import '../../styles/_divSkills'
-@import '../../styles/_fullscreen'
+@import "../../styles/_colors.sass"
 
+#About
+    width: 100%
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-color: $blue-charcoal
 
-.AboutRow
+    > h1
+        margin: auto
+        margin-bottom: 2rem
+        text-align: center
+        color: #e5e5e5
+        font-family: Montserrat
+
+.about-wrapper
     display: flex
     flex-direction: row
     justify-content: center
-    align-items: stretch
-    min-width: 40%
-    //margin: 1rem 0 1rem 0
-    //border: 1px solid #ddd
-    align-items: center
+    margin: auto
+    margin-top: 2rem
+    min-width: 24rem
+    max-width: 50rem
 
-    #divProfilePic img
-        height: 420px
-        margin-right: 30px
+    @media (max-width: 800px)
+        flex-direction: column
 
-        @media (max-width: 1024px)
-            height: 350px
-            
+    .div-picture
+        max-width: 19rem
+        margin: auto
 
-.AboutColumn
+        img
+            width: 100%
+            min-width: 14rem
+            border-radius: 5px
+            // margin: auto
+
+.about-column
     display: flex
     flex-direction: column
-    height: 100%
-    width: 450px
-    // margin-left: 30px
-    // margin: 0rem .5rem
-    // padding: 0rem .5rem
-    // font-size: 1rem
-
-    // &:first-child
-    //     margin-right: 30px
-
-    // @media (max-width: 1024px)
-    //     width: 400px
+    color: #aaa
+    max-width: 26rem
+    min-width: 14rem
+    font-size: .9rem
+    margin: auto
+    margin-left: 2rem
 
     .narrative
         text-align: justify
-        text-justify: inter-character
-        //line-height: 1.5em
-        width: 100%
-        // margin: 0px auto 15px auto
-        // margin-top: 0px
-        padding: 0px 5px 5px 5px
-        font-size: 14px
-        //border: 1px solid #ddd
+        // text-justify: inter-character
+        font-family: Roboto
+        margin-bottom: 1rem
+        max-width: 100%
+        // font-size: .85rem
 
-    
-.wrapperEducation
-    width: 100%
-    //padding: .5rem
-    //border-radius: .5rem 
-    //background-color: $dark-color3
-    //border: 1px ridge $dark-color3
-    //width: 100%
-    //margin-bottom: .5rem
-    margin: 15px auto 0px auto
+    .div-tech
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        margin: 1rem auto 0 auto
+        max-width: 27rem
+        min-width: 14rem
 
-    transition: all .2s ease-in
-    -webkit-transition: all .2s ease-in
-    -moz-transition: all .2s ease-in
-    -ms-transition: all .2s ease-in
-    -o-transition: all .2s ease-in
-    
-    // &:hover
-
-    //     background-color: $darkest-color
-    //     transition: all .2s ease-in
-    //     -webkit-transition: all .2s ease-in
-    //     -moz-transition: all .2s ease-in
-    //     -ms-transition: all .2s ease-in
-    //     -o-transition: all .2s ease-in
-
-    
-#tableEducation
-    width: 100%
-    font-family: "Roboto", sans-serif
-    font-size: 12px
-    //border: 1px solid #fff
-    padding: 0px
-    
-
-#tableEducation tr
-    margin-bottom: 1rem
-    //border: 1px solid #fff
-
-#tableEducation tr td
-    min-width: 60px
-    padding: .3rem .5rem
-    overflow-wrap: break-word
-    margin-bottom: 1rem
-    color: #dcdcdc
-
-    &:nth-child(1)
-        text-align: center
-        
+        label
+            font-family: Roboto
+            font-size: .8rem
+            text-align: center
+            padding: .2rem .5rem
+            margin: .2rem
+            margin-left: 0
+            border-radius: 5px
+            border: 1px solid rgba(50, 50, 50, 0.99)
+            box-shadow: inset -1px -1px 3px #00000090

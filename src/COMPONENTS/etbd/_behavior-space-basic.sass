@@ -1,0 +1,95 @@
+@import "../../styles/_colors.sass"
+
+.wrapper-behavior-space
+    width: 225px
+    // padding: .5rem 0
+    // margin: 1rem 1rem auto auto
+    margin: auto
+
+    // &::before
+    //     content: "Behavior space"
+    //     position: absolute
+    //     font-size: .8em
+    //     margin-left: -200px
+    //     margin-top: -20px
+    //     width: 60px
+    //     text-align: right
+    //     font-weight: 400
+    //     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+.bright-color
+    &::before
+        color: $h2color
+
+.behavior-space-basic
+    width: 200px
+    margin: auto
+    margin-bottom: .5rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    // background-color: #0f172530
+    border-style: outset
+    //border: 1px solid rgba(40, 150, 150, .25)
+    border-radius: 50%
+    border-width: 0 0 8px 0
+
+    // border-color: rgba(40, 150, 150, .0) #0f1725 #0f1725 #0f1725
+
+    border-color: $live-matching-bg-40
+
+    .min, .c1, .c2, .max, .else
+        font-size: .75rem
+        padding: .2rem .5rem
+        color: #ffffff69
+        // margin-bottom: .5rem
+
+        &:hover
+            // border: 1px solid #aaaaaa40
+            // background-color: #334454
+
+        &:active
+            transform: scale(0.98)
+            transform: translate(2px, 2px)
+
+    .c1
+        margin-right: .1rem
+        margin-top: 20px
+        margin-left: auto
+        // margin-bottom: 0
+        padding: .5rem
+        // font-size: .7rem
+
+    .c2
+        margin-left: .1rem
+        margin-top: 20px
+        margin-right: auto
+        // margin-bottom: 0
+        padding: .5rem
+        // font-size: .8rem
+
+    .min, .max
+        margin-top: 10px
+
+    // .min
+    //     position: absolute
+    //     margin: 0
+    //     font-size: 1rem
+    //     color: #ffffff69
+
+    // .min1
+    //     position: absolute
+    //     margin: 15px auto auto -1px
+    //     font-size: .9rem
+    //     color: #ffffff69
+
+    // .min2
+    //     position: absolute
+    //     margin: 30px auto auto -5px
+    //     font-size: .7rem
+    //     color: #ffffff69
+
+    .else
+        margin-top: 25px
+        color: #ffffff49
+        font-size: .5rem

@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid"
 import React from "react"
 import { Fade } from "react-reveal"
-
+import parse from 'html-react-parser'
 
 export default class TeachingCard extends React.Component {
     render() {
@@ -28,50 +28,64 @@ export default class TeachingCard extends React.Component {
             return (
                 <div
                     className='divDetails'
-                // style={{ margin: "0px", fontSize: "12px", display: "flex", flexDirection: "column", textAlign: "left", width: "100%", padding: "0px 5px ", color: "#19f8e2" }}
+                    style={{
+                        // margin: "0px",
+                        marginBottom: "4px",
+
+                        fontSize: "12px",
+                        display: "flex",
+                        // flexDirection: "column",
+                        flexDirection: "row",
+
+                        textAlign: "left",
+                        width: "100%",
+                        // padding: "0px 5px ",
+                        color: "#19f8e2",
+                        // border: '1px dotted yellow',
+                        justifyContent: 'space-between',
+                    }}
                 >
 
+
+
                     <span
                         style={{
-                            margin: "1px",
                             textAlign: "left",
-                            width: "100%",
                             color: "#eee",
-                            color: `#${fontClr}`
+                            fontSize: '11px',
                         }}
                     >
-                        {this.props.institution}
+                        {this.props.institution} {this.props.sections > 1 ? `(${this.props.sections} sections)` : null}
+
                     </span>
 
 
-
-
-
-                    <span
+                    {/* <span
                         style={{
                             margin: "1px",
                             textAlign: "left",
-                            width: "100%",
                             color: "#ddd",
                         }}
                     >
-                        {this.props.semester}  {this.props.sections > 1 ? ` , ${this.props.sections} sections` : null}
+                        {this.props.semester}  {this.props.sections > 1 ? `, ${this.props.sections} sections` : null}
                     </span>
-
-
+ */}
 
                     <span
                         style={{
-                            margin: "1px",
+                            fontSize: '11px',
                             textAlign: "left",
-                            width: "100%",
                             color: "#ddd",
                         }}
                     >
-                        {this.props.role === "Instructor" ? null : this.props.role}
+                        {this.props.semester}
+
                     </span>
+
 
                 </div >
+
+
             )
         }
 
