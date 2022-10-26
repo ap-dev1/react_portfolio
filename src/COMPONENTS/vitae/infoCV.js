@@ -212,7 +212,10 @@ const infoCV = [
 
         citation:
             "Popa, A., & McDowell, J J. (2010). Absolute reinforcement rates in ETBD. Poster presented at the 33rd Annual Meeting of the Society for the Quantitative Analysis of Behavior, San Antonio, TX.",
-        images: [hamming_abs_reinf_rate, sqab2010],
+        images: [
+            hamming_abs_reinf_rate,
+            // sqab2010
+        ],
         urls: [
             { name: "SQAB 2010", link: "https://www.sqab.org/programs/2010.pdf" },
         ],
@@ -331,7 +334,7 @@ const infoCV = [
 
 
     {
-        name: 'SQAB 2011',
+        name: 'SQAB2011',
         iconName: 'SQAB',
         date: '05/27/2011',
         type: "research poster",
@@ -342,7 +345,9 @@ const infoCV = [
         urls: [
             { name: 'SQAB 2011', link: "https://www.sqab.org/programs/2011.pdf" },
         ],
-        images: [sqab2011],
+        // images: [sqab2011],
+        images: [],
+
         notes: 'page 35 of the pdf schedule; abstract must be typed, no copying allowed; 2nd poster session, friday evening',
         abstract: "Popa & McDowell (2010) showed that a partcular feature of ETBD is computationally equivalent to to the changeover delay (COD) used in experiments with live organisms. McDowell & Popa (2010) suggested that mutation, one of the Darwinian rules implemented in ETBD, is computationally equivalent to impulsivity. The present study clarified how Hamming distances affect ETBD behavior in concurrent schedules, at different mutation rates. The results were qualitatively and quantitatively congruent with those recently reported in the ADHD literature (Taylor et al, 2010): high mutation rates (impulsivity) resulted in low exponents (a) and increased changeover frequency; the maladaptive effects were meliorated by increasing the COD requirement - namely the average Hamming distance between the two target classes.",
 
