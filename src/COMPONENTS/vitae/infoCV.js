@@ -1,7 +1,7 @@
 
 import sqab2009 from "../../assets/sqab_2009_abstract.png";
 // import sqab2010 from "../../assets/sqab_2010_abstract.png";
-import sqab2011 from "../../assets/sqab_2011_abstract.png";
+// import sqab2011 from "../../assets/sqab_2011_abstract.png";
 
 import jeab_2010_abstract from "../../assets/temp/jeab_2010_abstract.png";
 import jeab_2012_abstract from "../../assets/temp/jeab_2012_abstract.png";
