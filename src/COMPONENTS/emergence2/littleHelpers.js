@@ -2,6 +2,7 @@
 import etbdState from "../etbd/etbdState";
 import _ from "lodash";
 
+
 export function createAgentHistory() {
 
     let defaultGeneration = []
@@ -38,10 +39,57 @@ export function gLength() {
 
     let cg = Array.apply(null, Array(nrBits)).map(function (x, i) { return ""; })
 
-    return [nrBits, cg]
+    return binaryHigh.length
 }
 
-// let binaryHigh = this.state.high.toString(2)
-// this.setState({ nrBits: binaryHigh.length })
-// let cg = Array.apply(null, Array(binaryHigh.length)).map(function (x, i) { return ""; })
-// this.setState({ childGenotype: cg })
+
+export function emptyGenotype() {
+    let nrBits = gLength()
+    let cg = Array.apply(null, Array(nrBits)).map(function (x, i) { return ""; })
+    return cg
+}
+
+
+
+export const initialState = {
+    agentHistory: createAgentHistory(),
+    popSize: 5,
+    nrBits: gLength(),
+    demoState: 'start',
+    low: _.min(etbdState.repertoire),
+    high: _.max(etbdState.repertoire),
+    ems: '',
+    emsid: '',
+    reinforced: false,
+
+    rnfMessage: "Reinforce it",
+    rnfColor: "#555",
+
+    p1: null,
+    p2: null,
+    cp: null,
+
+    p1id: null,
+    p2id: null,
+    // g1: emptyGenotype(),
+    // g2: emptyGenotype(),
+    // cg: emptyGenotype(),
+
+    // genotype1: [0, 0, 0, 0, 0, 0],
+    // genotype2: [1, 1, 1, 1, 1, 1],
+    // childPhenotype: 57,
+    // childGenotype: [0, 1, 0, 1, 1, 1, 1],
+
+    mutatedPhenotype: "?",
+    mutatedGenotype: ["?", "?", "?", "?"],
+
+    fitnessZero: "",
+    allParents: [],
+    allChildren: [],
+
+    responses: 0,
+    mu: 6,
+    fitness_colors: ['#000', '#ff6200'],
+
+
+}

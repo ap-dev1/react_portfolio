@@ -334,7 +334,7 @@ const infoCV = [
 
 
     {
-        name: 'SQAB2011',
+        name: 'SQAB 2011',
         iconName: 'SQAB',
         date: '05/27/2011',
         type: "research poster",

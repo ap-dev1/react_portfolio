@@ -1,6 +1,12 @@
 @import "../../../styles/_colors.sass"
 
-#select-parents
+@mixin sunk
+    box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5), inset 1px 1px 3px 1px rgba(40, 0, 0, .5), inset -1px -1px 2px 1px rgba(40, 150, 150, .10), inset -1px -1px 3px 1px rgba(40, 150, 150, .10)
+
+@mixin raised
+    box-shadow: inset -1px -1px 2px 1px #000000bf, inset -1px -1px 3px 1px #000000bf, inset 1px 1px 1px 1px #28969633, inset 1px 1px 2px 1px #28969633
+
+#available-parents
     width: fit-content
     margin: 5px auto
     display: flex
@@ -11,6 +17,7 @@
     justify-content: space-evenly
 
 .btn-maybe-parent
+    @include raised
     width: 40px
     height: 30px
     margin: auto 0px
@@ -24,11 +31,19 @@
     padding-top: 4px
     text-align: center
     background: transparent
-    transition: .2s
+    transition: all .5s ease
+
+    &:disabled
+        opacity: .3
 
     &:hover
         background-color: #0f1b37
-        transition: .2s
+
+    &[data-selected=true]
+        @include sunk
 
 .btn-maybe-parent[title="reinforced"]
     background-color: #dae950
+
+.selected
+    @include sunk

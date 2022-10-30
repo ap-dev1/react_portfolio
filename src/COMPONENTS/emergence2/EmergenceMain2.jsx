@@ -1,7 +1,9 @@
-import "./emergence.sass";
-import "./emergence22.sass";
+import './emergence.sass';
+import './emergence22.sass';
 
-import './fitness/_btn-set-fitness.sass'
+import './fitness/_btn-set-fitness.sass';
+import './_demo-state.sass';
+import './_btn-go-to-rulz.sass';
 
 import React from "react";
 import { nanoid } from "nanoid";
@@ -22,13 +24,15 @@ import FitnessD3 from "./fitness/FitnessD3";
 
 import SelectParents from "./selection/SelectParents";
 
-import RecombineGenotypes from "./recombination/RecombineGenotypes";
+// import RecombineGenotypes from "./recombination/RecombineGenotypes";
+
+import ChildGenotype from "./recombination/ChildGenotype";
 
 import MutationDemo from "./mutation/MutationDemo";
 
-import { createAgentHistory, gLength } from './littleHelpers'
-// import SetFitnessCriterion from "./fitness/SetFitnessCriterion";
+import * as littleHelpers from './littleHelpers';
 
+// import SetFitnessCriterion from "./fitness/SetFitnessCriterion";
 
 
 // var defaultGeneration = []
@@ -50,49 +54,7 @@ export default class EmergenceMain2 extends React.Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            // agentHistory: [
-            //     { tn: -2, population: defaultGeneration },
-            //     { tn: -1, population: defaultGeneration }
-            // ],
-            agentHistory: createAgentHistory(),
-            popSize: 5,
-            nrBits: gLength()[0],
-            demoState: "start",
-            low: d3.min(etbdState.repertoire),
-            high: d3.max(etbdState.repertoire),
-            ems: '',
-            emsid: '',
-            reinforced: false,
-
-            rnfMessage: "Reinforce it",
-            rnfColor: "#555",
-
-            p1: null,
-            p2: null,
-            cp: null,
-
-            g1: gLength()[1],
-            g2: gLength()[1],
-            cg: gLength()[1],
-            genotype1: [0, 0, 0, 0, 0, 0],
-            genotype2: [1, 1, 1, 1, 1, 1],
-
-            childPhenotype: 57,
-            childGenotype: [0, 1, 0, 1, 1, 1, 1],
-
-            mutatedPhenotype: "?",
-            mutatedGenotype: ["?", "?", "?", "?"],
-
-            fitnessZero: "",
-            allParents: [],
-            allChildren: [],
-
-            fitness_colors: ["#000", "#ff6200"],
-            responses: 0,
-
-            miu1: 6
-        }
+        this.state = littleHelpers.initialState
 
         this.initializeAgent = this.initializeAgent.bind(this)
         this.doSomething = this.doSomething.bind(this)
@@ -100,6 +62,7 @@ export default class EmergenceMain2 extends React.Component {
         this.addChildItem = this.addChildItem.bind(this)
         this.automateRecombination = this.automateRecombination.bind(this)
     }
+
 
 
     componentWillMount() {
@@ -173,16 +136,37 @@ export default class EmergenceMain2 extends React.Component {
 
         this.setState({ ems: parseInt(eventTarget.value) })
         this.setState({ agentHistory: history })
+        // this.setState({ demoState: 'selection' })
+    }
+
+
+
+    dsSelection = () => {
         this.setState({ demoState: 'selection' })
     }
 
 
 
+    chooseParent = (eventTarget) => {
+
+        if (!this.state.p1) {
+            this.setState({
+                p1: eventTarget.value,
+                p1id: eventTarget.id
+            })
+        } else {
+            this.setState({
+                p2: eventTarget.value,
+                p2id: eventTarget.id,
+                demoState: 'recombination',
+            })
+        }
+    }
+
 
     reinforceResponse = () => {
 
         let ah = this.state.agentHistory
-        console.log(ah)
         let gn = ah[ah.length - 1]
 
         if (this.state.reinforced === false) {
@@ -196,7 +180,7 @@ export default class EmergenceMain2 extends React.Component {
                 // item.fitness = rf
 
                 let rd = Math.abs(item.phenotype - ems.phenotype)
-                let a = 1 / this.state.miu1
+                let a = 1 / this.state.mu
                 let rf = a * Math.E ** (-a * item.phenotype)
                 let rf1 = 1 - Math.E ** (-a * item.phenotype)
 
@@ -209,7 +193,7 @@ export default class EmergenceMain2 extends React.Component {
                 // console.log("rf: ", rf)
             })
 
-            let chosenFitness = d3.randomExponential(1 / this.state.miu1)(this.state.low, this.state.high)
+            let chosenFitness = d3.randomExponential(1 / this.state.mu)(this.state.low, this.state.high)
 
             // console.log("chosenFitness: ", parseInt(chosenFitness))
 
@@ -255,55 +239,14 @@ export default class EmergenceMain2 extends React.Component {
 
 
 
-    //  SELECT PARENTS:
 
-    doSomethingSelect = (event) => {
-        let value = event.currentTarget.value
-        let bits = this.state.nrBits
-        let gn = dec2binList(bits, parseInt(value))
-        let ppp = this.state.parents
-        let allP = this.state.allParents
-
-        ppp.push(parseInt(value))
-
-        if (ppp.length === 1) {
-            this.setState({ parents: ppp })
-            allP.unshift(ppp)
-        }
-
-        if (ppp.length === 2) {
-            ppp.sort((a, b) => a > b)
-            allP[0] = ppp
-            this.setState({ allParents: allP, parents: [] })
-        }
-
-        if (allP.length >= this.state.popSize && ppp.length === 2) {
-            let pair = allP[0]
-            let idx = 0
-
-            let p1 = parseInt(pair[0])
-            let p2 = parseInt(pair[1])
-            let g1 = dec2binList(this.state.nrBits, p1)
-            let g2 = dec2binList(this.state.nrBits, p2)
-
-            allP[idx] = []
-
-            this.setState({
-                parents: [p1, p2],
-                genotype1: g1,
-                genotype2: g2,
-                allParents: allP,
-                demoState: "recombination"
-            })
-        }
-    };
 
 
 
     twoFitParents = () => {
         let parents = []
 
-        let miu = 15
+        let mu = this.state.mu
         let fitnessZero = this.state.ems
         let range = [this.state.low, this.state.high]
 
@@ -315,7 +258,7 @@ export default class EmergenceMain2 extends React.Component {
         })
 
         while (parents.length < 2) {
-            let randomFitness = parseInt(d3.randomExponential(1 / miu)(range[0], range[1]))
+            let randomFitness = parseInt(d3.randomExponential(1 / mu)(range[0], range[1]))
             let phen1 = fitnessZero - randomFitness
             let phen2 = fitnessZero + randomFitness
 
@@ -662,9 +605,9 @@ export default class EmergenceMain2 extends React.Component {
 
 
 
-    handleMiu1 = () => {
-        console.log("handle miu1: this.state.miu1, not bind: ", this.state.miu1)
-        // this.setState({miu1: 5})
+    handleMu = () => {
+        console.log("handle mu: this.state.mu, no bind: ", this.state.mu)
+        // this.setState({mu: 5})
     }
 
 
@@ -765,7 +708,7 @@ export default class EmergenceMain2 extends React.Component {
                                 populationAgentHist={this.state.agentHistory[this.state.agentHistory.length - 1].population}
 
                                 rnf={this.state.reinforced}
-                                miu={this.state.miu1}
+                                miu={this.state.mu}
 
                             // onChange={this.handleMiu1()}
                             />
@@ -773,24 +716,34 @@ export default class EmergenceMain2 extends React.Component {
                         </div>
 
 
+
+
                         <div className='row' key={nanoid()} >
+
+
                             <NeonEmitBehavior demoState={this.state.demoState} />
 
+
                             <AvailableOptions
+                                demoState={this.state.demoState}
                                 population={this.state.agentHistory[this.state.agentHistory.length - 1].population}
                                 emsid={this.state.emsid}
                                 doSomething={this.doSomething}
                             />
+
+
                         </div>
 
 
 
                         <div className='row' key={nanoid()} >
+
+
                             <button
                                 id='btn-set-fitness'
                                 className={this.state.reinforced === true ? 'sunk' : ' raised'}
                                 key={nanoid()}
-                                disabled={this.state.demoState === "selection" ? false : true}
+                                disabled={this.state.demoState === "emission" ? false : true}
                                 title="Click to reinforce it"
                                 onClick={this.reinforceResponse}
                             >
@@ -799,18 +752,30 @@ export default class EmergenceMain2 extends React.Component {
 
                             <SelectionPressure
                                 varName={'Selection pressure'}
-                                miu={this.state.miu1}
+                                miu={this.state.mu}
                                 bgColor={d3.scaleLinear().domain([5, 15]).range(['grey', 'red'])}
-                                decrement={() => this.setState({ miu1: this.state.miu1 + 1 })}
-                                increment={() => this.setState({ miu1: this.state.miu1 - 1 })}
+                                decrement={() => this.setState({ mu: this.state.mu + 1 })}
+                                increment={() => this.setState({ mu: this.state.mu - 1 })}
                                 ems={this.state.ems}
                             />
 
                         </div>
 
 
+                        <button
+                            id='btn-go-to-rulz'
+                            key={nanoid()}
+                            onClick={this.dsSelection}
+                            title='Initiate the Darwinian cycle'
+                            disabled={(this.state.demoState === 'emission' && this.state.ems) ? false : true}
+                        >
+                            Create next generation
+                        </button>
 
 
+                        {/* <div className='row' key={nanoid()} >
+
+                        </div> */}
 
 
                     </div>
@@ -824,6 +789,10 @@ export default class EmergenceMain2 extends React.Component {
 
                     <div className='rulz-column' key={nanoid()} >
 
+                        <div className='row demo-state' key={nanoid()}   >
+                            <h1>{this.state.demoState}</h1>
+                        </div>
+
                         <div className='selection' key={nanoid()}  >
 
                             <div className='row' key={nanoid()}   >
@@ -833,14 +802,14 @@ export default class EmergenceMain2 extends React.Component {
                                     allParents={this.state.allParents}
                                     popSize={this.state.popSize}
                                 />
-                                <button
+                                {/* <button
                                     className='btn-automate'
                                     key={nanoid()}
                                     onClick={this.automateSelection}
                                     title='automate it'
                                 >
                                     automate
-                                </button>
+                                </button> */}
                                 <button
                                     className='btn-continue'
                                     key={nanoid()}
@@ -853,21 +822,29 @@ export default class EmergenceMain2 extends React.Component {
 
 
 
+
+
                             <div className='row' key={nanoid()}   >
                                 <SelectParents
                                     demoState={this.state.demoState}
-                                    population={this.state.agentHistory[this.state.agentHistory.length - 1].population}
-                                    doSomethingSelect={this.doSomethingSelect}
+                                    // availableParents={this.state.agentHistory[this.state.agentHistory.length - 1].population}
+                                    availableParents={this.state.agentHistory[this.state.agentHistory.length - 1].population.filter(item => item.phenotype !== this.state.p1)}
+                                    chooseParent={this.chooseParent}
                                     reinforced={this.state.reinforced}
+                                    p1id={this.state.p1id}
+                                    p2id={this.state.p2id}
                                 />
+
+
                             </div>
 
 
-                            <div className='row' key={nanoid()}   >
-                                <div className="parents-wrapper" key={nanoid()}>
+                            {/* <div className='row' key={nanoid()}   >
+                                <div className="parents-wrapper" key={nanoid()}
+                                >
                                     {AllTheParents}
                                 </div>
-                            </div>
+                            </div> */}
 
 
                         </div>
@@ -878,39 +855,19 @@ export default class EmergenceMain2 extends React.Component {
 
                                 < NeonRecombination demoState={this.state.demoState} />
 
-                                <button
-                                    className="btn-automate"
-                                    onClick={this.automateRecombination}
-                                    key={nanoid()}
-                                    title="automate it"
-                                >
-                                    auto
-                                </button>
 
                             </div>
 
 
-                            <div className='row' key={nanoid()}>
-                                <RecombineGenotypes
-                                    nrBits={this.state.nrBits}
-                                    demoState={this.state.demoState}
-                                    parent1={this.state.p1}
-                                    parent2={this.state.p2}
-
-                                    // parent1={this.state.parents[0]}
-                                    // parent2={this.state.parents[1]}
-                                    g1={this.state.genotype1}
-                                    g2={this.state.genotype2}
-
-                                    low={this.state.low}
-                                    high={this.state.high}
-
-                                    addChildItem={this.addChildItem}
-                                />
-                            </div>
 
 
-
+                            <ChildGenotype
+                                nrBits={this.state.nrBits}
+                                demoState={this.state.demoState}
+                                p1={this.state.p1}
+                                p2={this.state.p2}
+                            // addChildItem={this.addChildItem}
+                            />
 
 
                         </div>

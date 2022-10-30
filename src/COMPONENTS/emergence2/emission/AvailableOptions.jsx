@@ -19,7 +19,7 @@ export default function AvailableOptions(props) {
 
                     return (
                         <button
-                            className='option'
+                            className='btn-option'
                             data-selected={props.emsid === cellid ? true : false}
 
                             title={item.status}
@@ -30,7 +30,7 @@ export default function AvailableOptions(props) {
 
                             role='input'
                             key={nanoid()}
-
+                            disabled={props.demoState === 'emission' ? false : true}
                         >
                             {item.phenotype}
                         </button>
