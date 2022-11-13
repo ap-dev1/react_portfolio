@@ -25,7 +25,7 @@ import ResearchDemo from "./COMPONENTS/background/ResearchDemo";
 // import MatchingDemo from "./COMPONENTS/matching/MatchingDemo";
 
 // import EmergenceMain from "./COMPONENTS/emergence/EmergenceMain";
-import EmergenceMain2 from "./COMPONENTS/emergence2/EmergenceMain2.jsx";
+// import EmergenceMain2 from "./COMPONENTS/emergence2/EmergenceMain2.jsx";
 import TeaserPopa2019 from "./COMPONENTS/background/TeaserPopa2019";
 
 
@@ -44,7 +44,9 @@ class App extends Component {
             { markerID: 'research-overview', navButtonID: "btnresearch-overview" },
 
             { markerID: 'research-demo', navButtonID: "btnresearch-demo" },
-            { markerID: 'EmergenceSection', navButtonID: "btnEmergenceSection" },
+
+
+            // { markerID: 'EmergenceSection', navButtonID: "btnEmergenceSection" },
 
 
             { markerID: 'Parkour', navButtonID: "btnParkour" },
@@ -126,10 +128,12 @@ class App extends Component {
 
                 <ResearchDemo />
 
-                <BgDivider title="HOW IT WORKS" />
+                {/* <BgDivider title="HOW IT WORKS" /> */}
 
-                <EmergenceMain2 />
+                {/* <EmergenceMain2 /> */}
 
+
+                <BgDivider title="highlights" />
 
 
                 {/* <div

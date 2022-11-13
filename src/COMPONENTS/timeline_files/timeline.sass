@@ -34,6 +34,7 @@ $itemWidth: 75%
     position: relative
     padding-top: 1rem
     padding-bottom: 1rem
+    // background-color: $blue-whale
 
 //LINE:
 .timeline::after
@@ -49,6 +50,7 @@ $itemWidth: 75%
     position: absolute
     // background-color: #222333
     background-color: #168d6f
+    // opacity: 0
 
 // ITEM:
 .timeline .item
@@ -64,31 +66,14 @@ $itemWidth: 75%
         z-index: 1
         content: attr(content1)
 
-        // left: -200px
-        // top: 44px
-        // padding: .2rem
-
-        // width: 180px
-        // position: absolute
-        // text-align: right
-        // font-size: .8rem
-        // color: #aaa
-        //======================
-        // left: -$leftMargin
-        // top: 40px
-        // padding: .2rem
-        //======================
-
         left: -7rem
         top: 2rem
-        // padding: .2rem
         width: 7rem
         padding: .2rem 1rem
         position: absolute
         text-align: center
         font-size: 1rem
         font-weight: 700
-        color: #1a8268bb
         color: #299d80bb
 
     // CIRCLE:
@@ -104,13 +89,12 @@ $itemWidth: 75%
         position: absolute
         font-family: Roboto
         border-radius: 50%
-        background-color: #168d6f
         background-color: #67d2b7
 
     // CONTENT:
     .itemContent
         width: 100%
-        background-color: $contentBackground
+        background-color: $blue-whale
         padding: .5rem .5rem 1rem .5rem
         display: flex
         flex-direction: column
@@ -190,12 +174,6 @@ $itemWidth: 75%
         -ms-transition: all .2s ease-in
         -o-transition: all .2s ease-in
 
-// .timeline .item:nth-child(5) .itemContent
-    //background-color: #274235
-    //background-image: linear-gradient(to right, #1c3026 , #070c09 ,#070c09 ,#070c09,  #1c3026)
-    //border-radius: 20px
-    // background-image: linear-gradient(to right, #1c3026 , #070c09 ,#070c09 ,#070c09,  #1c3026, to bottom, #1c3026 , #070c09 ,#070c09 ,#070c09,  #1c3026)
-
 .timeline .item:nth-child(3):before
     top: 35px
 
@@ -214,14 +192,6 @@ $itemWidth: 75%
     left: -8px
     top: 25px
 
-// .timeline .item:nth-child(4):after
-//     border: 1px solid #000
-//     background-image: url('./icon_qual.png')
-//     width: 40px
-//     height: 40px
-//     left: -8px
-//     top: 25px
-
 .timeline .item:nth-child(5):after
     border: 1px solid #000
     background-image: url('../../assets/icon_graduation_yellow2.png')
@@ -229,70 +199,3 @@ $itemWidth: 75%
     height: 40px
     left: -8px
     top: 25px
-
-// .timeline .item:nth-child(11):before
-//     font-family: 'Yellowtail', cursive
-//     font-size: 2rem
-
-// .timeline .item:nth-child(15):before
-//     font-family: 'Yellowtail', cursive
-//     font-size: 2rem
-
-// .timeline .item:nth-child(4) .itemContent
-//     background-color: #eeea84
-//     color: #333
-
-// .timeline .item:nth-child(5) .itemContent
-//     background-color: #d32f2398
-
-// .timeline .item:nth-child(6) .itemContent
-//     background-color: #d32f2398
-
-// .timeline .item:nth-child(8) .itemContent
-//     background-color: #eeea84
-//     color: #333
-
-// .timeline .item:nth-child(9) .itemContent
-//     background-color: #d32f2398
-
-// .timeline .item:nth-child(10) .itemContent
-//     background-color: #d32f2398
-
-// .timeline .item:nth-child(11) .itemContent
-//     background-color: #d32f2398
-
-// .timeline .item:nth-child(14) .itemContent
-//     background-color: #eeea84
-//     color: #333
-
-// --------------------------------------------
-
-// .timeline .item:nth-child(4) .projectColumnLeft .title
-//     font-family: "'Yellowtail', cursive"
-//     color: #222
-//     text-align: center
-
-// .timeline .item:nth-child(6) .projectColumnLeft .title
-//     color: "#fff"
-
-// .timeline .item:nth-child(8) .projectColumnLeft .title
-//     font-family: "'Yellowtail', cursive"
-//     color: #222
-//     text-align: center
-
-// .timeline .item:nth-child(14) .projectColumnLeft .title
-//     font-family: "'Yellowtail', cursive"
-//     color: #222
-//     text-align: center
-
-//-----------------------------------------------
-
-// TITLE
-// .timeline .item.right:nth-child(1) .projectColumnLeft .title
-//     background-color: #FF652F
-
-//.timeline .item:nth-child(14) .itemContent
-// .timeline .item:nth-child(1) .title
-//     font-family: "'Yellowtail', cursive"
-//     color: #94ffa6
-//     //text-align: center

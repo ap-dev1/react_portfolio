@@ -35,12 +35,14 @@ var infoNav = [
         info: "Pre-candidacy work, 2007-2010: computational modelling, ETBD, Hamming Distances, Changeover Delay, Masters Thesis",
         btnClass: "navRegular"
     },
-    {
-        sectionID: 'EmergenceSection',
-        btnText: "Inside ETBD",
-        info: "The Darwinian cycle, step by step",
-        btnClass: "navRegular"
-    },
+
+
+    // {
+    //     sectionID: 'EmergenceSection',
+    //     btnText: "Inside ETBD",
+    //     info: "The Darwinian cycle, step by step",
+    //     btnClass: "navRegular"
+    // },
 
 
     /////////////////////////////////////////////////////////////

@@ -3,151 +3,128 @@ import './_child-genotype.sass';
 import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import { dec2binList } from "../../etbd_hamming/hammingFunctions";
+import * as recHelpers from './recHelpers';
 
-
-import RadioBit from "./RadioBit";
-
+let g0 = recHelpers.emptyGenotype(0)
 
 export default function ChildGenotype(props) {
 
-    const [g1, setg1] = useState([])
-    const [g2, setg2] = useState([])
-    const [powers, setpowers] = useState([])
+    const [g1, setg1] = useState(g0)
+    const [g2, setg2] = useState(g0)
+    const [newp, setnewp] = useState(0)
 
-    const [cg, setcg] = useState([])
-    const [cp, setcp] = useState('\"child\"')
+    const [newg, setnewg] = useState(
+        // [
+        //     { name: 'bit0', value: 0 },
+        //     { name: 'bit1', value: 0 },
+        //     { name: 'bit2', value: 0 },
+        //     { name: 'bit3', value: 0 },
+        //     { name: 'bit4', value: 0 },
+        // ]
 
-    function toggleBit(muie) {
-        let v = parseInt(muie.value)
 
-        let x = cg
-        let mybit = x.filter(item => item.name === muie.name)[0]
-        mybit['selected'] = v
-        setcg(x)
+        {
+            'bit0': 0,
+            'bit1': 0,
+            'bit2': 0,
+            'bit3': 0,
+            'bit4': 0
+        }
 
-        console.log(mybit)
+    )
+
+
+
+
+    function toggleBit(event) {
+        let a = event.target.name
+        let b = event.target.value
+        console.log("toggle bit event: ", a, b)
+        console.log("newg: ", newg[a])
+
     }
 
+
     useEffect(() => {
-        let bits = parseInt(props.nrBits)
-        let pws = []
-
-        for (let i = 0; i < bits; i++) {
-            pws.unshift(2 ** i)
-        }
-
-        setpowers(pws)
-
         if (props.p1) {
             let phen = parseInt(props.p1)
-            let gen = dec2binList(bits, phen)
+            let gen = dec2binList(g1.length - 1, phen)
             setg1(gen)
         }
-
         if (props.p2) {
             let phen = parseInt(props.p2)
-            let gen = dec2binList(bits, phen)
+            let gen = dec2binList(g2.length - 1, phen)
             setg2(gen)
         }
-
-
-        // if (g1.length > 0 && g2.length > 0) {
-        //     let bits = parseInt(props.nrBits)
-
-        //     let child = []
-
-        //     for (let i = 0; i < bits; i++) {
-        //         let rnd = Math.random()
-        //         let selected
-
-        //         if (rnd < .5) {
-        //             selected = parseInt(g1[i])
-        //         } else {
-        //             selected = parseInt(g2[i])
-        //         }
-
-        //         child.push({
-        //             worth: powers[i],
-        //             name: `bit${powers[i]}`,
-        //             options: [
-        //                 parseInt(g1[i]),
-        //                 parseInt(g2[i])
-        //             ],
-        //             selected: selected
-        //         })
-        //     }
-        //     setcg(child)
-        // }
-
     },
-        [props]
+        [props.p1, props.p2]
     )
 
-
-    useEffect(() => {
-
-        let bits = parseInt(props.nrBits)
-
-        if (g1.length === bits && g2.length === bits) {
-
-            let child = []
-
-            for (let i = 0; i < bits; i++) {
-                let rnd = Math.random()
-                let selected
-
-                if (rnd < .5) {
-                    selected = parseInt(g1[i])
-                } else {
-                    selected = parseInt(g2[i])
-                }
-
-                child.push({
-                    name: `bit${powers[i]}`,
-                    options: [
-                        parseInt(g1[i]),
-                        parseInt(g2[i])
-                    ],
-                    selected: selected
-                })
-            }
-            setcg(child)
-        }
-
-    },
-        [g1, g2]
-    )
 
 
 
     return (
         <div id='recombination-demo' key={nanoid()}  >
+
             <div id='selected-parents' key={nanoid()} >
                 <label>Phenotypes</label>
-                <label key={nanoid()}>{props.p1 ? props.p1 : 'p1'}</label>
-                <label key={nanoid()}>{props.p2 ? props.p2 : 'p2'}</label>
-                <label key={nanoid()}>{cp}</label>
+                <label key={nanoid()}>{props.p1}</label>
+                <label key={nanoid()}>{props.p2}</label>
+                <label key={nanoid()}>{newp}</label>
+                {/* <label key={nanoid()}>{newg.toString()}</label> */}
             </div>
-
-
 
 
             <div id='child-genotype' key={nanoid()} >
                 {
-                    cg.map((item, i) => {
+                    newg.map((item, i) => {
                         return (
-                            <RadioBit
-                                options={[g1[i], g2[i]]}
-                                name={item.name}
-                                selected={item.selected}
-                                toggleBit={toggleBit}
-                            />
+                            <div
+                                className='new-bit-wrapper'
+                                role='radiogroup'
+                            // name={item.name}
+                            // name={item.na}
+                            >
+                                <input
+                                    // className='option-input'
+                                    type="radio"
+                                    id="option1"
+                                    value={g1[i]}
+                                    name={item.name}
+                                    onChange={toggleBit}
+                                />
+                                <label for='option1'
+                                // className="lbl-option-text"
+                                >
+                                    {parseInt(g1[i])}
+                                </label>
+
+                                <input
+                                    // className="radio_input1"
+                                    type="radio"
+                                    id='option2'
+                                    value={g2[i]}
+                                    name={item.name}
+                                    onChange={toggleBit}
+                                />
+                                <label
+                                    // className="lbl-option-text"
+                                    for='option2'
+                                >
+                                    {parseInt(g2[i])}
+                                </label>
+                                {/* <button
+                                    classname='new-bit'
+                                >
+                                    {item.value}
+                                </button> */}
+                            </div>
                         )
-                    })
+                    }
+                    )
                 }
             </div>
-
-
         </div>
+
     )
-}
+} 

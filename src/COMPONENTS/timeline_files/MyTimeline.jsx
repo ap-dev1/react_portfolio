@@ -149,7 +149,8 @@ const MyTimeline = (props) => {
                     className='itemContent'
                     key={nanoid()}
                     style={{
-                        backgroundColor: props.contentBg ? props.contentBg : '#274235'
+                        // backgroundColor: props.contentBg ? props.contentBg : '#274235'
+                        backgroundColor: props.contentBg ? props.contentBg : '#01303f'
                     }}
                 >
 
@@ -215,7 +216,7 @@ const MyTimeline = (props) => {
             className='timeline'
             key={nanoid()}
             style={{
-                backgroundColor: props.bg ? props.bg : '#274235',
+                backgroundColor: props.bg ? props.bg : '#01303f',
             }}
         >
 

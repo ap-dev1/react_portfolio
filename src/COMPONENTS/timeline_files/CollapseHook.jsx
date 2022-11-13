@@ -9,7 +9,7 @@ export default function CollapseHook(props) {
     return (
 
         <>
-            <Button
+            <button
                 onClick={() => setOpen(!open)}
                 aria-controls="example-collapse-text"
                 aria-expanded={open}
@@ -17,15 +17,15 @@ export default function CollapseHook(props) {
 
                 style={{
                     padding: props.padding ? props.padding : ".4rem 1rem..3rem 1rem",
-                    backgroundColor: props.background ? props.background : "#02382a",
+                    backgroundColor: props.background ? props.background : "transparent",
                     margin: props.margin ? props.margin : ".2rem auto .2rem 0",
                     fontWeight: props.fontWeight ? props.fontWeight : 400,
 
                 }}
-                className="collapseHover"
+                className="btn-collapse-hover"
             >
                 {props.collapsedTitle}
-            </Button>
+            </button>
 
             <Collapse in={open}>
                 <div

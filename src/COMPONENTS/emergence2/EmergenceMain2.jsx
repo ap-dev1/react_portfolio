@@ -24,13 +24,13 @@ import FitnessD3 from "./fitness/FitnessD3";
 
 import SelectParents from "./selection/SelectParents";
 
-// import RecombineGenotypes from "./recombination/RecombineGenotypes";
 
 import ChildGenotype from "./recombination/ChildGenotype";
 
 import MutationDemo from "./mutation/MutationDemo";
 
 import * as littleHelpers from './littleHelpers';
+
 
 // import SetFitnessCriterion from "./fitness/SetFitnessCriterion";
 
@@ -861,18 +861,25 @@ export default class EmergenceMain2 extends React.Component {
 
 
 
-                            <ChildGenotype
+                            {/* <ChildGenotype
                                 nrBits={this.state.nrBits}
                                 demoState={this.state.demoState}
                                 p1={this.state.p1}
                                 p2={this.state.p2}
-                            // addChildItem={this.addChildItem}
-                            />
-
+                                addChildItem={this.addChildItem}
+                            /> */}
 
                         </div>
 
 
+                        <button
+                            className='btn-continue'
+                            key={nanoid()}
+                            onClick={this.automateSelection}
+                            title='next rule'
+                        >
+                            next rule
+                        </button>
 
 
                         <div className='mutation' key={nanoid()} >
@@ -882,7 +889,10 @@ export default class EmergenceMain2 extends React.Component {
                             </div>
 
                             <div className='row' key={nanoid()}>
-                                <div className='children-wrapper' key={nanoid()}  >
+                                <div
+                                    className='children-wrapper'
+                                    key={nanoid()}
+                                >
                                     {AllTheChildren}
                                     <button
                                         className="btn-swap"
@@ -902,7 +912,6 @@ export default class EmergenceMain2 extends React.Component {
                                     genotype={this.state.childGenotype}
                                     childPhenotype={this.state.childPhenotype}
                                     addToNext={this.replaceOriginal}
-
                                 />
                             </div>
 

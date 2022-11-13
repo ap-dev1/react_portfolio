@@ -19,49 +19,12 @@ const fitness_gradient = d3.scaleLinear()
 
 export default function AvailableParents(props) {
 
+
+
+
     function handleClick(event) {
         props.chooseParent(event.target)
     }
-
-
-
-
-
-    // if (props.demoState==='selection') {
-    //     ParentPopulation = this.props.population.map((item, i) => {
-    //         let cellId = `phenotype_${i + 1}`
-    //         let parent
-
-    //         if (item) {
-    //             parent = item
-    //         } else {
-    //             parent = { phenotype: "", genotype: "", status: "" }
-    //         }
-
-    //         return (
-
-    //             <button
-    //                 dataParent={false}
-    //                 key={nanoid()}
-    //                 title={parent.status}
-    //                 value={parent.phenotype}
-    //                 id={cellId}
-    //                 onClick={props.chooseParent}
-
-    //                 className='btn-maybe-parent'
-
-    //                 style={{
-    //                     background: this.props.reinforced === true ? fitness_gradient(parseFloat(item.fitness)) : "transparent",
-    //                     border: this.props.reinforced === true ? `1px solid ${fitness_gradient(parseFloat(item.fitness))}` : `0px solid ${fitness_gradient(parseFloat(item.fitness))}`
-    //                 }}
-
-    //             >
-    //                 {parent.phenotype}
-
-    //             </button>
-    //         )
-    //     })
-    // }
 
 
 
@@ -103,4 +66,44 @@ export default function AvailableParents(props) {
 
 
 }
+
+
+
+
+
+    // if (props.demoState==='selection') {
+    //     ParentPopulation = this.props.population.map((item, i) => {
+    //         let cellId = `phenotype_${i + 1}`
+    //         let parent
+
+    //         if (item) {
+    //             parent = item
+    //         } else {
+    //             parent = { phenotype: "", genotype: "", status: "" }
+    //         }
+
+    //         return (
+
+    //             <button
+    //                 dataParent={false}
+    //                 key={nanoid()}
+    //                 title={parent.status}
+    //                 value={parent.phenotype}
+    //                 id={cellId}
+    //                 onClick={props.chooseParent}
+
+    //                 className='btn-maybe-parent'
+
+    //                 style={{
+    //                     background: this.props.reinforced === true ? fitness_gradient(parseFloat(item.fitness)) : "transparent",
+    //                     border: this.props.reinforced === true ? `1px solid ${fitness_gradient(parseFloat(item.fitness))}` : `0px solid ${fitness_gradient(parseFloat(item.fitness))}`
+    //                 }}
+
+    //             >
+    //                 {parent.phenotype}
+
+    //             </button>
+    //         )
+    //     })
+    // }
 

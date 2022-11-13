@@ -37,7 +37,7 @@ export function gLength() {
     let binaryHigh = phenHigh.toString(2)
     let nrBits = binaryHigh.length
 
-    let cg = Array.apply(null, Array(nrBits)).map(function (x, i) { return ""; })
+    // let cg = Array.apply(null, Array(nrBits)).map(function (x, i) { return ""; })
 
     return binaryHigh.length
 }
@@ -65,12 +65,12 @@ export const initialState = {
     rnfMessage: "Reinforce it",
     rnfColor: "#555",
 
-    p1: null,
-    p2: null,
-    cp: null,
+    p1: _.max(etbdState.repertoire) - 7,
+    p2: _.max(etbdState.repertoire),
+    cp: 0,
 
-    p1id: null,
-    p2id: null,
+    p1id: "",
+    p2id: "",
     // g1: emptyGenotype(),
     // g2: emptyGenotype(),
     // cg: emptyGenotype(),
