@@ -4,7 +4,7 @@ import React, { Component } from "react";
 //import { Button } from "react-bootstrap";
 import parse from "html-react-parser";
 import infoContact from "../../DATA/infoContact";
-import data from '../../DATA/myData'
+// import data from '../../DATA/myData'
 import { nanoid } from 'nanoid'
 
 

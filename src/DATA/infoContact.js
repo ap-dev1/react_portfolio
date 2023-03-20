@@ -9,12 +9,23 @@ var infoContact = [
     //     img: [],
     // },
 
+
+
     {
         name: "andrei.popa.dev@gmail.com",
         url: "https://drive.google.com/drive/folders/1d6QlunZ_zh-mTXB1H2u0C5DQC7Vjmq5U?usp=sharing",
         key: 111,
         image_src: "link_google_drive_img.jpg",
         info: "Click to copy to clipboard. Use it only for good.",
+    },
+
+
+    {
+        name: "Twitter",
+        url: "https://www.andreipopa515.com/",
+        key: 6,
+        image_src: "src/assets/link_images/link_PsyArXiv_OSF_profile.png",
+        info: "personal website, made before I knew anything about web development. It touches on personal aspects of my life.",
     },
 
     {
@@ -47,13 +58,13 @@ var infoContact = [
         info: "Google Scholar does not index profiles registered with non-edu email addresses. Use the direct link to access my profile.",
     },
 
-    // {
-    //     name: 'LinkedIn',
-    //     url: 'http://www.linkedin.com/in/andrei-popa-evd',
-    //     key: 5,
-    //     image_src: 'link_linkedin_3.png',
-    //     info: 'info',
-    // },
+    {
+        name: "LinkedIn",
+        url: "http://www.linkedin.com/in/dr-andrei-popa",
+        key: 5,
+        image_src: "link_linkedin_3.png",
+        info: "http://www.linkedin.com/in/dr-andrei-popa",
+    },
 
     {
         name: "OSF/PsyArXiv",
@@ -62,6 +73,19 @@ var infoContact = [
         image_src: "src/assets/link_images/link_PsyArXiv_OSF_profile.png",
         info: "Open Science Foundation",
     },
+
+
+    {
+        name: "https://www.andreipopa515.com/",
+        url: "https://www.andreipopa515.com/",
+        key: 7,
+        // image_src: "src/assets/link_images/link_PsyArXiv_OSF_profile.png",
+        image_src: "",
+        info: "my first personal website, made before I knew anything about web development. Less formal.",
+    },
+
+
+
 ];
 
 export default infoContact;
