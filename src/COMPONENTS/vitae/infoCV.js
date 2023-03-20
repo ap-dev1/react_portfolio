@@ -109,7 +109,7 @@ const infoCV = [
         ],
         images: [sqab2009],
         description: "McDowell et. al. (2008) hypothesized that the Hamming distance between the target classes may be functionally equivalent to a changeover delay. Exploring this parallel became the topic of my Masters' thesis.",
-        keywords: ["ETBD", "matching", 'emergence', 'Hamming', ],
+        keywords: ["ETBD", "matching", 'emergence', 'Hamming',],
 
     },
 
@@ -181,7 +181,7 @@ const infoCV = [
         iconName: 'BP',
         type: "journal article",
         date: "03/01/2010",
-        
+
         citation:
             "Popa, A., & McDowell, J. J. (2010). The effect of Hamming distances in a computational model of selection by consequences. <i>Behavioural Processes</i>, <i>84</i>, 428-434.",
         images: [bp_2010_abstract],
@@ -199,7 +199,7 @@ const infoCV = [
         abstract:
             "McDowell (2004) instantiated the Darwinian principles of selection, recombination, and mutation in a computational model of selection by consequences.The model has been tested under a variety of conditions and the outcome is quantitatively indistinguishable from that displayed by live organisms. The computational model animates a virtual organism with a repertoire of 100 behaviors, selected from the integers from 0 to 1023, where the corresponding binary representations constitute the behavior’s genotypes. Using strings of binary digits raises the specific problem of Hamming distances: the number of bits that must be changed from 1 to 0 or from 0 to 1 in order to obtain another string of equal length.McDowell hypothesized that the Hamming distance may be computationally equivalent to the changeover delay used in experiments with live organisms.The results of the present experiments confirmed this hypothesis and revealed a robust rule about the effects of Hamming distances within the model, namely, in order to obtain good matching, the difference between the Hamming distance that separates the target classes and the largest Hamming distance comprised within a class must be equal to or larger than three.",
 
-            keywords: ["ETBD", "Hamming Distances", "Changeover Delay", "matching", "sensitivity", "COD", 'hamming'],
+        keywords: ["ETBD", "Hamming Distances", "Changeover Delay", "matching", "sensitivity", "COD", 'hamming'],
     },
 
 
@@ -882,7 +882,7 @@ const infoCV = [
         abstract:
             "The biopsychosocial model acknowledges that high-level phenotypes (e.g., impulsivity, good at math, etc.) are multiply-caused by a plethora of contributing, interacting factors, such as specific genetic configurations, socio-economic status, culture, ethnicity, gender, and so on.  However, the model does not explain how these variables interact with each other or how, exactly, they contribute to a specific outcome. I submit to the reader a potential explanation. Drawing on theoretical advancements from the field of complex systems and on computational research on the dynamics of behavioral repertoires (McDowell, 2013; Popa, 2013; Popa & McDowell, 2016), the theory discussed here proposes that the interaction between agents and their environment consists of a continuous-choice process during which agents adapt to environmental changes. This process molds an individual’s context (e.g., income, culture, etc.) into robust collections of cognitive, emotional, and behavioral manifestations like “impulsivity”, “authoritative parent”, etc. The factors typically associated with impulsivity (for example) contribute to its emergence indirectly, by altering the relative value of existing options, and, by extension, the moment-to-moment probability of choosing one course of action over another. High-level phenotypes, therefore, cannot be directly explained by the contributing factors themselves, but by the moment-to-moment changes said factors produce in cognition and action.",
 
-        keywords: ['population thinking', 'individuality','emergence', 'psychodiversity', 'scienta nova'],
+        keywords: ['population thinking', 'individuality', 'emergence', 'psychodiversity', 'scienta nova'],
 
     },
 
@@ -920,7 +920,7 @@ const infoCV = [
         abstract:
             "Physical forces acting on particles explain how physical systems change over time. Evolutionary forces acting on populations of genomes explain change in the genetic structure of populations across generations. Change in psychological systems - i.e. human development, or learning - is not yet understood. Although dynamic principles have been proposed, their target remained vaguely defined. Here I identified their target and I showed how it ties into psychology.",
 
-            keywords: ['population thinking', 'individuality','emergence', 'psychodiversity', 'scienta nova'],
+        keywords: ['population thinking', 'individuality', 'emergence', 'psychodiversity', 'scienta nova'],
     },
 
 
@@ -956,7 +956,7 @@ const infoCV = [
         abstract:
             "Novelty requires error. Automata are deterministic systems, governed by precise rules. The question examined here was: what if every new cell has a small probability to be written incorrectly, i.e. to mutate from 0 to 1 or viceversa. ... Low mutation probabilities facilitated the emergence of new patterns and structures, disconnected from the initial conditions.",
 
-            keywords: ["Wolfram", "ETBD", "complexity", "emergence", "Elementary Cellular Automata", "cellular automaton", 'novelty' ],
+        keywords: ["Wolfram", "ETBD", "complexity", "emergence", "Elementary Cellular Automata", "cellular automaton", 'novelty'],
     },
 
 
