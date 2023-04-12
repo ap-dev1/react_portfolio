@@ -10,6 +10,8 @@ var infoContact = [
     // },
 
 
+    // https://ko-fi.com/fixmachina
+    // 
 
     {
         name: "andrei.popa.dev@gmail.com",

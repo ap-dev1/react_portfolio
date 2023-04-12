@@ -1,5 +1,6 @@
 import "./teaching-intro.sass";
 import { nanoid } from "nanoid";
+import CarouselSwipe from "./CarouselSwipe";
 
 export default function TeachingIntro() {
 
@@ -8,7 +9,9 @@ export default function TeachingIntro() {
         <div id='teaching-intro' key={nanoid()}>
 
             <div className='wrapper'>
+
                 <h1 className='title' key={nanoid()} >  TEACHING  </h1>
+
                 <h2 className='years' key={nanoid()} >  2007 - 2018  </h2>
 
                 <div className='schools'>
@@ -29,8 +32,7 @@ export default function TeachingIntro() {
                     </span>
                 </div>
 
-
-
+                <CarouselSwipe />
             </div>
 
 

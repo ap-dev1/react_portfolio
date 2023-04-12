@@ -7,13 +7,9 @@ import HeaderSection from "./COMPONENTS/header_files/HeaderSection";
 import About from "./COMPONENTS/about_files/AboutSection";
 import MyTimeline from "./COMPONENTS/timeline_files/MyTimeline";
 
-// import Chapter04 from "./COMPONENTS/background/Chapter04";
-// import RecentProjects from "./COMPONENTS/recent/RecentProjects";
-
 import TeachingIntro from "./COMPONENTS/teaching/TeachingIntro";
-import TeachingExperience from "./COMPONENTS/teaching/TeachingSection";
+
 import Contact from "./COMPONENTS/contact/ContactSection";
-//import References from "./COMPONENTS/references/ReferencesSection";
 
 import MyVitae from "./COMPONENTS/vitae/MyVitae";
 
@@ -26,12 +22,14 @@ import ResearchDemo from "./COMPONENTS/background/ResearchDemo";
 
 // import EmergenceMain from "./COMPONENTS/emergence/EmergenceMain";
 // import EmergenceMain2 from "./COMPONENTS/emergence2/EmergenceMain2.jsx";
-import TeaserPopa2019 from "./COMPONENTS/background/TeaserPopa2019";
+// import TeaserPopa2019 from "./COMPONENTS/background/TeaserPopa2019";
 
 
 import BgDivider from "./COMPONENTS/background/BgDivider";
 
 
+
+const abc = ["A", "B", "C"]
 
 class App extends Component {
 
@@ -104,6 +102,7 @@ class App extends Component {
 
 
 
+
     render() {
 
         return (
@@ -115,10 +114,6 @@ class App extends Component {
                 <About />
 
                 <TeachingIntro />
-
-                <TeachingExperience />
-
-                {/* <TeaserPopa2019 /> */}
 
                 <ResearchIntro />
 
