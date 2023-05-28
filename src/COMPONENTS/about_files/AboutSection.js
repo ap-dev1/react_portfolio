@@ -1,5 +1,5 @@
 import "./about.sass"
-
+import profilePic from "./346474668_741310824362862_2634772592078921806_n.jpg"
 import React, { Component } from 'react'
 import data from '../../DATA/myData'
 import parse from 'html-react-parser'
@@ -13,20 +13,23 @@ class About extends Component {
 
     render() {
 
-        var Skills = infoSkills.skills.map((item) => {
-            return (
-                <label key={nanoid()}  >
-                    {item.name}
-                </label >
-            )
-        })
+        // var Skills = infoSkills.skills.map((item) => {
+        //     return (
+        //         <label key={nanoid()}  >
+        //             {item.name}
+        //         </label >
+        //     )
+        // })
 
 
         return (
 
             <div id='About' key={nanoid()} >
 
-                <h1 key={nanoid()}>About me</h1>
+                {/* <h1 key={nanoid()}>There are beautiful things ahead</h1> */}
+
+
+
 
                 <div className='about-wrapper' key={nanoid()} >
 
@@ -34,11 +37,43 @@ class About extends Component {
                         {
                             data.ShowAboutImage ?
                                 <img
-                                    src={data.aboutImage}
+                                    // src={data.aboutImage}
+                                    src={profilePic}
                                     alt='Dr. Andrei Popa'
                                 >
                                 </img> : null
                         }
+
+                        <table>
+                            <tr>
+                                <th title="Bachelor of Arts">B.A., 2003</th>
+                                <td>Alexandru Ioan Cuza University, Iasi, Romania</td>
+                            </tr>
+                            <tr >
+                                <th title="Master of Arts">
+                                    <a
+                                        title="https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en"
+                                        href="https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en">M.A., 2009
+                                    </a>
+                                </th>
+                                <td title="https://etd.library.emory.edu/concern/etds/8k71nj12p?locale=en">
+                                    Emory University, Atlanta, GA
+                                </td>
+                            </tr>
+                            <tr >
+                                <th title="Doctor of Philosophy">
+
+                                    <a title="https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en"
+                                        href="https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en">Ph.D., 2013
+                                    </a>
+
+                                </th>
+                                <td>Emory University, Atlanta, GA</td>
+                            </tr>
+
+                        </table>
+
+
                     </div>
 
                     <div className='about-column'>
@@ -52,16 +87,19 @@ class About extends Component {
                             })
                         }
 
-                        <div className='div-tech' >
+
+
+
+                        {/* <div className='div-tech' >
                             {Skills}
-                        </div>
+                        </div> */}
 
                     </div>
 
 
                 </div>
 
-            </div>
+            </div >
 
 
 

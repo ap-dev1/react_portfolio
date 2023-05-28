@@ -346,7 +346,6 @@ function HeatMapHook(props) {
             .attr("x", 35)
             .attr("y", -10)
             .attr("fill", "cyan")
-        //.attr("font-family", "Arial")
 
 
         // X-axis:

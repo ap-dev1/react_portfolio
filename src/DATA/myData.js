@@ -12,17 +12,48 @@ const data = {
     ],
 
     aboutText: [
-        "Behavioral scientist and self taught web developer, I received my BA in psychology from Al. I. Cuza University (Iasi, Romania) and my MA and PHD from Emory University (Atlanta, GA).",
+
+        "Hi, I'm Dr. Andrei Popa. I study computational models of behavior and neuronal dynamics.",
+
+        // "I am interested in computational representations of information, knowlege, and action, and in the evolution of complex systems and their emergent properties.",
 
 
-        "In grad school I focused on computational representations of learning, a line of research I continue to explore and expand.",
 
-        "I am interested in many interconnected topics and their applications, like interfaces and interactions, computational representations of information and action, of learning and remembering, the dynamics of complex systems, the list is long."
+        "My goal is to understand how neuronal dynamics affects the dynamic of behavior and cognition in real-time. This is the interface between mind and brain and where agents literally interact with other agents (i.e, environment).",
+
+        "My goal is to understand how neuronal dynamics affects the dynamic of behavior and cognition in real-time. This is the interface between mind and brain and where agents literally interact with other agents (i.e, environment). As such, this is key to understanding human development, counsciousness and free will, AGI, and the evolution of social groups, i.e. psychohistory.",
+
+        "All these phenomena are connected and are represented in the stream of neuronal activation states - a succession of 3-dimensional graphs that can be represented computationally. The transition from one configuration to the next is what change in psychological systems looks like  (Popa, 2019).",
+
+        // " and interactions  my interests lie with For example, implement neuronal systems and allow them to interact. observe  The emergent behavior of indivisual level must conform  and compare the behavior that emerges at individual level and group level with the behavior of biological agents. ",
+
+        // "The succession of configurations of active neurons (see figure) is the material counterpart of anything a nervous system can experience and express. ",
+
+        // "This stream of activation states is the interface between biology and culture, agent and environment, vulnerability and stressors, etc. (Popa, 2019)",
+
+        // "This succession of 3-dimensional graphs is the 'source code' of thinking, doing, and feeling. The  events that take place at this level shape the connectome, and with it, who we are. These changes are human development in real time.",
+
+        // "In 2019 I proposed that the succession of configurations of active nerons is the 'vehicle of change' in psychological systems, just as Darwin's theories  and the material and conceptual bridge between high-level theories of brain functioning (e.g., Edelman's Neuronal Darwinism) and theories of behavior change (e.g., Skinner's Behavioral Darwinism; see McDowell, 2010, for a parallel). It is the proposed  medium for all forms of expression and experience; as the interface between biology and culture; between nurture and nature; the 'source code' of thinking, of doing, and becoming. We are being written in it as <i>we happen</i>, by low-level Darwinian tendencies (behaviorally manifested as approach and avoidance), with a splash of consciousness. ",
+        // "Hello, I'm Dr. Andrei Popa. I received my BA in general psychology from Alexandru Ioan Cuza University in 2003, (Iasi, Romania), and my MA and PHD from Emory University (Atlanta, GA).",
+
+        // Behavioral scientist and self taught web developer, 
+
+        // "In grad school I researched computational representations of learning, a line of research I continue to pursue.",
+
+        // "I am interested in many interconnected topics and their applications, like interfaces and interactions, computational representations of information and action, of learning and remembering, the dynamics of complex systems, the list is long.",
+
+        // "I love my work, I love where it leads, and I know how to get there.",
+
+        // "The real-time interface between mind and brain, the dynamics of human development, the emergence of counsciousness, free will, generalized AI, psychohistory, i.e. the evolution of large groups – all these are within reach.",
+
+        // "I know what questions need answers, how the answers look like, and how to find them (Popa, 2019).",
+
+        // "There are beautiful things ahead, and I want to build bridges to them."
 
     ],
 
     researchText: [
-        "Experimental chambers experimentally using skinner-boxes - experimental chambers that allow a very high degree of experimental control",
+        // "Experimental chambers experimentally using skinner-boxes - experimental chambers that allow a very high degree of experimental control",
 
     ],
 
@@ -59,9 +90,9 @@ const data = {
 
 
 
-    ideas: [
-        "I'm especially excited about products and services that enhance human experience and performance in sustainable ways."
-    ],
+    // ideas: [
+    //     "I'm especially excited about products and services that enhance human experience and performance in sustainable ways."
+    // ],
 
 
 

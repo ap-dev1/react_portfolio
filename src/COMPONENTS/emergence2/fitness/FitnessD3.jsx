@@ -273,7 +273,6 @@ export default function FitnessD3(props) {
 
         //     .attr("dy", -10)
         //     .attr("font-weight", 100)
-        //     .attr("font-family", "monospace")
 
         //     .attr('fill', d => {
         //         fitnessGradient(d.df)

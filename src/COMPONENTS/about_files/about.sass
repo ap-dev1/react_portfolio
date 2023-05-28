@@ -13,47 +13,54 @@
         margin-bottom: 2rem
         text-align: center
         color: #e5e5e5
-        font-family: Montserrat
 
 .about-wrapper
     display: flex
     flex-direction: row
     justify-content: center
     margin: auto
-    margin-top: 2rem
-    min-width: 24rem
-    max-width: 50rem
+    // margin-top: 2rem
+    // min-width: 24rem
+    // max-width: 50rem
 
     @media (max-width: 800px)
         flex-direction: column
 
     .div-picture
-        max-width: 19rem
+        // width: 30%
         margin: auto
 
         img
             width: 100%
             min-width: 14rem
             border-radius: 5px
-            // margin: auto
+            border: 1px solid #6d717a
+
+        table
+            color: #aaa
+            font-size: .8rem
+            // border: 1px solid red
+            width: 100%
+            margin-top: .5rem
+
+            th
+                width: 25%
+                font-weight: 400
+            td
+                font-size: .7rem
 
 .about-column
     display: flex
     flex-direction: column
     color: #aaa
-    max-width: 26rem
-    min-width: 14rem
-    font-size: .9rem
     margin: auto
     margin-left: 2rem
+    // width: 70%
 
     .narrative
-        text-align: justify
-        // text-justify: inter-character
-        font-family: Roboto
         margin-bottom: 1rem
-        max-width: 100%
-        // font-size: .85rem
+        font-size: 1rem
+        width: 500px
 
     .div-tech
         display: flex
@@ -64,7 +71,6 @@
         min-width: 14rem
 
         label
-            font-family: Roboto
             font-size: .8rem
             text-align: center
             padding: .2rem .5rem

@@ -61,7 +61,7 @@ export default function LovelyOgive(props) {
 
 
 
-    
+
     useEffect(() => {
 
         let gOgive = d3.select(refOgiveGroup.current)
@@ -257,7 +257,7 @@ export default function LovelyOgive(props) {
             How to use a gradient.         
         */
 
-            
+
         //make defs and add the linear gradient
         var lg = gOgive.append("defs")
             .append("linearGradient")
@@ -295,7 +295,7 @@ export default function LovelyOgive(props) {
             .attr("font-size", "22px")
             .style("font-variant", "small-caps")
             .style("letter-spacing", "1.5px")
-            .style("font-family", "Monospace")
+        // .style("font-family", "Monospace")
 
 
     }, []);

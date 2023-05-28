@@ -1,19 +1,17 @@
 /** .attr("transform", (d) => {
-                if (d === 511) {
-                    return "translate(-45,0)rotate(-60)"
-                } else if (d === 512) {
-                    return "translat elsee(-5,0)rotate(-60)"
-                }
-            })
-    .style("text-anchor", "start")
-         **/
-    
+ if (d === 511) {
+ return "translate(-45,0)rotate(-60)"
+ } else if (d === 512) {
+ return "translat elsee(-5,0)rotate(-60)"
+ }
+ })
+ .style("text-anchor", "start")
+ **/
+
 @import '../../styles/_colors'
 
-
-$fassxdrgfs: #fbff00 
+$fassxdrgfs: #fbff00
 $fasxfvrfsg: #fbff00
-
 
 .rect_hover
     stroke: cyan
@@ -35,7 +33,7 @@ $fasxfvrfsg: #fbff00
         width: 100%
         height: 250px
         background-color: $svgLightGreen
-       
+
 //==================================================================
 #divScatter
     width: 100%
@@ -46,7 +44,7 @@ $fasxfvrfsg: #fbff00
         width: 100%
         height: 250px
         background-color: $svgLightGreen
-       
+
 //================================================================
 // divHeatMap is inside divHamming:
 // #69b3a2
@@ -57,13 +55,11 @@ $fasxfvrfsg: #fbff00
     position: relative
     margin-top: 10px
 
-
     #svgHeatMap
         width: 100%
         height: 250px
         //background-color: $svgLightGreen
         border: 1px solid $svgLightGreen
-
 
 .heatmapX line, path
     //stroke: rgb(28, 255, 28)
@@ -73,7 +69,6 @@ $fasxfvrfsg: #fbff00
 .heatmapX text
     //color: rgb(28, 255, 28)
     //color: #eeeeee
-    font-family: Arial, Helvetica, sans-serif
     font-size: 14px
 
 .heatmapY line, path
@@ -83,7 +78,6 @@ $fasxfvrfsg: #fbff00
 
 .heatmapY text
     color: rgb(28, 255, 28)
-    font-family: Arial, Helvetica, sans-serif
     font-size: 14px
 // ==========================================================        
 
@@ -94,7 +88,6 @@ $fasxfvrfsg: #fbff00
 .scatterX text
     //color: rgb(28, 255, 28)
     color: #ddd
-    font-family: Arial, Helvetica, sans-serif
     font-size: 14px
 
 .scatterY line, path
@@ -103,10 +96,8 @@ $fasxfvrfsg: #fbff00
 
 .scatterY text
     color: rgb(28, 255, 28)
-    font-family: Arial, Helvetica, sans-serif
     font-size: 14px
 //=================================================
-
 
 #divHamming
     width: 550px
@@ -123,7 +114,7 @@ $fasxfvrfsg: #fbff00
         background-color: $svgLightGreen
         // box-shadow: -4px 4px 10px 4px #b2f0da
         // box-shadow: -4px 4px 4px #6bae96
-                
+
         .axisLine line, path
             stroke: #c4d5d0
             //stroke: $svgLightGreen
@@ -133,34 +124,25 @@ $fasxfvrfsg: #fbff00
             //color: #c4d5d0
             color: #adadad
             font-size: 10px
-            font-family: Arial, Helvetica, sans-serif
-
-    
 
 .hammingLine
     font-size: 10px
 
 .hammingLine line, path
         //stroke: rgb(28, 255, 28)
-        stroke: rgb(170, 170, 170)
+    stroke: rgb(170, 170, 170)
 
 .hammingLine text
-        color: rgb(170, 170, 170)
-
-        font-family: Arial, Helvetica, sans-serif
-
-
+    color: rgb(170, 170, 170)
 
 .hammingLineOrange
     font-size: 10px
 
 .hammingLineOrange line, path
-        stroke: rgb(255, 128, 49)
+    stroke: rgb(255, 128, 49)
 
 .hammingLineOrange text
     color: rgb(255, 128, 49)
-    font-family: Arial, Helvetica, sans-serif
-
 
 .hammingBar
     opacity: .8
@@ -168,8 +150,6 @@ $fasxfvrfsg: #fbff00
     &:hover
         cursor: pointer
         opacity: .1
-
-
 
 .boundary
     draggable: true
@@ -188,7 +168,7 @@ $fasxfvrfsg: #fbff00
     stroke: rgb(28, 255, 28)
     stroke-width: 6
 .boundary.right
-    stroke: rgb(255, 128, 49)    
+    stroke: rgb(255, 128, 49)
     stroke-width: 6
 
     // colorGreen = 'rgb(28, 255, 28)'
@@ -199,8 +179,6 @@ $fasxfvrfsg: #fbff00
 //     stroke-width: 3
 //     stroke-dasharray: 5
 
-
-
 .yellowLine line, path
     stroke: $svgLightGreen
     //opacity: 0
@@ -208,4 +186,3 @@ $fasxfvrfsg: #fbff00
 .yellowLine text
     color: #c4d5d0
     font-size: 10px
-    font-family: Arial, Helvetica, sans-serif

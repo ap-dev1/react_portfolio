@@ -61,7 +61,7 @@ class Contact extends Component {
                             <tr key={nanoid()} >
                                 <td key={nanoid()}  >
                                     <button
-                                        className="btnContactLink"
+                                        className={link.label === "social" ? "btnContactLink social" : (link.label === "emory" ? "btnContactLink emory" : "btnContactLink")}
                                         key={nanoid()}
                                         name={link.url}
                                         title={link.url}
@@ -72,8 +72,13 @@ class Contact extends Component {
                                 </td>
 
                                 <td key={nanoid()}  >
-                                    <p className='p-details' key={nanoid()} >
-                                        {parse(link.info)}
+                                    <p
+                                        // className='p-details' 
+                                        className={link.label === "social" ? "p-details social" : (link.label === "emory" ? "p-details emory" : "p-details")}
+                                        key={nanoid()}
+                                    >
+                                        {/* {parse(link.info)} */}
+                                        {link.info === "" ? link.url : parse(link.info)}
                                     </p>
                                 </td>
                             </tr>

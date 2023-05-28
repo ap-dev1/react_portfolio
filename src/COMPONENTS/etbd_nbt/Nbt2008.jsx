@@ -139,8 +139,8 @@ export default function Nbt2008(props) {
 
 
         //  CIRCLES BIAS POINTS:
-        
-        
+
+
         gBaseline
             .selectAll(".bias-original")
             .data(
@@ -269,9 +269,8 @@ export default function Nbt2008(props) {
             .attr("x", 10)
             .attr("y", -45)
             .attr("font-size", "15px")
-            //.style("font-variant", "small-caps")
-            //.style("letter-spacing", "1.5px")
-            .style("font-family", "Roboto")
+        //.style("font-variant", "small-caps")
+        //.style("letter-spacing", "1.5px")
 
 
         gBaseline.append('text')
