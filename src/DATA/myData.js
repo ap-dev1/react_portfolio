@@ -13,17 +13,18 @@ const data = {
 
     aboutText: [
 
-        "Hi, I'm Dr. Andrei Popa. I study computational models of behavior and neuronal dynamics.",
+        "Hi, I'm Dr. Andrei Popa. Hi, I'm Dr. Andrei Popa, researcher, scholar, and more recently, web developer.",
 
+        "I study computational models of learning and human development. My goal is to apply this work to the study of consciousness and free will, artificial intelligence, and group dynamic (~ psychohistory).",
         // "I am interested in computational representations of information, knowlege, and action, and in the evolution of complex systems and their emergent properties.",
 
 
 
-        "My goal is to understand how neuronal dynamics affects the dynamic of behavior and cognition in real-time. This is the interface between mind and brain and where agents literally interact with other agents (i.e, environment).",
+        // "My goal is to understand how neuronal dynamics affects the dynamic of behavior and cognition in real-time. This is the interface between mind and brain and where agents literally interact with other agents (i.e, environment).",
 
-        "My goal is to understand how neuronal dynamics affects the dynamic of behavior and cognition in real-time. This is the interface between mind and brain and where agents literally interact with other agents (i.e, environment). As such, this is key to understanding human development, counsciousness and free will, AGI, and the evolution of social groups, i.e. psychohistory.",
+        "My goal is to understand how neuronal dynamics affects the dynamic of behavior and cognition in real-time. This is the interface between mind and brain and where agents literally interact with other agents (i.e, environment). As such, this is key to understanding human development, counsciousness and free will, AGI, and the evolution of  groups, i.e. psychohistory.",
 
-        "All these phenomena are connected and are represented in the stream of neuronal activation states - a succession of 3-dimensional graphs that can be represented computationally. The transition from one configuration to the next is what change in psychological systems looks like  (Popa, 2019).",
+        "All these phenomena are connected and are represented in the stream of neuronal activation states - a succession of 3-dimensional graphs that can be represented computationally. The transition from one configuration to the next is what change in psychological systems looks like (Popa, 2019).",
 
         // " and interactions  my interests lie with For example, implement neuronal systems and allow them to interact. observe  The emergent behavior of indivisual level must conform  and compare the behavior that emerges at individual level and group level with the behavior of biological agents. ",
 

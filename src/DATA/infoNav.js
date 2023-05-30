@@ -17,15 +17,15 @@ var infoNav = [
         info: "teaching experience",
         btnClass: "navRegular teaching"
     },
-    {
-        sectionID: 'research-intro',
-        btnText: "Research",
-        info: "there's an elephant in the room",
-        btnClass: "navRegular"
-    },
+    // {
+    //     sectionID: 'research-intro',
+    //     btnText: "Research",
+    //     info: "there's an elephant in the room",
+    //     btnClass: "navRegular"
+    // },
     {
         sectionID: 'research-overview',
-        btnText: "Overview",
+        btnText: "Research<br/> background",
         info: "behavior dynamics, or learning",
         btnClass: "navRegular"
     },
@@ -49,7 +49,9 @@ var infoNav = [
 
     {
         sectionID: 'Parkour',
-        btnText: "Highlights",
+        // btnText: "Projects and <br/> milestones",
+        btnText: "Milestones",
+
         info: "scientific contributions",
         btnClass: "navRegular "
     },

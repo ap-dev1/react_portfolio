@@ -38,7 +38,7 @@ class App extends Component {
         var navigationMarkers = [
             { markerID: 'About', navButtonID: "btnAbout" },
             { markerID: 'teaching-intro', navButtonID: "btnteaching-intro" },
-            { markerID: 'research-intro', navButtonID: "btnresearch-intro" },
+            // { markerID: 'research-intro', navButtonID: "btnresearch-intro" },
             { markerID: 'research-overview', navButtonID: "btnresearch-overview" },
 
             { markerID: 'research-demo', navButtonID: "btnresearch-demo" },
@@ -115,11 +115,11 @@ class App extends Component {
 
                 <TeachingIntro />
 
-                <ResearchIntro />
+                {/* <ResearchIntro /> */}
 
                 <ResearchOverview />
 
-                <BgDivider title="DEMO" />
+                <BgDivider title="Demonstration" />
 
                 <ResearchDemo />
 
@@ -128,7 +128,7 @@ class App extends Component {
                 {/* <EmergenceMain2 /> */}
 
 
-                <BgDivider title="highlights" />
+                <BgDivider title="Milestones" />
 
 
                 {/* <div

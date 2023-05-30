@@ -1,4 +1,5 @@
-import './_bg-divider.sass';
+import './bg-divider.sass';
+
 import { nanoid } from "nanoid";
 
 export default function BgDivider(props) {

@@ -8,8 +8,7 @@ import MatchingDemo from "../matching/MatchingDemo.jsx";
 export default class ResearchDemo extends Component {
     render() {
         return (
-            <div id='research-demo' key={nanoid()}  >
-
+            <div id='research-demo' key={nanoid()}>
                 <MatchingDemo />
             </div>
         );

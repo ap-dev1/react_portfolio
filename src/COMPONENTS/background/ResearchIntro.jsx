@@ -30,6 +30,7 @@ export default function ResearchIntro() {
                     {/* <span key={nanoid()} >
                         Independent
                     </span> */}
+
                 </div>
 
 

@@ -5,6 +5,11 @@
 $gradient1: $blue-whale
 $gradient2: $blue-whale
 
+// $gradient1: #8b1111
+// $gradient2: #00bfff
+// $blue-whale: #01303f
+// $blue-whale: #00bfff
+
 .bg-divider
     width: 100vw
     height: 50px
@@ -12,20 +17,16 @@ $gradient2: $blue-whale
     justify-content: center
     align-items: center
     background-image: radial-gradient($gradient1, $gradient2)
-    background-size: cover
+    //background-size: cover
     background-position: center
-    font-family: "Share Tech Mono", monospace
     font-size: 2rem
-    background-blend-mode: multiply,screen, overlay
+    // background-blend-mode: multiply,screen, overlay
+    // border: 5px solid $blue-whale
 
     > .divider
-        font-family: "Share Tech Mono", monospace
         color: $divider-font
-        // font-size: 6vh
-        font-size: 3vh
-
+        font-size: 50px
         text-shadow: 1px 1px 1px rgba(0, 0, 0, .45)
-
         display: flex
         justify-content: center
         align-items: center
@@ -51,5 +52,3 @@ $gradient2: $blue-whale
 //     margin: 0
 //     padding: 0
 //     box-sizing: border-box
-
-div
