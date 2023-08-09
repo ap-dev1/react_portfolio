@@ -102,7 +102,7 @@ var infoReferences = [
         label: 'Doctoral dissertation',
         committee: "Prof. Jack McDowell (chair), Prof. Scott Lilienfeld, Prof. Jack Marr, Prof. Monica Capra, Prof. Phil Wolff",
         keywords: ["Dissertation, ETBD, ADHD, emergence, Emory, doctoral thesis"],
-        citation: "Popa (2013). An Evolutionary Theory of Behavior Dynamics - <i>Complexity, Darwinism, and the Emergence of High-Level Phenotypes</i>. <b>Doctoral Dissertation</b>. Retrieved: https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en. ISBNxxxxxxxxxxxxxxx",
+        citation: "Popa (2013). An Evolutionary Theory of Behavior Dynamics - <i>Complexity, Darwinism, and the Emergence of High-Level Phenotypes</i>. <b>Doctoral Dissertation</b>. Retrieved: https://etd.library.emory.edu/concern/etds/9880vr10s?locale=en. ISBN 978-1-303-79422-3",
     },
 
 
@@ -207,7 +207,7 @@ var infoReferences = [
         id: "[25]",
         authors: "Popa & Grissom (2017)",
         label: 'talk',
-        keywords: "escaoe behavior. extinction. extinction burst. behavior variability. aversive conditioning",
+        keywords: "escape behavior. extinction. extinction burst. behavior variability. aversive conditioning",
         citation: "Popa, A. & Grissom, M. K. (2017). <i>Extinction-Induced Variability on Negatively Reinforced Human Behavior. Paper presented at the Winter Conference on Animal Learning & Behavior, Park City, UT.",
     },
 
@@ -240,7 +240,7 @@ var infoReferences = [
         authors: "Popa (2019a)",
         label: 'preprint',
         keywords: "development, learning, interactions, personality, neuronal dynamics, change in state",
-        citation: "Popa, Andrei. 2019. “Psychology 2.0: The Emergence of Individuality.” <i>PsyArXiv. September 8. doi:10.31234/osf.io/m87an.",
+        citation: "Popa, Andrei. 2019a. “Psychology 2.0: The Emergence of Individuality.” <i>PsyArXiv. September 8. doi:10.31234/osf.io/m87an.",
     },
 
     {
@@ -248,9 +248,33 @@ var infoReferences = [
         authors: "Popa (2019b)",
         label: 'preprint',
         keywords: [],
-        citation: "Popa, Andrei. 2019. “Imperfect Automata: Effects of “mutation” on the Evolution of Automaton 01101110 (rule 110)” <i>PsyArXiv. September 30. doi:10.31234/osf.io/wgp4e.",
+        citation: "Popa, Andrei. 2019b. “Imperfect Automata: Effects of “mutation” on the Evolution of Automaton 01101110 (rule 110)” <i>PsyArXiv. September 30. doi:10.31234/osf.io/wgp4e.",
     },
 
+    {
+        id: "[31]",
+        authors: "Popa (2023a)",
+        label: 'in preparation',
+        keywords: [],
+        citation: "Popa, A. (2023a, in preparation). ADHD is disrupted neuronal dynamics. Retrieved: https://ap-dev1.github.io/andreipopa515/#/adhd",
+    },
+
+    {
+        id: "[32]",
+        authors: "Popa (2023b)",
+        label: 'in preparation',
+        keywords: ["human research", "positive reinforcement", "negative reinforcement", "Fixed Cycle", "extinction", "extinction burst", "behavioral variability", "cognitive prototypes"],
+        citation: "Popa, A. (2023b, in preparation). A symmetrical comparison of positive and negative reinforcement on rule learning.",
+    },
+
+
+    {
+        id: "[33]",
+        authors: "Popa (2023c)",
+        label: 'in preparation',
+        keywords: ["choice", "emergence", "sensitivity to reinforcement", "behavioral variability"],
+        citation: "Popa, A. (2023c, in preparation). Changeover delays: function, form, and applications.",
+    },
 
     // {
     //     id: "[30]",

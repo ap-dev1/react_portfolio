@@ -28,12 +28,26 @@ class HeaderSection extends Component {
                 <div className='div-inset' key={nanoid()}>
 
                     <p className='inset-title' key={nanoid()} >
-                        Hi, I'm Dr. Andrei Popa.
+                        Hi, I'm
+                        <span
+                        // style={{ color: "#45a085" }}
+                        // style={{ color: "#007bff", opacity: ".5" }}
+
+                        > Dr. Andrei Popa
+                        </span>
                     </p>
 
+
                     <p className='inset-subtitle' key={nanoid()}  >
-                        Psychologist. Web developer. Puzzle enthusiast.
+                        Researcher, puzzle enthusiast, and temporary  <br /> survivor of <a href='https://en.wikipedia.org/wiki/Factitious_disorder_imposed_on_another'
+                        >Munchausen Syndrome by Proxy</a>
                     </p>
+
+                    <p className='inset-subtitle1' key={nanoid()}  >
+                        More about my backstory at<br /> <a href='https://ap-dev1.github.io/andreipopa515/'
+                        >https://ap-dev1.github.io/andreipopa515</a>
+                    </p>
+
 
                     <div
                         role='button'
@@ -41,22 +55,10 @@ class HeaderSection extends Component {
                         key={nanoid()}
                         onClick={this.scrollToProfile}
                     >
-                        Continue
+                        About me
                     </div>
 
                 </div>
-
-
-                {/* <div id="columnHeader">
-                    <p>
-                        Hi, I'm <span style={{ color: "#45a085" }}>Dr. Andrei Popa.</span>
-                    </p>
-                    <p>I do research and development.</p>
-                    <p>
-                        <button onClick={this.scrollToProfile}>Continue</button>
-                    </p>
-                </div> */}
-
 
 
                 <NavMain />
