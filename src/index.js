@@ -4,7 +4,7 @@ import App from "./App";
 
 import "./App.sass";
 import ReactGA from "react-ga4";
-ReactGA.initialize("G-MB2HPVP47E");
+ReactGA.initialize("G-VNGX57MZ2M");
 
 ReactDOM.render(
   <React.StrictMode>
