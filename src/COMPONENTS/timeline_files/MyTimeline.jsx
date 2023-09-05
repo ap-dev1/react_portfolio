@@ -220,6 +220,7 @@ const MyTimeline = (props) => {
             }}
         >
 
+            {/* <h1>Highlights</h1> */}
             {TimelineHighlights}
         </div>
     );

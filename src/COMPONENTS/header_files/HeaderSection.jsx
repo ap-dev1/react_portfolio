@@ -44,7 +44,7 @@ class HeaderSection extends Component {
                     </p>
 
                     <p className='inset-subtitle1' key={nanoid()}  >
-                        More about my backstory at<br /> <a href='https://ap-dev1.github.io/andreipopa515/'
+                        Backstory at <a href='https://ap-dev1.github.io/andreipopa515/'
                         >https://ap-dev1.github.io/andreipopa515</a>
                     </p>
 

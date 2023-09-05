@@ -27,6 +27,7 @@ class About extends Component {
             <div id='About' key={nanoid()} >
 
                 {/* <h1 key={nanoid()}>There are beautiful things ahead</h1> */}
+                <h1 key={nanoid()}>About</h1>
 
 
 

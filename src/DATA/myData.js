@@ -13,7 +13,6 @@ const data = {
 
     aboutText: [
 
-        "Hi, I'm Dr. Andrei Popa. Hi, I'm Dr. Andrei Popa, researcher, scholar, and more recently, web developer.",
 
         "I study computational models of learning and human development. My goal is to apply this work to the study of consciousness and free will, artificial intelligence, and group dynamic (~ psychohistory).",
         // "I am interested in computational representations of information, knowlege, and action, and in the evolution of complex systems and their emergent properties.",

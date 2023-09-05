@@ -7,12 +7,12 @@ var infoNav = [
 
     {
         sectionID: 'About',
-        btnText: "Profile",
+        btnText: "About",
         info: "Education, skills, ..",
         btnClass: "navRegular navAbout"
     },
     {
-        sectionID: 'teaching-intro',
+        sectionID: 'teachingSection',
         btnText: "Teaching",
         info: "teaching experience",
         btnClass: "navRegular teaching"
@@ -50,7 +50,7 @@ var infoNav = [
     {
         sectionID: 'Parkour',
         // btnText: "Projects and <br/> milestones",
-        btnText: "Milestones",
+        btnText: "Research highlights",
 
         info: "scientific contributions",
         btnClass: "navRegular "

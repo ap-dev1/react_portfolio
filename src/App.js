@@ -7,7 +7,7 @@ import HeaderSection from "./COMPONENTS/header_files/HeaderSection";
 import About from "./COMPONENTS/about_files/AboutSection";
 import MyTimeline from "./COMPONENTS/timeline_files/MyTimeline";
 
-import TeachingIntro from "./COMPONENTS/teaching/TeachingIntro";
+// import TeachingIntro from "./COMPONENTS/teaching/TeachingIntro";
 
 import Contact from "./COMPONENTS/contact/ContactSection";
 
@@ -27,7 +27,7 @@ import ResearchDemo from "./COMPONENTS/background/ResearchDemo";
 
 import BgDivider from "./COMPONENTS/background/BgDivider";
 
-
+import TeachingExperience from "./COMPONENTS/teachingpage/TeachingExperience"
 
 const abc = ["A", "B", "C"]
 
@@ -37,7 +37,7 @@ class App extends Component {
     componentDidMount() {
         var navigationMarkers = [
             { markerID: 'About', navButtonID: "btnAbout" },
-            { markerID: 'teaching-intro', navButtonID: "btnteaching-intro" },
+            { markerID: 'teachingSection', navButtonID: "btnteachingSection" },
             // { markerID: 'research-intro', navButtonID: "btnresearch-intro" },
             { markerID: 'research-overview', navButtonID: "btnresearch-overview" },
 
@@ -113,7 +113,10 @@ class App extends Component {
 
                 <About />
 
-                <TeachingIntro />
+
+                {/* <TeachingIntro /> */}
+
+                <TeachingExperience />
 
                 {/* <ResearchIntro /> */}
 
