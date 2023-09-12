@@ -25,7 +25,7 @@ export default function NavCollapse(props) {
                     color: 'rgba(50, 50, 50, 1)'
                 }}
             >
-                menu
+                {open === true ? "Click to roll up" : "expand menu"}
             </Button>
 
             <Collapse in={open}>

@@ -25,7 +25,7 @@ var infoNav = [
     // },
     {
         sectionID: 'research-overview',
-        btnText: "Research<br/> background",
+        btnText: "Research<br/> overview",
         info: "behavior dynamics, or learning",
         btnClass: "navRegular"
     },

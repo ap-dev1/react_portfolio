@@ -65,198 +65,198 @@ import parse from "html-react-parser";
 export default function OrderFellowship() {
 
 
-        return (
+    return (
 
 
-            <>
-                <div
-                    className='sub-section-header'
+        <>
+            <div
+                className='sub-section-header'
+                style={{
+                    marginTop: "30px",
+                    textAlign: "center",
+                    fontFamily: "Montserrat",
+                    border: "none",
+
+                    paddingTop: "10px",
+
+
+                }}
+            >
+
+                <h2 className="years"
                     style={{
-                        marginTop: "30px",
-                        textAlign: "center",
                         fontFamily: "Montserrat",
-                        border: "1px dotted teal",
+                        fontSize: "11px",
+                        marginBottom: "5px",
+                        letterSpacing: 1,
+                    }}
+                >
+                    On Recent Discoveries by Emory Researchers
+                </h2>
 
-                        paddingTop: "10px",
 
-
+                <h1 className="title"
+                    style={{
+                        marginBottom: "0px",
+                        paddingBottom: "0px",
+                        //fontSize: "10px",
+                        fontFamily: "Montserrat",
+                        color: "#ff9900",
                     }}
                 >
 
-                    <h2 className="years"
-                        style={{
-                            fontFamily: "Montserrat",
-                            fontSize: "11px",
-                            marginBottom: "5px",
-                            letterSpacing: 1,
-                        }}
-                    >
-                        On Recent Discoveries by Emory Researchers
-                    </h2>
+                    Complexity & Emergence:
 
-
-                    <h1 className="title"
-                        style={{
-                            marginBottom: "0px",
-                            paddingBottom: "0px",
-                            //fontSize: "10px",
-                            fontFamily: "Montserrat",
-                            color: "#ff9900",
-                        }}
-                    >
-
-                        Complexity & Emergence:
-
-                        {/* <br/>
+                    {/* <br/>
                         from Automata to Behavior  */}
 
-                    </h1>
-                    <h1 className="title"
-                        style={{
-                            fontFamily: "Montserrat",
-                            margin: "0px",
-                            padding: "2px",
-                            color: "#ff9900",
+                </h1>
+                <h1 className="title"
+                    style={{
+                        fontFamily: "Montserrat",
+                        margin: "0px",
+                        padding: "2px",
+                        color: "#ff9900",
 
-                        }}
-                    >
-                        from Automata to Behavior
-                    </h1>
+                    }}
+                >
+                    from Automata to Behavior
+                </h1>
 
-                    <h2 className="years"
-                        style={{
-                            margin: "15px auto 5px auto",
-                        }}
-                    >
-                        - interdisciplinary seminars -
-                    </h2>
-
-
-                    <h2 className="years"
-                        style={{
-                            margin: "0px auto 15px auto",
-                        }}
-                    >
-                        2011 - 2012
-                    </h2>
+                <h2 className="years"
+                    style={{
+                        margin: "15px auto 5px auto",
+                    }}
+                >
+                    - interdisciplinary seminars -
+                </h2>
 
 
+                <h2 className="years"
+                    style={{
+                        margin: "0px auto 15px auto",
+                    }}
+                >
+                    2011 - 2012
+                </h2>
 
-                    <CollapseHook
-                        collapsedTitle={'click to expand'}
 
-                        collapsedText={
 
-                            <div
-                                className='sub-section-body'
+                <CollapseHook
+                    collapsedTitle={'click to expand'}
+
+                    collapsedText={
+
+                        <div
+                            className='sub-section-body'
+                            style={{
+                                textAlign: "left",
+                                color: "#aaa",
+                                fontSize: "11px",
+                                fontFamily: "Roboto",
+                                wordWrap: "break-word",
+                                //padding: "2px",
+                                marginTop: "20px",
+                                //border: "1px dotted tomato",
+                                paddingTop: "0px",
+
+                            }}
+                        >
+
+
+
+
+
+
+                            <p
                                 style={{
-                                    textAlign: "left",
-                                    color: "#aaa",
-                                    fontSize: "11px",
-                                    fontFamily: "Roboto",
+                                    maxWidth: "350px",
                                     wordWrap: "break-word",
-                                    //padding: "2px",
-                                    marginTop: "20px",
-                                    //border: "1px dotted tomato",
-                                    paddingTop: "0px",
-
+                                    margin: "0px",
+                                    fontSize: "11px",
+                                    lineHeight: "15px",
+                                    padding: "0px",
+                                    marginBottom: "5px",
+                                    fontFamily: "Roboto",
+                                    color: "#aaa",
                                 }}
                             >
+                                When I wrote this, on 03/01/2022, the links were broken, but I found these snapshots from July 2021. Thank you,
+                                <a href="http://web.archive.org/"> Wayback Machine</a> !
+                            </p>
 
 
-
-
-
-
+                            <a href='http://web.archive.org/web/20210731031935/www.order.emory.edu/about/index.html'
+                            >
                                 <p
                                     style={{
-                                        maxWidth: "350px",
+                                        maxWidth: "300px",
                                         wordWrap: "break-word",
                                         margin: "0px",
-                                        fontSize: "11px",
-                                        lineHeight: "15px",
-                                        padding: "0px",
-                                        marginBottom: "5px",
-                                        fontFamily: "Roboto",
-                                        color: "#aaa",
+                                        fontSize: "10px",
+                                        margin: "auto",
+                                        paddingBottom: "5px",
                                     }}
                                 >
-                                    When I wrote this, on 03/01/2022, the links were broken, but I found these snapshots from July 2021. Thank you,
-                                    <a href="http://web.archive.org/"> Wayback Machine</a> !
+                                    http://web.archive.org/web/20210731031935/www.order.emory.edu/about/index.html
                                 </p>
 
+                            </a>
 
-                                <a href='http://web.archive.org/web/20210731031935/www.order.emory.edu/about/index.html'
-                                >
-                                    <p
-                                        style={{
-                                            maxWidth: "300px",
-                                            wordWrap: "break-word",
-                                            margin: "0px",
-                                            fontSize: "10px",
-                                            margin: "auto",
-                                            paddingBottom: "5px",
-                                        }}
-                                    >
-                                        http://web.archive.org/web/20210731031935/www.order.emory.edu/about/index.html
-                                    </p>
-
-                                </a>
-
-                                <a href='http://web.archive.org/web/20210731053234/http://order.emory.edu/people/past-teacher-scholars.html'
-                                >
-                                    <p
-                                        style={{
-
-                                            maxWidth: "300px",
-                                            wordWrap: "break-word",
-                                            margin: "0px",
-                                            padding: "0px",
-                                            margin: "auto",
-                                        }}
-                                    >
-                                        http://web.archive.org/web/20210731053234/http://order.emory.edu/people/past-teacher-scholars.html
-                                    </p>
-                                </a>
-
-
-
+                            <a href='http://web.archive.org/web/20210731053234/http://order.emory.edu/people/past-teacher-scholars.html'
+                            >
                                 <p
                                     style={{
-                                        padding: "0px",
+
+                                        maxWidth: "300px",
+                                        wordWrap: "break-word",
                                         margin: "0px",
-                                        marginTop: "10px",
-
-                                        marginBottom: "5px",
-                                        fontWeight: 600,
-                                        letterSpacing: "1px",
+                                        padding: "0px",
+                                        margin: "auto",
                                     }}
                                 >
-                                    Fellowship coordinators:
+                                    http://web.archive.org/web/20210731053234/http://order.emory.edu/people/past-teacher-scholars.html
                                 </p>
-
-                                <p
-                                    style={{
-                                        marginBottom: "0px",
-                                        paddingBottom: "0px",
-                                    }}
-                                >
-                                    Prof. David Lynn (Biological Chemistry)<br />
-                                    Prof. Leslie Taylor (Theatre Studies)
-                                </p>
-
-
-                            </div>
-                        }
-                    />
-                </div>
-
-
-            </>
+                            </a>
 
 
 
+                            <p
+                                style={{
+                                    padding: "0px",
+                                    margin: "0px",
+                                    marginTop: "10px",
 
-        )
+                                    marginBottom: "5px",
+                                    fontWeight: 600,
+                                    letterSpacing: "1px",
+                                }}
+                            >
+                                Fellowship coordinators:
+                            </p>
+
+                            <p
+                                style={{
+                                    marginBottom: "0px",
+                                    paddingBottom: "0px",
+                                }}
+                            >
+                                Prof. David Lynn (Biological Chemistry)<br />
+                                Prof. Leslie Taylor (Theatre Studies)
+                            </p>
+
+
+                        </div>
+                    }
+                />
+            </div>
+
+
+        </>
+
+
+
+
+    )
 }
 

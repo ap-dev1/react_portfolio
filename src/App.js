@@ -29,6 +29,8 @@ import BgDivider from "./COMPONENTS/background/BgDivider";
 
 import TeachingExperience from "./COMPONENTS/teachingpage/TeachingExperience"
 
+// import TopNavBar from "./TopNavBar"
+
 const abc = ["A", "B", "C"]
 
 class App extends Component {
@@ -106,7 +108,10 @@ class App extends Component {
     render() {
 
         return (
-            <div>
+            <div
+
+            // style={{ backgroundColor: "#01303f" }}
+            >
 
 
                 <HeaderSection />
@@ -122,7 +127,7 @@ class App extends Component {
 
                 <ResearchOverview />
 
-                <BgDivider title="Demonstration" />
+                {/* <BgDivider title="Demonstration" /> */}
 
                 <ResearchDemo />
 
@@ -131,7 +136,7 @@ class App extends Component {
                 {/* <EmergenceMain2 /> */}
 
 
-                <BgDivider title="Milestones" />
+                {/* <BgDivider title="Milestones" /> */}
 
 
                 {/* <div

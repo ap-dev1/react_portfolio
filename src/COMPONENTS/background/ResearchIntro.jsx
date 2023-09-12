@@ -31,10 +31,14 @@ export default function ResearchIntro() {
                         Independent
                     </span> */}
 
+
                 </div>
 
 
             </div>
+
+
+
 
         </div >
 

@@ -20,7 +20,7 @@ export default function CollapseHook(props) {
                     backgroundColor: props.background ? props.background : "transparent",
                     margin: props.margin ? props.margin : ".2rem auto .2rem 0",
                     fontWeight: props.fontWeight ? props.fontWeight : 400,
-
+                    cursor: "pointer"
                 }}
                 className="btn-collapse-hover"
             >
