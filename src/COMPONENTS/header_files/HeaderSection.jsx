@@ -1,11 +1,11 @@
 
 import "./header.sass";
-import { Fade } from "react-reveal"
-import { nanoid } from "nanoid"
+import { nanoid } from "nanoid";
 import React, { Component } from "react";
 
 import NavMain from "./NavMain";
 
+import QuickLinks from "./QuickLinks";
 
 class HeaderSection extends Component {
 
@@ -43,11 +43,7 @@ class HeaderSection extends Component {
                         >Munchausen Syndrome by Proxy</a>
                     </p>
 
-                    <p className='inset-subtitle1' key={nanoid()}  >
-                        Backstory at <a href='https://ap-dev1.github.io/andreipopa515/'
-                        >https://ap-dev1.github.io/andreipopa515</a>
-                    </p>
-
+                    <QuickLinks />
 
                     <div
                         role='button'
@@ -55,7 +51,7 @@ class HeaderSection extends Component {
                         key={nanoid()}
                         onClick={this.scrollToProfile}
                     >
-                        About me
+                        Continue
                     </div>
 
                 </div>

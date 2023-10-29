@@ -45,6 +45,7 @@ var infoContact = [
     // },
 
 
+
     {
         name: "Google Scholar",
         url: "https://scholar.google.com/citations?user=-C2nxZsAAAAJ",
@@ -86,7 +87,15 @@ var infoContact = [
 
 
     //===============================
-
+    {
+        name: "Medium",
+        url: "https://medium.com/@andreipopa515/dating-profile-25bf607e0fc7",
+        key: 453,
+        image_src: "",
+        info: "",
+        label: "social"
+    },
+    //===============================
 
     {
         name: "GitHub",
